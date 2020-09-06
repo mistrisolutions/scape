@@ -23,7 +23,7 @@
         <div class="collapse" id="general-pages">
           <ul class="nav flex-column sub-menu">
             <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> User Roles </a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
+            <li class="nav-item"> <a class="nav-link" href="{{ route('app.settings.statuss.index') }}"> Status Type </a></li>
             <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
             <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
             <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
@@ -31,18 +31,26 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
+        <a class="nav-link" data-toggle="collapse" href="#user" aria-expanded="false" aria-controls="general-pages">
           <span class="menu-title">Users</span>
           <i class="menu-arrow"></i>
           <i class="mdi mdi-medical-bag menu-icon"></i>
         </a>
-        <div class="collapse" id="general-pages">
+        <div class="collapse" id="user">
           <ul class="nav flex-column sub-menu">
             <li class="nav-item"> <a class="nav-link" href="{{ route('app.users.index') }}">Users List</a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#owner" aria-expanded="false" aria-controls="general-pages">
+          <span class="menu-title">Shop Owner</span>
+          <i class="menu-arrow"></i>
+          <i class="mdi mdi-medical-bag menu-icon"></i>
+        </a>
+        <div class="collapse" id="owner">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="{{ route('app.settings.statuss.index') }}">Users List</a></li>
           </ul>
         </div>
       </li>

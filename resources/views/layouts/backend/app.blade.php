@@ -10,7 +10,7 @@
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{ asset('assets/vendors/mdi/css/materialdesignicons.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendors/css/vendor.bundle.base.css') }}">
-    @stack('csss')
+    @stack('css')
     <!-- Layout styles -->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
    
@@ -28,7 +28,16 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper"> 
+
+            <div class="page-header">
+              <h3 class="page-title"> @yield('header-title') </h3>
+              <nav aria-label="breadcrumb">
+                @yield('add-menu')
+              </nav>
+            </div>
+
             @include('layouts.backend.partials.alert')
+            
             @yield('content')
           </div>
           <!-- content-wrapper ends -->

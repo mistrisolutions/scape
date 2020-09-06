@@ -34,14 +34,29 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
     Route::put('roles/update/{role}','RoleController@update')->name('role.update');
     Route::get('roles/abilities/{role}','RoleController@show')->name('role.show');
     Route::delete('roles/delete/{role}','RoleController@destroy')->name('role.destroy');
+
+    //status type
+    Route::group(['as'=>'statuss.','prefix'=>'status'],function(){
+        Route::get('/','StatusController@index')->name('index');
+        Route::post('/create','StatusController@store')->name('status.store');
+        Route::put('/update/{status}','StatusController@update')->name('status.update');
+        Route::delete('/delete/{status}','StatusController@destroy')->name('status.destroy');
+    });
+    
     });
 
     //user
 
-    Route::group(['as'=>'users.','prifix'=>'users'],function(){
+    Route::group(['as'=>'users.','prefix'=>'users'],function(){
         Route::get('/','UserController@index')->name('index');
         Route::get('/create','UserController@create')->name('user.create');
         Route::post('/create','UserController@store')->name('user.store');
+        Route::get('/profile/{user}','UserController@show')->name('user.show');
+        Route::get('/update/{user}','UserController@edit')->name('user.edit');
+        Route::put('/update/{user}','UserController@update')->name('user.update');
+        Route::delete('/delete/{user}','UserController@destroy')->name('user.destroy');
     });
+
+    
     
 });

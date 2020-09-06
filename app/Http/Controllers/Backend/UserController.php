@@ -10,6 +10,10 @@ use Illuminate\Support\Facades\Hash;
 
 use App\Models\User;
 
+use Illuminate\Validation\Rule;
+
+use Illuminate\Support\Facades\Validator;
+
 use App\Models\Role;
 
 use App\Models\Profile;
@@ -24,7 +28,7 @@ class UserController extends Controller
     public function index()
     {
         //
-        $users=User::userPagination(2);
+        $users=User::userPagination(5);
         //dd($users);
         return view('backend.users.index',[
             "users"=>$users
@@ -55,7 +59,7 @@ class UserController extends Controller
         $request->validate([
             'name'      =>['required','max:20',],
             'email'     =>['required','unique:users','email'],
-            'password'  =>['required','min:8','max:20'],
+            'password'  =>['required','min:8','max:20','confirmed'],
             'phone'     =>['required','max:20'],
             'gender'    =>['required'],
             'role'      =>'required',
@@ -67,7 +71,7 @@ class UserController extends Controller
         $user=User::create([
             'name'      =>$request->name,
             'email'     =>$request->email,
-            'password'  =>HASH::make($request->password),
+            'password'  =>$request->password,
             'role_id'   =>$request->role,
         ]);
 
@@ -77,7 +81,7 @@ class UserController extends Controller
             'phone'     =>$request->phone,
             'gender'    =>$request->gender,
             'address'   =>$request->address,
-            'avatar'    =>$request->avatar->store('avaters'),
+            'avatar'    =>$request->avatar,
         ]);
 
         return redirect()->route('app.users.index');
@@ -89,9 +93,12 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(User $user)
     {
         //
+        return view('backend.users.profile',[
+            "user"=>$user
+        ]);
     }
 
     /**
@@ -100,9 +107,13 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(User $user)
     {
         //
+        return view('backend.users.form',[
+            'user'=>$user,
+            'roles'=>Role::getAllRoles(),
+        ]);
     }
 
     /**
@@ -112,9 +123,40 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, User $user)
     {
         //
+        $attributes=$request->validate([
+            'name'      =>['required','max:20',],
+            'email'     =>['required',Rule::unique('users')->ignore($user->id),'email'],           
+            'role'      =>'required',            
+        ]);
+
+        $profile=$request->validate([
+            'phone'     =>['required','max:20'],
+            'gender'    =>['required'],
+            'address'   =>'required'
+        ]);
+        
+        if(!empty($request['password'])){
+            //dd('passwordd');
+            $request->validate([
+                'password'  =>['required','min:8','max:20','confirmed']
+            ]);
+            $attributes['password']=$request->password;
+        }
+        if($request->hasFile('avatar')){
+            $request->validate([
+                'avatar'    =>['required','mimes:jpeg,png,jpg','max:2048'],
+            ]);
+            $profile['avatar']=$request->avatar;
+        }
+
+        $user->update($attributes);
+        $user->profile->update($profile);
+
+        return redirect()->route('app.users.index')->with('success','User updated successfully');
+        
     }
 
     /**
@@ -123,8 +165,9 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
-        //
+    public function destroy(User $user){
+        $user->delete();
+
+        return redirect()->route('app.users.index')->with('success','User deleted');
     }
 }
