@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','role_id'
     ];
 
     /**
@@ -36,4 +36,22 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    static function getAllUsers(){
+        return self::all();
+    }
+
+    static function userPagination($number){
+        return self::where('role_id','!=','shop_owner')->paginate($number);
+    }
+
+
+    public function role(){
+        return $this->belongsTo(Role::class);
+    }
+
+
+    public function profile(){
+        return $this->hasOne(Profile::class);
+    }
 }
