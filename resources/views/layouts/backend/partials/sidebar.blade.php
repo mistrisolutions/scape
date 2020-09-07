@@ -34,7 +34,7 @@
         </a>
         <div class="collapse" id="owner">
           <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="{{ route('app.settings.statuss.index') }}">Users List</a></li>
+            <li class="nav-item"> <a class="nav-link" href="{{ route('app.shopOwners.index') }}">Shop Owners</a></li>
           </ul>
         </div>
       </li>
@@ -49,6 +49,7 @@
             <li class="nav-item"> <a class="nav-link" href="{{ route('app.settings.role.index') }}"> User Roles </a></li>
             <li class="nav-item"> <a class="nav-link" href="{{ route('app.settings.statuss.index') }}"> Status Type </a></li>
             <li class="nav-item"> <a class="nav-link" href="{{ route('app.settings.paymentMethods.index') }}"> Payment Methods </a></li>
+            <li class="nav-item"> <a class="nav-link" href="{{ route('app.settings.zones.index') }}"> Zones</a></li>
           </ul>
         </div>
       </li>

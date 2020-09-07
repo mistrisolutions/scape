@@ -2,21 +2,17 @@
 
 namespace App\Http\Controllers\Backend;
 
-use App\Http\Controllers\Controller;
-
 use Illuminate\Http\Request;
 
-use App\Models\User;
+use App\Http\Controllers\Controller;
 
-use App\Models\Role;
+use Illuminate\Support\Str;
 
-use App\Models\PaymentMethod;
+use Illuminate\Validation\Rule;
 
 use App\Models\Zone;
 
-use App\Models\ShopOwner;
-
-class ShopOwnerController extends Controller
+class ZoneController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -26,8 +22,8 @@ class ShopOwnerController extends Controller
     public function index()
     {
         //
-        return view('backend.shopowner.index',[
-            'owners'=>ShopOwner::all(),
+        return view('backend.settings.zones.index',[
+            "zones"=>Zone::all(),
         ]);
     }
 
@@ -39,11 +35,6 @@ class ShopOwnerController extends Controller
     public function create()
     {
         //
-        $data['roles']=Role::all();
-        $data['methods']=PaymentMethod::all();
-        $data['zone']=Zone::all();
-
-        return view('backend.shopowner.form',$data);
     }
 
     /**
@@ -55,6 +46,17 @@ class ShopOwnerController extends Controller
     public function store(Request $request)
     {
         //
+        $request->validate([
+            'title'=>['required','max:20','unique:zones']
+        ]);
+
+        Zone::create([
+            'title'=>$request->title,
+            'slug'=>Str::slug($request->title),
+        ]);
+
+        return redirect()->route('app.settings.zones.index')
+                        ->with('success','New Zone Added');
     }
 
     /**
@@ -86,9 +88,21 @@ class ShopOwnerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Zone $zone)
     {
         //
+        //
+        $request->validate([
+            'title'=>['required','max:20','unique:statuses',Rule::unique('zones')->ignore($zone->id)],
+        ]);
+
+        $zone->update([
+            'title'=>$request->title,
+            'slug'=> Str::slug($request->title),
+        ]);
+
+        return redirect()->route('app.settings.zones.index')
+                        ->with('success','Zone Updated');
     }
 
     /**
@@ -97,8 +111,13 @@ class ShopOwnerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Zone $zone)
     {
         //
+
+        $zone->delete();
+        return redirect()->route('app.settings.zones.index')
+                        ->with('success','Zone Deleted');
+        
     }
 }

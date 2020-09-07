@@ -17,4 +17,8 @@ class ShopOwner extends Model
     public function zone(){
         return $this->hasMany(Zone::class);
     }
+
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
 }

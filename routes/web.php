@@ -50,6 +50,14 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
             Route::put('/update/{method}','PaymentMethodController@update')->name('method.update');
             Route::delete('/delete/{method}','PaymentMethodController@destroy')->name('method.destroy');
         });
+
+        //Zone
+        Route::group(['as'=>'zones.','prefix'=>'zones'],function(){
+            Route::get('/','ZoneController@index')->name('index');
+            Route::post('/create','ZoneController@store')->name('zone.store');
+            Route::put('/update/{zone}','ZoneController@update')->name('zone.update');
+            Route::delete('/delete/{zone}','ZoneController@destroy')->name('zone.destroy');
+        });
     
     });
 
@@ -64,6 +72,20 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
         Route::put('/update/{user}','UserController@update')->name('user.update');
         Route::delete('/delete/{user}','UserController@destroy')->name('user.destroy');
     });
+
+
+     //shop Owner
+
+     Route::group(['as'=>'shopOwners.','prefix'=>'shopOwners'],function(){
+        Route::get('/','ShopOwnerController@index')->name('index');
+        Route::get('/create','ShopOwnerController@create')->name('owner.create');
+        Route::post('/create','ShopOwnerController@store')->name('owner.store');
+        Route::get('/profile/{owner}','ShopOwnerController@show')->name('owner.show');
+        Route::get('/update/{owner}','ShopOwnerController@edit')->name('owner.edit');
+        Route::put('/update/{owner}','ShopOwnerController@update')->name('owner.update');
+        Route::delete('/delete/{owner}','ShopOwnerController@destroy')->name('owner.destroy');
+    });
+
 
     
     
