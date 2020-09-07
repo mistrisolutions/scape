@@ -41,7 +41,7 @@ Orders
                 <td> {{ $order->customerphone }}</td>
                 <td> {{ $order->orderid }}</td>
                 <td> {{ $order->status }}</td>               
-                <td>{{ $role->created_at }}</td>
+                <td>{{ $order->created_at }}</td>
                 <td style="text-align: center"> 
                 <a href="{{ route('app.orders.order.show',$order->id) }}" class="badge badge-success">Abilities</a>
                 <a href="{{ route('app.orders.order.edit',$order->id) }}" class="badge badge-warning">Edit</a>
@@ -79,7 +79,6 @@ Orders
               @endforelse
             </tbody>
           </table>
-              {{ $roles->links('layouts.backend.partials.pagination') }}
         </div>
       </div>
     </div>
