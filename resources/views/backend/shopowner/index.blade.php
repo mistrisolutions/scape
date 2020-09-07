@@ -30,6 +30,7 @@ Shop Owners
               <th> name </th>
               <th> email </th>
               <th> phone </th>
+              <th> Website Url </th>
               <th class="text-center"> Action </th>
             </tr>
           </thead>
@@ -45,6 +46,9 @@ Shop Owners
               </td>
               <td>
                 {{ $owner->user->profile->phone }}
+              </td>
+              <td>
+                <a href="{{ $owner->url }}">{{ asset($owner->url) }}</a>
               </td>
               <td style="text-align: center"> 
                 <a href="{{ route('app.shopOwners.owner.show',$owner->id) }}" class="badge badge-success">Profile</a>

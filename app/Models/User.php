@@ -56,6 +56,9 @@ class User extends Authenticatable
         return $this->hasOne(Profile::class);
     }
 
+    public function shopOwner(){
+        return $this->hasOne(ShopOwner::class);
+    }
     //Mutator
 
     public function setPasswordAttribute($value){

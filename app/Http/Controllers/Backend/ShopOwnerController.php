@@ -10,9 +10,13 @@ use App\Models\User;
 
 use App\Models\Role;
 
+use Illuminate\Validation\Rule;
+
 use App\Models\PaymentMethod;
 
 use App\Models\Zone;
+
+use App\Models\Profile;
 
 use App\Models\ShopOwner;
 
@@ -41,7 +45,7 @@ class ShopOwnerController extends Controller
         //
         $data['roles']=Role::all();
         $data['methods']=PaymentMethod::all();
-        $data['zone']=Zone::all();
+        $data['zones']=Zone::all();
 
         return view('backend.shopowner.form',$data);
     }
@@ -55,6 +59,49 @@ class ShopOwnerController extends Controller
     public function store(Request $request)
     {
         //
+        //dd($request);
+       $user= $request->validate([
+            'name'      =>['required','max:20',],
+            'email'     =>['required','unique:users','email'],
+            'password'  =>['required','min:8','max:20','confirmed'],
+            'phone'     =>['required','max:20'],
+            'gender'    =>['required'],
+            'role_id'      =>'required',
+            'avatar'    =>['required','mimes:jpeg,png,jpg','max:2048'],
+            'address'   =>'required',
+            'payment_method_id'=>'required',
+            'zone_id'          =>'required',
+            'company_name'  =>['required','unique:shop_owners'],
+        ]);
+
+
+        //create user
+        $user=User::create([
+            'name'      =>$request->name,
+            'email'     =>$request->email,
+            'password'  =>$request->password,
+            'role_id'   =>$request->role,
+        ]);
+
+        //profile create
+        Profile::create([
+            'user_id'   =>$user->id,
+            'phone'     =>$request->phone,
+            'gender'    =>$request->gender,
+            'address'   =>$request->address,
+            'avatar'    =>$request->avatar,
+        ]);
+        ShopOwner::create([
+            'user_id'      =>$user->id,
+            'company_name'=>$request->company_name,
+            'payment_method_id'=>$request->payment_method_id,
+            'zone_id'      =>$request->zone,
+            'url'          =>$request->company_name,
+
+        ]);
+
+        return redirect()->route('app.shopOwners.index')
+                            ->with('success','New shop owner Created');
     }
 
     /**
@@ -63,9 +110,14 @@ class ShopOwnerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(ShopOwner $owner)
     {
         //
+        $data['roles']=Role::all();
+        $data['methods']=PaymentMethod::all();
+        $data['zones']=Zone::all();
+        $data['owner']=$owner;
+
     }
 
     /**
@@ -74,9 +126,16 @@ class ShopOwnerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(ShopOwner $owner)
     {
         //
+
+        $data['roles']=Role::all();
+        $data['methods']=PaymentMethod::all();
+        $data['zones']=Zone::all();
+        $data['owner']=$owner;
+        return view('backend.shopowner.form',$data);
+
     }
 
     /**
@@ -86,9 +145,47 @@ class ShopOwnerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,ShopOwner $owner)
     {
         //
+        //
+        $attributes=$request->validate([
+            'name'      =>['required','max:20',],
+            'email'     =>['required',Rule::unique('users')->ignore($owner->user->id),'email'],           
+            'role_id'      =>'required',            
+        ]);
+
+        $profile=$request->validate([
+            'phone'     =>['required','max:20'],
+            'gender'    =>['required'],
+            'address'   =>'required'
+        ]);
+
+        $ownerAttributes=$request->validate([
+            'company_name'     =>['required','max:30',Rule::unique('shop_owners')->ignore($owner->id)],
+            'payment_method_id'    =>['required'],
+            'zone_id'   =>'required'
+        ]);
+        if(!empty($request['password'])){
+            //dd('passwordd');
+            $request->validate([
+                'password'  =>['required','min:8','max:20','confirmed']
+            ]);
+            $attributes['password']=$request->password;
+        }
+        if($request->hasFile('avatar')){
+            $request->validate([
+                'avatar'    =>['required','mimes:jpeg,png,jpg','max:2048'],
+            ]);
+            $profile['avatar']=$request->avatar;
+        }
+       // dd($owner->user->profile);
+        $owner->update($ownerAttributes);
+        $owner->user->update($attributes);
+        $owner->user->profile->update($profile);
+
+        return redirect()->route('app.shopOwners.index')->with('success','Shop Owner updated ');
+
     }
 
     /**

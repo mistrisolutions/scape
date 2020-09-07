@@ -10,7 +10,7 @@ Create Shop Owner
   <div class="col-12 grid-margin stretch-card">
       <div class="card">
         <div class="card-body">
-          <form class="forms-sample"action="@isset($owner){{ route('app.shopOwners.owner.update',$owner->id) }} @else {{ route('app.users.user.store') }} @endif" enctype="multipart/form-data" method="POST">
+          <form class="forms-sample"action="@isset($owner){{ route('app.shopOwners.owner.update',$owner->id) }} @else {{ route('app.shopOwners.owner.store') }} @endif" enctype="multipart/form-data" method="POST">
             @csrf
             @isset($owner) @method('PUT') @endif
             <div class="row">
@@ -30,7 +30,7 @@ Create Shop Owner
                 </div>
                 <div class="form-group col-md-6">
                   <label for="exampleInputPassword4">Company name</label>
-                  <input type="text" name="company_name" class="form-control" id="exampleInputPassword4" placeholder="Company name">
+                  <input type="text" name="company_name" class="form-control" id="exampleInputPassword4"value="@isset($owner){{ $owner->company_name }} @else {{ old('company_name') }} @endif"  placeholder="Company name">
                 </div>
               </div>
             <div class="row">
@@ -53,9 +53,9 @@ Create Shop Owner
               </div>
               <div class="form-group col-md-6">
               <label for="exampleSelectGender">Role</label>
-              <select class="form-control @error('role')is-invalid @enderror" name="role" >
+              <select class="form-control @error('role')is-invalid @enderror" name="role_id" >
                 @foreach($roles as $key => $role)
-                <option value="{{ $role->id }} @isset($owner) @if($owner->user->role->slug==$role->slug) selected @endif @endif">{{ $role->title }}</option>
+                <option value="{{ $role->id }}" @isset($owner) @if($owner->user->role->slug==$role->slug) selected @endif @endif>{{ $role->title }}</option>
                 @endforeach
               </select>
               </div>
@@ -63,17 +63,17 @@ Create Shop Owner
             <div class="row">
                 <div class="form-group col-md-6">
                   <label for="exampleSelectGender">Payment Method</label>
-                  <select class="form-control @error('payment_method')is-invalid @enderror" name="payment_method" >
-                    @foreach($roles as $key => $role)
-                    <option value="{{ $role->id }} @isset($owner) @if($owner->user->role->slug==$role->slug) selected @endif @endif">{{ $role->title }}</option>
+                  <select class="form-control @error('payment_method')is-invalid @enderror" name="payment_method_id" >
+                    @foreach($methods as $key => $method)
+                    <option value="{{ $method->id }}" @isset($owner) @if($owner->paymentMethod->slug==$method->slug) selected @endif @endif">{{ $method->title }}</option>
                     @endforeach
                   </select>
                 </div>
                 <div class="form-group col-md-6">
-                <label for="exampleSelectGender">Role</label>
-                <select class="form-control @error('role')is-invalid @enderror" name="role" >
-                  @foreach($roles as $key => $role)
-                  <option value="{{ $role->id }} @isset($owner) @if($owner->user->role->slug==$role->slug) selected @endif @endif">{{ $role->title }}</option>
+                <label for="exampleSelectGender">Zone</label>
+                <select class="form-control @error('role')is-invalid @enderror" name="zone_id" >
+                  @foreach($zones as $key => $zone)
+                  <option value="{{ $zone->id }}" @isset($owner) @if($owner->zone->slug==$zone->slug) selected @endif @endif>{{ $zone->title }}</option>
                   @endforeach
                 </select>
                 </div>
@@ -84,7 +84,7 @@ Create Shop Owner
               <div class="input-group col-xs-12">
                 <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Avatar">
                 <span class="input-group-append">
-                  <button class="file-upload-browse btn btn-gradient-primary" type="button" id="upload">@isset($user)Change @else Upload @endif</button>
+                  <button class="file-upload-browse btn btn-gradient-primary" type="button" id="upload">@isset($owner)Change @else Upload @endif</button>
                 </span>
               </div>
             </div>
