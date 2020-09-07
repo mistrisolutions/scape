@@ -24,6 +24,13 @@ Route::get('/order', function () {
     return view('order');
 });
 
+Route::get('/ddesh', function () {
+    return view('ddesh');
+});
+Route::get('/dtable', function () {
+    return view('dtable');
+});
+
 Auth::routes();
 
 //backend
