@@ -13,10 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::redirect('/','/login');
 Route::get('/dlogin', function () {
     return view('dlogin');
 });
@@ -34,10 +31,9 @@ Route::get('/dtable', function () {
 Auth::routes();
 
 //backend
-Route::get('/home', 'HomeController@index')->name('home');
-//backend
 Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' => ['auth']],function(){
-
+    //home
+    Route::get('/dashboard', 'HomeController@index')->name('home');
     //settings
     Route::group(['as'=>'settings.','prefix'=>'settings'],function(){
         //Roles

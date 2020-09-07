@@ -32,7 +32,7 @@
             <a class="dropdown-item" href="#">
               <i class="mdi mdi-cached mr-2 text-success"></i> Activity Log </a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
               <i class="mdi mdi-logout mr-2 text-primary"></i> Signout </a>
           </div>
         </li>
@@ -145,3 +145,6 @@
       </button>
     </div>
   </nav>
+  <form id="logout-form" action="{{route('logout')}}" method="POST" style="display: none;">
+    @csrf
+  </form>

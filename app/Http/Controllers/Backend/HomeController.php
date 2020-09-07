@@ -1,6 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Backend;
+
+use App\http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 class HomeController extends Controller
@@ -22,6 +24,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('backend.settings.roles.index');
+        return view('backend.home.dashboard');
     }
 }
