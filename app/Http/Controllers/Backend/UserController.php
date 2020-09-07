@@ -62,7 +62,7 @@ class UserController extends Controller
             'password'  =>['required','min:8','max:20','confirmed'],
             'phone'     =>['required','max:20'],
             'gender'    =>['required'],
-            'role'      =>'required',
+            'role_id'   =>'required',
             'avatar'    =>['required','mimes:jpeg,png,jpg','max:2048'],
             'address'   =>'required'
         ]);
@@ -72,7 +72,7 @@ class UserController extends Controller
             'name'      =>$request->name,
             'email'     =>$request->email,
             'password'  =>$request->password,
-            'role_id'   =>$request->role,
+            'role_id'   =>$request->role_id,
         ]);
 
         //profile create
@@ -129,7 +129,7 @@ class UserController extends Controller
         $attributes=$request->validate([
             'name'      =>['required','max:20',],
             'email'     =>['required',Rule::unique('users')->ignore($user->id),'email'],           
-            'role'      =>'required',            
+            'role_id'      =>'required',            
         ]);
 
         $profile=$request->validate([

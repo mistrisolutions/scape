@@ -80,7 +80,7 @@ class ShopOwnerController extends Controller
             'name'      =>$request->name,
             'email'     =>$request->email,
             'password'  =>$request->password,
-            'role_id'   =>$request->role,
+            'role_id'   =>$request->role_id,
         ]);
 
         //profile create
@@ -95,7 +95,7 @@ class ShopOwnerController extends Controller
             'user_id'      =>$user->id,
             'company_name'=>$request->company_name,
             'payment_method_id'=>$request->payment_method_id,
-            'zone_id'      =>$request->zone,
+            'zone_id'      =>$request->zone_id,
             'url'          =>$request->company_name,
 
         ]);

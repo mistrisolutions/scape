@@ -47,9 +47,9 @@ Create User
               </div>
               <div class="form-group col-md-6">
               <label for="exampleSelectGender">Role</label>
-              <select class="form-control @error('role')is-invalid @enderror" name="role" >
+              <select class="form-control @error('role')is-invalid @enderror" name="role_id" >
                 @foreach($roles as $key => $role)
-                <option value="{{ $role->id }} @isset($user) @if($user->role->slug==$role->slug) selected @endif @endif">{{ $role->title }}</option>
+                <option value="{{ $role->id }}" @isset($user) @if($user->role->slug==$role->slug) selected @endif @endif>{{ $role->title }}</option>
                 @endforeach
               </select>
               </div>

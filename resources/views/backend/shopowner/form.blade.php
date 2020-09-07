@@ -65,7 +65,7 @@ Create Shop Owner
                   <label for="exampleSelectGender">Payment Method</label>
                   <select class="form-control @error('payment_method')is-invalid @enderror" name="payment_method_id" >
                     @foreach($methods as $key => $method)
-                    <option value="{{ $method->id }}" @isset($owner) @if($owner->paymentMethod->slug==$method->slug) selected @endif @endif">{{ $method->title }}</option>
+                    <option value="{{ $method->id }}" @isset($owner) @if($owner->paymentMethod->slug=="dsfds") selected @endif @endif">{{ $method->title }}</option>
                     @endforeach
                   </select>
                 </div>

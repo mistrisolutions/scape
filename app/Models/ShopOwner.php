@@ -13,7 +13,7 @@ class ShopOwner extends Model
 
 
     public function paymentMethod(){
-        return $this->belongsTo(ShopOwner::class);
+        return $this->belongsTo(PaymentMethod::class);
     }
 
     public function zone(){
