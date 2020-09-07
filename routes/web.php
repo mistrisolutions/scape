@@ -95,7 +95,7 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
 
 
     
-        //shop Owner
+        //Order 
 
         Route::group(['as'=>'orders.','prefix'=>'orders'],function(){
             Route::get('/','OrderController@index')->name('index');
