@@ -194,8 +194,12 @@ class ShopOwnerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(ShopOwner $owner)
     {
         //
+
+        $owner->user->delete();
+        return redirect()->route('app.shopOwners.index')
+                        ->with('success','Shop owner deleted');
     }
 }

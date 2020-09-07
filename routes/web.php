@@ -95,5 +95,16 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
 
 
     
+        //shop Owner
+
+        Route::group(['as'=>'orders.','prefix'=>'orders'],function(){
+            Route::get('/','OrderController@index')->name('index');
+            Route::get('/create','OrderController@create')->name('order.create');
+            Route::post('/create','OrderController@store')->name('order.store');
+            Route::get('/profile/{order}','OrderController@show')->name('order.show');
+            Route::get('/update/{order}','OrderController@edit')->name('order.edit');
+            Route::put('/update/{order}','OrderController@update')->name('order.update');
+            Route::delete('/delete/{order}','OrderController@destroy')->name('order.destroy');
+        });
     
 });
