@@ -17,6 +17,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/dlogin', function () {
+    return view('dlogin');
+});
+Route::get('/order', function () {
+    return view('order');
+});
+
 Auth::routes();
 
 //backend
