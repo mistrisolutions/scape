@@ -15,7 +15,6 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->string('customerid');
             $table->string('customername');
             $table->string('customerphone');
             $table->string('orderid');
@@ -23,7 +22,7 @@ class CreateOrdersTable extends Migration
             $table->integer('quantity');
             $table->string('zone');
             $table->string('address');
-            $table->text('note');
+            $table->text('note')->nullable(True);
             $table->unsignedBigInteger('status_id')->nullable(true);
             $table->unsignedBigInteger('shop_owner_id');
             $table->timestamps();

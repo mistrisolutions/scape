@@ -40,8 +40,8 @@ Orders
                 <td> {{ $order->customername }}</td>
                 <td> {{ $order->customerphone }}</td>
                 <td> {{ $order->orderid }}</td>
-                <td> {{ $order->status }}</td>               
-                <td>{{ $order->created_at }}</td>
+                <td> {{ $order->status->title }}</td>               
+                <td>{{ $order->created_at->diffForHumans() }}</td>
                 <td style="text-align: center"> 
                 <a href="{{ route('app.orders.order.show',$order->id) }}" class="badge badge-success">Abilities</a>
                 <a href="{{ route('app.orders.order.edit',$order->id) }}" class="badge badge-warning">Edit</a>
@@ -64,7 +64,7 @@ Orders
                         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                         <button id="delete" type="button" class="btn btn-danger" onclick="deleteForm('{{ $order->id }}')">Delete</button>
                         <form id="deleteform{{ $order->id }}"
-                          action="{{ route('app.settings.role.destroy',$order->id) }}" method="POST"
+                          action="{{ route('app.orders.order.destroy',$order->id) }}" method="POST"
                           style="display: none;">
                           @csrf()
                           @method('DELETE')

@@ -24,6 +24,10 @@ class ShopOwner extends Model
         return $this->belongsTo(User::class);
     }
 
+    public function orders(){
+        return $this->hasMany(Order::class);
+    }
+
     public function setUrlAttribute($value){
         $this->attributes['url']="shop/".Str::slug($value);
     }

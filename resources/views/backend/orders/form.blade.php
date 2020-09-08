@@ -20,7 +20,7 @@ Create Order
               </div>
               <div class="form-group col-md-6">
                 <label for="exampleSelectGender">Status</label>
-                <select class="form-control @error('status')is-invalid @enderror" name="status"  >
+                <select class="form-control @error('status')is-invalid @enderror" name="status_id"  >
                 @foreach($statuses as $key => $status) 
                 @endforeach
                   <option value="{{ $status->id }}" @isset($order) @if($order->status->slug==$status->slug)selected @endif @endif>{{ $status->title }}</option>
@@ -30,11 +30,11 @@ Create Order
             <div class="row">
                 <div class="form-group col-md-6">
                   <label for="exampleInputName1">Phone Number</label>
-                <input type="text" name="customername" class="form-control @error('customername')) is-invalid  @enderror" value="@isset($order){{ $order->customername }} @else {{ old('customername') }} @endif" id="exampleInputName1" placeholder="Customer Name">
+                <input type="text" name="customerphone" class="form-control @error('customerphone')) is-invalid  @enderror" value="@isset($order){{ $order->customerphone }} @else {{ old('customerphone') }} @endif" id="exampleInputName1" placeholder="Customer Phone">
                 </div>
                 <div class="form-group col-md-6">
                   <label for="exampleSelectGender">Shop owner</label>
-                  <select class="form-control @error('status')is-invalid @enderror" name="owner"  >
+                  <select class="form-control @error('status')is-invalid @enderror" name="shop_owner_id"  >
                   @foreach($owners as $key => $owner) 
                   <option value="{{ $owner->id }}" @isset($order) @if($order->shopOwner->id==$owner->id)selected @endif @endif>{{ $owner->user->name }}</option>
                   @endforeach
@@ -48,16 +48,16 @@ Create Order
                 </div>
                 <div class="form-group col-md-3">
                   <label for="exampleSelectGender">Quantity</label>
-                <input type="number" name="quantity" class="form-control @error('quantity')) is-invalid  @enderror" value="@isset($order){{ $order->quantity }} @else {{ old('quantity') }} @endif" id="exampleInputName1" placeholder="Product Quantity">
+                <input type="number" name="quantity" class="form-control @error('quantity')) is-invalid  @enderror" value="@isset($order){{ $order->quantity }}@endif" id="exampleInputName1" placeholder="Product Quantity">
                 </div>
               </div>           
             <div class="form-group">
               <label for="exampleTextarea1">Address</label>
-              <textarea name="address" class="form-control" id="exampleTextarea1" rows="4">@isset($order){{ $order->address}}@endif</textarea>
+              <textarea name="address" class="form-control @error('address')is-invalid @enderror" id="exampleTextarea1" rows="4">@isset($order){{ $order->address}}@endif</textarea>
             </div>
             <div class="form-group">
                 <label for="exampleTextarea1">Note</label>
-                <textarea name="address" class="form-control" id="exampleTextarea1" rows="4">@isset($order){{ $order->note}}@endif</textarea>
+                <textarea name="note" class="form-control" id="exampleTextarea1" rows="4">@isset($order){{ $order->note}}@endif</textarea>
               </div>
             <button type="submit" class="btn btn-gradient-primary mr-2">@isset($order)Update @else Create @endif</button>
           </form>
