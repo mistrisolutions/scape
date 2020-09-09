@@ -1,43 +1,56 @@
 @extends('layouts.backend.app')
-@section('title')
-User Profile
-@endsection
+@section('title','User Profile')
 @section('content')
-<div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-6">
-        <div class="well well-sm">
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
-                </div>
-                <div class="col-sm-6 col-md-8">
-                    <h4>
-                        Bhaumik Patel</h4>
-                    <small><cite title="San Francisco, USA">San Francisco, USA <i class="glyphicon glyphicon-map-marker">
-                    </i></cite></small>
-                    <p>
-                        <i class="glyphicon glyphicon-envelope"></i>email@example.com
-                        <br />
-                        <i class="glyphicon glyphicon-globe"></i><a href="http://www.jquery2dotnet.com">www.jquery2dotnet.com</a>
-                        <br />
-                        <i class="glyphicon glyphicon-gift"></i>June 02, 1988</p>
-                    <!-- Split button -->
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary">
-                            Social</button>
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                            <span class="caret"></span><span class="sr-only">Social</span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="https://plus.google.com/+Jquery2dotnet/posts">Google +</a></li>
-                            <li><a href="https://www.facebook.com/jquery2dotnet">Facebook</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Github</a></li>
-                        </ul>
-                    </div>
-                </div>
+<div class="row user-profile-area">
+    <div class="col-md-8 mx-auto">
+        <div class="card p-3">
+        <div class="row">
+        <div class="col-md-3">
+            <div class="profile">
+            <img src="{{ asset('assets/images/faces/face1.jpg') }}" alt="">
             </div>
+            <button type="button" class="btn btn-sm btn-success">Edit Profile</button>
+        </div>
+        <div class="col-md-9">
+            <div class="profile-info">
+            <table class="table table-borderless">
+            <tbody>
+                <tr>
+                <th width="3%">Name</th>
+                <th width="1%">:</th>
+                <td>Shuvo</td>
+                </tr>
+
+                <tr>
+                <th width="3%">Phone Number</th>
+                <th width="1%">:</th>
+                <td>345678900</td>
+                </tr>
+                <tr>
+                <th width="3%">Email address</th>
+                <th width="1%">:</th>
+                <td>email@mail.com</td>
+                </tr>
+                <tr>
+                <th width="3%">Gender</th>
+                <th width="1%">:</th>
+                <td>Male</td>
+                </tr>
+                <tr>
+                <th width="3%">Role</th>
+                <th width="1%">:</th>
+                <td>admin</td>
+                </tr>
+                <tr>
+                <th width="3%">Address</th>
+                <th width="1%">:</th>
+                <td>7584/a1 Panthapath, Dhanmondi</td>
+                </tr>
+            </tbody>
+            </table>
+            </div>
+        </div>
+        </div>
         </div>
     </div>
 </div>

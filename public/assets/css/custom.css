@@ -4,3 +4,14 @@
 .order-cart a{
     color: #fff !important;
 }
+.user-profile-area .profile{
+    margin: 50px auto;
+}
+.user-profile-area .profile img{
+    display: block;
+    margin: auto;
+}
+.user-profile-area .btn{
+    display: block;
+    margin: auto;
+}
