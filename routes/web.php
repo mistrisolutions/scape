@@ -27,6 +27,12 @@ Route::get('/ddesh', function () {
 Route::get('/dtable', function () {
     return view('dtable');
 });
+Route::get('/ordertable', function () {
+    return view('ordertable');
+});
+Route::get('/details', function () {
+    return view('details');
+});
 
 Auth::routes();
 

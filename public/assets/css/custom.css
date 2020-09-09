@@ -15,3 +15,15 @@
     display: block;
     margin: auto;
 }
+
+.order-table-area .form-check-input{
+    margin-left: 5px !important;
+}
+.drpdn-status{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.drpdn-status .btn{
+    width: 100%;
+    border: none;
+}
