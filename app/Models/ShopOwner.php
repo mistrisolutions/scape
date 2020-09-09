@@ -29,6 +29,11 @@ class ShopOwner extends Model
     }
 
     public function setUrlAttribute($value){
-        $this->attributes['url']="shop/".Str::slug($value);
+        $this->attributes['url']=Str::slug($value);
     }
+
+    public function getUrlAttribute($value){
+        return "shop/".$value;
+    }
+    
 }

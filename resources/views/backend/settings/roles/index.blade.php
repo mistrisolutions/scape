@@ -24,7 +24,6 @@ Roles
           <table class="table table-bordered">
             <thead>
               <tr>
-                <th>S/N</th>
                 <th> Role Name </th>
                 <th> privilege</th>
                 <th> Created At </th>
@@ -33,9 +32,11 @@ Roles
             </thead>
             <tbody>
               @forelse($roles as $key => $role)
+              @if ($role->slug == 'super-admin')
+               @continue
+              @endif
               <tr>
-                <td> {{ $key+1 }}</td>
-                <td> {{ $role->slug }}</td>
+                <td> {{ $role->title }}</td>
                 <td>
                   <div class="progress">
                     <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>

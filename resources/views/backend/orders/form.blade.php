@@ -22,8 +22,8 @@ Create Order
                 <label for="exampleSelectGender">Status</label>
                 <select class="form-control @error('status')is-invalid @enderror" name="status_id"  >
                 @foreach($statuses as $key => $status) 
+                <option value="{{ $status->id }}" @isset($order) @if($order->status->slug==$status->slug)selected @endif @endif>{{ $status->title }}</option>
                 @endforeach
-                  <option value="{{ $status->id }}" @isset($order) @if($order->status->slug==$status->slug)selected @endif @endif>{{ $status->title }}</option>
                 </select>
               </div>
             </div>

@@ -74,13 +74,13 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
     //user
 
     Route::group(['as'=>'users.','prefix'=>'users'],function(){
-        Route::get('/','UserController@index')->name('index');
-        Route::get('/create','UserController@create')->name('user.create');
-        Route::post('/create','UserController@store')->name('user.store');
-        Route::get('/profile/{user}','UserController@show')->name('user.show');
-        Route::get('/update/{user}','UserController@edit')->name('user.edit');
-        Route::put('/update/{user}','UserController@update')->name('user.update');
-        Route::delete('/delete/{user}','UserController@destroy')->name('user.destroy');
+        Route::get('/','UserController@index')->name('index')->middleware('can:create,App\Models\User');
+        Route::get('/create','UserController@create')->name('user.create')->middleware('can:create,App\Models\User');;
+        Route::post('/create','UserController@store')->name('user.store')->middleware('can:create,App\Models\User');;
+        Route::get('/profile/{user}','UserController@show')->name('user.show')->middleware('can:view,user');;
+        Route::get('/update/{user}','UserController@edit')->name('user.edit')->middleware('can:update,user');;
+        Route::put('/update/{user}','UserController@update')->name('user.update')->middleware('can:update,user');;
+        Route::delete('/delete/{user}','UserController@destroy')->name('user.destroy')->middleware('can:delete,user');;
     });
 
 
@@ -109,5 +109,13 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
             Route::put('/update/{order}','OrderController@update')->name('order.update');
             Route::delete('/delete/{order}','OrderController@destroy')->name('order.destroy');
         });
+
+
     
+});
+
+//shop
+Route::group(['as'=>'shop.','prefix'=>'shop'],function(){
+    Route::get('/{slug}','ShopController@index')->name('index');
+    Route::post('create/{slug}','ShopController@createOrder')->name('order.store');
 });

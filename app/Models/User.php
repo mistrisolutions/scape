@@ -51,6 +51,16 @@ class User extends Authenticatable
         return $this->belongsTo(Role::class);
     }
 
+    public function isSuperAdmin(){
+        if($this->role->slug=='super-admin'){
+            return true;
+        }
+    }
+
+    public function hasAbility($value){
+        //dd($value);
+        return $this->role->hasAbility($value);
+    }
 
     public function profile(){
         return $this->hasOne(Profile::class);

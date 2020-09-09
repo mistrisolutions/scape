@@ -26,4 +26,25 @@ class Role extends Model
         return $this->hasMany(User::class);
     }
 
+    public function createAbility($request){
+        $this->abilities()->sync($request->abilities);
+        
+    }
+
+    public function hasAbility($ability){
+         if($this->abilities->where('slug',$ability)->first()){
+             return true;
+         }
+ 
+     } 
+     public function hasAbilities($abilities){
+         if (is_array($abilities)){
+             foreach($abilities as $ability){
+                 $this->hasAbility($ability);
+             }
+         }else{
+             $this->hasAbility($abilities);
+         }
+     }
+
 }

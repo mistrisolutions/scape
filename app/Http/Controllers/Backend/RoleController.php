@@ -10,6 +10,10 @@ use Illuminate\Http\Request;
 
 use App\Models\Role;
 
+use Illuminate\Validation\Rule;
+
+use App\Models\Module;
+
 class RoleController extends Controller
 {
     /**
@@ -34,7 +38,7 @@ class RoleController extends Controller
     public function create()
     {
         //
-        return view('backend.settings.roles.form');
+        return view('backend.settings.roles.form',['modules'=>Module::all()]);
     }
 
     /**
@@ -49,12 +53,13 @@ class RoleController extends Controller
         $request->validate([
             'title'=>['required','max:20','unique:roles'],
         ]);
-        Role::create([
+        $role=Role::create([
             'title'=>$request->title,
             'slug'=>str::slug($request->title),
         ]);
+        $role->createAbility($request);
         return redirect()->route('app.settings.role.index')
-                         ->with('success',"role created sucessfully");   ;
+                         ->with('success',"role created sucessfully");  
     }
 
     /**
@@ -63,9 +68,9 @@ class RoleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Role $role)
     {
-        //
+       
     }
 
     /**
@@ -77,7 +82,7 @@ class RoleController extends Controller
     public function edit(Role $role)
     {
         //
-        return view('backend.settings.roles.form',['role'=>$role]);
+        return view('backend.settings.roles.form',['role'=>$role,'modules'=>Module::all()]);
     }
 
     /**
@@ -87,9 +92,19 @@ class RoleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,Role $role)
     {
-        //
+        //dd($role);
+         $request->validate([
+            'title'=>['required','max:20',Rule::unique('roles')->ignore($role->id)],
+        ]);
+        $role->update([
+            'title'=>$request->title,
+            'slug'=>str::slug($request->title),
+        ]);
+        $role->createAbility($request);
+        return redirect()->route('app.settings.role.index')
+                         ->with('success',"role updated sucessfully");  
     }
 
     /**

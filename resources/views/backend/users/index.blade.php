@@ -9,9 +9,11 @@ User List
 All Users
 @endsection
 @section('add-menu')
+@can('create',App\Models\User::class)
 <a  class="float-right" href="{{ route('app.users.user.create') }}">
   <label class="badge badge-success">Add user</label>
 </a>
+@endcan
 @endsection
 @section('content')
 <div class='row'>

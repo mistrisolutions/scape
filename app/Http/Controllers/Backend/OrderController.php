@@ -64,7 +64,7 @@ class OrderController extends Controller
             'status_id'    =>$request->status_id,
             'orderid'      =>random_int ( 50000 , 10000000 ),
             'zone'         =>$request->shop_owner_id,
-            'note'         =>$requedst->note,
+            'note'         =>$request->note,
         ]);
 
         return redirect()->route('app.orders.index')
