@@ -9,9 +9,10 @@
             <p class="mb-1 text-black">Tracking No:</p>
         </li>
         <li class="nav-item">
-        <form class="form-inline">
-        <div class="form-group mx-sm-3 mb-2">
-            <input type="number" placeholder="Enter you order No" class="form-control">
+        <form class="form-inline" action="{{ route('shop.order.tracking') }}" method="POST">
+        <div class="form-group mx-sm-3 mb-2" >
+          @csrf
+            <input type="number" name="order_id" placeholder="Enter you order No" class="form-control @error('order_id')is-invalid @enderror">
         </div>
         <button type="submit" class="btn btn-primary mb-2">Submit</button>
         </form>

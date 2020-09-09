@@ -116,6 +116,7 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
 
 //shop
 Route::group(['as'=>'shop.','prefix'=>'shop'],function(){
-    Route::get('/{slug}','ShopController@index')->name('index');
-    Route::post('create/{slug}','ShopController@createOrder')->name('order.store');
+    Route::get('/{url}','ShopController@index')->name('index');
+    Route::post('create/{url}','ShopController@createOrder')->name('order.store');
+    Route::post('tracking/','ShopController@tracking')->name('order.tracking');
 });

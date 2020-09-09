@@ -17,10 +17,10 @@ class ShopController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($slug)
+    public function index($url)
     {
         //
-        $shop=ShopOwner::where('url',$slug)->first();
+        $shop=ShopOwner::where('url',$url)->first();
 
         return view('forntend.order',['shop'=>$shop]);
     }
@@ -55,7 +55,7 @@ class ShopController extends Controller
     public function createOrder(Request $request ,$slug)
     {
         //
-        $shopOwner=ShopOwner::where('id',$slug)->first();
+        $shopOwner=ShopOwner::where('url',$slug)->first();
         $request->validate([
             'customername'=>['required','max:20'],
             'customerphone'=>['required','numeric'],
@@ -84,6 +84,21 @@ class ShopController extends Controller
     public function show($id)
     {
         //
+    }
+
+
+    public function tracking(Request $request){
+        $request->validate([
+            'order_id'=>['required','numeric'],
+        ]);
+
+        $tracking=Order::where('orderid',$request->order_id)->first();
+        
+        if($tracking){
+            return view('forntend.order',['tracking'=>$tracking]);
+        }else{
+            return redirect()->back()->with('error','No order found by the id');
+        }
     }
 
     /**

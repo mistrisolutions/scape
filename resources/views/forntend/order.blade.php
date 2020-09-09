@@ -11,7 +11,7 @@ Product Order
               <div class="row flex-grow">
                 <div class="col-lg-4 mx-auto">
                   <div class="auth-form-light text-left p-5">
-                    @isset($order)
+                    @if(isset($order))
                     <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
@@ -23,9 +23,21 @@ Product Order
                           </div>
                         </div>
                       </div>
+                    @elseif(isset($tracking))
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">Order Tracking Result</h5>
+                        </div>
+                        <div class="modal-body">
+                          <h3>Your Order No is : {{ $tracking->orderid }}</h3>
+                          <p>Please take screeshot of your oder id or keep it somewhere safe !</p>
+                        </div>
+                      </div>
+                    </div>
                     @else  
                     <h4>Make Order</h4>
-                    <form class="pt-3" action="{{ route('shop.order.store',$shop->id)}}" method="POST">
+                    <form class="pt-3" action="{{ route('shop.order.store',$shop->url)}}" method="POST">
                         @csrf
                       <div class="form-group">
                         <input type="text" name="customername" value="{{ old('customername') }}" class="form-control form-control-lg" required placeholder="Customer Name*">

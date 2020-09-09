@@ -48,7 +48,7 @@ Shop Owners
                 {{ $owner->user->profile->phone }}
               </td>
               <td>
-                <a href="{{ $owner->getShopUrl }}">{{ asset($owner->url) }}</a>
+                <a href="{{ asset($owner->getUrl())}}">{{ asset($owner->getUrl()) }}</a>
               </td>
               <td style="text-align: center"> 
                 <a href="{{ route('app.shopOwners.owner.show',$owner->id) }}" class="badge badge-success">Profile</a>
