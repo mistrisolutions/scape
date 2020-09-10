@@ -27,7 +27,7 @@ Orders
                 </div>
             </div>
             <div class="col-md-2 col-sm-6 col-6">
-            <a href="#" type="button" class="btn btn-sm btn-outline-success">Process</a>
+            <a href="{{ route('app.orders.order.process') }}" type="button" class="btn btn-sm btn-outline-success">Process</a>
             </div>
             
             <div class="col-md-2 col-sm-6 col-6">
@@ -56,6 +56,7 @@ Orders
                 </div>
             </div>
         </div>
+        <form>
         <div class="table-area">
             <table class="table table-bordered order-table-area">
                 <thead>
@@ -74,7 +75,7 @@ Orders
                 <tbody>
                 @forelse ($orders as $order)
                 <tr>
-                    <td>  </td>
+                    <td>  <input class="form-check-input" type="checkbox" value="{{ $order->id }}" id="all"> </td>
                     <td> {{ $order->orderid }}</td>
                     <td> {{ $order->customername }}</td>
                     <td> {{ $order->customerphone }}</td>
@@ -123,6 +124,7 @@ Orders
                 </div>
             </div>
         </div>
+        </form>
         </div>
     </div>
 </div>

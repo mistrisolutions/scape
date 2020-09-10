@@ -160,4 +160,8 @@ class OrderController extends Controller
             'status_id'    =>['required'],
         ]);
     }
+
+    public function process(){
+        return view('backend.orders.process');
+    }
 }
