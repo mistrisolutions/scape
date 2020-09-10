@@ -71,6 +71,18 @@
         overflow-x: scroll;
     }
  }
+@media (max-width: 493px) { 
+    .navbar-menu-wrapper{
+        margin: auto;
+    }
+    .navbar-brand-wrapper{
+        margin: auto;
+    }
+    .login-content-area{
+        margin-top: 50px;
+    }
+ }
+
 @media (max-width: 400px) { 
     .content-wrapper{
         padding: 0.75rem 0.25rem !important;
