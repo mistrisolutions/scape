@@ -78,7 +78,7 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
             Route::put('/update/{zone}','ZoneController@update')->name('zone.update');
             Route::delete('/delete/{zone}','ZoneController@destroy')->name('zone.destroy');
         });
-    
+
     });
 
     //user
@@ -107,8 +107,8 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
     });
 
 
-    
-        //Order 
+
+        //Order
 
         Route::group(['as'=>'orders.','prefix'=>'orders'],function(){
             Route::get('/','OrderController@index')->name('index')->middleware('can:view-any,App\Models\Order');
@@ -117,9 +117,9 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
             Route::get('/profile/{order}','OrderController@show')->name('order.show')->middleware('can:view,order');
             Route::get('/update/{order}','OrderController@edit')->name('order.edit')->middleware('can:update,order');
             Route::put('/update/{order}','OrderController@update')->name('order.update')->middleware('can:update,order');
-            Route::get('/process/','OrderController@process')->name('order.process')->middleware('can:create,App\Models\Order');
+            Route::get('/process/{id?}','OrderController@process')->name('order.process')->middleware('can:create,App\Models\Order');
             Route::delete('/delete/{order}','OrderController@destroy')->name('order.destroy')->middleware('can:delete,order');
-            
+
         });
 
         //Order table operations
@@ -127,7 +127,7 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
             Route::get('/update/{order}','OrderTableOperation@orderUpdate')->name('update')->middleware('can:create,App\Models\Order');
             Route::get('/filter/','OrderTableOperation@filterBytime')->name('filter.time')->middleware('can:create,App\Models\Order');
         });
-    
+
 });
 
 //shop
