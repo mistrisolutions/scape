@@ -2,6 +2,14 @@
 @section('title')
 Orders
 @endsection
+@section('header-title', 'All Orders')
+@section('add-menu')
+@can('create',App\Models\Order::class)
+<a  class="float-right" href="{{ route('app.orders.order.create') }}">
+  <label class="badge badge-success">Create order</label>
+</a>
+@endcan
+@endsection
 @section('content')
 <div class="row">
 <div class="col-lg-12 grid-margin stretch-card all-order-table">
@@ -87,7 +95,7 @@ Orders
                     </td>
                 </tr> 
                 @empty
-                    
+                   
                 @endforelse
 
                 </tbody>

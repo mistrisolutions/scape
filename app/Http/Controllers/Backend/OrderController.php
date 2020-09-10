@@ -12,6 +12,8 @@ use App\Models\Order;
 
 use App\Models\ShopOwner;
 
+use App\Models\PaymentMethod;
+
 class OrderController extends Controller
 {
     /**
@@ -37,6 +39,7 @@ class OrderController extends Controller
         //
         $data['statuses']=Status::all();
         $data['owners']=ShopOwner::all();
+        $data['methods']=PaymentMethod::all();
 
         return view('backend.orders.form',$data);
     }

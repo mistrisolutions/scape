@@ -25,9 +25,11 @@ class CreateOrdersTable extends Migration
             $table->text('note')->nullable(True);
             $table->unsignedBigInteger('status_id')->nullable(true);
             $table->unsignedBigInteger('shop_owner_id');
+            $table->unsignedBigInteger('payment_method_id');
             $table->timestamps();
-            $table->foreign('status_id')->references('id')->on('statuses');
+            $table->foreign('status_id')->references('id')->on('statuses')->onDelete('cascade');
             $table->foreign('shop_owner_id')->references('id')->on('shop_owners')->onDelete('cascade');
+            $table->foreign('payment_method_id')->references('id')->on('payment_methods')->onDelete('cascade');
         });
     }
 

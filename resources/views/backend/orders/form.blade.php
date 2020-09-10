@@ -40,7 +40,7 @@ Create Order
                   @endforeach
                   </select>
                 </div>
-              </div> 
+              </div>
               <div class="row">
                 <div class="form-group col-md-9">
                   <label for="exampleInputName1">Product Name</label>
@@ -50,7 +50,21 @@ Create Order
                   <label for="exampleSelectGender">Quantity</label>
                 <input type="number" name="quantity" class="form-control @error('quantity')) is-invalid  @enderror" value="@isset($order){{ $order->quantity }}@endif" id="exampleInputName1" placeholder="Product Quantity">
                 </div>
-              </div>           
+              </div>  
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="exampleInputName1">Price</label>
+                <input type="text" name="price" class="form-control @error('price')) is-invalid  @enderror" value="@isset($order){{ $order->price }} @else {{ old('price') }} @endif" id="exampleInputName1" placeholder="Product price">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="exampleSelectGender">Payment  method</label>
+                  <select class="form-control @error('status')is-invalid @enderror" name="shop_owner_id"  >
+                  @foreach($methods as $key => $method) 
+                  <option value="{{ $method->id }}" @isset($order) @if($order->paymentMethod->id==$method->id)selected @endif @endif>{{ $method->title }}</option>
+                  @endforeach
+                  </select>
+                </div>
+            </div>          
             <div class="form-group">
               <label for="exampleTextarea1">Address</label>
               <textarea name="address" class="form-control @error('address')is-invalid @enderror" id="exampleTextarea1" rows="4">@isset($order){{ $order->address}}@endif</textarea>
