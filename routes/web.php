@@ -126,6 +126,7 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
         Route::group(['as'=>'operation.','prefix' => 'order'], function () {
             Route::get('/update/{order}','OrderTableOperation@orderUpdate')->name('update')->middleware('can:create,App\Models\Order');
             Route::get('/filter/','OrderTableOperation@filterBytime')->name('filter.time')->middleware('can:create,App\Models\Order');
+            Route::post('/update/','OrderTableOperation@statusChange')->name('multi.update')->middleware('can:create,App\Models\Order');
         });
 
 });

@@ -56,7 +56,8 @@ Orders
                 </div>
             </div>
         </div>
-        <form>
+        <form action="{{ route('app.operation.multi.update') }}" method="POST">
+            @csrf
         <div class="table-area">
             <table class="table table-bordered order-table-area">
                 <thead>
@@ -75,7 +76,7 @@ Orders
                 <tbody>
                 @forelse ($orders as $order)
                 <tr>
-                    <td>  <input class="form-check-input" type="checkbox" value="{{ $order->id }}" id="all"> </td>
+                    <td>  <input class="form-check-input" name="multiCheck[]" type="checkbox" value="{{ $order->id }}" id="all"> </td>
                     <td> {{ $order->orderid }}</td>
                     <td> {{ $order->customername }}</td>
                     <td> {{ $order->customerphone }}</td>
@@ -109,24 +110,59 @@ Orders
         <div class="row justify-content-between px-4 mt-4">
             <div class="col-sm-6  col-6">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="all">
+                <input id="all-check" class="form-check-input" type="checkbox" value="" id="all">
                 <label class="form-check-label" for="all">
-                    Clear all
+                    Check all
                 </label>
                 </div>
             </div>
             <div class="col-sm-6  col-6">
             <button class="btn btn-sm float-right btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
                 <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                @foreach($statuses as $key => $status)
+                <a class="dropdown-item" onClick="action('{{ $status->id }}')">{{ $status->title }}</a>  
+                @endforeach
                 </div>
             </div>
         </div>
+        <input type="hidden" id='status'name="status_id">
         </form>
         </div>
     </div>
 </div>
 </div>  
 @endsection
+@push('custom-scripts')
+<script>
+    const form=document.forms[1];
+    const check=document.querySelector('#all-check');
+    const status=document.querySelector('#status');
+    const selectItems=document.getElementsByName('multiCheck[]');
+    let triger=false;
+    check.addEventListener('change',function(event){
+        if(check.checked){
+           for(item of selectItems){
+               item.checked=true;
+           }
+        }else{
+            for(item of selectItems){
+               item.checked=false;
+           }  
+        }
+    });
+
+    function action(id){
+        const items=document.getElementsByName('multiCheck[]');
+        for(item of items){
+               if(item.checked){
+                   triger=true;
+                   break;
+               }
+           }  
+        status.value=id;
+        if(triger){
+        form.submit();
+        }       
+    }
+</script>
+@endpush

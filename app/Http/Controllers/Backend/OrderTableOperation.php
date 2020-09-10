@@ -30,12 +30,12 @@ class OrderTableOperation extends Controller
         if(request()->has('time')){
             $date=Carbon::now();
             if(request()->time=="today"){
-                $orders = Order::whereDay('created_at',$date->day)->paginate(5);
+                $orders = Order::whereDay('created_at',$date->day)->paginate(2);
             }elseif(request()->time=="week"){
                 //dd($date->endOfWeek());
-                $orders = Order::where('created_at','<=',$date)->get();
+                $orders = Order::where('created_at','<=',$date)->paginate(2);
             }elseif(request()->time=="month"){
-                $orders = Order::whereMonth('created_at',$date->month)->get();
+                $orders = Order::whereMonth('created_at',$date->month)->paginate(2);
             }elseif(request()->time=="year"){
                 $orders = Order::whereYear('created_at',$date->year)->paginate(2);
             } 
@@ -44,10 +44,10 @@ class OrderTableOperation extends Controller
 
             foreach(Status::all() as $status){
                 if(request()->status==$status->slug){
-                    $orders = $status->orders;
+                    $orders = $status->orders()->paginate(2);
                 }     
             }
-            
+
         }elseif(request()->has('owner')){
 
             foreach(ShopOwner::all() as $owner){
@@ -57,5 +57,18 @@ class OrderTableOperation extends Controller
             }
         }
         return view('backend.orders.index',['orders'=>$orders]);
+    }
+
+
+
+    public function statusChange(Request $request){
+        // /dd($request->status_id);
+        foreach($request->multiCheck as $id){
+            $order=Order::find($id)->update([
+                'status_id'=>intval($request->status_id),
+            ]);
+            
+        }
+        return redirect()->route('app.orders.index')->with('success','Status Changed');
     }
 }
