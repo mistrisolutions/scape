@@ -62,6 +62,8 @@ class User extends Authenticatable
         return $this->role->hasAbility($value);
     }
 
+    //relations
+
     public function profile(){
         return $this->hasOne(Profile::class);
     }
@@ -69,9 +71,14 @@ class User extends Authenticatable
     public function shopOwner(){
         return $this->hasOne(ShopOwner::class);
     }
+
+    public function notifications(){
+        return $this->hasMany(Notification::class);
+    }
     //Mutator
 
     public function setPasswordAttribute($value){
         $this->attributes['password']=HASH::make($value);
     }
+
 }

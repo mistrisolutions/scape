@@ -4,83 +4,100 @@ Orders
 @endsection
 @section('content')
 <div class="row">
-  <div class="col-lg-12 grid-margin stretch-card">
-      <div class="card">
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
         <div class="card-body">
-          <div class="row pb-5">
-            <div class="col-md-6">
-              <div>
-                <h4 class="card-title">All Orders</h4>
-              </div>
+        <div class="row justify-content-between">
+            <div class="col-md-3">
+                <div class="form-group">
+                <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Search</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" placeholder="Search" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                </div>
             </div>
-            <div class="col-md-6">
-              <div class="float-right">
-                <a href="{{ route('app.orders.order.create') }}">
-                  <label class="badge badge-success">Add Order</label>
-                </a>
-              </div>
+            <div class="col-md-2">
+            <a href="#" type="button" class="btn btn-outline-success">Success</a>
             </div>
-          </div>  
-          <table class="table table-bordered">
+            
+            <div class="col-md-2">
+                <button class="btn float-right btn-success dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <button class="btn float-right btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <button class="btn float-right btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+        </div>
+        <table class="table table-bordered order-table-area">
             <thead>
-              <tr>
-                <th>S/N</th>
-                <th> Customer Name</th>
-                <th> Phone</th>
-                <th> Order Id</th>
-                <th> Status</th>
-                <th> Created At </th>
-                <th style="text-align: center"> Action </th>
-              </tr>
+            <tr>
+                <th> 
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="all">
+                <label class="form-check-label" for="all">
+                    All
+                </label>
+                </div>
+                </th>
+                <th> Order Id </th>
+                <th> Customer Name </th>
+                <th> Customer Phone </th>
+                <th> Address </th>
+                <th> Status </th>
+                <th> Action </th>
+            </tr>
             </thead>
             <tbody>
-              @forelse($orders as $key => $order)
+              @forelse ($orders as $order)
               <tr>
-                <td> {{ $key+1 }}</td>
-                <td> {{ $order->customername }}</td>
-                <td> {{ $order->customerphone }}</td>
-                <td> {{ $order->orderid }}</td>
-                <td> {{ $order->status->title }}</td>               
-                <td>{{ $order->created_at->diffForHumans() }}</td>
-                <td style="text-align: center"> 
-                <a href="{{ route('app.orders.order.show',$order->id) }}" class="badge badge-success">Abilities</a>
-                <a href="{{ route('app.orders.order.edit',$order->id) }}" class="badge badge-warning">Edit</a>
-                <a data-toggle="modal" data-target="#delete{{ $order->id }}" class="badge badge-danger">Delete</a>
+                <td> <input class="form-check-input" type="checkbox" value="" id="all"> </td>
+                <td> Herman Beck </td>
+                <td> Herman Beck </td>
+                <td> $ 77.99 </td>
+                <td> May 15, 2015 </td>
+                <td class="drpdn-status">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Pending
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div> 
                 </td>
-                <!-- Modal -->
-                <div class="modal fade" id="delete{{ $order->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Delete Order - {{ $order->title }}</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        Are you sure ?
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                        <button id="delete" type="button" class="btn btn-danger" onclick="deleteForm('{{ $order->id }}')">Delete</button>
-                        <form id="deleteform{{ $order->id }}"
-                          action="{{ route('app.orders.order.destroy',$order->id) }}" method="POST"
-                          style="display: none;">
-                          @csrf()
-                          @method('DELETE')
-                        </form>
-                      </div> 
-                    </div>
-                  </div>
-                </div>
-              </tr>
+                <td>
+                <label class="badge badge-info">View</label>
+                <label class="badge badge-success">Edit</label>
+                <label class="badge badge-danger">Delete</label>
+                </td>
+              </tr> 
               @empty
-                
+                  
               @endforelse
+
             </tbody>
-          </table>
+        </table>
         </div>
-      </div>
+    </div>
     </div>
 </div>  
 @endsection

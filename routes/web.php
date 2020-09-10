@@ -41,7 +41,7 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
     //home
     Route::get('/dashboard', 'HomeController@index')->name('home');
     //settings
-    Route::group(['as'=>'settings.','prefix'=>'settings'],function(){
+    Route::group(['as'=>'settings.','prefix'=>'settings','middleware'=>['settings']],function(){
         //Roles
         Route::get('roles/','RoleController@index')->name('role.index');
         Route::get('roles/create','RoleController@create')->name('role.create');
@@ -80,7 +80,7 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
     //user
 
     Route::group(['as'=>'users.','prefix'=>'users'],function(){
-        Route::get('/','UserController@index')->name('index')->middleware('can:create,App\Models\User');
+        Route::get('/','UserController@index')->name('index')->middleware('can:view-any,App\Models\User');
         Route::get('/create','UserController@create')->name('user.create')->middleware('can:create,App\Models\User');;
         Route::post('/create','UserController@store')->name('user.store')->middleware('can:create,App\Models\User');;
         Route::get('/profile/{user}','UserController@show')->name('user.show')->middleware('can:view,user');;
@@ -92,14 +92,14 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
 
      //shop Owner
 
-     Route::group(['as'=>'shopOwners.','prefix'=>'shopOwners'],function(){
-        Route::get('/','ShopOwnerController@index')->name('index');
-        Route::get('/create','ShopOwnerController@create')->name('owner.create');
-        Route::post('/create','ShopOwnerController@store')->name('owner.store');
-        Route::get('/profile/{owner}','ShopOwnerController@show')->name('owner.show');
-        Route::get('/update/{owner}','ShopOwnerController@edit')->name('owner.edit');
-        Route::put('/update/{owner}','ShopOwnerController@update')->name('owner.update');
-        Route::delete('/delete/{owner}','ShopOwnerController@destroy')->name('owner.destroy');
+     Route::group(['as'=>'shopOwners.','prefix'=>'shopowners'],function(){
+        Route::get('/','ShopOwnerController@index')->name('index')->middleware('can:view-any,App\Models\ShopOwner');
+        Route::get('/create','ShopOwnerController@create')->name('owner.create')->middleware('can:create,App\Models\ShopOwner');
+        Route::post('/create','ShopOwnerController@store')->name('owner.store')->middleware('can:create,App\Models\ShopOwner');
+        Route::get('/profile/{owner}','ShopOwnerController@show')->name('owner.show')->middleware('can:view,owner');
+        Route::get('/update/{owner}','ShopOwnerController@edit')->name('owner.edit')->middleware('can:update,owner');
+        Route::put('/update/{owner}','ShopOwnerController@update')->name('owner.update')->middleware('can:update,owner');
+        Route::delete('/delete/{owner}','ShopOwnerController@destroy')->name('owner.destroy')->middleware('can:delete,owner');
     });
 
 
@@ -107,13 +107,13 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
         //Order 
 
         Route::group(['as'=>'orders.','prefix'=>'orders'],function(){
-            Route::get('/','OrderController@index')->name('index');
-            Route::get('/create','OrderController@create')->name('order.create');
-            Route::post('/create','OrderController@store')->name('order.store');
-            Route::get('/profile/{order}','OrderController@show')->name('order.show');
-            Route::get('/update/{order}','OrderController@edit')->name('order.edit');
-            Route::put('/update/{order}','OrderController@update')->name('order.update');
-            Route::delete('/delete/{order}','OrderController@destroy')->name('order.destroy');
+            Route::get('/','OrderController@index')->name('index')->middleware('can:view-any,App\Models\Order');
+            Route::get('/create','OrderController@create')->name('order.create')->middleware('can:create,App\Models\Order');
+            Route::post('/create','OrderController@store')->name('order.store')->middleware('can:create,App\Models\Order');
+            Route::get('/profile/{order}','OrderController@show')->name('order.show')->middleware('can:view,order');
+            Route::get('/update/{order}','OrderController@edit')->name('order.edit')->middleware('can:update,order');
+            Route::put('/update/{order}','OrderController@update')->name('order.update')->middleware('can:update,order');
+            Route::delete('/delete/{order}','OrderController@destroy')->name('order.destroy')->middleware('can:delete,order');
         });
 
 

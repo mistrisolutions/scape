@@ -1,26 +1,18 @@
 @extends('layouts.backend.app')
 @section('title')
-Roles
+All Roles
+@endsection
+@section('header-title', 'All Roles')
+@section('add-menu')
+<a href="{{ route('app.settings.role.create') }}">
+  <label class="badge badge-success">Add New</label>
+</a>
 @endsection
 @section('content')
 <div class="row">
   <div class="col-lg-12 grid-margin stretch-card">
       <div class="card">
         <div class="card-body">
-          <div class="row pb-5">
-            <div class="col-md-6">
-              <div>
-                <h4 class="card-title">All Roles</h4>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="float-right">
-                <a href="{{ route('app.settings.role.create') }}">
-                  <label class="badge badge-success">Add New</label>
-                </a>
-              </div>
-            </div>
-          </div>  
           <table class="table table-bordered">
             <thead>
               <tr>

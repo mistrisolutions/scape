@@ -10,7 +10,7 @@ Add Roles
           <h4 class="card-title pb-3">@if(isset($role)) Update Role @else Create Role @endif</h4>
           <form class="forms-sample" action="@isset($role){{ route('app.settings.role.update',$role->id) }} @else {{ route('app.settings.role.store') }} @endif "method="POST">
            @csrf
-           @isset($role) @method("PUT") @endif ;
+           @isset($role) @method("PUT") @endif 
             <div class="form-group">
               <input type="text" placeholder="Role Title" name ='title' class="form-control" id="title" @if(isset($role)) value="{{ $role->title }}" @else  value="{{ old('title') }}" @endif >
             </div>
