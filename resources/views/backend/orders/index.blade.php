@@ -31,27 +31,28 @@ Orders
             </div>
             
             <div class="col-md-2 col-sm-6 col-6">
-                <button class="btn btn-sm float-right btn-success dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown1</button>
+                <button class="btn btn-sm float-right btn-success dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter By time</button>
                 <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="{{ route('app.operation.filter.time') }}?time=today">Today</a>
+                <a class="dropdown-item" href="{{ route('app.operation.filter.time') }}?time=week">This Week</a>
+                <a class="dropdown-item" href="{{ route('app.operation.filter.time') }}?time=month">This Month</a>
+                <a class="dropdown-item" href="{{ route('app.operation.filter.time') }}?time=year">This Year</a>
                 </div>
             </div>
             <div class="col-md-2 col-sm-6 col-6">
-                <button class="btn btn-sm float-right btn-info dropdown-2 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown2</button>
+                <button class="btn btn-sm float-right btn-info dropdown-2 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter by status</button>
                 <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                @foreach ($statuses as $status)
+                <a class="dropdown-item" href="{{ route('app.operation.filter.time') }}?status={{ $status->slug }}">{{ $status->title }}</a> 
+                @endforeach    
                 </div>
             </div>
             <div class="col-md-2 col-sm-6 col-6">
-                <button class="btn btn-sm float-right btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown3</button>
+                <button class="btn btn-sm float-right btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter by owner</button>
                 <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                    @foreach($owners as $key => $owner)
+                    <a class="dropdown-item" href="{{ route('app.operation.filter.time') }}?owner={{ $owner->id }}">{{ $owner->user->name }}</a>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -87,7 +88,7 @@ Orders
                         @if($order->status->slug==$status->slug)
                         @continue
                         @endif
-                        <a class="dropdown-item" href="#">{{ $status->title }}</a>
+                        <a class="dropdown-item" href="{{ route('app.operation.update',$order->id) }}?status={{ $status->slug }}">{{ $status->title }}</a>
                         @endforeach
                     </div> 
                     </td>
@@ -109,7 +110,7 @@ Orders
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="all">
                 <label class="form-check-label" for="all">
-                    All
+                    Clear all
                 </label>
                 </div>
             </div>

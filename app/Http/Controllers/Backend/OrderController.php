@@ -25,7 +25,6 @@ class OrderController extends Controller
     {
         //
         $data['orders']=Order::all();
-        $data['statuses']=Status::all();
 
         return view('backend.orders.index',$data);
     }
