@@ -74,18 +74,21 @@ Orders
                 @forelse ($orders as $order)
                 <tr>
                     <td>  </td>
-                    <td> Herman Beck </td>
-                    <td> Herman Beck </td>
-                    <td> $ 77.99 </td>
-                    <td> May 15, 2015 </td>
+                    <td> {{ $order->orderid }}</td>
+                    <td> {{ $order->customername }}</td>
+                    <td> {{ $order->customerphone }}</td>
+                    <td> {{ $order->address }} </td>
                     <td class="drpdn-status">
                     <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Pending
+                        {{ $order->status->title }}
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        @foreach($statuses as $key => $status)
+                        @if($order->status->slug==$status->slug)
+                        @continue
+                        @endif
+                        <a class="dropdown-item" href="#">{{ $status->title }}</a>
+                        @endforeach
                     </div> 
                     </td>
                     <td>

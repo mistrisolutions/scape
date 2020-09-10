@@ -21,6 +21,10 @@ Route::get('/order', function () {
     return view('order');
 });
 
+Route::get('/process', function () {
+    return view('backend.orders.process');
+});
+
 Route::get('/ddesh', function () {
     return view('ddesh');
 });
@@ -114,9 +118,13 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
             Route::get('/update/{order}','OrderController@edit')->name('order.edit')->middleware('can:update,order');
             Route::put('/update/{order}','OrderController@update')->name('order.update')->middleware('can:update,order');
             Route::delete('/delete/{order}','OrderController@destroy')->name('order.destroy')->middleware('can:delete,order');
+            
         });
 
-
+        //Order table operations
+        Route::group(['as'=>'operation.','prefix' => 'order'], function () {
+            Route::get('/update/{order}','OrderTableOperation@orderUpdate')->name('update')->middleware('can:create,App\Models\Order');
+        });
     
 });
 

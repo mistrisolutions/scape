@@ -58,7 +58,7 @@ Create Order
                 </div>
                 <div class="form-group col-md-6">
                   <label for="exampleSelectGender">Payment  method</label>
-                  <select class="form-control @error('status')is-invalid @enderror" name="shop_owner_id"  >
+                  <select class="form-control @error('status')is-invalid @enderror" name="payment_method_id"  >
                   @foreach($methods as $key => $method) 
                   <option value="{{ $method->id }}" @isset($order) @if($order->paymentMethod->id==$method->id)selected @endif @endif>{{ $method->title }}</option>
                   @endforeach

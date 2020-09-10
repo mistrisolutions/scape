@@ -25,6 +25,7 @@ class OrderController extends Controller
     {
         //
         $data['orders']=Order::all();
+        $data['statuses']=Status::all();
 
         return view('backend.orders.index',$data);
     }
@@ -63,6 +64,7 @@ class OrderController extends Controller
             'productname'  =>$request->productname,
             'quantity'     =>$request->quantity,
             'address'      =>$request->address,
+            'payment_method_id'=>$request->payment_method_id,
             'shop_owner_id'=>$request->shop_owner_id,
             'status_id'    =>$request->status_id,
             'orderid'      =>random_int ( 50000 , 10000000 ),
@@ -121,6 +123,7 @@ class OrderController extends Controller
             'productname'  =>$request->productname,
             'quantity'     =>$request->quantity,
             'address'      =>$request->address,
+            'payment_method_id'=>$request->payment_method_id,
             'shop_owner_id'=>$request->shop_owner_id,
             'status_id'    =>$request->status_id,
             'zone'         =>$request->shop_owner_id,
@@ -154,6 +157,7 @@ class OrderController extends Controller
             'quantity'     =>['required','numeric'],
             'address'      =>['required'],
             'shop_owner_id'=>['required'],
+            'payment_method_id'=>['required'],
             'status_id'    =>['required'],
         ]);
     }
