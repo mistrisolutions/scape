@@ -1,23 +1,23 @@
 @extends('layouts.backend.app')
 
 @section('content')
-<div class="row user-profile-area">
-    <div class="col-md-8 mx-auto">
+<div class="row product-details-area">
+    <div class="col-md-8 col-sm-12 mx-auto">
         <div class="card p-3">
         <div class="row justify-content-between">
-            <div class="col-md-3">
+            <div class="col-sm-6">
                 <h3>Product Details</h3>
             </div>
-            <div class="col-md-2">
+            <div class="col-sm-6 text-right">
                 <h4>#fd8998</h4>
             </div>
         </div>
         <hr />
         <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-12">
             <h1 class="text-center mt-5">Status</h1>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-9 col-sm-12">
             <div class="profile-info">
             <table class="table table-borderless">
             <tbody>

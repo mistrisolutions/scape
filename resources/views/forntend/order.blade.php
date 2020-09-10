@@ -52,7 +52,7 @@ Product Order
                         <input type="number" name="quantity" value="{{ old('quantity') }}" class="form-control form-control-lg" required placeholder="Product Quality">
                       </div>
                       <div class="form-group">
-                        <textarea name="address" value="{{ old('address') }}" class="form-control" rows="3" placeholder="address.."></textarea>
+                        <input name="address" value="{{ old('address') }}" class="form-control" rows="3" placeholder="address.." />
                         </div>
                       <div class="form-group">
                       <textarea class="form-control" name="note" value="{{ old('note') }}" rows="3" placeholder="Note.."></textarea>

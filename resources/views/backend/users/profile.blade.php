@@ -2,7 +2,7 @@
 @section('title','User Profile')
 @section('content')
 <div class="row user-profile-area">
-    <div class="col-md-8 mx-auto">
+    <div class="col-md-10 col-sm-12 mx-auto">
         <div class="card p-3">
         <div class="row">
         <div class="col-md-3">
