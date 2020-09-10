@@ -24,7 +24,7 @@ class OrderController extends Controller
     public function index()
     {
         //
-        $data['orders'] = Order::all();
+        $data['orders'] = Order::latest('id')->get();
 
         return view('backend.orders.index', $data);
     }
