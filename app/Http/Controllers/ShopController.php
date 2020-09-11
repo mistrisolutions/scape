@@ -25,6 +25,11 @@ class ShopController extends Controller
         return view('forntend.order',['shop'=>$shop]);
     }
 
+
+    public function confirmation(Order $order){
+        return view('forntend.confirmation',['order'=>$order]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -60,6 +65,7 @@ class ShopController extends Controller
             'customername'=>['required','max:20'],
             'customerphone'=>['required','numeric'],
             'productname'  =>['required','max:50'],
+            'payment_method_id'  =>['required'],
             'quantity'     =>['required','numeric'],
             'address'      =>['required'],
         ]);
@@ -70,14 +76,15 @@ class ShopController extends Controller
             'quantity'     =>$request->quantity,
             'address'      =>$request->address,
             'shop_owner_id'=>$shopOwner->id,
-            'status_id'    =>Status::where('slug','panding')->first()->id,
+            'payment_method_id'=>$shopOwner->payment_method_id,
+            'status_id'    =>Status::where('slug','pending')->first()->id,
             'orderid'      =>random_int ( 50000 , 10000000 ),
             'zone'         =>$shopOwner->id,
             'note'         =>$request->note,
         ]);
 
         
-        return view('forntend.order',['order'=>$order]);
+        return redirect()->route('shop.order.confirmation',$order);
 
     }
 
@@ -87,17 +94,14 @@ class ShopController extends Controller
     }
 
 
-    public function tracking(Request $request){
-        $request->validate([
-            'order_id'=>['required','numeric'],
-        ]);
-
-        $tracking=Order::where('orderid',$request->order_id)->first();
-        
-        if($tracking){
-            return view('forntend.order',['tracking'=>$tracking]);
+    public function tracking(){
+        $order=Order::where('orderid',request('orderid'))->first();   
+           
+        if($order){
+            return view('forntend.tracking',['order'=>$order]);
         }else{
-            return redirect()->back()->with('error','No order found by the id');
+            $message['message']="No order found with the id";
+            return view('forntend.tracking',['message'=>$message]);
         }
     }
 

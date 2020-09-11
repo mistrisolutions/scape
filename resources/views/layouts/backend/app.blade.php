@@ -31,6 +31,7 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
+            @yield('extra-content')
             <div class="page-header">
               <h3 class="page-title"> @yield('header-title')</h3>
               <nav aria-label="breadcrumb">

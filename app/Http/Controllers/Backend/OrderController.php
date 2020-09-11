@@ -142,9 +142,13 @@ class OrderController extends Controller
             'zone' => $request->shop_owner_id,
             'note' => $request->note,
         ]);
-
-        return redirect()->route('app.orders.index')
+        if(request('process')){
+            return redirect()->back()
             ->with('success', 'Order Updated');
+        }else{
+            return redirect()->route('app.orders.index')
+            ->with('success', 'Order Updated');
+        }       
     }
 
     /**

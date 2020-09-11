@@ -1,6 +1,6 @@
 @extends('layouts.backend.app')
 @section('title')
-Create User
+@isset($user)Update User @else Create User @endif
 @endsection
 @section('header-title')
 @isset($user)Update User @else Create User @endif

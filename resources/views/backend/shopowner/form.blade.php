@@ -20,7 +20,7 @@ Create Shop Owner
               </div>
               <div class="form-group col-md-6">
                 <label for="exampleInputPassword4">Phone Number</label>
-                <input type="text" name="phone" class="form-control" value="@isset($owner){{ $owner->user->profile->phone }} @else {{ old('phone') }} @endif"  placeholder="Phone Number">
+                <input type="text" name="phone" class="form-control" @isset($owner) valu="{{ $owner->user->profile->phone }}" @else value=" {{ old('phone') }} @endif"  placeholder="01*********" pattern="(^([+]{1}[8]{2}|0088)?(01){1}[3-9]{1}\d{8})$">
               </div>
             </div>
             <div class="row">

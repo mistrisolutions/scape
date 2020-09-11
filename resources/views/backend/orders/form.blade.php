@@ -1,13 +1,17 @@
 @extends('layouts.backend.app')
+
 @section('title')
-Create Order
+@isset($order)Update Order @else Create Order @endif
 @endsection
+
 @section('header-title')
 @isset($order)Update Order @else Create Order @endif
 @endsection
+
 @push('css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css" integrity="sha512-EZSUkJWTjzDlspOoPSpUFR0o0Xy7jdzW//6qhUkoZ9c4StFkVsp9fbbd0O06p9ELS3H486m4wmrCELjza4JEog==" crossorigin="anonymous" />
 @endpush
+
 @section('content')
 <div class="row">
   <div class="col-12 grid-margin stretch-card">
@@ -37,7 +41,7 @@ Create Order
             <div class="row">
                 <div class="form-group col-md-6">
                   <label for="exampleInputName1">Phone Number</label>
-                <input type="text" name="customerphone" class="form-control @error('customerphone')) is-invalid  @enderror" value="@isset($order){{ $order->customerphone }} @else {{ old('customerphone') }} @endif" id="exampleInputName1" placeholder="Customer Phone">
+                <input type="text" name="customerphone" class="form-control @error('customerphone')) is-invalid  @enderror" value="@isset($order){{ $order->customerphone }} @else {{ old('customerphone') }} @endif" id="exampleInputName1" placeholder="Customer >
                 </div>
                 <div class="form-group col-md-6">
                   <label for="exampleSelectGender">Shop owner</label>

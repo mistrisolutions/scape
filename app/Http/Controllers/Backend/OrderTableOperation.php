@@ -30,26 +30,26 @@ class OrderTableOperation extends Controller
         if(request()->has('time')){
             $date=Carbon::now();
             if(request()->time=="today"){
-                $orders = Order::checkAuth()->whereDay('created_at',$date->day)->paginate(2);
+                $orders = Order::checkAuth()->whereDay('created_at',$date->day)->paginate(20);
             }elseif(request()->time=="week"){
-                $orders = Order::checkAuth()->where('created_at','<=',$date)->paginate(2);
+                $orders = Order::checkAuth()->where('created_at','<=',$date)->paginate(20);
             }elseif(request()->time=="month"){
-                $orders = Order::checkAuth()->whereMonth('created_at',$date->month)->paginate(2);
+                $orders = Order::checkAuth()->whereMonth('created_at',$date->month)->paginate(20);
             }elseif(request()->time=="year"){
-                $orders = Order::checkAuth()->whereYear('created_at',$date->year)->paginate(2);
+                $orders = Order::checkAuth()->whereYear('created_at',$date->year)->paginate(20);
             } 
                         
         }elseif(request()->has('status')){
 
             $orders=Order::checkAuth()->whereHas('status',function($query){
                 $query->where('slug',request()->status);
-            })->paginate(10);
+            })->paginate(20);
 
         }elseif(request()->has('owner')){
 
             foreach(ShopOwner::all() as $owner){
                 if(request()->owner==$owner->id){
-                    $orders = $owner->orders;
+                    $orders = $owner->orders()->paginate(20);
                 }     
             }
         }
@@ -68,6 +68,8 @@ class OrderTableOperation extends Controller
         }
         return redirect()->route('app.orders.index')->with('success','Status Changed');
     }
+
+    
 
 
 

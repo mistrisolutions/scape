@@ -1,7 +1,30 @@
 @extends('layouts.backend.app')
+
 @section('title')
 Orders
 @endsection
+
+@if(auth()->user()->isShopOwner())
+@section('extra-content')
+<div class="row">
+    <div class="col-lg-12 grid-margin stretch-card ">
+        <div class="card text-center">
+            <div class="card-header">
+              {{ auth()->user()->shopOwner->company_name }}
+            </div>
+            <div class="card-body">
+              <h5 id="link" class="card-title">{{ asset(auth()->user()->shopOwner->getUrl()) }}</h5>
+              <a id="copyButton" class="btn btn-primary">Copy shop link</a>
+            </div>
+            <div class="card-footer text-muted">
+              share
+            </div>
+        </div>
+    </div> 
+</div> 
+@endsection
+@endif
+
 @section('header-title', 'All Orders')
 @section('add-menu')
 @can('create',App\Models\Order::class)
@@ -10,8 +33,9 @@ Orders
 </a>
 @endcan
 @endsection
-@section('content')
-<div class="row">
+
+@section('content')   
+<div class="row">   
 <div class="col-lg-12 grid-margin stretch-card all-order-table">
     <div class="card">
         <div class="card-body">
@@ -61,7 +85,7 @@ Orders
             </div>
             @endif
         </div>
-        <form action="{{ route('app.operation.multi.update') }}" method="POST">
+        <form id="selectForm" action="{{ route('app.operation.multi.update') }}" method="POST">
             @csrf
         <div class="table-area">
             <table class="table table-bordered order-table-area">
@@ -157,12 +181,14 @@ Orders
                 @endforeach
                 </div>
             </div>
+            @isset($orders)
             <div class="col-sm-3  col-3">
                 <div >
                     {{ $orders->links('layouts.backend.partials.pagination') }}
                 </div>
             </div>
         </div>
+        @endif
         <input type="hidden" id='status'name="status_id">
         </form>
         </div>
@@ -172,7 +198,7 @@ Orders
 @endsection
 @push('custom-scripts')
 <script>
-    const form=document.forms[2];
+    const form=document.querySelector('#selectForm');
     const check=document.querySelector('#all-check');
     const status=document.querySelector('#status');
     const selectItems=document.getElementsByName('multiCheck[]');
@@ -202,5 +228,20 @@ Orders
         form.submit();
         }       
     }
+</script>
+
+<script>
+const copyButton=document.querySelector('#copyButton');
+const copyText=document.querySelector('#link');
+copyButton.addEventListener('click',function(event){
+    event.preventDefault();
+    var tempInput = document.createElement("input");
+    tempInput.value = copyText.innerText;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+    copyButton.innerText="Copied";
+});
 </script>
 @endpush

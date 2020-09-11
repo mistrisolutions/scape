@@ -28,7 +28,9 @@ class UserController extends Controller
     public function index()
     {
         //
-        $users=User::userPagination(5);
+        $users=User::whereHas('role',function($query){
+            $query->where('slug','!=','shop-owner');
+        })->paginate(20);
         //dd($users);
         return view('backend.users.index',[
             "users"=>$users

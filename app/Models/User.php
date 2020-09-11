@@ -38,14 +38,6 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    static function getAllUsers(){
-        return self::all();
-    }
-
-    static function userPagination($number){
-        return self::where('role_id','!=','shop_owner')->paginate($number);
-    }
-
 
     public function role(){
         return $this->belongsTo(Role::class);

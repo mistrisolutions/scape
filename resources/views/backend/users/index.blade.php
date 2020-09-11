@@ -1,13 +1,17 @@
 @extends('layouts.backend.app')
+
 @section('title')
 User List
 @endsection
+
 @push('css')
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
 @endpush
+
 @section('header-title')
 All Users
 @endsection
+
 @section('add-menu')
 @can('create',App\Models\User::class)
 <a  class="float-right" href="{{ route('app.users.user.create') }}">
@@ -15,6 +19,7 @@ All Users
 </a>
 @endcan
 @endsection
+
 @section('content')
 <div class='row'>
   <div class="col-lg-12 grid-margin stretch-card">
@@ -51,10 +56,15 @@ All Users
               </td>
               <td>{{ $user->role->title }}</td>
               <td style="text-align: center"> 
-                <a href="{{ route('app.users.user.show',$user->id) }}" class="badge badge-success">Profile</a>
+                @can('update',$user)
                 <a href="{{ route('app.users.user.edit',$user->id) }}" class="badge badge-warning">Edit</a>
+                @endcan
+                @can('delete',$user)
                 <a data-toggle="modal" data-target="#delete{{ $user->id }}" class="badge badge-danger">Delete</a>
+                @endcan
+                @can('delete',$user)
                 </td>
+                @endcan
                  <!-- Modal -->
                  <div class="modal fade" id="delete{{ $user->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog" role="document">

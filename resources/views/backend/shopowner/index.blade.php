@@ -51,9 +51,12 @@ Shop Owners
                 <a href="{{ asset($owner->getUrl())}}">{{ asset($owner->getUrl()) }}</a>
               </td>
               <td style="text-align: center"> 
-                <a href="{{ route('app.shopOwners.owner.show',$owner->id) }}" class="badge badge-success">Profile</a>
+                @can('update',$owner)
                 <a href="{{ route('app.shopOwners.owner.edit',$owner->id) }}" class="badge badge-warning">Edit</a>
+                @endcan
+                @can('delete',$owner)
                 <a data-toggle="modal" data-target="#delete{{ $owner->id }}" class="badge badge-danger">Delete</a>
+                @endcan
                 </td>
                  <!-- Modal -->
                  <div class="modal fade" id="delete{{ $owner->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

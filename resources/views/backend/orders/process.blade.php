@@ -12,7 +12,7 @@
         <div class="col-12 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <form class="forms-sample"action="@isset($order){{ route('app.orders.order.update',$order->id) }} @else {{ route('app.orders.order.store') }} @endif" enctype="multipart/form-data" method="POST">
+                    <form class="forms-sample"action="@isset($order){{ route('app.orders.order.update',$order->id) }}?process=true @else {{ route('app.orders.order.store') }} @endif" enctype="multipart/form-data" method="POST">
                         @csrf
                         @isset($order) @method('PUT') @endif
                         <div class="row">

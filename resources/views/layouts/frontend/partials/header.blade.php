@@ -7,22 +7,24 @@
     <div class="navbar-menu-wrapper d-flex align-items-stretch">
       <ul class="navbar-nav navbar-nav-right">
         <li class="nav-item">
-            <p class="mb-1 text-black">Tracking No:</p>
+            <p class="mb-1 text-black">Tracking No: </p>
         </li>
         <li class="nav-item">
-        <!-- <form class="form-inline" action="{{ route('shop.order.tracking') }}" method="POST">
+        <!-- <form class="form-inline" action="" method="POST">
         <div class="form-group mx-sm-3 mb-2" >
-          @csrf
+          
             <input type="number" name="order_id" placeholder="Enter you order No" class="form-control @error('order_id')is-invalid @enderror">
         </div>
         <button type="submit" class="btn btn-primary mb-2">Submit</button>
         </form> -->
-        <div class="input-group input-group-sm">
-          <input type="text" class="form-control" placeholder="Enter you order No"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-          <div class="input-group-prepend">
-          <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        <form class="form-inline" action="{{ route('shop.order.tracking') }}">
+          <div class="input-group input-group-sm">
+            <input type="text" class="form-control" placeholder="Enter you order No"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name="orderid">
+            <div class="input-group-prepend">
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+            </div>
           </div>
-        </div>
+        </form>
         </li>
       </ul>
     </div>
