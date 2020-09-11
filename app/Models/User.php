@@ -57,6 +57,20 @@ class User extends Authenticatable
         }
     }
 
+    public function isShopOwner(){
+        //dd($this->role);
+        if ($this->hasRole('shop-owner')){
+            return true;
+        }
+    }
+
+    public function hasRole($value){
+        //dd($this->role);
+        if ($this->role->slug==$value){
+            return true;
+        }
+    }
+
     public function hasAbility($value){
         //dd($value);
         return $this->role->hasAbility($value);

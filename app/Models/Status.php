@@ -14,4 +14,18 @@ class Status extends Model
     public function orders(){
         return $this->hasMany(Order::class);
     }
+
+    public function scopeCheckAuth( $query)
+    {   if(auth()->user()->isShopOwner()){
+            return $query->whereHas('orders', function($query){
+                $query->whereHas('shopOwner',function($query){
+                    $query->where('id',auth()->user()->shopOwner->id);
+                });
+            });
+        }else{
+            return $query->whereHas('orders', function($query){               
+                    $query->has('shopOwner');
+            });
+        }     
+    }
 }

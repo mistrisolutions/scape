@@ -3,7 +3,7 @@
 namespace App\Policies;
 
 use App\Models\User;
-use App\ShopOwner;
+use App\Models\ShopOwner;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class ShopOwnerPolicy

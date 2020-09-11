@@ -16,6 +16,6 @@ class Profile extends Model
 
     public function setAvatarAttribute($value){
         $extension=$value->extension();
-        $this->attributes['avatar']=$value->storeAs('avaters',$this->user->id.'.'. $extension);
+        $this->attributes['avatar']=$value->storeAs('avatars',$this->user->id.'.'. $extension);
     }
 }

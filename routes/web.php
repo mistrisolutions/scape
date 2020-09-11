@@ -54,7 +54,6 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
         Route::put('roles/update/{role}','RoleController@update')->name('role.update');
         Route::get('roles/abilities/{role}','RoleController@show')->name('role.show');
         Route::delete('roles/delete/{role}','RoleController@destroy')->name('role.destroy');
-
         //status type
         Route::group(['as'=>'statuss.','prefix'=>'status'],function(){
             Route::get('/','StatusController@index')->name('index');
@@ -115,10 +114,10 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
             Route::get('/create','OrderController@create')->name('order.create')->middleware('can:create,App\Models\Order');
             Route::post('/create','OrderController@store')->name('order.store')->middleware('can:create,App\Models\Order');
             Route::get('/profile/{order}','OrderController@show')->name('order.show')->middleware('can:view,order');
-            Route::get('/update/{order}','OrderController@edit')->name('order.edit')->middleware('can:update,order');
-            Route::put('/update/{order}','OrderController@update')->name('order.update')->middleware('can:update,order');
+            Route::get('/update/{id}','OrderController@edit')->name('order.edit');
+            Route::put('/update/{id}','OrderController@update')->name('order.update');
             Route::get('/process/{id?}','OrderController@process')->name('order.process')->middleware('can:create,App\Models\Order');
-            Route::delete('/delete/{order}','OrderController@destroy')->name('order.destroy')->middleware('can:delete,order');
+            Route::get('/delete/{id}','OrderController@destroy')->name('order.destroy');
 
         });
 
@@ -127,6 +126,7 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
             Route::get('/update/{order}','OrderTableOperation@orderUpdate')->name('update')->middleware('can:create,App\Models\Order');
             Route::get('/filter/','OrderTableOperation@filterBytime')->name('filter.time')->middleware('can:create,App\Models\Order');
             Route::post('/update/','OrderTableOperation@statusChange')->name('multi.update')->middleware('can:create,App\Models\Order');
+            Route::post('/search/','OrderTableOperation@search')->name('order.search')->middleware('can:create,App\Models\Order');
         });
 
 });

@@ -24,7 +24,7 @@ class OrderController extends Controller
     public function index()
     {
         //
-        $data['orders'] = Order::latest('id')->get();
+        $data['orders'] = Order::checkAuth()->latest('id')->paginate(20);
 
         return view('backend.orders.index', $data);
     }
@@ -62,7 +62,9 @@ class OrderController extends Controller
             'customerphone' => $request->customerphone,
             'productname' => $request->productname,
             'quantity' => $request->quantity,
+            'price' => $request->price,
             'address' => $request->address,
+            'image'    =>$request,
             'payment_method_id' => $request->payment_method_id,
             'shop_owner_id' => $request->shop_owner_id,
             'status_id' => $request->status_id,
@@ -92,11 +94,16 @@ class OrderController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Order $order)
+    public function edit($id)
     {
         //
-
+        $order=Order::checkAuth()->find($id);
+        if(!$order){
+            return redirect()->route('app.orders.index')->with('error','No order found');
+        }
+        $this->authorize('update', $order);
         $data['statuses'] = Status::all();
+        $data['methods'] = PaymentMethod::all();
         $data['owners'] = ShopOwner::all();
         $data['order'] = $order;
 
@@ -112,16 +119,23 @@ class OrderController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Order $order)
+    public function update(Request $request,$id)
     {
         //
+        $order=Order::checkAuth()->find($id);
+        if(!$order){
+            return redirect()->route('app.orders.index')->with('error','No order found');
+        }
+        $this->authorize('update', $order);
         $this->validator($request);
         $order->update([
             'customername' => $request->customername,
             'customerphone' => $request->customerphone,
             'productname' => $request->productname,
             'quantity' => $request->quantity,
+            'price' => $request->price,
             'address' => $request->address,
+            'image'=>$request,
             'payment_method_id' => $request->payment_method_id,
             'shop_owner_id' => $request->shop_owner_id,
             'status_id' => $request->status_id,
@@ -139,9 +153,14 @@ class OrderController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Order $order)
+    public function destroy($id)
     {
         //
+        $order=Order::checkAuth()->find($id);
+        if(!$order){
+            return redirect()->route('app.orders.index')->with('error','No order found');
+        }
+        $this->authorize('delete', $order);
         $order->delete();
 
         return redirect()->route('app.orders.index')
@@ -165,12 +184,12 @@ class OrderController extends Controller
     public function process($id = null)
     {
         if (isset($id))
-            $data['order'] = Order::checkStatus()->latest('id')->findOrFail($id);
+            $data['order'] = Order::checkAuth()->checkStatus()->latest('id')->findOrFail($id);
         else
-            $data['order'] = Order::checkStatus()->latest('id')->firstOrFail();
+            $data['order'] = Order::checkAuth()->checkStatus()->latest('id')->firstOrFail();
 
-        $data['previous_order'] = Order::checkStatus()->where('id', '<', $data['order']->id)->latest('id')->first();
-        $data['next_order'] = Order::checkStatus()->where('id', '>', $data['order']->id)->orderBy('id')->first();
+        $data['previous_order'] = Order::checkAuth()->checkStatus()->where('id', '<', $data['order']->id)->latest('id')->first();
+        $data['next_order'] = Order::checkAuth()->checkStatus()->where('id', '>', $data['order']->id)->orderBy('id')->first();
         return view('backend.orders.process', $data);
     }
 }

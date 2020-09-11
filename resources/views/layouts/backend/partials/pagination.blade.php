@@ -1,9 +1,4 @@
 @if ($paginator->hasPages())
-    <div class="row pt-5">
-        <div class="col-md-6">
-        <p class="font-weight-bold">Result - ({{ $paginator->count() }} out of {{ $paginator->total() }})</p>
-        </div>
-        <div class="col-md-6">
             <nav aria-label="Page navigation example">
                 <ul class="pagination float-right ">
                 
@@ -44,7 +39,4 @@
                 </ul>
             </nav>
 
-        
-        </div>
-    </div>   
 @endif

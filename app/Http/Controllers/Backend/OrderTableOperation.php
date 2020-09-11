@@ -30,23 +30,20 @@ class OrderTableOperation extends Controller
         if(request()->has('time')){
             $date=Carbon::now();
             if(request()->time=="today"){
-                $orders = Order::whereDay('created_at',$date->day)->paginate(2);
+                $orders = Order::checkAuth()->whereDay('created_at',$date->day)->paginate(2);
             }elseif(request()->time=="week"){
-                //dd($date->endOfWeek());
-                $orders = Order::where('created_at','<=',$date)->paginate(2);
+                $orders = Order::checkAuth()->where('created_at','<=',$date)->paginate(2);
             }elseif(request()->time=="month"){
-                $orders = Order::whereMonth('created_at',$date->month)->paginate(2);
+                $orders = Order::checkAuth()->whereMonth('created_at',$date->month)->paginate(2);
             }elseif(request()->time=="year"){
-                $orders = Order::whereYear('created_at',$date->year)->paginate(2);
+                $orders = Order::checkAuth()->whereYear('created_at',$date->year)->paginate(2);
             } 
                         
         }elseif(request()->has('status')){
 
-            foreach(Status::all() as $status){
-                if(request()->status==$status->slug){
-                    $orders = $status->orders()->paginate(2);
-                }     
-            }
+            $orders=Order::checkAuth()->whereHas('status',function($query){
+                $query->where('slug',request()->status);
+            })->paginate(10);
 
         }elseif(request()->has('owner')){
 
@@ -70,5 +67,15 @@ class OrderTableOperation extends Controller
             
         }
         return redirect()->route('app.orders.index')->with('success','Status Changed');
+    }
+
+
+
+    public function search(Request $request){
+        
+        $orders=Order::checkAuth()->where('orderid',$request->search)
+                                    ->orWhere('customerphone',$request->search)->get();
+        
+        return view('backend.orders.index',['orders'=>$orders]);
     }
 }

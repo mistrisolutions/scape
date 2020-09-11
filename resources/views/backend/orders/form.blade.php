@@ -5,6 +5,9 @@ Create Order
 @section('header-title')
 @isset($order)Update Order @else Create Order @endif
 @endsection
+@push('css')
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css" integrity="sha512-EZSUkJWTjzDlspOoPSpUFR0o0Xy7jdzW//6qhUkoZ9c4StFkVsp9fbbd0O06p9ELS3H486m4wmrCELjza4JEog==" crossorigin="anonymous" />
+@endpush
 @section('content')
 <div class="row">
   <div class="col-12 grid-margin stretch-card">
@@ -14,6 +17,10 @@ Create Order
             @csrf
             @isset($order) @method('PUT') @endif
             <div class="row">
+              <div class="form-group col-md-12">
+                <label for="exampleFormControlFile1"> Product Image</label>
+                <input type="file" class="form-control-file dropify" id="exampleFormControlFile1" name="image" data-default-file="@isset($order){{ asset($order->image) }}@endif">
+              </div>
               <div class="form-group col-md-6">
                 <label for="exampleInputName1">Customer Name</label>
               <input type="text" name="customername" class="form-control @error('customername')) is-invalid  @enderror" value="@isset($order){{ $order->customername }} @else {{ old('customername') }} @endif" id="exampleInputName1" placeholder="Customer Name">
@@ -36,6 +43,14 @@ Create Order
                   <label for="exampleSelectGender">Shop owner</label>
                   <select class="form-control @error('status')is-invalid @enderror" name="shop_owner_id"  >
                   @foreach($owners as $key => $owner) 
+                    @if(auth()->user()->isShopOwner())
+                      @if(auth()->user()->shopOwner->id==$owner->id)
+                      <option value="{{ $owner->id }}"" selected>{{ $owner->user->name }}</option>
+                      @offja
+                      @else
+                      @continue
+                      @endif
+                    @endif
                   <option value="{{ $owner->id }}" @isset($order) @if($order->shopOwner->id==$owner->id)selected @endif @endif>{{ $owner->user->name }}</option>
                   @endforeach
                   </select>
@@ -80,3 +95,13 @@ Create Order
     </div>
 </div>
 @endsection
+
+@push('custom-scripts')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js" integrity="sha512-8QFTrG0oeOiyWo/VM9Y8kgxdlCryqhIxVeRpWSezdRRAvarxVtwLnGroJgnVW9/XBRduxO/z1GblzPrMQoeuew==" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            // Dropify
+            $('.dropify').dropify();
+        });
+    </script>    
+@endpush

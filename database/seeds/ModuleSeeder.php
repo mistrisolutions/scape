@@ -83,19 +83,19 @@ class ModuleSeeder extends Seeder
             'slug'=>Str::slug('View any shop owner'),
         ]);
         $module->abilities()->create([
-            'title'=>'Create order',
+            'title'=>'Create shop owner',
             'slug'=>Str::slug('Create shop owner'),
         ]);
         $module->abilities()->create([
-            'title'=>'View order',
+            'title'=>'View shop owner',
             'slug'=>Str::slug('View shop owner'),
         ]);
         $module->abilities()->create([
-            'title'=>'Update order',
+            'title'=>'Update shop owner',
             'slug'=>Str::slug('Update shop owner'),
         ]);
         $module->abilities()->create([
-            'title'=>'Delete order',
+            'title'=>'Delete shop owner',
             'slug'=>Str::slug('Delete shop owner'),
         ]);
     }
