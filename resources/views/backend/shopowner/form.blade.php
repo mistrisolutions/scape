@@ -1,6 +1,6 @@
 @extends('layouts.backend.app')
 @section('title')
-Create Shop Owner
+@isset($user)Update Shop Owner @else Create Shop Owner @endif
 @endsection
 @section('header-title')
 @isset($user)Update Shop Owner @else Create Shop Owner @endif

@@ -18,7 +18,7 @@
         <a class="nav-link" data-toggle="collapse" href="#dashboard" aria-expanded="false" aria-controls="general-pages">
           <span class="menu-title">Dashboard</span>
           <i class="menu-arrow"></i>
-          <i class="mdi mdi-medical-bag menu-icon"></i>
+          <i class="mdi mdi-view-dashboard menu-icon"></i>
         </a>
         <div class="collapse" id="dashboard">
           <ul class="nav flex-column sub-menu">
@@ -31,7 +31,7 @@
         <a class="nav-link" data-toggle="collapse" href="#orders" aria-expanded="false" aria-controls="general-pages">
           <span class="menu-title">Orders</span>
           <i class="menu-arrow"></i>
-          <i class="mdi mdi-medical-bag menu-icon"></i>
+          <i class="mdi mdi-view-list menu-icon"></i>
         </a>
         <div class="collapse" id="orders">
           <ul class="nav flex-column sub-menu">
@@ -45,7 +45,7 @@
         <a class="nav-link" data-toggle="collapse" href="#user" aria-expanded="false" aria-controls="general-pages">
           <span class="menu-title">Users</span>
           <i class="menu-arrow"></i>
-          <i class="mdi mdi-medical-bag menu-icon"></i>
+          <i class="mdi mdi-account-multiple menu-icon"></i>
         </a>
         <div class="collapse" id="user">
           <ul class="nav flex-column sub-menu">
@@ -59,7 +59,7 @@
         <a class="nav-link" data-toggle="collapse" href="#owner" aria-expanded="false" aria-controls="general-pages">
           <span class="menu-title">Shop Owner</span>
           <i class="menu-arrow"></i>
-          <i class="mdi mdi-medical-bag menu-icon"></i>
+          <i class="mdi mdi-settings-box menu-icon"></i>
         </a>
         <div class="collapse" id="owner">
           <ul class="nav flex-column sub-menu">

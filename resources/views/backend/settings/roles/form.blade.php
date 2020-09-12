@@ -1,6 +1,6 @@
 @extends('layouts.backend.app')
 @section('title')
-Add Roles
+@if(isset($role)) Update Role @else Create Role @endif
 @endsection
 @section('content')  
 <div class="row">
