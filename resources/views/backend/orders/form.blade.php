@@ -41,7 +41,7 @@
             <div class="row">
                 <div class="form-group col-md-6">
                   <label for="exampleInputName1">Phone Number</label>
-                <input type="text" name="customerphone" class="form-control @error('customerphone')) is-invalid  @enderror" value="@isset($order){{ $order->customerphone }} @else {{ old('customerphone') }} @endif" id="exampleInputName1" placeholder="Customer >
+                <input type="text" name="customerphone" class="form-control @error('customerphone'))" is-invalid  @enderror" value="@isset($order){{ $order->customerphone }} @else {{ old('customerphone') }} @endif" id="exampleInputName1" placeholder="Customer >
                 </div>
                 <div class="form-group col-md-6">
                   <label for="exampleSelectGender">Shop owner</label>
