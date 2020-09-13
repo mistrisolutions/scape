@@ -30,7 +30,7 @@ class LoginController extends Controller
 
     public function redirectTo()
     {
-        return Auth::user()->role->slug === 'shop-owner' ? '/app/orders/process/' : '/app/dashboard';
+        return Auth::user()->role->slug === 'shop-owner' ? '/app/orders/' : '/app/dashboard';
     }
 
     /**
