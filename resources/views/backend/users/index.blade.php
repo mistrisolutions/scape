@@ -45,7 +45,7 @@ All Users
             @forelse($users as $key => $user)
             <tr>
               <td class="py-1">
-                <img src="{{ asset($user->profile->avatar) }}" alt="image" />
+                <img src="{{ Storage::url($user->profile->avatar) }}" alt="image" />
               </td>
               <td> {{ $user->name }}</td>
               <td>
