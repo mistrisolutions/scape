@@ -30,7 +30,7 @@ Shop Owners
             @forelse($owners as $key => $owner)
             <tr>
               <td class="py-1">
-                <img src="{{ asset($owner->user->profile->avatar) }}" alt="image" />
+                <img src="{{ Storage::url($owner->user->profile->avatar) }}" alt="image" />
               </td>
               <td> {{ $owner->user->name }}</td>
               <td>
