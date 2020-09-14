@@ -32,6 +32,12 @@ class ShopOwner extends Model
         $this->attributes['url']=Str::slug($value);
     }
 
+    public function setLogoAttribute($value){
+    //    / dd($value);
+        $extension=$value->extension();
+        $this->attributes['logo']=$value->storeAs('logo',$this->user->shopOwner->url.'.'. $extension);
+    }
+
     public function getUrl(){
         return "shop/".$this->url;
     }

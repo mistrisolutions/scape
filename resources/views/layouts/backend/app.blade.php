@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="{{ asset('assets/vendors/css/vendor.bundle.base.css') }}">
     <!-- endinject -->
     <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="{{ asset('assets/vendors/font-awesome/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css') }}">
+    
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     @stack('css')
@@ -68,6 +71,11 @@
    <script src="{{ asset('assets/js/dashboard.js') }}"></script>
    <script src="{{ asset('assets/js/todolist.js') }}"></script>
    <script src="{{ asset('assets/js/custom.js') }}"></script>
+   <script src="{{ asset('assets/vendors/inputmask/jquery.inputmask.bundle.js') }}"></script>
+    <script src="{{ asset('assets/js/inputmask.js') }}"></script>
+    <script src="{{ asset('assets/vendors/datatables.net/jquery.dataTables.js') }}"></script>
+    <script src="{{ asset('assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js') }}"></script>
+    <script src="{{ asset('assets/js/data-table.js') }}"></script>
    <!-- End custom js for this page -->
    @stack('custom-scripts')
    <form id="logout-form" action="{{route('logout')}}" method="POST" style="display: none;">

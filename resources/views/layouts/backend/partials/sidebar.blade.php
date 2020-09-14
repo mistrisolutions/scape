@@ -3,7 +3,7 @@
       <li class="nav-item nav-profile">
         <a href="#" class="nav-link">
           <div class="nav-profile-image">
-            <img src="{{ asset(auth()->user()->profile->avatar) }}" alt="profile">
+            <img src="{{ Storage::url(auth()->user()->profile->avatar) }}" alt="profile">
             <span class="login-status online"></span>
             <!--change to offline or busy as needed-->
           </div>

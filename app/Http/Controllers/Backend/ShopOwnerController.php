@@ -66,8 +66,9 @@ class ShopOwnerController extends Controller
             'password'  =>['required','min:8','max:20','confirmed'],
             'phone'     =>['required','max:20'],
             'gender'    =>['required'],
-            'role_id'      =>'required',
+            'role_id'   =>'required',
             'avatar'    =>['required','mimes:jpeg,png,jpg','max:2048'],
+            'logo'      =>['required','mimes:jpeg,png,jpg','max:2048'],
             'address'   =>'required',
             'payment_method_id'=>'required',
             'zone_id'          =>'required',
@@ -94,6 +95,7 @@ class ShopOwnerController extends Controller
         ShopOwner::create([
             'user_id'      =>$user->id,
             'company_name'=>$request->company_name,
+            'logo'        =>$request->logo,
             'payment_method_id'=>$request->payment_method_id,
             'zone_id'      =>$request->zone_id,
             'url'          =>$request->company_name,
@@ -148,7 +150,6 @@ class ShopOwnerController extends Controller
     public function update(Request $request,ShopOwner $owner)
     {
         //
-        //
         $attributes=$request->validate([
             'name'      =>['required','max:20',],
             'email'     =>['required',Rule::unique('users')->ignore($owner->user->id),'email'],           
@@ -164,7 +165,7 @@ class ShopOwnerController extends Controller
         $ownerAttributes=$request->validate([
             'company_name'     =>['required','max:30',Rule::unique('shop_owners')->ignore($owner->id)],
             'payment_method_id'    =>['required'],
-            'zone_id'   =>'required'
+            'zone_id'   =>'required',
         ]);
         if(!empty($request['password'])){
             //dd('passwordd');
@@ -178,6 +179,12 @@ class ShopOwnerController extends Controller
                 'avatar'    =>['required','mimes:jpeg,png,jpg','max:2048'],
             ]);
             $profile['avatar']=$request->avatar;
+        }
+        if($request->hasFile('logo')){
+            $request->validate([
+                'logo'    =>['required','mimes:jpeg,png,jpg','max:2048'],
+            ]);
+            $ownerAttributes['logo']=$request->logo;
         }
        // dd($owner->user->profile);
         $owner->update($ownerAttributes);

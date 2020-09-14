@@ -63,7 +63,7 @@ class ShopController extends Controller
         $shopOwner=ShopOwner::where('url',$slug)->first();
         $request->validate([
             'customername'=>['required','max:20'],
-            'customerphone'=>['required','numeric'],
+            'customerphone'=>['required'],
             'productname'  =>['required','max:50'],
             'payment_method_id'  =>['required'],
             'quantity'     =>['required','numeric'],

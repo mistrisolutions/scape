@@ -15,7 +15,7 @@ All Users
 @section('add-menu')
 @can('create',App\Models\User::class)
 <a  class="float-right" href="{{ route('app.users.user.create') }}">
-  <label class="badge badge-success">Add user</label>
+  <label class="badge badge-success">Create user</label>
 </a>
 @endcan
 @endsection
@@ -56,11 +56,14 @@ All Users
               </td>
               <td>{{ $user->role->title }}</td>
               <td style="text-align: center"> 
+                @can('view',$user)
+                <a href="{{ route('app.users.user.show',$user->id) }}" class="badge badge-info">Profile</a>
+                @endcan
                 @can('update',$user)
-                <a href="{{ route('app.users.user.edit',$user->id) }}" class="badge badge-warning">Edit</a>
+                <a href="{{ route('app.users.user.edit',$user->id) }}" class="badge badge-success">Edit</a>
                 @endcan
                 @can('delete',$user)
-                <a data-toggle="modal" data-target="#delete{{ $user->id }}" class="badge badge-danger">Delete</a>
+                <a data-toggle="modal" href="" data-target="#delete{{ $user->id }}" class="badge badge-danger">Delete</a>
                 @endcan
                 @can('delete',$user)
                 </td>

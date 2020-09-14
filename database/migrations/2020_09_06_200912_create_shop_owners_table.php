@@ -17,6 +17,7 @@ class CreateShopOwnersTable extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->string('company_name');
+            $table->string('logo')->nullable(true);
             $table->unsignedBigInteger('zone_id');
             $table->unsignedBigInteger('payment_method_id');
             $table->string('url');

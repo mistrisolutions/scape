@@ -38,8 +38,8 @@ Zones
                   {{ $zone->created_at }}
                 </td>
                 <td style="text-align: center"> 
-                  <a data-toggle="modal" data-target="#updatezone{{ $zone->id }}"  class="badge badge-warning">Edit</a>
-                  <a data-toggle="modal" data-target="#delete{{ $zone->id }}" class="badge badge-danger">Delete</a>
+                  <a href="" data-toggle="modal" data-target="#updatezone{{ $zone->id }}"  class="badge badge-success">Edit</a>
+                  <a href="" data-toggle="modal" data-target="#delete{{ $zone->id }}" class="badge badge-danger">Delete</a>
                   </td>
 
                   <!-- Modal update -->

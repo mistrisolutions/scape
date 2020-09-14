@@ -1,10 +1,16 @@
 @extends('layouts.backend.app')
+
 @section('title')
 @isset($user)Update User @else Create User @endif
 @endsection
+
 @section('header-title')
 @isset($user)Update User @else Create User @endif
 @endsection
+@push('css')
+<link rel="stylesheet" href="{{ asset('assets/vendors/select2/select2.min.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/vendors/select2-bootstrap-theme/select2-bootstrap.min.css') }}">
+@endpush
 @section('content')
 <div class="row">
   <div class="col-12 grid-margin stretch-card">
@@ -20,7 +26,7 @@
               </div>
               <div class="form-group col-md-6">
                 <label for="exampleInputPassword4">Phone Number</label>
-                <input type="text" name="phone" class="form-control" value="@isset($user){{ $user->profile->phone }} @else {{ old('phone') }} @endif"  placeholder="Phone Number">
+                <input type="text" name="phone" class="form-control" value="@isset($user){{ $user->profile->phone }} @else {{ old('phone') }} @endif"  placeholder="Phone Number" data-inputmask-alias="(+880) 9999999999">
               </div>
             </div>
             <div class="form-group">
@@ -29,12 +35,12 @@
             </div>
             <div class="row">
               <div class="form-group col-md-6">
-                <label for="exampleInputPassword4">Password</label>
-                <input type="password" name="password" class="form-control @error('password')) is-invalid  @enderror" id="exampleInputPassword4" placeholder="Password">
+                <label >Password</label>
+                <input type="password" name="password" class="form-control @error('password')) is-invalid  @enderror"  placeholder="Password">
               </div>
               <div class="form-group col-md-6">
                 <label for="exampleInputPassword4">Confirm Password</label>
-                <input type="password" name="password_confirmation" class="form-control" id="exampleInputPassword4" placeholder="Password">
+                <input type="password" name="password_confirmation" class="form-control"  placeholder="Password">
               </div>
             </div>
             <div class="row">
@@ -82,6 +88,8 @@
 @endsection
 @push('custom-scripts')
 <script src="{{ asset('assets/js/file-upload.js') }}"></script>
+<script src="{{ asset('assets/vendors/select2/select2.min.js') }}"></script>
+<script src="{{ asset('assets/js/select2.js') }}"></script>
 <script>
   var loadFile = function(event) {
     const image=document.createElement('img');

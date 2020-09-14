@@ -75,8 +75,8 @@ class OrderTableOperation extends Controller
 
     public function search(Request $request){
         
-        $orders=Order::checkAuth()->where('orderid',$request->search)
-                                    ->orWhere('customerphone',$request->search)->get();
+        $orders=Order::checkAuth()->where('orderid','LIKE',$request->search)
+                                    ->orWhere('customerphone','LIKE',$request->search)->paginate(10);
         
         return view('backend.orders.index',['orders'=>$orders]);
     }

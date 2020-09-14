@@ -43,6 +43,8 @@
     <script src="{{ asset('assets/js/dashboard.js') }}"></script>
     <script src="{{ asset('assets/js/todolist.js') }}"></script>
     <script src="{{ asset('assets/js/custom.js') }}"></script>
+    <script src="{{ asset('assets/vendors/inputmask/jquery.inputmask.bundle.js') }}"></script>
+    <script src="{{ asset('assets/js/inputmask.js') }}"></script>
     <!-- End custom js for this page -->
     @stack('custom-scripts')
   </body>

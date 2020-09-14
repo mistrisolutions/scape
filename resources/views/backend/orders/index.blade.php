@@ -129,10 +129,10 @@ Orders
                     </td>
                     <td>
                         @can('update',$order)
-                            <a href="{{ route('app.orders.order.edit',$order->id) }}" class="badge badge-warning">Edit</a>
+                            <a href="{{ route('app.orders.order.edit',$order->id) }}" class="badge badge-success">Edit</a>
                         @endcan
                         @can('delete',$order)
-                        <a data-toggle="modal" data-target="#delete{{ $order->id }}" class="badge badge-danger">Delete</a>
+                        <a href="" data-toggle="modal" data-target="#delete{{ $order->id }}" class="badge badge-danger">Delete</a>
                         @endcan
                         </td>
                          <!-- Modal -->

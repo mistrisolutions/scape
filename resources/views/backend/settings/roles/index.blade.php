@@ -36,9 +36,8 @@ All Roles
                 </td>
                 <td>{{ $role->created_at }}</td>
                 <td style="text-align: center"> 
-                <a href="{{ route('app.settings.role.show',$role->id) }}" class="badge badge-success">Abilities</a>
-                <a href="{{ route('app.settings.role.edit',$role->id) }}" class="badge badge-warning">Edit</a>
-                <a data-toggle="modal" data-target="#delete{{ $role->id }}" class="badge badge-danger">Delete</a>
+                <a href="{{ route('app.settings.role.edit',$role->id) }}" class="badge badge-success">Edit</a>
+                <a href="" data-toggle="modal" data-target="#delete{{ $role->id }}" class="badge badge-danger">Delete</a>
                 </td>
                 <!-- Modal -->
                 <div class="modal fade" id="delete{{ $role->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

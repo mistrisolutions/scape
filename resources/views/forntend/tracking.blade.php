@@ -14,44 +14,18 @@ Product Order
                   @isset($order)
                     <div class="col-md-9 col-sm-12 mx-auto">
                       <div class="card p-3">
-                      <div class="row justify-content-between">
-                          <div class="col-sm-6">
-                              <h3>Product Details</h3>
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="staticBackdropLabel">Order status</h5>
+                            </div>
+                            <div class="modal-body">
+                            <h3>Your order status : <span class="text-primary">{{ $order->status->title }}</span></h3>
+                            </div>
                           </div>
-                          <div class="col-sm-6 text-right">
-                              <h4>id : {{ $order->orderid }}</h4>
-                          </div>
+                        </div>                
                       </div>
                       <hr />
-                      <div class="row">
-                      <div class="col-md-3 col-sm-12">
-                          <h1 class="text-center mt-5">{{ $order->status->title }}</h1>
-                      </div>
-                      <div class="col-md-9 col-sm-12">
-                          <div class="profile-info float-center">
-                          <table class="table table-borderless ">
-                          <tbody>
-                              <tr>
-                              <th width="3%">Customer Name</th>
-                              <th width="1%">:</th>
-                              <td>{{ $order->customername }}</td>
-                              </tr>
-                              <tr>
-                              <th width="3%">Product Name</th>
-                              <th width="1%">:</th>
-                              <td>{{ $order->productname }}</td>
-                              </tr>
-              
-                              <tr>
-                              <th width="3%">Quantity</th>
-                              <th width="1%">:</th>
-                              <td>{{ $order->quantity }}</td>
-                              </tr>                              
-                          </tbody>
-                          </table>
-                          </div>
-                      </div>
-                      </div>
                       </div>
                   </div>
                   @else

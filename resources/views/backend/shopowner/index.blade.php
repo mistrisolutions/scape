@@ -2,9 +2,6 @@
 @section('title')
 Shop Owners 
 @endsection
-@push('css')
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
-@endpush
 @section('header-title')
 Shop Owners 
 @endsection
@@ -18,12 +15,7 @@ Shop Owners
   <div class="col-lg-12 grid-margin stretch-card">
     <div class="card">
       <div class="card-body">
-        <div class="row">
-          <div class="col-lg-12">
-            
-          </div>
-        </div>
-        <table class="table table-bordered" id="myTable">
+        <table id="order-listing" class="table table-bordered">
           <thead>
             <tr>
               <th> User </th>
@@ -52,10 +44,10 @@ Shop Owners
               </td>
               <td style="text-align: center"> 
                 @can('update',$owner)
-                <a href="{{ route('app.shopOwners.owner.edit',$owner->id) }}" class="badge badge-warning">Edit</a>
+                <a href="{{ route('app.shopOwners.owner.edit',$owner->id) }}" class="badge badge-success">Edit</a>
                 @endcan
                 @can('delete',$owner)
-                <a data-toggle="modal" data-target="#delete{{ $owner->id }}" class="badge badge-danger">Delete</a>
+                <a href="" data-toggle="modal" data-target="#delete{{ $owner->id }}" class="badge badge-danger">Delete</a>
                 @endcan
                 </td>
                  <!-- Modal -->
@@ -95,12 +87,3 @@ Shop Owners
   </div>
 </div>  
 @endsection
-@push('custom-scripts')
-<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
-<script>
-  $(document).ready( function () {
-    $('#myTable').DataTable();
-} );
-</script>
-@endpush  
