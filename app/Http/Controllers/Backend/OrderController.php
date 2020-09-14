@@ -175,7 +175,7 @@ class OrderController extends Controller
     {
         return $request->validate([
             'customername' => ['required', 'max:20'],
-            'customerphone' => ['required', 'numeric'],
+            'customerphone' => ['required'],
             'productname' => ['required', 'max:50'],
             'quantity' => ['required', 'numeric'],
             'address' => ['required'],
