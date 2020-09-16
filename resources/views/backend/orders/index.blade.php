@@ -104,7 +104,7 @@ Orders
                 <tr>
                     <td class="text-center">
                         <div class="form-check">
-                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                        <input class="form-check-input position-static" name="multicheck[]" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
                         </div>  
                     </td>
                     <td> {{ $order->orderid }}</td>
