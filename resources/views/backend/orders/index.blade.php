@@ -7,17 +7,12 @@ Orders
 @if(auth()->user()->isShopOwner())
 @section('extra-content')
 <div class="row">
-    <div class="col-lg-12 grid-margin stretch-card ">
+    <div class="col-lg-12 grid-margin stretch-card shop-copy-link-area">
         <div class="card text-center">
-            <div class="card-header">
-              {{ auth()->user()->shopOwner->company_name }}
-            </div>
             <div class="card-body">
-              <h5 id="link" class="card-title">{{ asset(auth()->user()->shopOwner->getUrl()) }}</h5>
-              <a id="copyButton" class="btn btn-primary">Copy shop link</a>
-            </div>
-            <div class="card-footer text-muted">
-              share
+              <h3>{{ auth()->user()->shopOwner->company_name }}</h3>
+              <a href="#" class="btn btn-outline-primary btn-sm">Copy Link</a>
+              <a href="#" class="btn btn-primary btn-sm">Visit</a>
             </div>
         </div>
     </div> 
@@ -53,11 +48,11 @@ Orders
                 </div>
                 </form>
             </div>
-            <div class="col-md-2 col-sm-6 col-6">
+            <div class="full-area-btn col-md-2 col-sm-12 col-12">
             <a href="{{ route('app.orders.order.process') }}" type="button" class="btn btn-sm btn-outline-success">Process</a>
             </div>
             
-            <div class="col-md-2 col-sm-6 col-6">
+            <div class="full-area-btn col-md-2 col-sm-12 col-12">
                 <button class="btn btn-sm float-right btn-success dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter By time</button>
                 <div class="dropdown-menu">
                 <a class="dropdown-item" href="{{ route('app.operation.filter.time') }}?time=today">Today</a>
@@ -66,7 +61,7 @@ Orders
                 <a class="dropdown-item" href="{{ route('app.operation.filter.time') }}?time=year">This Year</a>
                 </div>
             </div>
-            <div class="col-md-2 col-sm-6 col-6">
+            <div class="full-area-btn col-md-2 col-sm-12 col-12">
                 <button class="btn btn-sm float-right btn-info dropdown-2 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter by status</button>
                 <div class="dropdown-menu">
                 @foreach ($statuses as $status)
@@ -75,7 +70,7 @@ Orders
                 </div>
             </div>
             @if(!auth()->user()->isShopOwner())
-            <div class="col-md-2 col-sm-6 col-6">               
+            <div class="full-area-btn col-md-2 col-sm-12 col-12">               
                 <button class="btn btn-sm float-right btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter by owner</button>
                 <div class="dropdown-menu">
                     @foreach($owners as $key => $owner)
@@ -107,15 +102,19 @@ Orders
                 <tbody>
                 @forelse ($orders as $order)
                 <tr>
-                    <td>  <input class="form-check-input" name="multiCheck[]" type="checkbox" value="{{ $order->id }}" id="all"> </td>
+                    <td class="text-center">
+                        <div class="form-check">
+                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                        </div>  
+                    </td>
                     <td> {{ $order->orderid }}</td>
                     <td> {{ $order->customername }}</td>
                     <td> {{ $order->customerphone }}</td>
                     @if(!auth()->user()->isShopOwner())
                         <td> {{ $order->shopOwner->user->name }}</td>
                     @endif    
-                    <td class="drpdn-status">
-                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <td class="drpdn-status p-0">
+                    <button class="btn btn-outline-secondary drpdn-status-colr-processing dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         {{ $order->status->title }}
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -129,10 +128,10 @@ Orders
                     </td>
                     <td>
                         @can('update',$order)
-                            <a href="{{ route('app.orders.order.edit',$order->id) }}" class="badge badge-success">Edit</a>
+                            <a href="{{ route('app.orders.order.edit',$order->id) }}" class="badge badge-outline-success">Edit</a>
                         @endcan
                         @can('delete',$order)
-                        <a href="" data-toggle="modal" data-target="#delete{{ $order->id }}" class="badge badge-danger">Delete</a>
+                        <a href="" data-toggle="modal" data-target="#delete{{ $order->id }}" class="badge badge-outline-danger">Delete</a>
                         @endcan
                         </td>
                          <!-- Modal -->
@@ -165,24 +164,27 @@ Orders
             </table>
         </div>
         <div class="row justify-content-between px-4 mt-4">
-            <div class="col-sm-3  col-3">
-            <div class="form-check">
-                <input id="all-check" class="form-check-input" type="checkbox" value="" >
-                <label class="form-check-label" >
-                    Check all
-                </label>
+            <div class="col-sm-9 col-12 pagination-area">
+                <div class="form-check d-inline-block mr-4">
+                    <input id="all-check" class="form-check-input" type="checkbox" value="" >
+                    <label class="form-check-label" >
+                        Check all
+                    </label>
+                </div>
+                <div class="dropdown d-inline-block">
+                <button class="btn btn-success btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
                 </div>
             </div>
-            <div class="col-sm-3  col-3">
-                <button class="btn btn-sm float-right btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BulK status change</button>
-                <div class="dropdown-menu">
-                @foreach($statuses as $key => $status)
-                <a class="dropdown-item" onClick="action('{{ $status->id }}')">{{ $status->title }}</a>  
-                @endforeach
-                </div>
-            </div>
+            
             @isset($orders)
-            <div class="col-sm-3  col-3">
+            <div class="col-sm-3  col-12 pagination-area">
                 <div >
                     {{ $orders->links('layouts.backend.partials.pagination') }}
                 </div>
