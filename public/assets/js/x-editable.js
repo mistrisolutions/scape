@@ -10,11 +10,11 @@
         '<button type="button" class="btn btn-default btn-sm editable-cancel">' +
         '<i class="fa fa-fw fa-times"></i>' +
         '</button>';
-      $('#username').editable({
+      $('#customername').editable({
         type: 'text',
         pk: 1,
-        name: 'username',
-        title: 'Enter username'
+        name: 'customername',
+        title: 'Enter customername'
       });
 
       $('#firstname').editable({

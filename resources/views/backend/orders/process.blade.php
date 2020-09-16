@@ -16,9 +16,9 @@
               <div class="template-demo">
                 <form id="editable-form" class="editable-form">
                   <div class="form-group row">
-                    <label class="col-6 col-lg-4 col-form-label">Product id</label>
+                    <label class="col-6 col-lg-4 col-form-label">Customer name</label>
                     <div class="col-6 col-lg-8 d-flex align-items-center">
-                      <a href="#" id="username" data-type="text" data-pk="1">awesome</a>
+                      <a href="#" id="customername" data-type="text" data-pk="1">Shuvo</a>
                     </div>
                   </div>
                   <div class="form-group row">
