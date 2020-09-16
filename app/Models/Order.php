@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-
+use Illuminate\Support\Facades\Auth;
 use App\Models\ShopOwner;
 
 class Order extends Model
@@ -60,7 +60,8 @@ class Order extends Model
    
 
     public function scopeCheckAuth( $query)
-    {   if(auth()->user()->isShopOwner()){
+    {  // dd(auth()->user()->shopOwner);
+          if(auth()->user()->isShopOwner()){
             return $query->whereHas('ShopOwner', function($query){
                 $query->where('id',auth()->user()->shopOwner->id);
             });

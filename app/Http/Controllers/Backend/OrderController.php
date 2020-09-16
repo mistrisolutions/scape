@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Carbon;
+
 use App\Models\Status;
 
 use App\Models\Order;
@@ -24,7 +26,7 @@ class OrderController extends Controller
     public function index()
     {
         //
-        $data['orders'] = Order::checkAuth()->latest('id')->paginate(20);
+        $data['orders'] = Order::checkAuth()->whereDay('created_at',Carbon::now()->day)->latest('id')->paginate(1);
 
         return view('backend.orders.index', $data);
     }

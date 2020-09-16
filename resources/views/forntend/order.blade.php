@@ -42,6 +42,19 @@ Product Order
                       </div>
                     </div>
                     <div class="form-group row">
+                      <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">Address</label>
+                      <div class="col-sm-9">
+                        <input name="address" value="{{ old('address') }}" class="form-control" rows="3" placeholder="address.." />
+                        @error('address')
+                          {{ $message }}
+                        @enderror
+                      </div>
+                    </div>
+                    <div>
+                      <p class="" id="triger">show more</p>
+                    </div>
+                    <fieldset id='show-more' class="d-none">
+                    <div class="form-group row">
                         <label for="exampleInputMobile" class="col-sm-3 col-form-label">Quantity</label>
                         <div class="col-sm-9">
                           <input type="number" name="quantity" value="{{ old('quantity') }}" class="form-control form-control-lg" required placeholder="Product Quality">
@@ -65,15 +78,6 @@ Product Order
                       </div>
                     </div>
                     <div class="form-group row">
-                      <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">Address</label>
-                      <div class="col-sm-9">
-                        <input name="address" value="{{ old('address') }}" class="form-control" rows="3" placeholder="address.." />
-                        @error('address')
-                          {{ $message }}
-                        @enderror
-                      </div>
-                    </div>
-                    <div class="form-group row">
                       <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">Note</label>
                       <div class="col-sm-9">
                         <textarea class="form-control" name="note" value="{{ old('note') }}" rows="3" placeholder="Note.."></textarea>
@@ -82,6 +86,7 @@ Product Order
                         @enderror
                       </div>
                     </div>
+                    </fieldset>
                     <button type="submit" class="btn btn-gradient-primary mr-2">Submit</button>
                   </form>              
                   </div>
@@ -95,3 +100,14 @@ Product Order
   </div>
 </div>
 @endsection
+@push('custom-scripts')
+<script>
+  const triger = document.getElementById("triger");
+  const showFields = document.getElementById("show-more");
+  triger.addEventListener('click',function(){
+    triger.style.display='none';
+    showFields.classList.remove("d-none");
+  });
+  
+</script>
+@endpush

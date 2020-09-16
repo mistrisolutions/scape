@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ asset('assets/vendors/css/vendor.bundle.base.css') }}">
     @stack('css')
     <!-- Layout styles -->
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style2.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
    
     <!-- End layout styles -->
