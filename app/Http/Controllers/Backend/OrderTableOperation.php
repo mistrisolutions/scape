@@ -84,11 +84,13 @@ class OrderTableOperation extends Controller
     }
 
     public function pdfConverter(){
-        $data['orders'] = Order::checkAuth()->whereDay('created_at',Carbon::now()->day)->latest('id')->paginate(20);
-
-        $pdf = PDF::loadView('backend.orders.index', $data);
+        $data['orders'] = Order::checkAuth()->whereDay('created_at',Carbon::now()->day)->latest('id')->get();
+        //dd($data['orders']);
+        $pdf = PDF::loadView('backend.orders.pdf',$data);
         
         return $pdf->download('orders.pdf');
+
+       //return view('backend.orders.pdf',$data);
     }
     
 }
