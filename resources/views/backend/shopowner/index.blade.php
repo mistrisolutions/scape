@@ -12,10 +12,11 @@ Shop Owners
 @endsection
 @section('content')
 <div class='row'>
-  <div class="col-lg-12 grid-margin stretch-card">
+  <div class="col-lg-12 grid-margin stretch-card shop-owner-table">
     <div class="card">
       <div class="card-body">
-        <table id="order-listing" class="table table-bordered">
+       <div class="table-area">
+       <table id="order-listing" class="table table-bordered">
           <thead>
             <tr>
               <th> User </th>
@@ -82,6 +83,7 @@ Shop Owners
             @endforelse
           </tbody>
         </table>
+       </div>
       </div>
     </div>
   </div>

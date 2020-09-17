@@ -72,13 +72,16 @@
     margin-left: 10px;
     padding: 0.25rem 0.80rem !important;
 }
+.shop-owner-table .custom-select{
+    width: 55px !important;
+}
 
 
 
 
 
-
-
+/* 
+//responsiveness start */
 @media (max-width: 1200px) { 
     .product-details-area h1{
         font-size: 1.5rem !important;
@@ -108,6 +111,18 @@
     .all-order-table .card .table-area{
         padding: 20px 0px;
         overflow-x: scroll;
+    }
+    .shop-owner-table .table th, .table td{
+        padding: 10px !important;
+    }
+    .shop-owner-table .table-area .col-sm-12{
+        overflow-x: scroll;
+    }
+    .shop-owner-table .table-area .pagination{
+        text-align: center;
+        margin: auto !important;
+        width: 150px;
+        margin-top: 20px !important;
     }
  }
 @media (max-width: 576px) {
