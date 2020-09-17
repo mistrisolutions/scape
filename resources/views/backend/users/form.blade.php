@@ -72,7 +72,7 @@
             </div>
             <div class="form-group" id="output">
               @isset($user)
-              <img id="newImage" class="img-thumbnail" style="height: 100px;width: 100px;"src={{ asset($user->profile->avatar) }}>
+              <img id="newImage" class="img-thumbnail" style="height: 100px;width: 100px;"src={{ Storage::url($user->profile->avatar) }}>
               @endif
             </div>
             <div class="form-group">
