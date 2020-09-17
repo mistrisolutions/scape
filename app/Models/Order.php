@@ -46,10 +46,12 @@ class Order extends Model
 
 
     public function setShopOwnerIdAttribute($value){
-        if(auth()->user()->isShopOwner()){
+        if(auth()->check()){
+            if(auth()->user()->isShopOwner()){
 
-            $this->attributes['shop_owner_id']=auth()->user()->shopOwner->id;
-
+                $this->attributes['shop_owner_id']=auth()->user()->shopOwner->id;
+    
+            }
         }else
 
         $this->attributes['shop_owner_id']=$value;
