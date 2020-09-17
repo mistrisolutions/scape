@@ -13,6 +13,5 @@ class OrderComposer
         $view->with('statuses',Status::all());
         $view->with('owners',ShopOwner::all());
         $view->with('methods',PaymentMethod::all());
-        $view->with('notifications',Notification::checkAuth()->take(10)->get());
    }
 }

@@ -23,22 +23,7 @@
         <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
           <h6 class="p-3 mb-0">Notifications</h6>
           <div class="dropdown-divider"></div>
-          @forelse($notifications as $key => $notification)
-          <a class="dropdown-item preview-item">
-            <div class="preview-thumbnail">
-              <div class="preview-icon bg-success">
-                <i class="mdi @if($notification->type=='profile')mdi mdi-account @elseif($notification->type=='order')mdi-view-list @endif"></i>
-              </div>
-            </div>
-            <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
-              <h6 class="preview-subject font-weight-normal mb-1">{{ $notification->user->name }}-{{ $notification->created_at->diffForHumans() }}</h6>
-              <p class="text-gray ellipsis mb-0"> {{ $notification->message }} </p>
-            </div>
-          </a>
-          <div class="dropdown-divider"></div>
-          @empty
-            <p class="">No notification found</p>
-          @endforelse
+
 
           <h6 class="p-3 mb-0 text-center">See all notifications</h6>
         </div>
