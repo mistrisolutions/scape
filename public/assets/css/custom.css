@@ -171,13 +171,21 @@
         overflow-x: scroll;
     }
  }
+ @media (max-width: 350px){
+    .navbar .navbar-brand-wrapper{
+        display: none !important;
+    }
+    .form-con{
+        margin-top: 70px !important;
+    }
+ }
 
- @media (max-height: 800px) {
+ @media (max-height: 800px) and (max-width:450px){
     .frontend-order-area{
         padding: 20px !important;
     }
     .frontend-order-area .form-group {
-        margin-bottom: 0px !important;
+        margin-bottom: 10px !important;
     }
     .frontend-order-area .form-group label{
         padding-bottom: 0px !important;
@@ -185,14 +193,21 @@
     .frontend-order-area .form-group input{
         padding: 10px !important;
     }
- }
- @media (max-height: 600px) {
-    
+    .frontend-order-area .form-group input{
+        height: 40px !important;
+        padding: 5px !important;
+    }
+    .frontend-order-area {
+        padding: 10px !important;
+    }
     .frontend-order-area form{
         padding-top: 0px !important;
     }
+ }
+
+ @media (max-height: 600px) and (max-width:450px){
     .frontend-order-area .form-group input{
-        height: 40px !important;
+        height: 30px !important;
         padding: 5px !important;
     }
  }
