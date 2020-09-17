@@ -14,6 +14,8 @@ use App\Models\Order;
 
 use App\Models\ShopOwner;
 
+use App\Models\Notification;
+
 use App\Models\PaymentMethod;
 
 class OrderController extends Controller
@@ -73,6 +75,11 @@ class OrderController extends Controller
             'orderid' => random_int(50000, 10000000),
             'zone' => $request->shop_owner_id,
             'note' => $request->note,
+        ]);
+        Notification::create([
+            'type'=>'order',
+            'message'=>'A new order has created',
+            'user_id'=>auth()->user()->id,
         ]);
 
         return redirect()->route('app.orders.index')
@@ -149,6 +156,13 @@ class OrderController extends Controller
             'zone' => $request->shop_owner_id,
             'note' => $request->note,
         ]);
+
+        Notification::create([
+            'type'=>'order',
+            'message'=>''.$order->orderid.' successfully updated',
+            'user_id'=>auth()->user()->id,
+        ]);
+
         if(request('process')){
             return redirect()->back()
             ->with('success', 'Order Updated');
@@ -174,6 +188,12 @@ class OrderController extends Controller
         $this->authorize('delete', $order);
         $order->update([
             'available'=>0
+        ]);
+
+        Notification::create([
+            'type'=>'order',
+            'message'=>''.$order->orderid.' successfully removed from table',
+            'user_id'=>auth()->user()->id,
         ]);
 
         return redirect()->route('app.orders.index')
@@ -239,6 +259,12 @@ class OrderController extends Controller
             'image'=>$request,
             'status_id' => $request->status_id,
             'note' => $request->note,
+        ]);
+
+        Notification::create([
+            'type'=>'order',
+            'message'=>''.$order->orderid.' successfully updated',
+            'user_id'=>auth()->user()->id,
         ]);
 
         if($order->status->slug=='deliverd'){

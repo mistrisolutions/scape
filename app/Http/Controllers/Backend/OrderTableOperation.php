@@ -9,6 +9,7 @@ use Illuminate\Support\Carbon;
 use App\Models\Order;
 use App\Models\Status;
 use App\Models\ShopOwner;
+use App\Models\Notification;
 
 use PDF;
 
@@ -19,6 +20,11 @@ class OrderTableOperation extends Controller
             $status=Status::where('slug',request()->status)->first();
             $order->update([
                 'status_id'=>$status->id,
+            ]);
+            Notification::create([
+                'type'=>'order',
+                'message'=>''.$order->orderid.' status successfully updated',
+                'user_id'=>auth()->user()->id,
             ]);
             return redirect()->route('app.orders.index')->with('success','Order status Updated');
         }
@@ -68,6 +74,11 @@ class OrderTableOperation extends Controller
             ]);
             
         }
+        Notification::create([
+            'type'=>'order',
+            'message'=>'Orders bulk status successfully updated',
+            'user_id'=>auth()->user()->id,
+        ]);
         return redirect()->route('app.orders.index')->with('success','Status Changed');
     }
 

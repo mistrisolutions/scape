@@ -13,5 +13,11 @@ class OrderComposer
         $view->with('statuses',Status::all());
         $view->with('owners',ShopOwner::all());
         $view->with('methods',PaymentMethod::all());
+      //   /dd($view->getName());
+        if(!in_array($view->getName(), ['forntend.confirmation', 'forntendorder', 'fornend.tracking', 'auth.login','layouts.frontend.app','layouts.frontend.partials.header','backend.notifications.index'])) {
+         //dd($view->getName());
+         $view->with('notifications',Notification::checkAuth()->latest('id')->limit(5)->get());
+     }
+
    }
 }

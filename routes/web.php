@@ -46,6 +46,7 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
     Route::get('/dashboard', 'HomeController@index')->name('home');
     Route::get('/profile', 'HomeController@profile')->name('profile');
     Route::put('/profile/update/', 'HomeController@updateProfile')->name('profile.update');
+    Route::get('/notifications', 'NotificationController@index')->name('notification');
     //settings
     Route::group(['as'=>'settings.','prefix'=>'settings','middleware'=>['settings']],function(){
         //Roles
