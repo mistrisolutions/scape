@@ -118,6 +118,9 @@
         margin-top: 30px;
         float: left !important;
     }
+    .fastfly-content-area{
+        display: none;
+    }
 }
 @media (max-width: 493px) { 
     .navbar-menu-wrapper{
@@ -132,6 +135,12 @@
  }
 
 @media (max-width: 400px) { 
+    .login-content-area .auth-form-light{
+        padding: 15px !important;
+    }
+    .login-content-area .auth-form-light h6{
+        text-align: center;
+    }
     .content-wrapper{
         padding: 0.75rem 0.25rem !important;
     }

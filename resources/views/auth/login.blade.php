@@ -5,7 +5,7 @@
       <div class="container-fluid page-body-wrapper full-page-wrapper">
         <div class="content-wrapper d-flex align-items-center auth">
           <div class="row flex-grow px-4">
-            <div class="col-lg-4 col-md-6 mx-auto">
+            <div class="col-lg-4 col-md-6 mx-auto fastfly-content-area">
               <h2>Fastfly</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis totam, tenetur eveniet ea natus laboriosam velit a consequuntur necessitatibus, consequatur recusandae. Impedit enim rerum non, assumenda quasi aperiam architecto distinctio?</p>
             </div>

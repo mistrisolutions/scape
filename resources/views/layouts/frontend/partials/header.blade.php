@@ -7,9 +7,6 @@
     <div class="navbar-menu-wrapper d-flex align-items-stretch">
       <ul class="navbar-nav navbar-nav-right">
         <li class="nav-item">
-            <p class="mb-1 text-black">Tracking No: </p>
-        </li>
-        <li class="nav-item">
         <!-- <form class="form-inline" action="" method="POST">
         <div class="form-group mx-sm-3 mb-2" >
           
@@ -21,7 +18,7 @@
           <div class="input-group input-group-sm">
             <input type="text" class="form-control" placeholder="Enter you order No"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name="orderid">
             <div class="input-group-prepend">
-            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+            <button type="submit" class="btn btn-primary mb-2">Tracking</button>
             </div>
           </div>
         </form>
