@@ -19,7 +19,7 @@ Product Order
                       <div class="col-sm-9">
                         <input type="text" name="customername" value="{{ old('customername') }}" class="form-control form-control-lg" required placeholder="Customer Name*">
                         @error('customername')
-                        {{ $message }}
+                        <p class="text-danger">{{ $message }}</p> 
                         @enderror
                       </div>
                     </div>
@@ -28,7 +28,7 @@ Product Order
                       <div class="col-sm-9">
                         <input type="text" name="customerphone" value="{{ old('customerphone') }}" value="{{ old('customerphone') }}" class="form-control form-control-lg" required placeholder="Customer Mobile No(01*********)" data-inputmask-alias="(+880) 9999999999" >
                         @error('customerphone')
-                        {{ $message }}
+                        <p class="text-danger">{{ $message }}</p> 
                         @enderror
                       </div>
                     </div>
@@ -37,7 +37,7 @@ Product Order
                       <div class="col-sm-9">
                         <input type="text" name="productname" value="{{ old('productname') }}" class="form-control form-control-lg" required placeholder="Product Name">
                         @error('productname')
-                        {{ $message }}
+                        <p class="text-danger">{{ $message }}</p> 
                         @enderror
                       </div>
                     </div>
@@ -46,12 +46,12 @@ Product Order
                       <div class="col-sm-9">
                         <input name="address" value="{{ old('address') }}" class="form-control" rows="3" placeholder="address.." />
                         @error('address')
-                          {{ $message }}
+                        <p class="text-danger">{{ $message }}</p> 
                         @enderror
                       </div>
                     </div>
                     <div>
-                      <p class="badge badge-success" id="triger">show more<i class="mdi mdi-chevron-down"></i></p>
+                      <p class="badge badge-secondary" id="triger">show more<i class="mdi mdi-chevron-down"></i></p>
                     </div>
                     <fieldset id='show-more' class="d-none">
                     <div class="form-group row">
@@ -59,7 +59,7 @@ Product Order
                         <div class="col-sm-9">
                           <input type="number" name="quantity" value="{{ old('quantity') }}" class="form-control form-control-lg" placeholder="Product Quality">
                           @error('quantity')
-                            {{ $message }}
+                           <p class="text-danger">{{ $message }}</p> 
                           @enderror
                         </div>
                     </div>

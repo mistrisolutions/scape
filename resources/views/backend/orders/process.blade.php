@@ -8,113 +8,108 @@
 @endpush
 
 @section('header-title')
-order id : #{{ $order->id }}
+order id : #<a href="{{ route('app.orders.order.show',$order->id) }}">{{ $order->orderid }}</a>
 @endsection
 @section('content')
-    <div class="row">
-        <div class="col-12 grid-margin stretch-card product-process">
-          <div class="card">
-            <div class="card-body">
-              <div class="template-demo">
-                
-                <form id="editable-form" action="{{ route('app.orders.order.process.update',$order->id) }}" class="editable-form" enctype="multipart/form-data" method="POST">
-                  @csrf
-                  @method('PUT')
-                  <div class="form-con-area">
-                  <div class="form-group row">
-                    <label class="col-6 col-lg-2 col-form-label">Product picture</label>
-                    <div class="col-6 col-lg-10 d-flex align-items-center">
-                      <input type="file" class="form-control-file dropify" id="exampleFormControlFile1" name="logo" data-default-file="{{ Storage::url($order->image) }}">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-6 col-lg-2 col-form-label">Cusetomer address</label>
-                    <div class="col-6 col-lg-10 d-flex align-items-center">
-                      <input class="form-control" type="text" name="address" value="{{ $order->address }}" placeholder="address" />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-6 col-lg-2 col-form-label">Note</label>
-                    <div class="col-6 col-lg-10 d-flex align-items-center">
-                      <input class="form-control" type="text" name="note" value="{{ $order->note }}" placeholder="note" />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-6 col-lg-2 col-form-label">Price</label>
-                    <div class="col-6 col-lg-10 d-flex align-items-center">
-                      <input class="form-control" type="text" name="price" value="{{ $order->price }}" placeholder="price" />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-6 col-lg-2 col-form-label">Status</label>
-                    <div class="col-6 col-lg-10 d-flex align-items-center">
-                      <select class="form-control @error('status')is-invalid @enderror" name="status_id"  >
-                        @foreach($statuses as $key => $status) 
-                        <option value="{{ $status->id }}" @isset($order) @if($order->status->slug==$status->slug)selected @endif @endif>{{ $status->title }}</option>
-                        @endforeach
-                        </select>
-                    </div>
-                  </div>
-                  <fieldset id='show-more' class="d-none">
-                  <div class="form-group row">
-                    <label class="col-6 col-lg-2 col-form-label">Customer name</label>
-                    <div class="col-6 col-lg-10 d-flex align-items-center">
-                      <input class="form-control" type="text" name="customername" value="{{ $order->customername }}" placeholder="Customer name" />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-6 col-lg-2 col-form-label">Customer Phone</label>
-                    <div class="col-6 col-lg-10 d-flex align-items-center">
-                      <input class="form-control"  type="text" name="customerphone" value="{{ $order->customerphone }}" placeholder="Customer phone" />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-6 col-lg-2 col-form-label">Product name</label>
-                    <div class="col-6 col-lg-10 d-flex align-items-center">
-                      <input class="form-control" type="text" name="productname" value="{{ $order->productname }}" placeholder="Product name" />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-6 col-lg-2 col-form-label">Product quantity</label>
-                    <div class="col-6 col-lg-10 d-flex align-items-center">
-                      <input class="form-control" type="text" name="quantity" value="{{ $order->quantity }}" placeholder="quantity" />
-                    </div>
-                  </div>
-                </fieldset>
-                <div>
-                  <p class="badge badge-success" id="triger">show more<i class="mdi mdi-chevron-down"></i></p>
-                </div>
-                  <div class="form-group form-control-arrow-action">
-                    <div class="row justify-content-between px-4">
-                        @isset($previous_order)
-                            <a id="previousOrder" class="btn btn-gradient-info"
-                               href="{{ route('app.orders.order.process',$previous_order->id) }}">
-                                <i class="mdi mdi-chevron-left"></i>
-                            </a>
-                        @else
-                            <button disabled class="btn btn-gradient-info">
-                                <i class="mdi mdi-chevron-left"></i>
-                            </button>
-                        @endisset
-                        <button type="submit" class="btn btn-gradient-primary mr-2">Update</button>
-                        @isset($next_order)
-                            <a id="oderNext" class="btn btn-gradient-info"
-                               href="{{ route('app.orders.order.process',$next_order->id) }}">
-                                <i class="mdi mdi-chevron-right"></i>
-                            </a>
-                        @else
-                            <button disabled class="btn btn-gradient-info">
-                                <i class="mdi mdi-chevron-right"></i>
-                            </button>
-                        @endisset
-                    </div>
-                </div>
-                </form>
-              </div>
-            </div>
+<div class="row  product-process">
+  <div class=" card col-lg-12 ">
+    <div class="auth-form-light frontend-order-area text-left p-5">
+      <form class="pt-3" action="{{ route('app.orders.order.process.update',$order->id) }}" method="POST"enctype="multipart/form-data">
+        @csrf
+        @method('PUT')
+        <div class="form-group row">
+          <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Product picture</label>
+          <div class="col-sm-9">
+            <input type="file" class="form-control-file dropify" id="exampleFormControlFile1" name="image" data-default-file="{{ Storage::url($order->image) }}">
           </div>
         </div>
+        <div class="form-group row">
+          <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Customer address</label>
+          <div class="col-sm-9">
+            <input class="form-control" type="text" name="address" value="{{ $order->address }}" placeholder="address" />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="exampleInputMobile" class="col-sm-3 col-form-label">Note</label>
+          <div class="col-sm-9">
+            <input class="form-control" type="text" name="note" value="{{ $order->note }}" placeholder="note" />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="exampleInputMobile" class="col-sm-3 col-form-label">Price</label>
+          <div class="col-sm-9">
+            <input class="form-control" type="text" name="price" value="{{ $order->price }}" placeholder="price" />
+          </div>
+      </div>
+        <div>
+          <p class="badge badge-secondary" id="triger">show more<i class="mdi mdi-chevron-down"></i></p>
+        </div>
+        <fieldset id='show-more' class="d-none">
+        <div class="form-group row">
+          <label for="exampleInputPassword2" class="col-sm-3 col-form-label">Status</label>
+          <div class="col-sm-9">
+            <select class="form-control @error('status')is-invalid @enderror" name="status_id"  >
+              @foreach($statuses as $key => $status) 
+              <option value="{{ $status->id }}" @isset($order) @if($order->status->slug==$status->slug)selected @endif @endif>{{ $status->title }}</option>
+              @endforeach
+              </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label  class="col-sm-3 col-form-label">Customer name</label>
+          <div class="col-sm-9">
+            <input class="form-control" type="text" name="customername" value="{{ $order->customername }}" placeholder="Customer name" />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label  class="col-sm-3 col-form-label">Customer phone</label>
+          <div class="col-sm-9">
+            <input class="form-control"  type="text" name="customerphone" value="{{ $order->customerphone }}" placeholder="Customer phone" data-inputmask-alias="(+880) 9999999999"/>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label  class="col-sm-3 col-form-label">Product name</label>
+          <div class="col-sm-9">
+            <input class="form-control" type="text" name="productname" value="{{ $order->productname }}" placeholder="Product name" />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label  class="col-sm-3 col-form-label">Product quantity</label>
+          <div class="col-sm-9">
+            <input class="form-control" type="text" name="quantity" value="{{ $order->quantity }}" placeholder="quantity" />
+          </div>
+        </div>
+        </fieldset>
+        <div class="form-group form-control-arrow-action">
+          <div class="row justify-content-between px-4">
+              @isset($previous_order)
+                  <a id="previousOrder" class="btn btn-gradient-info"
+                     href="{{ route('app.orders.order.process',$previous_order->id) }}">
+                      <i class="mdi mdi-chevron-left"></i>
+                  </a>
+              @else
+                  <button disabled class="btn btn-secondary">
+                      <i class="mdi mdi-chevron-left"></i>
+                  </button>
+              @endisset
+              <button type="submit" class="btn btn-gradient-primary mr-2">Update</button>
+              @isset($next_order)
+                  <a id="oderNext" class="btn btn-gradient-info"
+                     href="{{ route('app.orders.order.process',$next_order->id) }}">
+                      <i class="mdi mdi-chevron-right"></i>
+                  </a>
+              @else
+                  <button disabled class="btn btn-secondary">
+                      <i class="mdi mdi-chevron-right"></i>
+                  </button>
+              @endisset
+          </div>
+      </div>
+      </form>              
+      </div>
     </div>
+  </div>
+
 @endsection
 
 @push('custom-scripts')

@@ -40,8 +40,7 @@ class Order extends Model
     public function setImageAttribute($value){
         if($value->hasFile('image')){
             $this->attributes['image']=$value->image->store('products');
-        }else
-        $this->attributes['image']=null;
+        }
     }
 
 

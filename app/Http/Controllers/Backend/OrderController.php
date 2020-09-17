@@ -199,10 +199,15 @@ class OrderController extends Controller
         if (isset($id))
             $data['order'] = Order::checkAuth()->checkStatus()->latest('id')->findOrFail($id);
         else
-            $data['order'] = Order::checkAuth()->checkStatus()->latest('id')->firstOrFail();
+            $data['order'] = Order::checkAuth()->checkStatus()->latest('id')->first();
+            if($data['order']==null){
+                return redirect()->route('app.orders.index')->with('success','No more orders to process');
+            }
 
         $data['previous_order'] = Order::checkAuth()->checkStatus()->where('id', '<', $data['order']->id)->latest('id')->first();
         $data['next_order'] = Order::checkAuth()->checkStatus()->where('id', '>', $data['order']->id)->orderBy('id')->first();
+        
+        
         return view('backend.orders.process', $data);
     }
 
@@ -219,6 +224,11 @@ class OrderController extends Controller
             'quantity' => ['required', 'numeric'],
             'address' => ['required'],
         ]);
+        if($request->hasFile('image')){
+            $request->validate([
+                'image'    =>['required','mimes:jpeg,png,jpg','max:2048'],
+            ]);
+        }
         $order->update([
             'customername' => $request->customername,
             'customerphone' => $request->customerphone,
