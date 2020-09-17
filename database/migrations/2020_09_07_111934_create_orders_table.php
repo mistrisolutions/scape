@@ -28,6 +28,7 @@ class CreateOrdersTable extends Migration
             $table->unsignedBigInteger('status_id')->nullable(true);
             $table->unsignedBigInteger('shop_owner_id');
             $table->unsignedBigInteger('payment_method_id');
+            $table->boolean('available')->default(true);
             $table->timestamps();
             $table->foreign('status_id')->references('id')->on('statuses')->onDelete('cascade');
             $table->foreign('shop_owner_id')->references('id')->on('shop_owners')->onDelete('cascade');

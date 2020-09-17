@@ -62,11 +62,11 @@ class Order extends Model
     public function scopeCheckAuth( $query)
     {  // dd(auth()->user()->shopOwner);
           if(auth()->user()->isShopOwner()){
-            return $query->whereHas('ShopOwner', function($query){
+            return $query->where('available',true)->whereHas('ShopOwner', function($query){
                 $query->where('id',auth()->user()->shopOwner->id);
             });
         }else{
-            return $query->has('shopOwner');
+            return $query->where('available',true)->has('shopOwner');
         }     
     }
 

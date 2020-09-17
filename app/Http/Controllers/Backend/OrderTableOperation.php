@@ -10,6 +10,8 @@ use App\Models\Order;
 use App\Models\Status;
 use App\Models\ShopOwner;
 
+use PDF;
+
 class OrderTableOperation extends Controller
 {
    public function orderUpdate(Order $order){
@@ -80,4 +82,13 @@ class OrderTableOperation extends Controller
         
         return view('backend.orders.index',['orders'=>$orders]);
     }
+
+    public function pdfConverter(){
+        $data['orders'] = Order::checkAuth()->whereDay('created_at',Carbon::now()->day)->latest('id')->paginate(20);
+
+        $pdf = PDF::loadView('backend.orders.index', $data);
+        
+        return $pdf->download('orders.pdf');
+    }
+    
 }

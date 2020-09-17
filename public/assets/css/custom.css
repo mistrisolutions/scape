@@ -26,8 +26,17 @@
     width: 100%;
     border: none;
 }
-.drpdn-status .drpdn-status-colr-processing{
+.drpdn-status .drpdn-status-colr-pending{
     background-color: #fe7c96;
+    color: #fff;
+}
+.drpdn-status .drpdn-status-colr-processing{
+    background-color: #f8e57a;
+    color: #fff;
+}
+
+.drpdn-status .drpdn-status-colr-deliverd{
+    background-color: #41bd6a;
     color: #fff;
 }
 

@@ -57,7 +57,7 @@ Product Order
                     <div class="form-group row">
                         <label for="exampleInputMobile" class="col-sm-3 col-form-label">Quantity</label>
                         <div class="col-sm-9">
-                          <input type="number" name="quantity" value="{{ old('quantity') }}" class="form-control form-control-lg" required placeholder="Product Quality">
+                          <input type="number" name="quantity" value="{{ old('quantity') }}" class="form-control form-control-lg" placeholder="Product Quality">
                           @error('quantity')
                             {{ $message }}
                           @enderror

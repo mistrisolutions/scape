@@ -14,58 +14,34 @@
           <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="collapse" href="#dashboard" aria-expanded="false" aria-controls="general-pages">
+      <li class="nav-item {{ Request::routeIs('app.home') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('app.home') }}">
           <span class="menu-title">Dashboard</span>
-          <i class="menu-arrow"></i>
           <i class="mdi mdi-view-dashboard menu-icon"></i>
         </a>
-        <div class="collapse" id="dashboard">
-          <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="{{ route('app.home') }}">Dashboard</a></li>
-          </ul>
-        </div>
       </li>
       @can('view-any',App\Models\Order::class)
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="collapse" href="#orders" aria-expanded="false" aria-controls="general-pages">
-          <span class="menu-title">Orders</span>
-          <i class="menu-arrow"></i>
+      <li class="nav-item {{ Request::routeIs('app.orders.index') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('app.orders.index') }}">
+          <span class="menu-title">All orders</span>
           <i class="mdi mdi-view-list menu-icon"></i>
         </a>
-        <div class="collapse" id="orders">
-          <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="{{ route('app.orders.index') }}">All Orders</a></li>
-          </ul>
-        </div>
       </li>
       @endcan
       @can('view-any',App\Models\User::class)
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="collapse" href="#user" aria-expanded="false" aria-controls="general-pages">
+      <li class="nav-item {{ Request::routeIs('app.users.index') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('app.users.index') }}">
           <span class="menu-title">Users</span>
-          <i class="menu-arrow"></i>
           <i class="mdi mdi-account-multiple menu-icon"></i>
         </a>
-        <div class="collapse" id="user">
-          <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="{{ route('app.users.index') }}">Users List</a></li>
-          </ul>
-        </div>
       </li>
       @endcan
       @can('view-any',App\Models\ShopOwner::class)
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="collapse" href="#owner" aria-expanded="false" aria-controls="general-pages">
-          <span class="menu-title">Shop Owner</span>
-          <i class="menu-arrow"></i>
-          <i class="mdi mdi-settings-box menu-icon"></i>
+      <li class="nav-item {{ Request::routeIs('app.shoOwners.index') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('app.shopOwners.index') }}">
+          <span class="menu-title">Shop owners</span>
+          <i class="mdi mdi mdi-account-convert menu-icon"></i>
         </a>
-        <div class="collapse" id="owner">
-          <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="{{ route('app.shopOwners.index') }}">Shop Owners</a></li>
-          </ul>
-        </div>
       </li>
       @endcan
       @if(auth()->user()->isSuperAdmin())
@@ -73,7 +49,7 @@
         <a class="nav-link" data-toggle="collapse" href="#settings" aria-expanded="false" aria-controls="general-pages">
           <span class="menu-title">Settings</span>
           <i class="menu-arrow"></i>
-          <i class="mdi mdi-medical-bag menu-icon"></i>
+          <i class="mdi mdi-settings-box menu-icon"></i>
         </a>
         <div class="collapse" id="settings">
           <ul class="nav flex-column sub-menu">

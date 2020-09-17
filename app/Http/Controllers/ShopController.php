@@ -10,6 +10,8 @@ use App\Models\Order;
 
 use App\Models\Status;
 
+use App\Models\PaymentMethod;
+
 class ShopController extends Controller
 {
     /**
@@ -60,23 +62,22 @@ class ShopController extends Controller
     public function createOrder(Request $request ,$slug)
     {
         //
+
         $shopOwner=ShopOwner::where('url',$slug)->first();
         $request->validate([
             'customername'=>['required','max:20'],
             'customerphone'=>['required'],
             'productname'  =>['required','max:50'],
-            'payment_method_id'  =>['required'],
-            'quantity'     =>['required','numeric'],
             'address'      =>['required'],
         ]);
        $order=Order::create([
             'customername'=>$request->customername,
             'customerphone'=>$request->customerphone,
             'productname'  =>$request->productname,
-            'quantity'     =>$request->quantity,
+            'quantity'     =>(!empty($request->quantity))?$request->quantity:1,
             'address'      =>$request->address,
             'shop_owner_id'=>$shopOwner->id,
-            'payment_method_id'=>$shopOwner->payment_method_id,
+            'payment_method_id'=>(!empty($request->payment_method_id))?$request->payment_method_id:PaymentMethod::where('slug','on-delivery')->first()->id,
             'status_id'    =>Status::where('slug','pending')->first()->id,
             'orderid'      =>random_int ( 50000 , 10000000 ),
             'zone'         =>$shopOwner->id,

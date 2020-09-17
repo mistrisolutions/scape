@@ -26,7 +26,7 @@ class OrderController extends Controller
     public function index()
     {
         //
-        $data['orders'] = Order::checkAuth()->whereDay('created_at',Carbon::now()->day)->latest('id')->paginate(1);
+        $data['orders'] = Order::checkAuth()->whereDay('created_at',Carbon::now()->day)->latest('id')->paginate(2);
 
         return view('backend.orders.index', $data);
     }
@@ -88,6 +88,11 @@ class OrderController extends Controller
     public function show($id)
     {
         //
+        $order=Order::checkAuth()->find($id);
+        if(!$order){
+            return redirect()->route('app.orders.index')->with('error','No order found');
+        }
+        return view('backend.orders.show',['order'=>$order]);
     }
 
     /**
@@ -167,7 +172,9 @@ class OrderController extends Controller
             return redirect()->route('app.orders.index')->with('error','No order found');
         }
         $this->authorize('delete', $order);
-        $order->delete();
+        $order->update([
+            'available'=>0
+        ]);
 
         return redirect()->route('app.orders.index')
             ->with('success', 'Order Deleted');
