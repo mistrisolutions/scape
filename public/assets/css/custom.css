@@ -76,10 +76,10 @@
 .shop-owner-table .custom-select{
     width: 55px !important;
 }
-.form-con-area{
+/* .form-con-area{
     height: 600px;
     overflow-y: scroll;
-}
+} */
 .profile-info{
     width: 400px;
     margin: auto;

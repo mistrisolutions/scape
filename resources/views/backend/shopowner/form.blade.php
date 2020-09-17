@@ -32,7 +32,7 @@
                     <input type="email" name="email" class="form-control @error('email')) is-invalid  @enderror "  value="@isset($owner){{ $owner->user->email }} @else {{ old('email') }} @endif" id="exampleInputEmail3" placeholder="Email">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="exampleInputPassword4">Company name</label>
+                  <label for="exampleInputPassword4">Shop name</label>
                   <input type="text" name="company_name" class="form-control" id="exampleInputPassword4"value="@isset($owner){{ $owner->company_name }} @else {{ old('company_name') }} @endif"  placeholder="Company name">
                 </div>
               </div>

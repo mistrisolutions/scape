@@ -18,6 +18,8 @@ use App\Models\Role;
 
 use App\Models\Profile;
 
+use App\Models\Notification;
+
 class UserController extends Controller
 {
     /**
@@ -86,7 +88,12 @@ class UserController extends Controller
             'avatar'    =>$request->avatar,
         ]);
 
-        return redirect()->route('app.users.index');
+        Notification::create([
+            'type'=>'profile',
+            'message'=>''.$user->name.' User successfully created',
+            'user_id'=>auth()->user()->id,
+        ]);
+        return redirect()->route('app.users.index')->with('success','User created');
     }
 
     /**
@@ -157,6 +164,12 @@ class UserController extends Controller
         $user->update($attributes);
         $user->profile->update($profile);
 
+        Notification::create([
+            'type'=>'profile',
+            'message'=>''.$user->name.'User successfully updated',
+            'user_id'=>auth()->user()->id,
+        ]);
+
         return redirect()->route('app.users.index')->with('success','User updated successfully');
         
     }
@@ -170,6 +183,11 @@ class UserController extends Controller
     public function destroy(User $user){
         $user->delete();
 
+        Notification::create([
+            'type'=>'profile',
+            'message'=>''.$user->name.'User successfully Deleted',
+            'user_id'=>auth()->user()->id,
+        ]);
         return redirect()->route('app.users.index')->with('success','User deleted');
     }
 }

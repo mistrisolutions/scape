@@ -7,88 +7,83 @@
     <link rel="stylesheet" href="{{ asset('assets/vendors/x-editable/bootstrap-editable.css') }}">
 @endpush
 
-@section('header-title', 'Order process')
+@section('header-title')
+order id : #{{ $order->id }}
+@endsection
 @section('content')
     <div class="row">
         <div class="col-12 grid-margin stretch-card">
           <div class="card">
             <div class="card-body">
               <div class="template-demo">
-                <form id="editable-form" class="editable-form">
+                
+                <form id="editable-form" action="{{ route('app.orders.order.process.update',$order->id) }}" class="editable-form" enctype="multipart/form-data" method="POST">
+                  @csrf
+                  @method('PUT')
                   <div class="form-con-area">
                   <div class="form-group row">
-                    <label class="col-6 col-lg-4 col-form-label">Order id</label>
+                    <label class="col-6 col-lg-4 col-form-label">Product picture</label>
                     <div class="col-6 col-lg-8 d-flex align-items-center">
-                      <a href="#" id="orderid" data-type="text" data-pk="1">#{{ $order->orderid }}</a>
+                      <input type="file" class="form-control-file dropify" id="exampleFormControlFile1" name="logo" data-default-file="{{ Storage::url($order->image) }}">
                     </div>
                   </div>
+                  <div class="form-group row">
+                    <label class="col-6 col-lg-4 col-form-label">Cusetomer address</label>
+                    <div class="col-6 col-lg-8 d-flex align-items-center">
+                      <input class="form-control" type="text" name="address" value="{{ $order->address }}" placeholder="address" />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-6 col-lg-4 col-form-label">Note</label>
+                    <div class="col-6 col-lg-8 d-flex align-items-center">
+                      <input class="form-control" type="text" name="note" value="{{ $order->note }}" placeholder="note" />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-6 col-lg-4 col-form-label">Price</label>
+                    <div class="col-6 col-lg-8 d-flex align-items-center">
+                      <input class="form-control" type="text" name="price" value="{{ $order->price }}" placeholder="price" />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-6 col-lg-4 col-form-label">Status</label>
+                    <div class="col-6 col-lg-8 d-flex align-items-center">
+                      <select class="form-control @error('status')is-invalid @enderror" name="status_id"  >
+                        @foreach($statuses as $key => $status) 
+                        <option value="{{ $status->id }}" @isset($order) @if($order->status->slug==$status->slug)selected @endif @endif>{{ $status->title }}</option>
+                        @endforeach
+                        </select>
+                    </div>
+                  </div>
+                  <fieldset id='show-more' class="d-none">
                   <div class="form-group row">
                     <label class="col-6 col-lg-4 col-form-label">Customer name</label>
                     <div class="col-6 col-lg-8 d-flex align-items-center">
-                      <a href="#" id="customername" data-type="text" data-pk="1" data-placement="right"  data-title="Customer name">{{ $order->customername }}</a>
+                      <input class="form-control" type="text" name="customername" value="{{ $order->customername }}" placeholder="Customer name" />
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label class="col-6 col-lg-4 col-form-label">Customer phone number</label>
+                    <label class="col-6 col-lg-4 col-form-label">Customer Phone</label>
                     <div class="col-6 col-lg-8 d-flex align-items-center">
-                      <a href="#" id="sex" data-type="select" data-pk="1" data-value="" data-title="Select sex">not selected</a>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-6 col-lg-4 col-form-label">Product name</label>
-                    <div class="col-6 col-lg-8 d-flex align-items-center">
-                      <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">15/05/1984</a>
+                      <input class="form-control"  type="text" name="customerphone" value="{{ $order->customerphone }}" placeholder="Customer phone" />
                     </div>
                   </div>
                   <div class="form-group row">
                     <label class="col-6 col-lg-4 col-form-label">Product name</label>
                     <div class="col-6 col-lg-8 d-flex align-items-center">
-                      <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">15/05/1984</a>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-6 col-lg-4 col-form-label">Product name</label>
-                    <div class="col-6 col-lg-8 d-flex align-items-center">
-                      <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">15/05/1984</a>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-6 col-lg-4 col-form-label">Product name</label>
-                    <div class="col-6 col-lg-8 d-flex align-items-center">
-                      <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">15/05/1984</a>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-6 col-lg-4 col-form-label">Product name</label>
-                    <div class="col-6 col-lg-8 d-flex align-items-center">
-                      <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">15/05/1984</a>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-6 col-lg-4 col-form-label">Product name</label>
-                    <div class="col-6 col-lg-8 d-flex align-items-center">
-                      <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">15/05/1984</a>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-6 col-lg-4 col-form-label">Product name</label>
-                    <div class="col-6 col-lg-8 d-flex align-items-center">
-                      <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">15/05/1984</a>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-6 col-lg-4 col-form-label">Product name</label>
-                    <div class="col-6 col-lg-8 d-flex align-items-center">
-                      <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">15/05/1984</a>
+                      <input class="form-control" type="text" name="productname" value="{{ $order->productname }}" placeholder="Product name" />
                     </div>
                   </div>
                   <div class="form-group row">
                     <label class="col-6 col-lg-4 col-form-label">Product quantity</label>
                     <div class="col-6 col-lg-8 d-flex align-items-center">
-                      <a href="#" id="comments" data-type="textarea" data-pk="1" data-placeholder="Your comments here..." data-title="Enter comments">awesome user!</a>
+                      <input class="form-control" type="text" name="quantity" value="{{ $order->quantity }}" placeholder="quantity" />
                     </div>
                   </div>
-                  </div>
+                </fieldset>
+                <div>
+                  <p class="" id="triger">show more</p>
+                </div>
                   <div class="form-group form-control-arrow-action">
                     <div class="row justify-content-between px-4">
                         @isset($previous_order)
@@ -137,6 +132,15 @@
                 document.getElementById("oderNext").click();
             }
         });
+    </script>
+    <script>
+      const triger = document.getElementById("triger");
+      const showFields = document.getElementById("show-more");
+      triger.addEventListener('click',function(){
+        triger.style.display='none';
+        showFields.classList.remove("d-none");
+      });
+      
     </script>
     <script src="{{ asset('assets/vendors/x-editable/bootstrap-editable.min.js') }}"></script>
     <script src="{{ asset('assets/js/x-editable.js') }}"></script>

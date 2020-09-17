@@ -13,55 +13,55 @@
                   <div class="form-group row">
                     <label class="col-6 col-lg-4 col-form-label">Order id</label>
                     <div class="col-6 col-lg-8 d-flex align-items-center">
-                      <a href="#" id="orderid" data-type="text" data-pk="1">#{{ $order->orderid }}</a>
+                      <a class="text-primary" id="orderid" data-type="text" data-pk="1">#{{ $order->orderid }}</a>
                     </div>
                   </div>
                   <div class="form-group row">
                     <label class="col-6 col-lg-4 col-form-label">Status</label>
                     <div class="col-6 col-lg-8 d-flex align-items-center">
-                      <a href="#" id="orderid" data-type="text" data-pk="1">{{ $order->status->title }}</a>
+                      <a class="text-primary"  id="orderid" data-type="text" data-pk="1">{{ $order->status->title }}</a>
                     </div>
                   </div>
                   <div class="form-group row">
                     <label class="col-6 col-lg-4 col-form-label">Customer name</label>
                     <div class="col-6 col-lg-8 d-flex align-items-center">
-                      <a href="#" id="customername" data-type="text" data-pk="1" data-placement="right"  data-title="Customer name">{{ $order->customername }}</a>
+                      <a class="text-primary"  id="customername" data-type="text" data-pk="1" data-placement="right"  data-title="Customer name">{{ $order->customername }}</a>
                     </div>
                   </div>
                   <div class="form-group row">
                     <label class="col-6 col-lg-4 col-form-label">Customer phone number</label>
                     <div class="col-6 col-lg-8 d-flex align-items-center">
-                        <a href="#" id="customername" data-type="text" data-pk="1" data-placement="right"  data-title="Customer name">{{ $order->customerphone }}</a>
+                        <a class="text-primary"  id="customername" data-type="text" data-pk="1" data-placement="right"  data-title="Customer name">{{ $order->customerphone }}</a>
                     </div>
                   </div>
                   <div class="form-group row">
                     <label class="col-6 col-lg-4 col-form-label">Product name</label>
                     <div class="col-6 col-lg-8 d-flex align-items-center">
-                        <a href="#" id="customername" data-type="text" data-pk="1" data-placement="right"  data-title="Customer name">{{ $order->productname }}</a>
+                        <a class="text-primary"  id="customername" data-type="text" data-pk="1" data-placement="right"  data-title="Customer name">{{ $order->productname }}</a>
                     </div>
                   </div>
                   <div class="form-group row">
                     <label class="col-6 col-lg-4 col-form-label">Product quantity</label>
                     <div class="col-6 col-lg-8 d-flex align-items-center">
-                        <a href="#" id="customername" data-type="text" data-pk="1" data-placement="right"  data-title="Customer name">{{ $order->quantity }}</a>
+                        <a class="text-primary"  id="customername" data-type="text" data-pk="1" data-placement="right"  data-title="Customer name">{{ $order->quantity }}</a>
                     </div>
                   </div>
                   <div class="form-group row">
                     <label class="col-6 col-lg-4 col-form-label">Product Price</label>
                     <div class="col-6 col-lg-8 d-flex align-items-center">
-                        <a href="#" id="customername" data-type="text" data-pk="1" data-placement="right"  data-title="Customer name">{{ $order->price }}</a>
+                        <a class="text-primary"  id="customername" data-type="text" data-pk="1" data-placement="right"  data-title="Customer name">{{ $order->price }}</a>
                     </div>
                   </div>
                   <div class="form-group row">
                     <label class="col-6 col-lg-4 col-form-label">Customer address</label>
                     <div class="col-6 col-lg-8 d-flex align-items-center">
-                        <a href="#" id="customername" data-type="text" data-pk="1" data-placement="right"  data-title="Customer name">{{ $order->address }}</a>
+                        <a class="text-primary"  id="customername" data-type="text" data-pk="1" data-placement="right"  data-title="Customer name">{{ $order->address }}</a>
                     </div>
                   </div>
                   <div class="form-group row">
                     <label class="col-6 col-lg-4 col-form-label">Note</label>
                     <div class="col-6 col-lg-8 d-flex align-items-center">
-                        <a href="#" id="customername" data-type="text" data-pk="1" data-placement="right"  data-title="Customer name">{{ $order->note }}</a>
+                        <a class="text-primary"  id="customername" data-type="text" data-pk="1" data-placement="right"  data-title="Customer name">{{ $order->note }}</a>
                     </div>
                   </div>
                 </form>

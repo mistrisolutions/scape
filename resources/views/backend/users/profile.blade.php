@@ -7,7 +7,7 @@
         <div class="row">
         <div class="col-md-12">
             <div class="profile">
-            <img src="{{ asset('assets/images/faces/face1.jpg') }}" alt="">
+            <img src="{{ Storage::url($user->profile->avatar) }}" alt="">
             </div>
         </div>
         <div class="col-md-12">
@@ -17,7 +17,7 @@
                   <h4>Name</h4>
                 </div>
                 <div class="col-6">
-                  <p>Shuvo Dewan</p>
+                  <p>{{ $user->name }}</p>
                 </div>
               </div>
               <div class="row mb-2">
@@ -25,7 +25,7 @@
                   <h4>Phone Number</h4>
                 </div>
                 <div class="col-6">
-                  <p>345678900</p>
+                  <p>{{ $user->profile->phone }}</p>
                 </div>
               </div>
               <div class="row mb-2">
@@ -33,7 +33,7 @@
                   <h4>Email address</h4>
                 </div>
                 <div class="col-6">
-                  <p>email@mail.com</p>
+                  <p>{{ $user->email }}</p>
                 </div>
               </div>
               <div class="row mb-2">
@@ -41,7 +41,7 @@
                   <h4>Gender</h4>
                 </div>
                 <div class="col-6">
-                  <p>Male</p>
+                  <p>{{ $user->profile->gender }}</p>
                 </div>
               </div>
               <div class="row mb-2">
@@ -49,7 +49,7 @@
                   <h4>Role</h4>
                 </div>
                 <div class="col-6">
-                  <p class="text-info">admin</p>
+                  <p class="text-info">{{ $user->role->title }}</p>
                 </div>
               </div>
               <div class="row mb-2">
@@ -57,14 +57,14 @@
                   <h4>Address</h4>
                 </div>
                 <div class="col-6">
-                  <p>7584/a1 Panthapath, Dhanmondi</p>
+                  <p>{{ $user->profile->address }}</p>
                 </div>
               </div>
             
             </div>
         </div>
         <div class="col-md-12">
-            <button type="button" class="btn btn-sm btn-success">Edit Profile</button>
+           <a href="{{ route('app.users.user.edit',$user->id) }}"> <button type="button" class="btn btn-sm btn-success">Edit profile</button>
         </div>
         </div>
         </div>

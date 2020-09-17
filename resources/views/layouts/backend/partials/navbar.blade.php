@@ -23,42 +23,23 @@
         <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
           <h6 class="p-3 mb-0">Notifications</h6>
           <div class="dropdown-divider"></div>
+          @forelse($notifications as $key => $notification)
           <a class="dropdown-item preview-item">
             <div class="preview-thumbnail">
               <div class="preview-icon bg-success">
-                <i class="mdi mdi-calendar"></i>
+                <i class="mdi @if($notification->type=='profile')mdi mdi-account @elseif($notification->type=='order')mdi-view-list @endif"></i>
               </div>
             </div>
             <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
-              <h6 class="preview-subject font-weight-normal mb-1">Event today</h6>
-              <p class="text-gray ellipsis mb-0"> Just a reminder that you have an event today </p>
+              <h6 class="preview-subject font-weight-normal mb-1">{{ $notification->user->name }}-{{ $notification->created_at->diffForHumans() }}</h6>
+              <p class="text-gray ellipsis mb-0"> {{ $notification->message }} </p>
             </div>
           </a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item preview-item">
-            <div class="preview-thumbnail">
-              <div class="preview-icon bg-warning">
-                <i class="mdi mdi-settings"></i>
-              </div>
-            </div>
-            <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
-              <h6 class="preview-subject font-weight-normal mb-1">Settings</h6>
-              <p class="text-gray ellipsis mb-0"> Update dashboard </p>
-            </div>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item preview-item">
-            <div class="preview-thumbnail">
-              <div class="preview-icon bg-info">
-                <i class="mdi mdi-link-variant"></i>
-              </div>
-            </div>
-            <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
-              <h6 class="preview-subject font-weight-normal mb-1">Launch Admin</h6>
-              <p class="text-gray ellipsis mb-0"> New admin wow! </p>
-            </div>
-          </a>
-          <div class="dropdown-divider"></div>
+          @empty
+            <p class="">No notification found</p>
+          @endforelse
+
           <h6 class="p-3 mb-0 text-center">See all notifications</h6>
         </div>
       </li>
@@ -73,8 +54,9 @@
           </div>
         </a>
         <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
-          <a class="dropdown-item" href="#">
+          <a class="dropdown-item" href="{{ route('app.profile') }}">
             <i class="mdi mdi-cached mr-2 text-success"></i> Profile</a>
+
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
             <i class="mdi mdi-logout mr-2 text-primary"></i> Signout </a>

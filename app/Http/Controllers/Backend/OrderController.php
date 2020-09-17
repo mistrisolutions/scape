@@ -26,7 +26,7 @@ class OrderController extends Controller
     public function index()
     {
         //
-        $data['orders'] = Order::checkAuth()->whereDay('created_at',Carbon::now()->day)->latest('id')->paginate(2);
+        $data['orders'] = Order::checkAuth()->whereDay('created_at',Carbon::now()->day)->latest('id')->paginate(5);
 
         return view('backend.orders.index', $data);
     }
@@ -204,5 +204,40 @@ class OrderController extends Controller
         $data['previous_order'] = Order::checkAuth()->checkStatus()->where('id', '<', $data['order']->id)->latest('id')->first();
         $data['next_order'] = Order::checkAuth()->checkStatus()->where('id', '>', $data['order']->id)->orderBy('id')->first();
         return view('backend.orders.process', $data);
+    }
+
+
+    public function processUpdate(Request $request , $id){
+        $order=Order::checkAuth()->find($id);
+        if(!$order){
+            return redirect()->route('app.orders.index')->with('error','No order found');
+        }
+        $request->validate([
+            'customername' => ['required', 'max:20'],
+            'customerphone' => ['required'],
+            'productname' => ['required', 'max:50'],
+            'quantity' => ['required', 'numeric'],
+            'address' => ['required'],
+        ]);
+        $order->update([
+            'customername' => $request->customername,
+            'customerphone' => $request->customerphone,
+            'productname' => $request->productname,
+            'quantity' => $request->quantity,
+            'price' => $request->price,
+            'address' => $request->address,
+            'image'=>$request,
+            'status_id' => $request->status_id,
+            'note' => $request->note,
+        ]);
+
+        if($order->status->slug=='deliverd'){
+            return redirect()->route('app.orders.order.process')
+            ->with('success', 'Order Updated');
+        }else{
+            return redirect()->route('app.orders.order.process',$order->id)
+            ->with('success', 'Order Updated');
+        }
+        
     }
 }

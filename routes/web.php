@@ -44,6 +44,8 @@ Auth::routes();
 Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' => ['auth']],function(){
     //home
     Route::get('/dashboard', 'HomeController@index')->name('home');
+    Route::get('/profile', 'HomeController@profile')->name('profile');
+    Route::put('/profile/update/', 'HomeController@updateProfile')->name('profile.update');
     //settings
     Route::group(['as'=>'settings.','prefix'=>'settings','middleware'=>['settings']],function(){
         //Roles
@@ -117,6 +119,7 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
             Route::get('/update/{id}','OrderController@edit')->name('order.edit');
             Route::put('/update/{id}','OrderController@update')->name('order.update');
             Route::get('/process/{id?}','OrderController@process')->name('order.process')->middleware('can:create,App\Models\Order');
+            Route::put('/process/{id}','OrderController@processUpdate')->name('order.process.update')->middleware('can:create,App\Models\Order');
             Route::get('/delete/{id}','OrderController@destroy')->name('order.destroy');
 
         });
