@@ -51,6 +51,8 @@ class Order extends Model
 
                 $this->attributes['shop_owner_id']=auth()->user()->shopOwner->id;
     
+            }else{
+                $this->attributes['shop_owner_id']=$value;
             }
         }else
 
