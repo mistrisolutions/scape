@@ -10,7 +10,7 @@ Product Order
           <div class="content-wrapper d-flex align-items-center auth">
             <div class="row flex-grow">
               <div class="col-lg-6 col-md-10 form-con mx-auto">
-                <div class="auth-form-light text-left p-5">
+                <div class="auth-form-light frontend-order-area text-left p-5">
                   <h4>Make Order</h4>
                   <form class="pt-3" action="{{ route('shop.order.store',$shop->url)}}" method="POST">
                     @csrf

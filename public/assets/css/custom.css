@@ -137,6 +137,7 @@
         display: none;
     }
 }
+
 @media (max-width: 493px) { 
     .navbar-menu-wrapper{
         margin: auto;
@@ -168,5 +169,30 @@
     .user-profile-area{
         width: 425px;
         overflow-x: scroll;
+    }
+ }
+
+ @media (max-height: 800px) {
+    .frontend-order-area{
+        padding: 20px !important;
+    }
+    .frontend-order-area .form-group {
+        margin-bottom: 0px !important;
+    }
+    .frontend-order-area .form-group label{
+        padding-bottom: 0px !important;
+    }
+    .frontend-order-area .form-group input{
+        padding: 10px !important;
+    }
+ }
+ @media (max-height: 600px) {
+    
+    .frontend-order-area form{
+        padding-top: 0px !important;
+    }
+    .frontend-order-area .form-group input{
+        height: 40px !important;
+        padding: 5px !important;
     }
  }
