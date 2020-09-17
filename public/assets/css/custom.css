@@ -85,7 +85,9 @@
     margin: auto;
     padding-bottom: 40px;
 }
-
+.product-process .dropify-wrapper{
+    height: 100px !important;
+}
 
 
 /* 

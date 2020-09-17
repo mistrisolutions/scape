@@ -51,7 +51,7 @@ Product Order
                       </div>
                     </div>
                     <div>
-                      <p class="" id="triger">show more</p>
+                      <p class="badge badge-success" id="triger">show more<i class="mdi mdi-chevron-down"></i></p>
                     </div>
                     <fieldset id='show-more' class="d-none">
                     <div class="form-group row">
@@ -87,7 +87,7 @@ Product Order
                       </div>
                     </div>
                     </fieldset>
-                    <button type="submit" class="btn btn-gradient-primary mr-2">Submit</button>
+                    <button type="submit" class="btn btn-gradient-primary btn-sm mr-2">Submit</button>
                   </form>              
                   </div>
                 </div>

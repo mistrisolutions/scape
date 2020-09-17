@@ -12,7 +12,7 @@ order id : #{{ $order->id }}
 @endsection
 @section('content')
     <div class="row">
-        <div class="col-12 grid-margin stretch-card">
+        <div class="col-12 grid-margin stretch-card product-process">
           <div class="card">
             <div class="card-body">
               <div class="template-demo">
@@ -22,32 +22,32 @@ order id : #{{ $order->id }}
                   @method('PUT')
                   <div class="form-con-area">
                   <div class="form-group row">
-                    <label class="col-6 col-lg-4 col-form-label">Product picture</label>
-                    <div class="col-6 col-lg-8 d-flex align-items-center">
+                    <label class="col-6 col-lg-2 col-form-label">Product picture</label>
+                    <div class="col-6 col-lg-10 d-flex align-items-center">
                       <input type="file" class="form-control-file dropify" id="exampleFormControlFile1" name="logo" data-default-file="{{ Storage::url($order->image) }}">
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label class="col-6 col-lg-4 col-form-label">Cusetomer address</label>
-                    <div class="col-6 col-lg-8 d-flex align-items-center">
+                    <label class="col-6 col-lg-2 col-form-label">Cusetomer address</label>
+                    <div class="col-6 col-lg-10 d-flex align-items-center">
                       <input class="form-control" type="text" name="address" value="{{ $order->address }}" placeholder="address" />
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label class="col-6 col-lg-4 col-form-label">Note</label>
-                    <div class="col-6 col-lg-8 d-flex align-items-center">
+                    <label class="col-6 col-lg-2 col-form-label">Note</label>
+                    <div class="col-6 col-lg-10 d-flex align-items-center">
                       <input class="form-control" type="text" name="note" value="{{ $order->note }}" placeholder="note" />
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label class="col-6 col-lg-4 col-form-label">Price</label>
-                    <div class="col-6 col-lg-8 d-flex align-items-center">
+                    <label class="col-6 col-lg-2 col-form-label">Price</label>
+                    <div class="col-6 col-lg-10 d-flex align-items-center">
                       <input class="form-control" type="text" name="price" value="{{ $order->price }}" placeholder="price" />
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label class="col-6 col-lg-4 col-form-label">Status</label>
-                    <div class="col-6 col-lg-8 d-flex align-items-center">
+                    <label class="col-6 col-lg-2 col-form-label">Status</label>
+                    <div class="col-6 col-lg-10 d-flex align-items-center">
                       <select class="form-control @error('status')is-invalid @enderror" name="status_id"  >
                         @foreach($statuses as $key => $status) 
                         <option value="{{ $status->id }}" @isset($order) @if($order->status->slug==$status->slug)selected @endif @endif>{{ $status->title }}</option>
@@ -57,32 +57,32 @@ order id : #{{ $order->id }}
                   </div>
                   <fieldset id='show-more' class="d-none">
                   <div class="form-group row">
-                    <label class="col-6 col-lg-4 col-form-label">Customer name</label>
-                    <div class="col-6 col-lg-8 d-flex align-items-center">
+                    <label class="col-6 col-lg-2 col-form-label">Customer name</label>
+                    <div class="col-6 col-lg-10 d-flex align-items-center">
                       <input class="form-control" type="text" name="customername" value="{{ $order->customername }}" placeholder="Customer name" />
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label class="col-6 col-lg-4 col-form-label">Customer Phone</label>
-                    <div class="col-6 col-lg-8 d-flex align-items-center">
+                    <label class="col-6 col-lg-2 col-form-label">Customer Phone</label>
+                    <div class="col-6 col-lg-10 d-flex align-items-center">
                       <input class="form-control"  type="text" name="customerphone" value="{{ $order->customerphone }}" placeholder="Customer phone" />
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label class="col-6 col-lg-4 col-form-label">Product name</label>
-                    <div class="col-6 col-lg-8 d-flex align-items-center">
+                    <label class="col-6 col-lg-2 col-form-label">Product name</label>
+                    <div class="col-6 col-lg-10 d-flex align-items-center">
                       <input class="form-control" type="text" name="productname" value="{{ $order->productname }}" placeholder="Product name" />
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label class="col-6 col-lg-4 col-form-label">Product quantity</label>
-                    <div class="col-6 col-lg-8 d-flex align-items-center">
+                    <label class="col-6 col-lg-2 col-form-label">Product quantity</label>
+                    <div class="col-6 col-lg-10 d-flex align-items-center">
                       <input class="form-control" type="text" name="quantity" value="{{ $order->quantity }}" placeholder="quantity" />
                     </div>
                   </div>
                 </fieldset>
                 <div>
-                  <p class="" id="triger">show more</p>
+                  <p class="badge badge-success" id="triger">show more<i class="mdi mdi-chevron-down"></i></p>
                 </div>
                   <div class="form-group form-control-arrow-action">
                     <div class="row justify-content-between px-4">
