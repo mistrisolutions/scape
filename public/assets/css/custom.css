@@ -3,9 +3,10 @@
     color: #fff !important;
 }
 .user-profile-area .profile{
-    margin: 50px auto;
+    margin:0px auto 50px;
 }
 .user-profile-area .profile img{
+    width: 200px;
     display: block;
     margin: auto;
 }
@@ -75,8 +76,15 @@
 .shop-owner-table .custom-select{
     width: 55px !important;
 }
-
-
+.form-con-area{
+    height: 600px;
+    overflow-y: scroll;
+}
+.profile-info{
+    width: 400px;
+    margin: auto;
+    padding-bottom: 40px;
+}
 
 
 
@@ -149,8 +157,24 @@
         margin-top: 50px;
     }
  }
-
-@media (max-width: 400px) { 
+ @media (max-width: 420px){
+    .profile-info{
+        width: 390px;
+    }
+ }
+@media (max-width: 400px) {
+    .user-profile-area .profile img{
+        width: 100px;
+    }
+    .profile-info{
+        width: 320px;
+        margin: 0px !important;
+        padding-bottom: 10px;
+    }
+    .profile-info h4{
+        font-size: 14px;
+        float: left;
+    } 
     .login-content-area .auth-form-light{
         padding: 15px !important;
     }
@@ -164,12 +188,9 @@
         text-align:center;
     }
     .user-profile-area .card{
-        padding: 0px !important;
+        padding: 10px !important;
     }
-    .user-profile-area{
-        width: 425px;
-        overflow-x: scroll;
-    }
+
  }
  @media (max-width: 350px){
     .navbar .navbar-brand-wrapper{
