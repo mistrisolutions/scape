@@ -15,6 +15,7 @@
             <div class="card-body">
               <div class="template-demo">
                 <form id="editable-form" class="editable-form">
+                  <div class="form-con-area">
                   <div class="form-group row">
                     <label class="col-6 col-lg-4 col-form-label">Order id</label>
                     <div class="col-6 col-lg-8 d-flex align-items-center">
@@ -40,10 +41,53 @@
                     </div>
                   </div>
                   <div class="form-group row">
+                    <label class="col-6 col-lg-4 col-form-label">Product name</label>
+                    <div class="col-6 col-lg-8 d-flex align-items-center">
+                      <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">15/05/1984</a>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-6 col-lg-4 col-form-label">Product name</label>
+                    <div class="col-6 col-lg-8 d-flex align-items-center">
+                      <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">15/05/1984</a>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-6 col-lg-4 col-form-label">Product name</label>
+                    <div class="col-6 col-lg-8 d-flex align-items-center">
+                      <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">15/05/1984</a>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-6 col-lg-4 col-form-label">Product name</label>
+                    <div class="col-6 col-lg-8 d-flex align-items-center">
+                      <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">15/05/1984</a>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-6 col-lg-4 col-form-label">Product name</label>
+                    <div class="col-6 col-lg-8 d-flex align-items-center">
+                      <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">15/05/1984</a>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-6 col-lg-4 col-form-label">Product name</label>
+                    <div class="col-6 col-lg-8 d-flex align-items-center">
+                      <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">15/05/1984</a>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-6 col-lg-4 col-form-label">Product name</label>
+                    <div class="col-6 col-lg-8 d-flex align-items-center">
+                      <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">15/05/1984</a>
+                    </div>
+                  </div>
+                  <div class="form-group row">
                     <label class="col-6 col-lg-4 col-form-label">Product quantity</label>
                     <div class="col-6 col-lg-8 d-flex align-items-center">
                       <a href="#" id="comments" data-type="textarea" data-pk="1" data-placeholder="Your comments here..." data-title="Enter comments">awesome user!</a>
                     </div>
+                  </div>
                   </div>
                   <div class="form-group form-control-arrow-action">
                     <div class="row justify-content-between px-4">
