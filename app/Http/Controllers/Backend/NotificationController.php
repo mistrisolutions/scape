@@ -18,7 +18,7 @@ class NotificationController extends Controller
     public function index()
     {
         //
-        $data['notifications']=Notification::checkAuth()->get();
+        $data['notifications']=Notification::checkAuth()->latest('id')->get();
         return view('backend.notifications.index',$data);
     }
 

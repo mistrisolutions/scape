@@ -12,6 +12,8 @@ use App\Models\Status;
 
 use App\Models\PaymentMethod;
 
+use App\Models\Notification;
+
 class ShopController extends Controller
 {
     /**
@@ -82,6 +84,12 @@ class ShopController extends Controller
             'orderid'      =>random_int ( 50000 , 10000000 ),
             'zone'         =>$shopOwner->id,
             'note'         =>$request->note,
+        ]);
+
+        Notification::create([
+            'type'=>'order',
+            'message'=>''.$order->orderid.' orderd by customer',
+            'user_id'=>$shopOwner->user->id,
         ]);
 
         
