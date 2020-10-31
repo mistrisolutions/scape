@@ -20,11 +20,7 @@ class Notification extends Model
 
     public function scopeCheckAuth( $query)
     {  // dd(auth()->user()->shopOwner);
-          if(auth()->user()->isShopOwner()){
-            return $query->where('user_id',auth()->user()->id);
-            
-        }else{
-            return $query->where('user_id','<',100000000);
-        }     
+
+            return $query->where('user_id','<',100000000);    
     }
 }

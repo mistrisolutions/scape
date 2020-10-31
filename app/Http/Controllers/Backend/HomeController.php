@@ -6,7 +6,6 @@ use App\http\Controllers\Controller;
 use Illuminate\Support\Carbon;
 
 use Illuminate\Http\Request;
-use App\Models\Order;
 use App\Models\Notification;
 use Illuminate\Validation\Rule;
 class HomeController extends Controller
@@ -28,21 +27,8 @@ class HomeController extends Controller
      */
     public function index()
     {   
-        $date=Carbon::now();
-        $order['total']=Order::checkAuth()->whereDay('created_at',$date->day)->count();
 
-        $order['pending']=Order::checkAuth()->whereHas('status',function($query){
-                        $query->where('slug','pending');
-                            })->whereDay('created_at',$date->day)->count();
-
-        $order['deliverd']=Order::checkAuth()->whereHas('status',function($query){
-            $query->where('slug','deliverd');
-                })->whereDay('created_at',$date->day)->count(); 
-
-        $order['cancelled']=Order::checkAuth()->whereHas('status',function($query){            
-            $query->where('slug','canceld');
-                })->whereDay('created_at',$date->day)->count();  
-        return view('backend.home.dashboard',['order'=>$order]);
+        return view('backend.home.dashboard');
     }
 
 
@@ -82,22 +68,6 @@ class HomeController extends Controller
        // dd($profile);
         $user->update($attributes);
         $user->profile->update($profile);
-
-        if(auth()->user()->isShopOwner()){
-            $request->validate([
-                'company_name'    =>['required'],
-            ]);
-            $shop['company_name']=$request->company_name;
-            $shop['url']=$request->company_name;
-
-            if($request->hasFile('logo')){
-                $request->validate([
-                    'logo'    =>['required','mimes:jpeg,png,jpg','max:2048'],
-                ]);
-                $shop['logo']=$request->logo;
-            }
-            $user->shopOwner->update($shop);
-        }
 
         Notification::create([
             'type'=>'profile',

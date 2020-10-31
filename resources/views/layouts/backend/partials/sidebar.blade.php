@@ -20,14 +20,6 @@
           <i class="mdi mdi-view-dashboard menu-icon"></i>
         </a>
       </li>
-      @can('view-any',App\Models\Order::class)
-      <li class="nav-item {{ Request::routeIs('app.orders.index') ? 'active' : '' }}">
-        <a class="nav-link" href="{{ route('app.orders.index') }}">
-          <span class="menu-title">All orders</span>
-          <i class="mdi mdi-view-list menu-icon"></i>
-        </a>
-      </li>
-      @endcan
       @can('view-any',App\Models\User::class)
       <li class="nav-item {{ Request::routeIs('app.users.index') ? 'active' : '' }}">
         <a class="nav-link" href="{{ route('app.users.index') }}">
@@ -36,14 +28,7 @@
         </a>
       </li>
       @endcan
-      @can('view-any',App\Models\ShopOwner::class)
-      <li class="nav-item {{ Request::routeIs('app.shoOwners.index') ? 'active' : '' }}">
-        <a class="nav-link" href="{{ route('app.shopOwners.index') }}">
-          <span class="menu-title">Shop owners</span>
-          <i class="mdi mdi mdi-account-convert menu-icon"></i>
-        </a>
-      </li>
-      @endcan
+
       @if(auth()->user()->isSuperAdmin())
       <li class="nav-item">
         <a class="nav-link" data-toggle="collapse" href="#settings" aria-expanded="false" aria-controls="general-pages">
@@ -54,9 +39,6 @@
         <div class="collapse" id="settings">
           <ul class="nav flex-column sub-menu">
             <li class="nav-item"> <a class="nav-link" href="{{ route('app.settings.role.index') }}"> User Roles </a></li>
-            <li class="nav-item"> <a class="nav-link" href="{{ route('app.settings.statuss.index') }}"> Status Type </a></li>
-            <li class="nav-item"> <a class="nav-link" href="{{ route('app.settings.paymentMethods.index') }}"> Payment Methods </a></li>
-            <li class="nav-item"> <a class="nav-link" href="{{ route('app.settings.zones.index') }}"> Zones</a></li>
           </ul>
         </div>
       </li>

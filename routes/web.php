@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::redirect('/','/login');
+Route::get('/',function(){
+    return view('frontend.home');
+});
 Route::get('/dlogin', function () {
     return view('dlogin');
 });
@@ -57,29 +59,7 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
         Route::put('roles/update/{role}','RoleController@update')->name('role.update');
         Route::get('roles/abilities/{role}','RoleController@show')->name('role.show');
         Route::delete('roles/delete/{role}','RoleController@destroy')->name('role.destroy');
-        //status type
-        Route::group(['as'=>'statuss.','prefix'=>'status'],function(){
-            Route::get('/','StatusController@index')->name('index');
-            Route::post('/create','StatusController@store')->name('status.store');
-            Route::put('/update/{status}','StatusController@update')->name('status.update');
-            Route::delete('/delete/{status}','StatusController@destroy')->name('status.destroy');
-        });
 
-        //payment method
-        Route::group(['as'=>'paymentMethods.','prefix'=>'paymentMethods'],function(){
-            Route::get('/','PaymentMethodController@index')->name('index');
-            Route::post('/create','PaymentMethodController@store')->name('method.store');
-            Route::put('/update/{method}','PaymentMethodController@update')->name('method.update');
-            Route::delete('/delete/{method}','PaymentMethodController@destroy')->name('method.destroy');
-        });
-
-        //Zone
-        Route::group(['as'=>'zones.','prefix'=>'zones'],function(){
-            Route::get('/','ZoneController@index')->name('index');
-            Route::post('/create','ZoneController@store')->name('zone.store');
-            Route::put('/update/{zone}','ZoneController@update')->name('zone.update');
-            Route::delete('/delete/{zone}','ZoneController@destroy')->name('zone.destroy');
-        });
 
     });
 
@@ -95,51 +75,4 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
         Route::delete('/delete/{user}','UserController@destroy')->name('user.destroy')->middleware('can:delete,user');;
     });
 
-
-     //shop Owner
-
-     Route::group(['as'=>'shopOwners.','prefix'=>'shopowners'],function(){
-        Route::get('/','ShopOwnerController@index')->name('index')->middleware('can:view-any,App\Models\ShopOwner');
-        Route::get('/create','ShopOwnerController@create')->name('owner.create')->middleware('can:create,App\Models\ShopOwner');
-        Route::post('/create','ShopOwnerController@store')->name('owner.store')->middleware('can:create,App\Models\ShopOwner');
-        Route::get('/profile/{owner}','ShopOwnerController@show')->name('owner.show')->middleware('can:view,owner');
-        Route::get('/update/{owner}','ShopOwnerController@edit')->name('owner.edit')->middleware('can:update,owner');
-        Route::put('/update/{owner}','ShopOwnerController@update')->name('owner.update')->middleware('can:update,owner');
-        Route::delete('/delete/{owner}','ShopOwnerController@destroy')->name('owner.destroy')->middleware('can:delete,owner');
-    });
-
-
-
-        //Order
-
-        Route::group(['as'=>'orders.','prefix'=>'orders'],function(){
-            Route::get('/','OrderController@index')->name('index')->middleware('can:view-any,App\Models\Order');
-            Route::get('/create','OrderController@create')->name('order.create')->middleware('can:create,App\Models\Order');
-            Route::post('/create','OrderController@store')->name('order.store')->middleware('can:create,App\Models\Order');
-            Route::get('/profile/{order}','OrderController@show')->name('order.show');
-            Route::get('/update/{id}','OrderController@edit')->name('order.edit');
-            Route::put('/update/{id}','OrderController@update')->name('order.update');
-            Route::get('/process/{id?}','OrderController@process')->name('order.process')->middleware('can:create,App\Models\Order');
-            Route::put('/process/{id}','OrderController@processUpdate')->name('order.process.update')->middleware('can:create,App\Models\Order');
-            Route::get('/delete/{id}','OrderController@destroy')->name('order.destroy');
-
-        });
-
-        //Order table operations
-        Route::group(['as'=>'operation.','prefix' => 'order'], function () {
-            Route::get('/update/{order}','OrderTableOperation@orderUpdate')->name('update')->middleware('can:create,App\Models\Order');
-            Route::get('/filter/','OrderTableOperation@filterBytime')->name('filter.time')->middleware('can:create,App\Models\Order');
-            Route::post('/update/','OrderTableOperation@statusChange')->name('multi.update')->middleware('can:create,App\Models\Order');
-            Route::post('/search/','OrderTableOperation@search')->name('order.search')->middleware('can:create,App\Models\Order');
-            Route::get('/pdf/','OrderTableOperation@pdfConverter')->name('order.pdf')->middleware('can:create,App\Models\Order');
-        });
-
-});
-
-//shop
-Route::group(['as'=>'shop.','prefix'=>'shop'],function(){
-    Route::get('/{url}','ShopController@index')->name('index');
-    Route::post('create/{url}','ShopController@createOrder')->name('order.store');
-    Route::get('order/tracking','ShopController@tracking')->name('order.tracking');
-    Route::get('confirmation/{order}','ShopController@confirmation')->name('order.confirmation');
 });
