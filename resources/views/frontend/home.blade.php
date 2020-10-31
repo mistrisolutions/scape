@@ -2,5 +2,5 @@
 
 
 @section('content')
-content
+<h1 class="primary">testttt</h1>
 @endsection
