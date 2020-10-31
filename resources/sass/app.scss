@@ -1,8 +1,39 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
 
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+
+@font-face {
+    font-family: 'Libel Suit';
+    src: url('./font/libel-suit-rg.ttf') format('ttf'),
+    url('./font/Libel\ Suit\ Regular.otf') format('otf');
+    
+}
+
+body {
+    font-family: 'Libel Suit', sans-serif;
+}
+
+#header .header-nav {
+   background-color: #000C20;
+}
+#header .navbar-brand img {
+   width: 180.03px !important;
+   height: 57.7px !important;
+}
+#header .navbar .nav-item {
+    margin-left: 30px !important;
+}
+#header .navbar .nav-item .nav-link {
+   font-family: Libel Suit;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 24px;
+   line-height: 29px;
+   color: #FFFDFD !important;
+}

@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@charset "UTF-8";
 
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
@@ -2160,6 +2160,11 @@ pre code {
 }
 
 .form-control:-ms-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+.form-control::-ms-input-placeholder {
   color: #6c757d;
   opacity: 1;
 }
@@ -10897,5 +10902,36 @@ a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+
+@font-face {
+  font-family: "Libel Suit";
+  src: url(/fonts/libel-suit-rg.ttf?167aa59b822998917cdb7b3f54880333) format("ttf"), url("/fonts/Libel Suit Regular.otf?477ce0b997727afd4093809a88c3ace5") format("otf");
+}
+
+body {
+  font-family: "Libel Suit", sans-serif;
+}
+
+#header .header-nav {
+  background-color: #000C20;
+}
+
+#header .navbar-brand img {
+  width: 180.03px !important;
+  height: 57.7px !important;
+}
+
+#header .navbar .nav-item {
+  margin-left: 30px !important;
+}
+
+#header .navbar .nav-item .nav-link {
+  font-family: Libel Suit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFDFD !important;
 }
 
