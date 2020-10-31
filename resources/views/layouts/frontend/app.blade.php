@@ -8,7 +8,7 @@
         @yield('title')
     </title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     @stack('css')
     <!-- Layout styles -->
    
