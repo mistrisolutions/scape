@@ -16,29 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',function(){
     return view('frontend.home');
 });
-Route::get('/dlogin', function () {
-    return view('dlogin');
-});
-Route::get('/order', function () {
-    return view('order');
-});
-
-Route::get('/process', function () {
-    return view('backend.orders.process');
-});
-
-Route::get('/ddesh', function () {
-    return view('ddesh');
-});
-Route::get('/dtable', function () {
-    return view('dtable');
-});
-Route::get('/ordertable', function () {
-    return view('ordertable');
-});
-Route::get('/details', function () {
-    return view('details');
-});
 
 Auth::routes();
 
