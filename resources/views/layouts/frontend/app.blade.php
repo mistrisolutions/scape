@@ -8,7 +8,7 @@
         @yield('title')
     </title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
     @stack('css')
     <!-- Layout styles -->
    
@@ -19,7 +19,7 @@
     @yield('content')
     <!-- container-scroller -->
     <!-- plugins:js -->
-    <script src="{{ asset('assets/vendors/js/vendor.bundle.base.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
     <!-- End custom js for this page -->
     @stack('custom-scripts')
   </body>
