@@ -22,9 +22,14 @@
 body {
     font-family: 'Libel Suit', sans-serif;
 }
+button{
+   border: none !important;
+   outline: none !important;
+}
 button:focus {
-    border: none !important;
-    outline: none !important;
+   border: none !important;
+   outline: none !important;
+   box-shadow: none !important;
 }
 /*
 *--------------------------------
@@ -173,11 +178,361 @@ ul.slick-dots li.slick-active button {
     margin-top: 50px;
 }
 .quote::before {
-   content: "\201C";
+   content: "\f10d";
+   font-family: 'Font Awesome 5 Pro';
    position: absolute;
-   top: -50px;
-   left: 8px;
-   font-size: 160px;
+   top: 0;
+   left: 20px;
+   font-size: 50px;
    color: #0C95D3;
    font-weight: 600;
+}
+
+/*
+*---------------------------
+*Features
+*---------------------------
+*/
+.project{
+   padding: 100px 0;
+}
+.project h1 {
+   font-family: Libel Suit;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 34px;
+   line-height: 40px;
+   letter-spacing: 0.1px;
+   color: #373F41;
+   margin-bottom: 60px;
+}
+.project .card{
+   margin-bottom: 10px;
+}
+.project .card .card-header {
+   height: 280px;
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+}
+.project .card .card-img-top {
+   height: 100%;
+   width: 100%;
+   transition: all 0.5s;
+   position: absolute;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   right: 0;
+}
+.project .card:hover .card-img-top {
+   transform: scale(1.2);
+}
+.project .card .card-body p {
+   font-family: Libel Suit;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 24px;
+   letter-spacing: 0.5px;
+   color: #373F41;
+   flex: none;
+   order: 0;
+   align-self: center;
+   flex-grow: 0;
+   margin: 0px 12px;
+   word-spacing: 2px;
+}
+
+.project .card .card-body span {
+   font-family: Lora;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 20px;
+   text-align: center;
+   letter-spacing: 0.2px;
+   color: #373F41;
+   flex: none;
+   order: 1;
+   align-self: center;
+   flex-grow: 0;
+   margin: 0px 12px;
+}
+.project .more button {
+   background: #3C64B1;
+   font-family: Libel Suit;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 18px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.3px;
+   color: #FFFFFF;
+}
+.project .more button:hover{
+   background-color: #3f6fcc;
+   transition: all .5s;
+}
+
+/*
+*---------------------------------
+*Happy-client
+*---------------------------------
+*/
+.happy-client{
+   height: 100%;
+   width: 100%;
+   background-color: #fff;
+   position: relative;
+}
+.happy-client .happy-bg {
+   background-image: url('/assets/images/home/happy-bg.png');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100%;
+   min-height: 80vh;
+   width: 100%;
+   position: relative;
+}
+.happy-client .happy-bg .overlay{
+   background-color: rgb(0 0 0 / 82%);
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+.happy-client .happy-bg .client-content h1{
+   font-family: Libel Suit;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 34px;
+   line-height: 40px;
+   text-align: center;
+   letter-spacing: 0.1px;
+   color: #FFFFFF !important;
+}
+.happy-client .happy-bg .client-content .review {
+   width: 70%;
+   margin: auto;
+   position: relative;
+}
+.happy-client .happy-bg .client-content .review:before{
+   content: "\F10E";
+   font-family: "Font Awesome 5 Pro";
+   position: absolute;
+   top: 15px;
+   left: 0;
+   font-size: 40px;
+   color: #0C95D3;
+   font-weight: 600;
+   right: 0;
+}
+.happy-client .happy-bg .client-content .review .single-review {
+   margin-top: 100px;
+}
+.happy-client .happy-bg .client-content .review .single-review h3{
+   font-family: Libel Suit;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 18px;
+   text-align: center;
+   letter-spacing: 0.005em;
+   color: #0C95D3;
+   margin-top: 40px;
+}
+.happy-client .happy-bg .client-content .review .single-review p{
+   font-family: Lora;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 30px;
+   letter-spacing: 0.3px;
+   color: #FFFFFF;
+   text-align: left !important;
+   overflow: hidden;
+}
+.happy-client .happy-bg .client-content .review .single-review span{
+   font-family: Libel Suit;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 18px;
+   text-align: center;
+   letter-spacing: 0.005em;
+   color: #fff;
+}
+button.slick-prev.slick-arrow,
+button.slick-next.slick-arrow{
+   font-size: 0px;
+   background: transparent;
+   color: #fff;
+   font-variant: none;
+   text-transform: none;
+   line-height: 0;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 30px;
+   width: 16px;
+}
+button.slick-prev.slick-arrow {
+   left: -100px;
+   background-image: url('/assets/images/home/left.svg');
+}
+button.slick-next.slick-arrow {
+   right: -100px;
+   background-image: url('/assets/images/home/right.svg');
+}
+
+/*
+*---------------------------------
+*Our-clients
+*---------------------------------
+*/
+.our-clients .clients.slick-initialized.slick-slider {
+   height: 100%;
+   width: 100%;
+}
+.our-clients .clients-logo {
+   margin: auto !important;
+   text-align: center !important;
+   justify-content: center !important;
+   display: flex !important;
+   align-items: center !important;
+   height: 200px !important;
+   outline: none !important;
+}
+.our-clients ul.slick-dots li button {
+   transform: scale(1);
+   background: rgba(134, 134, 134, 0.5) !important;
+   height: 11.5px !important;
+   width: 11.5px !important;
+}
+.our-clients ul.slick-dots li.slick-active button {
+   background: #0C95D3 !important;
+   height: 15.33px !important;
+   width: 15.33px !important;
+}
+
+/*
+*---------------------------------
+*Footer
+*---------------------------------
+*/
+.footer-bg{
+   height: 100%;
+   width: 100%;
+   background: #000C20;
+   padding: 50px 0;
+   color: #fff;
+}
+.footer-bg .company {
+   padding: 0 10px;
+}
+.footer-bg .services, 
+.footer-bg .contact,
+.footer-bg .social{
+   margin-top: 78px;
+}
+.footer-bg .services h4,
+.footer-bg .contact h4,
+.footer-bg .social h4{
+   font-family: Libel Suit;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 21px;
+   line-height: 24px;
+   letter-spacing: 0.1px;
+   color: #FFFFFF;
+   margin-bottom: 15px;
+}
+.footer-bg .company p {
+   font-family: Lora;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 17px;
+   letter-spacing: 0.3px;
+   color: #868686;
+}
+
+.footer-bg .services ul li a,
+.footer-bg .contact ul li,
+.footer-bg .social ul li {
+   font-family: Lora;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 20px;
+   letter-spacing: 0.2px;
+   color: #868686;
+}
+
+
+/*
+*---------------------------------
+*About-page
+*---------------------------------
+*/
+.about-nav-slider {
+   height: 400px;
+   width: 100%;
+   margin-top: 220px;
+}
+.about-slider-wrap {
+   width: 100%;
+   height: 100%;
+}
+.about-slider-wrap img{
+   width: 100%;
+   height: 100%;
+}
+.about-us {
+   background-color: #fff;
+}
+.about-us .we-are h1,
+.about-us .mission h1,
+.about-us .vission h1{
+   font-family: Libel Suit;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 38px;
+   line-height: 40px;
+   letter-spacing: 0.1px;
+   color: #373F41;
+   margin-bottom: 35px;
+}
+.about-us .we-are p,
+.about-us .mission p,
+.about-us .vission p {
+   font-family: Lora;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 22px;
+   letter-spacing: 0.3px;
+   color: #737B7D;
+   margin-bottom: 15px;
+}
+.about-us .we-are ol{
+   list-style: upper-roman;
+   margin-left: 30px;
+}
+.about-us .we-are li{
+   font-family: Lora;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 30px;
+   letter-spacing: 0.3px;
+   color: #737B7D;
 }
