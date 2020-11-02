@@ -21,6 +21,7 @@
 }
 body {
     font-family: 'Libel Suit', sans-serif;
+    scroll-behavior: smooth;
 }
 // button{
 //    border: none !important;
@@ -31,6 +32,25 @@ button:focus {
    outline: none !important;
    box-shadow: none !important;
 }
+h1 {
+   font-family: Libel Suit !important;
+   font-style: normal !important;
+   font-weight: bold !important;
+   font-size: 32px !important;
+   line-height: 40px !important;
+   letter-spacing: 0.1px !important;
+   color: #373F41 !important;
+}
+
+p {
+   font-family: Mulish !important;
+   font-style: normal !important;
+   font-weight: normal !important;
+   font-size: 16px !important;
+   line-height: 22px !important;
+   letter-spacing: 0.3px !important;
+   color: #737B7D !important;
+}
 /*
 *--------------------------------
 * Header-nav
@@ -38,6 +58,14 @@ button:focus {
 */
 #header {
    height:100vh;
+}
+.navbar-fixed-top{
+   top: 0!important;
+   transition: all .5s ease-in-out;
+}
+.teeth-fixed-top {
+   top: -30px !important;
+   transition: all .5s ease-in-out;
 }
 .navbar-dark button.navbar-toggler:focus {
    border: 1px solid rgba(255, 255, 255, 0.1) !important;
@@ -49,18 +77,22 @@ button:focus {
    right: 0;
    z-index: 1000!important;
    background-color: #000C20;
+   transition: all .5s ease-in-out;
 }
 #header .navbar-brand img {
    width: 180.03px !important;
    height: 57.7px !important;
 }
 #header .navbar .nav-item {
-    margin-left: 30px !important;
+   margin-left: 30px !important;
+   transition: all .5s ease;
+}
+#header .navbar .nav-item:hover .nav-link {
+   color: #0DA6DB !important;
+   transition: all .5s ease;
 }
 #header .navbar .nav-item .nav-link {
    font-family: Libel Suit;
-   font-style: normal;
-   font-weight: normal;
    font-size: 24px;
    line-height: 29px;
    color: #FFFDFD !important;
@@ -115,10 +147,11 @@ ul.slick-dots li.slick-active button {
 }
 
 .teeth {
-    position: fixed;
-    top: 0;
-    left: 210px;
-    z-index: 100;
+   position: fixed;
+   top: 0;
+   left: 210px;
+   z-index: 100;
+   transition: all .5s ease-in-out;
 }
 
 /*
@@ -138,24 +171,24 @@ ul.slick-dots li.slick-active button {
    background-size: cover;
    background-position: center;
 }
-.section-content h1{
-   font-family: Libel Suit;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 38px;
-   line-height: 46px;
-   letter-spacing: 0.1px;
-   color: #373F41;
-}
-.section-content p{
-   font-family: Lora;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 16px;
-   line-height: 22px;
-   letter-spacing: 0.3px;
-   color: #737B7D;
-}
+// .section-content h1{
+//    font-family: Libel Suit;
+//    font-style: normal;
+//    font-weight: normal;
+//    font-size: 38px;
+//    line-height: 46px;
+//    letter-spacing: 0.1px;
+//    color: #373F41;
+// }
+// .section-content p{
+//    font-family: Lora;
+//    font-style: normal;
+//    font-weight: normal;
+//    font-size: 16px;
+//    line-height: 22px;
+//    letter-spacing: 0.3px;
+//    color: #737B7D;
+// }
 .section-content ul li {
    font-family: Lora;
    font-style: normal;
@@ -197,13 +230,13 @@ ul.slick-dots li.slick-active button {
    padding: 100px 0;
 }
 .project h1 {
-   font-family: Libel Suit;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 34px;
-   line-height: 40px;
-   letter-spacing: 0.1px;
-   color: #373F41;
+   // font-family: Libel Suit;
+   // font-style: normal;
+   // font-weight: normal;
+   // font-size: 34px;
+   // line-height: 40px;
+   // letter-spacing: 0.1px;
+   // color: #373F41;
    margin-bottom: 60px;
 }
 .project .card{
@@ -383,6 +416,7 @@ button.slick-next.slick-arrow{
    background-repeat: no-repeat;
    height: 30px;
    width: 16px;
+   border: none;
 }
 button.slick-prev.slick-arrow {
    left: -100px;
@@ -580,3 +614,183 @@ button.slick-next.slick-arrow {
    line-height: 18px;
    letter-spacing: 0.3px;
 }
+
+/*
+*---------------------------------
+*Team-page
+*---------------------------------
+*/
+.team {
+   margin-top: 210px;
+}
+.team .card{
+   transition: all .5s;
+}
+.team .card:hover{
+   margin-top: -20px;
+   transition: all .5s ease-in-out;
+}
+
+/*
+*---------------------------------
+*Portfolio-page
+*---------------------------------
+*/
+.portfolio{
+   margin-top: 210px;
+}
+.view-card{
+   position: relative;
+}
+.view-card img{
+   cursor: pointer;
+}
+.view-card .threeD {
+   position: absolute;
+   bottom: 15px;
+   right: 15px;
+   z-index: 1;
+   cursor: pointer;
+}
+.portfolio-wrap  .nav-link{
+   font-family: Libel Suit;
+   font-size: 16px;
+   line-height: 18px;
+   letter-spacing: 0.3px;
+}
+
+/*
+*---------------------------------
+*Contact-page
+*---------------------------------
+*/
+.contact-wrap h4{
+   font-family: Libel Suit;
+   font-size: 20px;
+   line-height: 24px;
+   letter-spacing: 0.1px;
+   color: #373F41;
+}
+.contact-wrap .nav-item i {
+   background: #0C95D3;
+   font-size: 22px;
+   color: #fff;
+}
+.contact-wrap .nav-item span {
+   font-family: Lora;
+   font-size: 14px;
+   line-height: 20px;
+   text-align: center;
+   letter-spacing: 0.2px;
+   color: #373F41;
+}
+.form textarea{
+   border: 1px solid #2b7af0;
+   height: 180px;
+   resize: none;
+   color: #373f41;
+   font-size: 16px;
+}
+
+
+/*
+*---------------------------------
+*Responsive Design
+*---------------------------------
+*/
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1199px) {}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 991px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 767px) {
+   .teeth {
+      left: 145px;
+   }
+}
+
+@media (max-width: 575px) {
+   #header .header-nav {
+      top: 25px;
+   }
+   #header .navbar-brand img {
+      width: 120.03px !important;
+      height: 35px !important;
+   }
+   #header .navbar .nav-item .nav-link {
+      font-size: 18px;
+      line-height: 20px;
+      text-align: right;
+      margin-right: 5px;
+   }
+   .teeth {
+      left: 32px;
+   }
+   .teeth img{
+      width: 125px;
+      height: 125px;
+   }
+   .nav-slider {
+      height: 80%;
+   }
+   .nav-slider .slider-wrap {
+      height: 80%;
+   }
+   ul.slick-dots li button {
+      height: 10px !important;
+      width: 10px !important;
+   }
+   h1 {
+      font-size: 24px !important;
+   }
+   p {
+      font-size: 14px !important;
+   }
+   .section-content ul li {
+      font-size: 15px;
+      line-height: 25px;
+   }
+   .quote::before {
+      font-size: 40px;
+   }
+   .quote {
+      height: 100px;
+   }
+   .project {
+      padding: 60px 0;
+   }
+   button.slick-next.slick-arrow {
+      right: -60px;
+   }
+   button.slick-prev.slick-arrow {
+      left: -60px;
+   }
+   .our-clients ul.slick-dots li button {
+      height: 8.5px !important;
+      width: 8.5px !important;
+   }
+   .our-clients ul.slick-dots li.slick-active button {
+      height: 10.33px !important;
+      width: 10.33px !important;
+   }
+   .company img{
+      max-height: 70px;
+   }
+
+   // About
+   .about-nav-slider {
+      height: 300px;
+      margin-top: 150px;
+   }
+   .about-us .we-are li {
+      font-size: 15px;
+      line-height: 25px;
+   }
+   
+}
+
+
+
+

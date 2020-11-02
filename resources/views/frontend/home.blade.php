@@ -148,8 +148,8 @@
     <section class="happy-client">
         <div class="happy-bg">
             <div class="overlay">
-                <div class="container py-5">
-                    <div class="row pt-5">
+                <div class="container">
+                    <div class="row py-5">
                         <div class="col-md-12">
                             <div class="client-content text-center">
                                 <h1>Our happy clients</h1>
@@ -285,13 +285,33 @@
 <!-- slick-slider js-->
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
+    // Navbar
+    $(document).ready(function() {
+        $(window).scroll(function () { 
+
+            if ($(window).scrollTop() > 550) {
+                $('.header-nav').addClass('navbar-fixed-top');
+                $('.teeth').addClass('teeth-fixed-top');
+            }
+
+            if ($(window).scrollTop() < 551) {
+                $('.header-nav').removeClass('navbar-fixed-top');
+                $('.teeth').removeClass('teeth-fixed-top');
+            }
+        });
+    });
+
+    // slider
     $('.slider-wrap').slick({
         dots: true,
         arrows: false,
         infinite: true,
         speed: 300,
         slidesToShow: 1,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        focusOnSelect: false,
+        pauseOnHover: false,
+        pauseOnFocus: false,
     });
     
     $('.review').slick({
@@ -300,7 +320,10 @@
         infinite: true,
         speed: 300,
         slidesToShow: 1,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        focusOnSelect: false,
+        pauseOnHover: false,
+        pauseOnFocus: false,
     });
 
     $('.clients').slick({
@@ -308,7 +331,7 @@
         arrows: false,
         slidesToShow: 4,
         slidesToScroll: 2,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         focusOnSelect: false,
         pauseOnHover: false,
