@@ -48,71 +48,81 @@
             </nav> <!-- ./Nav -->
         </div><!-- ./Container -->
       </div> <!-- ./Header-nav -->
-    
-      <div class="container">
-         <div class="row">
-            <div class="col-md-10 mx-auto">
-               <div class="about-nav-slider">
-                  <div class="about-slider-wrap">
-                     <div>
-                        <img src="{{asset('assets/images/about/header.png')}}" alt="">
-                     </div>
-                     <div>
-                        <img src="{{asset('assets/images/home/slider1.png')}}" alt="">
-                     </div>
-                     <div>
-                        <img src="{{asset('assets/images/about/header.png')}}" alt="">
-                     </div>
-                  </div><!-- ./Slider-wrap -->
-               </div><!-- ./Nav-slider -->
-            </div>
-         </div>
-      </div>
+
       <div class="teeth">
          <img src="{{asset('assets/images/home/Teeth.png')}}" alt="">
       </div>
    </header> <!-- ./Header -->
    <main>
-      <div class="about-us">
+      <div class="service">
          <div class="container">
-            <div class="row pt-5">
+            <div class="row my-5">
                <div class="col-md-10 mx-auto">
-                  <div class="we-are">
-                     <h1>Who we are?</h1>
-                     <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
-                     <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
-                     <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
-                     <p>we provide one stop architecture & realestate solution including:</p>
-                     <ol>
-                        <li>Interior design & development.</li>
-                        <li>Architectural & engineering consultant.</li>
-                        <li>Pre-engineered steel building.</li>
-                        <li>Civil & building construction.</li>
-                        <li>Real estate.</li>
-                     </ol>
-                  </div> <!-- ./we-are -->
-               </div> <!-- ./col -->
+                  <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
+               </div>
             </div> <!-- ./row -->
-            <div class="row pt-5">
+            <div class="row my-5">
                <div class="col-md-10 mx-auto">
-                  <div class="mission">
-                     <h1>Our mission?</h1>
-                     <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p> 
-
-                     <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam.</p>
-                  </div> <!-- ./mission -->
-               </div> <!-- ./col -->
+                  <div class="service-item">
+                     <div class="row d-flex align-items-center mb-5">
+                        <div class="col-md-5 mb-5 mb-md-0">
+                           <img class="img-fluid w-100" src="{{asset('assets/images/service/interior.png')}}" alt="">
+                        </div>
+                        <div class="col-md-7 mb-5 mb-md-0">
+                           <h1 class="mb-5">Interior design & development.</h1>
+                           <p class="mb-5">Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
+                           <button class="btn btn-primary rounded-0 px-3 py-2 mr-3">Our Previous Work</button>
+                           <button class="btn btn-outline-primary rounded-0 px-3 py-2">Let's Work</button>
+                        </div>
+                     </div> <!-- ./row -->
+                     <div class="row d-flex align-items-center mb-5">
+                        <div class="col-md-7 mb-5 mb-md-0">
+                           <h1 class="mb-5">Architectural & Engineering Consultant.</h1>
+                           <p class="mb-5">Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
+                           <button class="btn btn-primary rounded-0 px-3 py-2 mr-3">Our Previous Work</button>
+                           <button class="btn btn-outline-primary rounded-0 px-3 py-2">Let's Work</button>
+                        </div>
+                        <div class="col-md-5 mb-5 mb-md-0">
+                           <img class="img-fluid  w-100" src="{{asset('assets/images/service/architect.png')}}" alt="">
+                        </div>
+                     </div> <!-- ./row -->
+                     <div class="row d-flex align-items-center mb-5">
+                        <div class="col-md-5 mb-5 mb-md-0">
+                           <img class="img-fluid  w-100" src="{{asset('assets/images/service/building.png')}}" alt="">
+                        </div>
+                        <div class="col-md-7 mb-5 mb-md-0">
+                           <h1 class="mb-5">Pre-engineered Steel Building.</h1>
+                           <p class="mb-5">Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
+                           <button class="btn btn-primary rounded-0 px-3 py-2 mr-3">Our Previous Work</button>
+                           <button class="btn btn-outline-primary rounded-0 px-3 py-2">Let's Work</button>
+                        </div>
+                     </div> <!-- ./row -->
+                     <div class="row d-flex align-items-center mb-5">
+                        <div class="col-md-7 mb-5 mb-md-0">
+                           <h1 class="mb-5">Civil & Building Construction.</h1>
+                           <p class="mb-5">Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
+                           <button class="btn btn-primary rounded-0 px-3 py-2 mr-3">Our Previous Work</button>
+                           <button class="btn btn-outline-primary rounded-0 px-3 py-2">Let's Work</button>
+                        </div>
+                        <div class="col-md-5 mb-5 mb-md-0">
+                           <img class="img-fluid  w-100" src="{{asset('assets/images/service/civil.png')}}" alt="">
+                        </div>
+                     </div> <!-- ./row -->
+                     <div class="row d-flex align-items-center mb-5">
+                        <div class="col-md-5 mb-5 mb-md-0">
+                           <img class="img-fluid  w-100" src="{{asset('assets/images/service/real-estate.png')}}" alt="">
+                        </div>
+                        <div class="col-md-7 mb-5 mb-md-0">
+                           <h1 class="mb-5">Real Estate</h1>
+                           <p class="mb-5">Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
+                           <button class="btn btn-primary rounded-0 px-3 py-2 mr-3">Our Previous Work</button>
+                           <button class="btn btn-outline-primary rounded-0 px-3 py-2">Let's Work</button>
+                        </div>
+                     </div> <!-- ./row -->
+                  </div>
+               </div>
             </div> <!-- ./row -->
-            <div class="row py-5">
-               <div class="col-md-10 mx-auto">
-                  <div class="vission pb-5">
-                     <h1>Our vission?</h1>
-                     <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p> 
-
-                     <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam.</p>
-                  </div> <!-- ./vission -->
-               </div> <!-- ./col -->
-            </div> <!-- ./row -->
+            
          </div> <!-- ./container -->
       </div> <!-- ./about-us -->
    </main> <!-- ./Main -->
@@ -194,22 +204,7 @@
    </footer> <!-- ./Footer -->
 
 @push('custom-scripts')
-<!-- slick-slider js-->
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script>
-   $('.about-slider-wrap').slick({
-      dots: true,
-      arrows: false,
-      slidesToShow: 1,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      focusOnSelect: false,
-      pauseOnHover: false,
-      pauseOnFocus: false,
-   });
-    
 
-</script>
 @endpush
 
 

@@ -22,10 +22,10 @@
 body {
     font-family: 'Libel Suit', sans-serif;
 }
-button{
-   border: none !important;
-   outline: none !important;
-}
+// button{
+//    border: none !important;
+//    outline: none !important;
+// }
 button:focus {
    border: none !important;
    outline: none !important;
@@ -535,4 +535,48 @@ button.slick-next.slick-arrow {
    line-height: 30px;
    letter-spacing: 0.3px;
    color: #737B7D;
+}
+
+/*
+*---------------------------------
+*Service-page
+*---------------------------------
+*/
+.service {
+   margin-top: 210px;
+}
+.service p {
+   font-family: Mulish;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 22px;
+   letter-spacing: 0.3px;
+   color: #737B7D;
+}
+.service-item h1{
+   font-family: Mulish;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 32px;
+   line-height: 40px;
+   letter-spacing: 0.1px;
+   color: #373F41;
+}
+.service-item p {
+   font-family: Mulish;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 22px;
+   letter-spacing: 0.3px;
+   color: #737B7D;
+}
+.service-item button{
+   font-family: Mulish;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 18px;
+   letter-spacing: 0.3px;
 }
