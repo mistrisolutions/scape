@@ -2,11 +2,47 @@
 @push('css')
 <!-- slick-slider-css -->
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- magnific-popup-css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"/>
 <!-- Font-Awesome -->
 <script src="https://kit.fontawesome.com/c1b498439e.js" crossorigin="anonymous"></script>
+
 <style>
    #header{
       height: 100%;
+   }
+   /* overlay at start */
+   .mfp-fade.mfp-bg {
+   opacity: 0;
+
+   -webkit-transition: all 0.15s ease-out;
+   -moz-transition: all 0.15s ease-out;
+   transition: all 0.15s ease-out;
+   }
+   /* overlay animate in */
+   .mfp-fade.mfp-bg.mfp-ready {
+   opacity: 0.8;
+   }
+   /* overlay animate out */
+   .mfp-fade.mfp-bg.mfp-removing {
+   opacity: 0;
+   }
+
+   /* content at start */
+   .mfp-fade.mfp-wrap .mfp-content {
+   opacity: 0;
+
+   -webkit-transition: all 0.15s ease-out;
+   -moz-transition: all 0.15s ease-out;
+   transition: all 0.15s ease-out;
+   }
+   /* content animate it */
+   .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+   opacity: 1;
+   }
+   /* content animate out */
+   .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+   opacity: 0;
    }
 </style>
 @endpush
@@ -14,43 +50,49 @@
 @section('content')
    <header id="header">
       <div class="header-nav">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand mr-5" href="#">
-                    <img class="img-fluid" src="{{ asset('assets/images/logo_web.png') }}" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+         <div class="container">
+               <nav class="navbar navbar-expand-lg navbar-dark">
+                  <a class="navbar-brand mr-5" href="#">
+                     <img class="img-fluid" src="{{ asset('assets/images/logo_web.png') }}" alt="">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacts</a>
-                    </li>
-                    </ul>
-                </div> <!-- ./Collapse -->
-            </nav> <!-- ./Nav -->
-        </div><!-- ./Container -->
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav mr-auto">
+                     <li class="nav-item active">
+                           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="nav-item">
+                           <a class="nav-link" href="#">About</a>
+                     </li>
+                     <li class="nav-item">
+                           <a class="nav-link" href="#">Services</a>
+                     </li>
+                     <li class="nav-item">
+                           <a class="nav-link" href="#">Team</a>
+                     </li>
+                     <li class="nav-item">
+                           <a class="nav-link" href="#">Portfolio</a>
+                     </li>
+                     <li class="nav-item">
+                           <a class="nav-link" href="#">Contacts</a>
+                     </li>
+                     </ul>
+                  </div> <!-- ./Collapse -->
+               </nav> <!-- ./Nav -->
+         </div><!-- ./Container -->
       </div> <!-- ./Header-nav -->
-
-      <div class="teeth">
-         <img src="{{asset('assets/images/home/Teeth.png')}}" alt="">
+         
+      <div class="container">
+         <div class="row">
+               <div class="col-md-12">
+                  <div class="teeth">
+                  <img class="img-fluid" src="{{asset('assets/images/home/Teeth.png')}}" alt="">
+               </div>
+               </div>
+         </div>
       </div>
    </header> <!-- ./Header -->
    <main>
@@ -60,19 +102,19 @@
                <div class="col-md-10 mx-auto">
                   <div class="portfolio-wrap">
                      <ul class="nav nav-pills mb-5 w-100 justify-content-between" id="pills-tab" role="tablist">
-                        <li class="nav-item">
+                        <li class="nav-item mb-3">
                            <a class="nav-link active rounded-0" id="pills-residence-tab" data-toggle="pill" href="#pills-residence" role="tab" aria-controls="pills-residence" aria-selected="true">Residence Interior</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mb-3">
                            <a class="nav-link rounded-0" id="pills-office-tab" data-toggle="pill" href="#pills-office" role="tab" aria-controls="pills-office" aria-selected="false">Office Interior</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mb-3">
                            <a class="nav-link rounded-0" id="pills-hotel-tab" data-toggle="pill" href="#pills-hotel" role="tab" aria-controls="pills-hotel" aria-selected="false">Hotel & Commercial</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mb-3">
                            <a class="nav-link rounded-0" id="pills-rooftop-tab" data-toggle="pill" href="#pills-rooftop" role="tab" aria-controls="pills-rooftop" aria-selected="false">Rooftop ladscaping</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mb-3">
                            <a class="nav-link rounded-0" id="pills-steel-tab" data-toggle="pill" href="#pills-steel" role="tab" aria-controls="pills-steel" aria-selected="false">Pre-engineered steel building</a>
                         </li>
                      </ul>
@@ -81,37 +123,37 @@
                            <div class="row">
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/1.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/2.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/3.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/1.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/2.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/3.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
@@ -122,37 +164,37 @@
                            <div class="row">
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/1.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/2.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/3.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/1.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/2.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/3.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
@@ -163,37 +205,37 @@
                            <div class="row">
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/1.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/2.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/3.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/1.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/2.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/3.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
@@ -204,37 +246,37 @@
                            <div class="row">
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/1.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/2.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/3.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/1.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/2.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/3.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
@@ -245,37 +287,37 @@
                            <div class="row">
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/1.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/2.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/3.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/1.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/2.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/3.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
@@ -367,7 +409,20 @@
    </footer> <!-- ./Footer -->
 
 @push('custom-scripts')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
+<script>
+   $(document).ready(function() {
+      $('.view-popup').magnificPopup({
+         type:'image',
+         gallery: {
+            enabled: true
+         },
+         removalDelay: 500,
+         mainClass: 'mfp-fade'
+    });
+   });
+</script>
 @endpush
 
 

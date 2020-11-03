@@ -44,6 +44,16 @@
             </nav> <!-- ./Nav -->
         </div><!-- ./Container -->
     </div> <!-- ./Header-nav -->
+        
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="teeth">
+                <img class="img-fluid" src="{{asset('assets/images/home/Teeth.png')}}" alt="">
+            </div>
+            </div>
+        </div>
+    </div>
     <div class="nav-slider">
         <div class="slider-wrap">
             <div>
@@ -56,9 +66,6 @@
                 <img src="{{asset('assets/images/home/slider1.png')}}" alt="">
             </div>
         </div><!-- ./Slider-wrap -->
-        <div class="teeth">
-            <img src="{{asset('assets/images/home/Teeth.png')}}" alt="">
-        </div>
     </div><!-- ./Nav-slider -->
 
 </header> <!-- ./Header -->
@@ -102,35 +109,35 @@
                 <div class="col-sm-12 col-md-10 mx-auto">
                     <h1>Feature projects</h1>
                     <div class="row">
-                        <div class="col-sm-12 col-md-4">
+                        <div class="col-sm-6 col-md-4">
                             <div class="card border-0">
                                 <div class="card-header">
                                     <img class="card-img-top" src="{{asset('assets/images/home/project1.png')}}" alt="Card image">
                                 </div>
                                 <div class="card-body text-center">
-                                    <p class="card-text">Project 1</p>
+                                    <p class="card-text font-weight-bold text-dark">Project 1</p>
                                     <span class="card-text">Location</span>
                                 </div>
                             </div> <!-- ./Card -->
                         </div> <!-- ./col -->
-                        <div class="col-sm-12 col-md-4">
+                        <div class="col-sm-6 col-md-4">
                             <div class="card border-0">
                                 <div class="card-header">
                                     <img class="card-img-top" src="{{asset('assets/images/home/project2.png')}}" alt="Card image">
                                 </div>
                                 <div class="card-body text-center">
-                                    <p class="card-text">Project Laximi Vander</p>
+                                    <p class="card-text font-weight-bold text-dark">Project Laximi Vander</p>
                                     <span class="card-text">Pabna</span>
                                 </div>
                             </div> <!-- ./Card -->
                         </div> <!-- ./col -->
-                        <div class="col-sm-12 col-md-4">
+                        <div class="col-sm-6 col-md-4">
                             <div class="card border-0">
                                 <div class="card-header">
                                     <img class="card-img-top" src="{{asset('assets/images/home/project3.png')}}" alt="Card image">
                                 </div>
                                 <div class="card-body text-center">
-                                    <p class="card-text">Project 3</p>
+                                    <p class="card-text font-weight-bold text-dark">Project 3</p>
                                     <span class="card-text">Gulsan</span>
                                 </div>
                             </div> <!-- ./Card -->
@@ -147,9 +154,9 @@
     </section><!-- ./Project -->
     <section class="happy-client">
         <div class="happy-bg">
-            <div class="overlay">
-                <div class="container">
-                    <div class="row py-5">
+            <div class="overlay d-flex align-items-center">
+                <div class="container py-5">
+                    <div class="row">
                         <div class="col-md-12">
                             <div class="client-content text-center">
                                 <h1>Our happy clients</h1>
@@ -177,7 +184,7 @@
             </div> <!-- ./overlay -->
         </div> <!-- ./Happy-bg -->
     </section> <!-- Happy-client -->
-    <section class="our-clients py-5">
+    <section class="our-clients py-md-5 py-0">
         <div class="container">
             <div class="row py-5 justify-content-center text-center">
                 <div class="col-md-12">
