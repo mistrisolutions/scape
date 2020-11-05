@@ -1,6 +1,5 @@
 @extends('layouts.frontend.app')
-@section('title', 'Scape')
-@endsection
+@section('title', 'Home')
 @push('css')
 <!-- slick-slider-css -->
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -8,7 +7,21 @@
 <script src="https://kit.fontawesome.com/c1b498439e.js" crossorigin="anonymous"></script>
 
 @endpush
-
+@section('slider')
+<div class="nav-slider">
+    <div class="slider-wrap">
+        <div>
+            <img src="{{asset('assets/images/home/slider1.png')}}" alt="">
+        </div>
+        <div>
+            <img src="{{asset('assets/images/home/slider1.png')}}" alt="">
+        </div>
+        <div>
+            <img src="{{asset('assets/images/home/slider1.png')}}" alt="">
+        </div>
+    </div><!-- ./Slider-wrap -->
+</div><!-- ./Nav-slider -->
+@endsection
 @section('content')
 <main>
     <section class="middle-section">

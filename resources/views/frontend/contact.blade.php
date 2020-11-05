@@ -1,6 +1,5 @@
 @extends('layouts.frontend.app')
 @section('title', 'Contact')
-@endsection
 @push('css')
 <!-- slick-slider-css -->
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
