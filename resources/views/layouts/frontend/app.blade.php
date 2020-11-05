@@ -16,7 +16,10 @@
     <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" />
   </head>
   <body>
+    <!--header-->
+    @include('layouts.frontend.partials.header')
     @yield('content')
+    @include('layouts.frontend.partials.footer')
     <!-- container-scroller -->
     <!-- plugins:js -->
     <script src="{{ asset('js/app.js') }}"></script>
