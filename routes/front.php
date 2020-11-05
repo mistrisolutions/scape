@@ -18,9 +18,9 @@ Route::get('team',function(){
     return view('frontend.team');
 })->name('team');
 
-Route::get('portfolio',function(){
-    return view('frontend.portfolio');
-})->name('portfolio');
+Route::get('gallery',function(){
+    return view('frontend.gallery');
+})->name('gallery');
 
 Route::get('contact',function(){
     return view('frontend.contact');

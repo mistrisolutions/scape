@@ -11558,7 +11558,7 @@ button.slick-next.slick-arrow:focus {
   height: 100%;
 }
 
-.view-card a img {
+.view-card a.view-popup img {
   cursor: pointer;
   height: 100%;
   -o-object-fit: cover;

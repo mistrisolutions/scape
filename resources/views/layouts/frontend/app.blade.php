@@ -43,7 +43,7 @@
                           <a class="nav-link" href="{{ route('team') }}">Team</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="">Gallery</a>
+                          <a class="nav-link" href="{{ route('gallery') }}">Gallery</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href=" {{ route('contact') }}">Contacts</a>
