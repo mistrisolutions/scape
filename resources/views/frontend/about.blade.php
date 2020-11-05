@@ -104,19 +104,15 @@
                <div class="col-md-10 mx-auto">
                   <div class="mission">
                      <h1>Our mission?</h1>
-                     <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p> 
-
-                     <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam.</p>
+                     <p>Our mission is to positively influence the lives of all customers with whom we have the pleasure of working, and leave a lasting impression on their minds and imagination. Our designs must inspire and elevate the hearts and minds of all those who lay eyes on it. Our long-term goals are always in line with our core values. Our mission is to always go one step further – to offer an exclusive customer service to our clients.</p>
                   </div> <!-- ./mission -->
                </div> <!-- ./col -->
             </div> <!-- ./row -->
             <div class="row py-5">
                <div class="col-md-10 mx-auto">
                   <div class="vission pb-5">
-                     <h1>Our vission?</h1>
-                     <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p> 
-
-                     <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam.</p>
+                     <h1>Our vision?</h1>
+                     <p>Our vision aim to shape spaces with “timeless designs” and want to be a globally recognized professional interior design company, providing solutions in the field of high-end corporate, commercial & residential interiors.</p> 
                   </div> <!-- ./vission -->
                </div> <!-- ./col -->
             </div> <!-- ./row -->

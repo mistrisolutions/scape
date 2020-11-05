@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Lora&family=Mulish:ital,wght@0,600;
+@import url(https://fonts.cdnfonts.com/css/libel-suit);@import url(https://fonts.googleapis.com/css2?family=Lora&family=Mulish:ital,wght@0,600;
 
 1,200&display=swap);@charset "UTF-8";
 
@@ -10905,11 +10905,6 @@ a.text-dark:focus {
   }
 }
 
-@font-face {
-  font-family: "Libel Suit", sans-serif;
-  src: url("/font/libel-suit-rg.ttf") format("ttf"), url("/font/Libel-Suit-Regular.otf") format("otf");
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -10926,7 +10921,7 @@ button:focus {
 }
 
 h1 {
-  font-family: Libel Suit !important;
+  font-family: "Libel Suit" !important;
   font-style: normal !important;
   font-weight: bold !important;
   font-size: 32px !important;
@@ -10995,7 +10990,7 @@ p {
 }
 
 #header .navbar .nav-item .nav-link {
-  font-family: Libel Suit;
+  font-family: "Libel Suit";
   font-size: 24px;
   line-height: 29px;
   color: #FFFDFD !important;
@@ -11164,7 +11159,7 @@ ul.slick-dots li.slick-active button {
 }
 
 .project .card .card-body p {
-  font-family: Libel Suit;
+  font-family: "Libel Suit";
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.5px;
@@ -11184,7 +11179,7 @@ ul.slick-dots li.slick-active button {
 
 .project .more button {
   background: #3C64B1;
-  font-family: Libel Suit;
+  font-family: "Libel Suit";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -11235,7 +11230,7 @@ ul.slick-dots li.slick-active button {
 }
 
 .happy-client .happy-bg .client-content h1 {
-  font-family: Libel Suit;
+  font-family: "Libel Suit";
   font-size: 34px;
   line-height: 40px;
   text-align: center;
@@ -11266,7 +11261,7 @@ ul.slick-dots li.slick-active button {
 }
 
 .happy-client .happy-bg .client-content .review .single-review h3 {
-  font-family: Libel Suit;
+  font-family: "Libel Suit";
   font-size: 20px;
   line-height: 18px;
   text-align: center;
@@ -11286,7 +11281,7 @@ ul.slick-dots li.slick-active button {
 }
 
 .happy-client .happy-bg .client-content .review .single-review span {
-  font-family: Libel Suit;
+  font-family: "Libel Suit";
   font-size: 20px;
   line-height: 18px;
   text-align: center;
@@ -11385,6 +11380,10 @@ button.slick-next.slick-arrow:focus {
   padding: 0 10px;
 }
 
+.footer-bg .company img {
+  width: 100%;
+}
+
 .footer-bg .services,
 .footer-bg .contact,
 .footer-bg .social {
@@ -11394,7 +11393,7 @@ button.slick-next.slick-arrow:focus {
 .footer-bg .services h4,
 .footer-bg .contact h4,
 .footer-bg .social h4 {
-  font-family: Libel Suit;
+  font-family: "Libel Suit";
   font-size: 21px;
   line-height: 24px;
   letter-spacing: 0.1px;
@@ -11449,7 +11448,7 @@ button.slick-next.slick-arrow:focus {
 .about-us .we-are h1,
 .about-us .mission h1,
 .about-us .vission h1 {
-  font-family: Libel Suit;
+  font-family: "Libel Suit";
   font-size: 38px;
   line-height: 40px;
   letter-spacing: 0.1px;
@@ -11570,7 +11569,7 @@ button.slick-next.slick-arrow:focus {
 }
 
 .portfolio-wrap .nav-link {
-  font-family: Libel Suit;
+  font-family: "Libel Suit";
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 0.3px;
@@ -11592,7 +11591,7 @@ img.mfp-img {
 */
 
 .contact-wrap h4 {
-  font-family: Libel Suit;
+  font-family: "Libel Suit";
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.1px;

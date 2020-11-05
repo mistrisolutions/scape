@@ -68,8 +68,8 @@
                      <div class="row d-flex align-items-center mb-5">
                         <div class="col-md-7 mb-5 mb-md-0">
                            <h1 class="mb-5">Message from CEO</h1>
-                           <p class="mb-5">Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit.</p>
-                           <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam </p>
+                           <p class="mb-5">Our company began in 2020 and has continually grown thanks to the outstanding support of our many clients. SDE never stops doing what you need to give you the satisfaction you expect. That's how we became the best.Today as we tread the path of success, we look forward to sharing our story with you.</p>
+                           <p>We sincerely hope you will continue to seek inspiration from our history and look forward to a lasting relationship with you.</p>
                            <button class="btn btn-primary rounded-0 px-3 py-2 mr-3">Our Previous Work</button>
                            <button class="btn btn-outline-primary rounded-0 px-3 py-2">Let's Work</button>
                         </div>
@@ -87,135 +87,48 @@
                      <div class="col-sm-6 col-md-6 col-lg-4">
                         <div class="card border-0">
                            <div class="card-header  p-0 border-0">
-                              <img class="card-img-top img-fluid" src="{{asset('assets/images/team/shovon_shaha.png')}}" alt="Card image">
+                              <img class="card-img-top img-fluid" src="{{asset('assets/images/team/demo.png')}}" alt="Card image">
                            </div>
                            <div class="card-body text-center">
-                              <p class="card-text font-weight-bold text-dark">Kawsar Ahmed</p>
-                              <p class="font-weight-light">HR Manager</p>
+                              <p class="card-text font-weight-bold text-dark">Al Mamun</p>
+                              <p class="font-weight-light">Project Engineer</p>
                            </div>
                         </div> <!-- ./Card -->
                      </div> <!-- ./col -->
                      <div class="col-sm-6 col-md-6 col-lg-4">
                         <div class="card border-0">
                            <div class="card-header  p-0 border-0">
-                              <img class="card-img-top img-fluid" src="{{asset('assets/images/team/shovon_shaha.png')}}" alt="Card image">
+                              <img class="card-img-top img-fluid" src="{{asset('assets/images/team/demo.png')}}" alt="Card image">
                            </div>
                            <div class="card-body text-center">
-                              <p class="card-text font-weight-bold text-dark">Shovon Saha</p>
-                              <p class="font-weight-light">CEO, SCAPE Development Engineers</p>
+                              <p class="card-text font-weight-bold text-dark">Kawser Ahmed</p>
+                              <p class="font-weight-light">HR & Accounts</p>
                            </div>
                         </div> <!-- ./Card -->
                      </div> <!-- ./col -->
                      <div class="col-sm-6 col-md-6 col-lg-4">
                         <div class="card border-0">
                            <div class="card-header  p-0 border-0">
-                              <img class="card-img-top img-fluid" src="{{asset('assets/images/team/shovon_shaha.png')}}" alt="Card image">
+                              <img class="card-img-top img-fluid" src="{{asset('assets/images/team/demo.png')}}" alt="Card image">
                            </div>
                            <div class="card-body text-center">
-                              <p class="card-text font-weight-bold text-dark">Shimul Afefin</p>
-                              <p class="font-weight-light">Senior Architect</p>
+                              <p class="card-text font-weight-bold text-dark">Ashiujjaman Real</p>
+                              <p class="font-weight-light">Graphics Designer</p>
                            </div>
                         </div> <!-- ./Card -->
                      </div> <!-- ./col -->
                      <div class="col-sm-6 col-md-6 col-lg-4">
                         <div class="card border-0">
                            <div class="card-header  p-0 border-0">
-                              <img class="card-img-top img-fluid" src="{{asset('assets/images/team/shovon_shaha.png')}}" alt="Card image">
+                              <img class="card-img-top img-fluid" src="{{asset('assets/images/team/demo.png')}}" alt="Card image">
                            </div>
                            <div class="card-body text-center">
-                              <p class="card-text font-weight-bold text-dark">Kawsar Ahmed</p>
-                              <p class="font-weight-light">HR Manager</p>
+                              <p class="card-text font-weight-bold text-dark">Rezaul Islam</p>
+                              <p class="font-weight-light">Project Engineer</p>
                            </div>
                         </div> <!-- ./Card -->
                      </div> <!-- ./col -->
-                     <div class="col-sm-6 col-md-6 col-lg-4">
-                        <div class="card border-0">
-                           <div class="card-header  p-0 border-0">
-                              <img class="card-img-top img-fluid" src="{{asset('assets/images/team/shovon_shaha.png')}}" alt="Card image">
-                           </div>
-                           <div class="card-body text-center">
-                              <p class="card-text font-weight-bold text-dark">Shovon Saha</p>
-                              <p class="font-weight-light">CEO, SCAPE Development Engineers</p>
-                           </div>
-                        </div> <!-- ./Card -->
-                     </div> <!-- ./col -->
-                     <div class="col-sm-6 col-md-6 col-lg-4">
-                        <div class="card border-0">
-                           <div class="card-header  p-0 border-0">
-                              <img class="card-img-top img-fluid" src="{{asset('assets/images/team/shovon_shaha.png')}}" alt="Card image">
-                           </div>
-                           <div class="card-body text-center">
-                              <p class="card-text font-weight-bold text-dark">Shimul Afefin</p>
-                              <p class="font-weight-light">Senior Architect</p>
-                           </div>
-                        </div> <!-- ./Card -->
-                     </div> <!-- ./col -->
-                     <div class="col-sm-6 col-md-6 col-lg-4">
-                        <div class="card border-0">
-                           <div class="card-header  p-0 border-0">
-                              <img class="card-img-top img-fluid" src="{{asset('assets/images/team/shovon_shaha.png')}}" alt="Card image">
-                           </div>
-                           <div class="card-body text-center">
-                              <p class="card-text font-weight-bold text-dark">Kawsar Ahmed</p>
-                              <p class="font-weight-light">HR Manager</p>
-                           </div>
-                        </div> <!-- ./Card -->
-                     </div> <!-- ./col -->
-                     <div class="col-sm-6 col-md-6 col-lg-4">
-                        <div class="card border-0">
-                           <div class="card-header  p-0 border-0">
-                              <img class="card-img-top img-fluid" src="{{asset('assets/images/team/shovon_shaha.png')}}" alt="Card image">
-                           </div>
-                           <div class="card-body text-center">
-                              <p class="card-text font-weight-bold text-dark">Shovon Saha</p>
-                              <p class="font-weight-light">CEO, SCAPE Development Engineers</p>
-                           </div>
-                        </div> <!-- ./Card -->
-                     </div> <!-- ./col -->
-                     <div class="col-sm-6 col-md-6 col-lg-4">
-                        <div class="card border-0">
-                           <div class="card-header  p-0 border-0">
-                              <img class="card-img-top img-fluid" src="{{asset('assets/images/team/shovon_shaha.png')}}" alt="Card image">
-                           </div>
-                           <div class="card-body text-center">
-                              <p class="card-text font-weight-bold text-dark">Shimul Afefin</p>
-                              <p class="font-weight-light">Senior Architect</p>
-                           </div>
-                        </div> <!-- ./Card -->
-                     </div> <!-- ./col -->
-                     <div class="col-sm-6 col-md-6 col-lg-4">
-                        <div class="card border-0">
-                           <div class="card-header  p-0 border-0">
-                              <img class="card-img-top img-fluid" src="{{asset('assets/images/team/shovon_shaha.png')}}" alt="Card image">
-                           </div>
-                           <div class="card-body text-center">
-                              <p class="card-text font-weight-bold text-dark">Kawsar Ahmed</p>
-                              <p class="font-weight-light">HR Manager</p>
-                           </div>
-                        </div> <!-- ./Card -->
-                     </div> <!-- ./col -->
-                     <div class="col-sm-6 col-md-6 col-lg-4">
-                        <div class="card border-0">
-                           <div class="card-header  p-0 border-0">
-                              <img class="card-img-top img-fluid" src="{{asset('assets/images/team/shovon_shaha.png')}}" alt="Card image">
-                           </div>
-                           <div class="card-body text-center">
-                              <p class="card-text font-weight-bold text-dark">Shovon Saha</p>
-                              <p class="font-weight-light">CEO, SCAPE Development Engineers</p>
-                           </div>
-                        </div> <!-- ./Card -->
-                     </div> <!-- ./col -->
-                     <div class="col-sm-6 col-md-6 col-lg-4">
-                        <div class="card border-0">
-                           <div class="card-header  p-0 border-0">
-                              <img class="card-img-top img-fluid" src="{{asset('assets/images/team/shovon_shaha.png')}}" alt="Card image">
-                           </div>
-                           <div class="card-body text-center">
-                              <p class="card-text font-weight-bold text-dark">Shimul Afefin</p>
-                              <p class="font-weight-light">Senior Architect</p>
-                           </div>
-                        </div> <!-- ./Card -->
-                     </div> <!-- ./col -->
+                     
                   </div>
                </div>
             </div> <!-- ./row -->

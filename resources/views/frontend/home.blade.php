@@ -13,7 +13,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand mr-5" href="#">
-                    <img class="img-fluid" src="{{ asset('assets/images/logo_web.png') }}" alt="">
+                    <img class="img-fluid" src="{{ asset('assets/images/logo-w.png') }}" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -77,8 +77,8 @@
                     <div class="row py-5">
                         <div class="col-sm-12 col-md-10 mx-auto pt-4">
                             <h1 class="mb-4">Best Architectural Engineering Consultant in the city lucilius noster postulant philosophia ea usu, qui</h1>
-                            <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum. Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum. Et has minim elitr intellegat.</p>
-                            <p>we provide one stop architecture & realestate solution including:</p>
+                            <p>SCAPE Development Engineers is a Consultancy firm located in Dhaka which provides Interior Design, Exterior Design & Total Constructions solution for Govt. & Private sectors in Bangladesh.</p>
+                            <p>Scape is a team of mordern interior design company. We believe any types of interior is possible like global taste of design.</p>
 
                             <ul class="navbar-nav">
                                 <li class="nav-item" ><img src="{{asset('assets/images/home/list-arrow.svg')}}" alt="">Interior design & development.</li>
@@ -217,7 +217,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="company">
-                        <img class="img-fluid mb-3" src="{{asset('assets/images/logo_web.png')}}" alt="">
+                        <img class="img-fluid mb-3" src="{{asset('assets/images/logo-w.png')}}" alt="">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem velit id scelerisque purus at vulputate sed etiam. Rhoncus mauris iaculis sed felis. Quis cras sed orci dui sed. Elementum.</p>
                     </div>
                 </div> <!-- ./col -->
@@ -326,8 +326,10 @@
         arrows: true,
         infinite: true,
         speed: 300,
+        autoplay: true,
+        autoplaySpeed: 6000,
         slidesToShow: 1,
-        adaptiveHeight: true,
+        
         focusOnSelect: false,
         pauseOnHover: false,
         pauseOnFocus: false,
@@ -338,7 +340,7 @@
         arrows: false,
         slidesToShow: 4,
         slidesToScroll: 2,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         focusOnSelect: false,
         pauseOnHover: false,
