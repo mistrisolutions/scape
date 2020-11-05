@@ -34,7 +34,7 @@
                         <a class="nav-link" href="#">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contacts</a>
@@ -218,7 +218,7 @@
                 <div class="col-md-4">
                     <div class="company">
                         <img class="img-fluid mb-3" src="{{asset('assets/images/logo-w.png')}}" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem velit id scelerisque purus at vulputate sed etiam. Rhoncus mauris iaculis sed felis. Quis cras sed orci dui sed. Elementum.</p>
+                        <p>SCAPE Development Engineers is a Consultancy firm located in Dhaka which provides Interior Design, Exterior Design & Total Constructions solution for Govt. & Private sectors in Bangladesh.</p>
                     </div>
                 </div> <!-- ./col -->
                 <div class="col-md-3">
@@ -314,6 +314,8 @@
         arrows: false,
         infinite: true,
         speed: 300,
+        autoplay: true,
+        autoplaySpeed: 6000,
         slidesToShow: 1,
         adaptiveHeight: true,
         focusOnSelect: false,
@@ -326,10 +328,9 @@
         arrows: true,
         infinite: true,
         speed: 300,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 6000,
         slidesToShow: 1,
-        
         focusOnSelect: false,
         pauseOnHover: false,
         pauseOnFocus: false,

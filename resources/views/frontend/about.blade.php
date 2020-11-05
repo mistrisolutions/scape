@@ -86,10 +86,8 @@
                <div class="col-md-10 mx-auto">
                   <div class="we-are">
                      <h1>Who we are?</h1>
-                     <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
-                     <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
-                     <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
-                     <p>we provide one stop architecture & realestate solution including:</p>
+                     <p>SCAPE Development Engineers is a Consultancy firm located in Dhaka which provides Interior Design, Exterior Design & Total Constructions solution for Govt. & Private sectors in Bangladesh.</p>
+                     <p>Scape is a team of mordern interior design company. We believe any types of interior is possible like global taste of design.</p>
                      <ol>
                         <li>Interior design & development.</li>
                         <li>Architectural & engineering consultant.</li>

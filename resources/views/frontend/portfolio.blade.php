@@ -123,7 +123,7 @@
                            <div class="row">
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <a class="view-popup" href="{{asset('assets/images/portfolio/1.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt=""></a>
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/1.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/demo-buil.jpg')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>

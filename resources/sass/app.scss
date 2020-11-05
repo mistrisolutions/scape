@@ -320,6 +320,7 @@ ul.slick-dots li.slick-active button {
 }
 .happy-client .happy-bg .client-content .review .single-review {
    margin-top: 100px;
+   outline: none !important;
 }
 .happy-client .happy-bg .client-content .review .single-review h3{
    font-family: 'Libel Suit';
@@ -581,9 +582,13 @@ button.slick-next.slick-arrow:focus {
 }
 .view-card{
    position: relative;
+   height: 100%;
 }
 .view-card img{
    cursor: pointer;
+   height: 100%;
+   object-fit: cover;
+   object-position: 50% 50%;
 }
 .view-card .threeD {
    position: absolute;
