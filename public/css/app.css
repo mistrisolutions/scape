@@ -11258,6 +11258,7 @@ ul.slick-dots li.slick-active button {
 
 .happy-client .happy-bg .client-content .review .single-review {
   margin-top: 100px;
+  outline: none !important;
 }
 
 .happy-client .happy-bg .client-content .review .single-review h3 {
@@ -11554,10 +11555,16 @@ button.slick-next.slick-arrow:focus {
 
 .view-card {
   position: relative;
+  height: 100%;
 }
 
-.view-card img {
+.view-card a img {
   cursor: pointer;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 
 .view-card .threeD {

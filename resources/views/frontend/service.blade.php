@@ -1,4 +1,5 @@
 @extends('layouts.frontend.app')
+@section('title','Services')
 @push('css')
 <!-- slick-slider-css -->
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -12,59 +13,12 @@
 @endpush
 
 @section('content')
-   <header id="header">
-        <div class="header-nav">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                    <a class="navbar-brand mr-5" href="#">
-                        <img class="img-fluid" src="{{ asset('assets/images/logo_web.png') }}" alt="">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacts</a>
-                        </li>
-                        </ul>
-                    </div> <!-- ./Collapse -->
-                </nav> <!-- ./Nav -->
-            </div><!-- ./Container -->
-        </div> <!-- ./Header-nav -->
-            
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="teeth">
-                    <img class="img-fluid" src="{{asset('assets/images/home/Teeth.png')}}" alt="">
-                </div>
-                </div>
-            </div>
-        </div>
-   </header> <!-- ./Header -->
    <main>
       <div class="service">
          <div class="container">
             <div class="row my-5">
                <div class="col-md-10 mx-auto">
-                  <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
+                  <p>Bangladeshi corporate culture have a demand on modern, luxurious & contemporary office interior. Scape is providing the service at a optimum cost which reaches the client's requirement. Scape Development Engineers always keep their best idea for design concept,high quality materials, user friendly accessories,advance lighting solution and quality assurance for every project.</p>
                </div>
             </div> <!-- ./row -->
             <div class="row my-5">
@@ -76,16 +30,16 @@
                         </div>
                         <div class="col-md-7 mb-5 mb-md-0">
                            <h1 class="mb-5">Interior design & development.</h1>
-                           <p class="mb-5">Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
-                           <button class="btn btn-primary rounded-0 px-3 py-2 mr-3">Our Previous Work</button>
+                           <p class="mb-5">This is where we love to explore personalized interior design options in much greater detail so you can begin to “see” what the end result will look like.</p>
+                           <button class="btn btn-primary rounded-0 px-3 py-2 mr-3">View Gallery</button>
                            <button class="btn btn-outline-primary rounded-0 px-3 py-2">Let's Work</button>
                         </div>
                      </div> <!-- ./row -->
                      <div class="row d-flex align-items-center mb-5">
                         <div class="col-md-7 mb-5 mb-md-0">
                            <h1 class="mb-5">Architectural & Engineering Consultant.</h1>
-                           <p class="mb-5">Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
-                           <button class="btn btn-primary rounded-0 px-3 py-2 mr-3">Our Previous Work</button>
+                           <p class="mb-5">We believe that successful design originates from listening to the clients’ needs, implementing explicit concepts and transforming them into physical form.  Architectural services, both commercial and residential are provided by Scape Development Engineers.  Our Architectural Staff is well trained in current building codes, Fair Housing Act and other safety issues that may arise in your project.</p>
+                           <button class="btn btn-primary rounded-0 px-3 py-2 mr-3">View Gallery</button>
                            <button class="btn btn-outline-primary rounded-0 px-3 py-2">Let's Work</button>
                         </div>
                         <div class="col-md-5 mb-5 mb-md-0">
@@ -98,16 +52,16 @@
                         </div>
                         <div class="col-md-7 mb-5 mb-md-0">
                            <h1 class="mb-5">Pre-engineered Steel Building.</h1>
-                           <p class="mb-5">Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
-                           <button class="btn btn-primary rounded-0 px-3 py-2 mr-3">Our Previous Work</button>
+                           <p class="mb-5">An efficiently designed pre-engineered building can be lighter than the conventional steel buildings by up to 30%. Lighter weight equates to less steel and potential price savings in structural framework.</p>
+                           <button class="btn btn-primary rounded-0 px-3 py-2 mr-3">View Gallery</button>
                            <button class="btn btn-outline-primary rounded-0 px-3 py-2">Let's Work</button>
                         </div>
                      </div> <!-- ./row -->
                      <div class="row d-flex align-items-center mb-5">
                         <div class="col-md-7 mb-5 mb-md-0">
                            <h1 class="mb-5">Civil & Building Construction.</h1>
-                           <p class="mb-5">Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
-                           <button class="btn btn-primary rounded-0 px-3 py-2 mr-3">Our Previous Work</button>
+                           <p class="mb-5">Civil construction falls in the category of civil engineering which is all about designing, constructing and maintaining the physical and naturally built environment. Civil construction is the art of building bridges, dams, roads, airports, canals, and buildings.</p>
+                           <button class="btn btn-primary rounded-0 px-3 py-2 mr-3">View Gallery</button>
                            <button class="btn btn-outline-primary rounded-0 px-3 py-2">Let's Work</button>
                         </div>
                         <div class="col-md-5 mb-5 mb-md-0">
@@ -120,8 +74,8 @@
                         </div>
                         <div class="col-md-7 mb-5 mb-md-0">
                            <h1 class="mb-5">Real Estate</h1>
-                           <p class="mb-5">Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
-                           <button class="btn btn-primary rounded-0 px-3 py-2 mr-3">Our Previous Work</button>
+                           <p class="mb-5">Find your dream property from our featured properties built at prime locations in Dhaka. From this featured list of ongoing, upcoming and completed properties, choose the one that best resonates with your heart.</p>
+                           <button class="btn btn-primary rounded-0 px-3 py-2 mr-3">View Gallery</button>
                            <button class="btn btn-outline-primary rounded-0 px-3 py-2">Let's Work</button>
                         </div>
                      </div> <!-- ./row -->
@@ -132,83 +86,7 @@
          </div> <!-- ./container -->
       </div> <!-- ./about-us -->
    </main> <!-- ./Main -->
-   <footer>
-      <div class="footer-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="company">
-                        <img class="img-fluid mb-3" src="{{asset('assets/images/logo_web.png')}}" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem velit id scelerisque purus at vulputate sed etiam. Rhoncus mauris iaculis sed felis. Quis cras sed orci dui sed. Elementum.</p>
-                    </div>
-                </div> <!-- ./col -->
-                <div class="col-md-3">
-                    <div class="services">
-                        <h4>Services</h4>
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="#">
-                                    <img class="mr-2"src="{{asset('assets/images/home/footer-arrow.svg')}}" alt="">Interior design & development.
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#">
-                                    <img class="mr-2"src="{{asset('assets/images/home/footer-arrow.svg')}}" alt="">Architectural & engineering consultant.
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#">
-                                    <img class="mr-2" src="{{asset('assets/images/home/footer-arrow.svg')}}" alt="">Pre-engineered steel building.
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#">
-                                    <img class="mr-2"src="{{asset('assets/images/home/footer-arrow.svg')}}" alt="">Civil & building construction.
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#">
-                                    <img class="mr-2" src="{{asset('assets/images/home/footer-arrow.svg')}}" alt="">Real estate
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div> <!-- ./col -->
-                <div class="col-md-3">
-                    <div class="contact">
-                        <h4>Contact us</h4>
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <img class="mr-2"src="{{asset('assets/images/home/phone.svg')}}" alt="">+88 01616182874
-                            </li>
-                            <li class="nav-item">
-                                <img class="mr-2"src="{{asset('assets/images/home/phone.svg')}}" alt="">+88 01616182874
-                            </li>
-                            <li class="nav-item">
-                                <img class="mr-2"src="{{asset('assets/images/home/mail.svg')}}" alt="">info.scapebd@gmail.com
-                            </li>
-                            <li class="nav-item d-flex align-items-start">
-                                <img class="mr-2"src="{{asset('assets/images/home/location.png')}}" alt="">
-                                <span>44/F/7 (2nd floor), Rangan Tower,West Panthapath,Dhaka-1215, Bangladesh.</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div> <!-- ./col -->
-                <div class="col-md-2">
-                    <div class="social">
-                        <h4>Connect with us</h4>
-                        <ul class="navbar-nav d-flex navbar-expand">
-                            <li class="nav-item mr-3"><img src="{{asset('assets/images/home/facebook.svg')}}" alt=""></li>
-                            <li class="nav-item mr-3"><img src="{{asset('assets/images/home/instagram.svg')}}" alt=""></li>
-                            <li class="nav-item mr-3"><img src="{{asset('assets/images/home/linkedin.svg')}}" alt=""></li>
-                        </ul>
-                    </div>
-                </div> <!-- ./col -->
-            </div> <!-- ./row -->
-        </div> <!-- ./container -->
-      </div> <!-- ./footer-bg -->
-   </footer> <!-- ./Footer -->
-
+@endsection
 @push('custom-scripts')
    <script>
        // Navbar
@@ -230,4 +108,3 @@
 @endpush
 
 
-@endsection

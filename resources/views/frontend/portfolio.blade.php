@@ -2,8 +2,8 @@
 @push('css')
 <!-- slick-slider-css -->
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<!-- magnific-popup-css -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"/>
+<!-- fancybox-popup-css -->
+<link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
 <!-- Font-Awesome -->
 <script src="https://kit.fontawesome.com/c1b498439e.js" crossorigin="anonymous"></script>
 
@@ -123,8 +123,12 @@
                            <div class="row">
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <a class="view-popup" href="{{asset('assets/images/portfolio/1.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/demo-buil.jpg')}}" alt=""></a>
-                                    <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
+                                    <a class="view-popup" href="{{asset('assets/images/portfolio/1.png')}}">
+                                       <!-- <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/demo-buil.jpg')}}" alt=""> -->
+                                       <iframe class="img-fluid w-100" src="https://momento360.com/e/u/350a43f62e744c4ebd9142602eccba2d?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium" alt=""></iframe>
+                                    </a>
+                                    <a href="https://momento360.com/e/u/350a43f62e744c4ebd9142602eccba2d?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium"><img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt=""></a>
+                                    
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
@@ -409,18 +413,44 @@
    </footer> <!-- ./Footer -->
 
 @push('custom-scripts')
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<!-- fancybox-popup-js -->
+<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 
 <script>
+   // $(document).ready(function() {
+   //    $('.view-popup').magnificPopup({
+   //       type:'image',
+   //       gallery: {
+   //          enabled: true
+   //       },
+   //       removalDelay: 500,
+   //       mainClass: 'mfp-fade'
+   //  });
+   // });
+
    $(document).ready(function() {
-      $('.view-popup').magnificPopup({
-         type:'image',
-         gallery: {
-            enabled: true
-         },
-         removalDelay: 500,
-         mainClass: 'mfp-fade'
-    });
+
+      /* This is basic - uses default settings */
+      
+      // $("a#single_image").fancybox();
+      
+      // /* Using custom settings */
+      
+      // $("a#inline").fancybox({
+      //    'hideOnContentClick': true
+      // });
+
+      /* Apply fancybox to multiple items */
+      
+      $(".view-popup").fancybox({
+         'transitionIn'	:	'elastic',
+         'transitionOut'	:	'elastic',
+         'speedIn'		:	600, 
+         'speedOut'		:	200, 
+         'overlayShow'	:	false
+      });
+      
    });
 </script>
 @endpush

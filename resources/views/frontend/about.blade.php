@@ -11,7 +11,27 @@
    }
 </style>
 @endpush
-
+@section('slider')
+<div class="container">
+   <div class="row">
+      <div class="col-md-10 mx-auto">
+         <div class="about-nav-slider">
+            <div class="about-slider-wrap">
+               <div>
+                  <img src="{{asset('assets/images/about/header.png')}}" alt="">
+               </div>
+               <div>
+                  <img src="{{asset('assets/images/home/slider1.png')}}" alt="">
+               </div>
+               <div>
+                  <img src="{{asset('assets/images/about/header.png')}}" alt="">
+               </div>
+            </div><!-- ./Slider-wrap -->
+         </div><!-- ./Nav-slider -->
+      </div>
+   </div>
+</div>
+@endsection
 @section('content')
    <main>
       <div class="about-us">
