@@ -80,12 +80,12 @@
     $(document).ready(function() {
         $(window).scroll(function () { 
 
-            if ($(window).scrollTop() > 550) {
+            if ($(window).scrollTop() > 50) {
                 $('.header-nav').addClass('navbar-fixed-top');
                 $('.teeth').addClass('teeth-fixed-top');
             }
 
-            if ($(window).scrollTop() < 551) {
+            if ($(window).scrollTop() < 51) {
                 $('.header-nav').removeClass('navbar-fixed-top');
                 $('.teeth').removeClass('teeth-fixed-top');
             }

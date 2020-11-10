@@ -328,10 +328,27 @@
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 <script>
-   
-      $('.view-popup').fancybox({
+ // Navbar
+      $(document).ready(function() {
+         //Navbar fixed top
+         $(window).scroll(function () { 
+               if ($(window).scrollTop() > 50) {
+                  $('.header-nav').addClass('navbar-fixed-top');
+                  $('.teeth').addClass('teeth-fixed-top');
+               }
+
+               if ($(window).scrollTop() < 51) {
+                  $('.header-nav').removeClass('navbar-fixed-top');
+                  $('.teeth').removeClass('teeth-fixed-top');
+               }
+         });
          
+         //Fancybox
+         $('.view-popup').fancybox({
+            
+         });
       });
+   
 
 </script>
 @endpush
