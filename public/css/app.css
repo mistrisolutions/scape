@@ -10956,7 +10956,7 @@ p {
 }
 
 .teeth-fixed-top {
-  top: -30px !important;
+  top: -40px !important;
   transition: all 0.5s ease-in-out;
 }
 
@@ -10966,7 +10966,7 @@ p {
 
 #header .header-nav {
   position: fixed;
-  top: 40px;
+  top: 20px;
   left: 0;
   right: 0;
   z-index: 1000 !important;

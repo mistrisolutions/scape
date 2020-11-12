@@ -54,7 +54,7 @@ p {
    transition: all .5s ease-in-out;
 }
 .teeth-fixed-top {
-   top: -30px !important;
+   top: -40px !important;
    transition: all .5s ease-in-out;
 }
 .navbar-dark button.navbar-toggler:focus {
@@ -62,7 +62,7 @@ p {
 }
 #header .header-nav {
    position: fixed;
-   top: 40px;
+   top: 20px;
    left: 0;
    right: 0;
    z-index: 1000!important;
