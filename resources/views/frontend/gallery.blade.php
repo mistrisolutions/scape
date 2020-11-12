@@ -99,8 +99,8 @@
                            <div class="row">
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup" data-fancybox="gallery" href="{{asset('assets/images/portfolio/demo-buil.jpg')}}">
-                                       <img class="img-fluid w-100" src="{{asset('assets/images/portfolio/demo-buil.jpg')}}" alt="">
+                                    <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup" data-fancybox="gallery" href="{{asset('assets/images/residential/1.jpg')}}">
+                                       <img class="img-fluid w-100" src="{{asset('assets/images/residential/1.jpg')}}" alt="">
                                     </a>
                                     <a href=""  data-toggle="modal" data-target="#exampleModal"><img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt=""></a>
                                     
@@ -108,119 +108,120 @@
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup" data-fancybox="gallery"  href="{{asset('assets/images/portfolio/2.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt=""></a>
+                                    <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup" data-fancybox="gallery"  href="{{asset('assets/images/residential/2.jpg')}}"><img class="img-fluid w-100" src="{{asset('assets/images/residential/2.jpg')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup" data-fancybox="gallery" href="{{asset('assets/images/portfolio/3.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt=""></a>
+                                    <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup" data-fancybox="gallery" href="{{asset('assets/images/residential/3.jpg')}}"><img class="img-fluid w-100" src="{{asset('assets/images/residential/3.jpg')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/portfolio/1.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt=""></a>
+                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/residential/4.jpg')}}"><img class="img-fluid w-100" src="{{asset('assets/images/residential/4.jpg')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/portfolio/2.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt=""></a>
+                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/residential/5.jpg')}}"><img class="img-fluid w-100" src="{{asset('assets/images/residential/5.jpg')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/portfolio/3.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt=""></a>
+                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/residential/6.jpg')}}"><img class="img-fluid w-100" src="{{asset('assets/images/residential/6.jpg')}}" alt=""></a>
+                                    <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
+                                 </div>
+                              </div>
+                              
+                              <div class="col-sm-6 col-md-4 mb-5">
+                                 <div class="view-card">
+                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/residential/7.jpg')}}"><img class="img-fluid w-100" src="{{asset('assets/images/residential/7.jpg')}}" alt=""></a>
+                                    <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
+                                 </div>
+                              </div>
+                              
+                              <div class="col-sm-6 col-md-4 mb-5">
+                                 <div class="view-card">
+                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/residential/8.jpg')}}"><img class="img-fluid w-100" src="{{asset('assets/images/residential/8.jpg')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               
                            </div>
-                        </div>
+                        </div> <!-- ./tab-pan -->
                         <div class="tab-pane fade" id="pills-office" role="tabpanel" aria-labelledby="pills-office-tab">
                            <div class="row">
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/portfolio/1.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt=""></a>
+                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/office/1.jpg')}}"><img class="img-fluid w-100" src="{{asset('assets/images/office/1.jpg')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
+                              
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup" href="{{asset('assets/images/portfolio/2.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt=""></a>
+                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/office/2.jpg')}}"><img class="img-fluid w-100" src="{{asset('assets/images/office/2.jpg')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
+                              
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/portfolio/3.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt=""></a>
+                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/office/3.jpg')}}"><img class="img-fluid w-100" src="{{asset('assets/images/office/3.jpg')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
+                              
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/portfolio/1.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt=""></a>
-                                    <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
-                                 </div>
-                              </div>
-                              <div class="col-sm-6 col-md-4 mb-5">
-                                 <div class="view-card">
-                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/portfolio/2.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt=""></a>
-                                    <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
-                                 </div>
-                              </div>
-                              <div class="col-sm-6 col-md-4 mb-5">
-                                 <div class="view-card">
-                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/portfolio/3.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt=""></a>
+                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/office/4.jpg')}}"><img class="img-fluid w-100" src="{{asset('assets/images/office/4.jpg')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               
                            </div>
-                        </div>
+                        </div> <!-- ./tab-pan -->
                         <div class="tab-pane fade" id="pills-hotel" role="tabpanel" aria-labelledby="pills-hotel-tab">
                            <div class="row">
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/portfolio/1.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt=""></a>
+                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/hotel/1.jpg')}}"><img class="img-fluid w-100" src="{{asset('assets/images/hotel/1.jpg')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/portfolio/2.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt=""></a>
+                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/hotel/2.jpg')}}"><img class="img-fluid w-100" src="{{asset('assets/images/hotel/2.jpg')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/portfolio/3.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt=""></a>
+                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/hotel/3.jpg')}}"><img class="img-fluid w-100" src="{{asset('assets/images/hotel/3.jpg')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/portfolio/1.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt=""></a>
+                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/hotel/4.jpg')}}"><img class="img-fluid w-100" src="{{asset('assets/images/hotel/4.jpg')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
-                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/portfolio/2.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/2.png')}}" alt=""></a>
+                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/hotel/5.jpg')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/1.png')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
-                              <div class="col-sm-6 col-md-4 mb-5">
-                                 <div class="view-card">
-                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/portfolio/3.png')}}"><img class="img-fluid w-100" src="{{asset('assets/images/portfolio/3.png')}}" alt=""></a>
-                                    <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
-                                 </div>
-                              </div>
+
+                              
                               
                            </div>
-                        </div>
+                        </div> <!-- ./tab-pan -->
                         <div class="tab-pane fade" id="pills-rooftop" role="tabpanel" aria-labelledby="pills-rooftop-tab">
                            <div class="row">
                               <div class="col-sm-6 col-md-4 mb-5">
@@ -261,7 +262,7 @@
                               </div>
                               
                            </div>
-                        </div>
+                        </div> <!-- ./tab-pan -->
                         <div class="tab-pane fade" id="pills-steel" role="tabpanel" aria-labelledby="pills-steel-tab">
                            <div class="row">
                               <div class="col-sm-6 col-md-4 mb-5">
@@ -302,7 +303,7 @@
                               </div>
                               
                            </div>
-                        </div>
+                        </div> <!-- ./tab-pan -->
                      </div>
                   </div>
                </div>
@@ -314,7 +315,7 @@
       <div class="modal-dialog" role="document">
          <div class="modal-content">
             <div class="modal-body">
-               <iframe class="img-fluid w-100" src="https://momento360.com/e/u/350a43f62e744c4ebd9142602eccba2d?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium" alt="">
+               <iframe class="img-fluid w-100" src="https://momento360.com/e/u/805ec727bacf478cb1a0c93aa34ebde5?utm_campaign=embed&utm_source=other&heading=1198.55&pitch=-9.76&field-of-view=75&size=medium" alt="">
                </iframe>
             </div>
             </div>

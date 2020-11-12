@@ -66,7 +66,7 @@
                         <div class="col-sm-6 col-md-4">
                             <div class="card border-0">
                                 <div class="card-header">
-                                    <img class="card-img-top" src="{{asset('assets/images/home/project1.png')}}" alt="Card image">
+                                    <img class="card-img-top" src="{{asset('assets/images/residential/1.jpg')}}" alt="Card image">
                                 </div>
                                 <div class="card-body text-center">
                                     <p class="card-text font-weight-bold text-dark">Project 1</p>
@@ -77,7 +77,7 @@
                         <div class="col-sm-6 col-md-4">
                             <div class="card border-0">
                                 <div class="card-header">
-                                    <img class="card-img-top" src="{{asset('assets/images/home/project2.png')}}" alt="Card image">
+                                    <img class="card-img-top" src="{{asset('assets/images/office/1.jpg')}}" alt="Card image">
                                 </div>
                                 <div class="card-body text-center">
                                     <p class="card-text font-weight-bold text-dark">Project Laximi Vander</p>
@@ -88,7 +88,7 @@
                         <div class="col-sm-6 col-md-4">
                             <div class="card border-0">
                                 <div class="card-header">
-                                    <img class="card-img-top" src="{{asset('assets/images/home/project3.png')}}" alt="Card image">
+                                    <img class="card-img-top" src="{{asset('assets/images/hotel/1.jpg')}}" alt="Card image">
                                 </div>
                                 <div class="card-body text-center">
                                     <p class="card-text font-weight-bold text-dark">Project 3</p>
