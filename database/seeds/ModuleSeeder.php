@@ -43,60 +43,31 @@ class ModuleSeeder extends Seeder
             'slug'=>Str::slug('Delete user'),
         ]);
 
-        //Orders
-
-         //
-         $module=Module::create([
-            'title'=>'Order',
-            'slug'=>Str::slug('Order'),
-        ]);
-        $module->abilities()->create([
-            'title'=>'View any order',
-            'slug'=>Str::slug('View any order'),
-        ]);
-        $module->abilities()->create([
-            'title'=>'Create order',
-            'slug'=>Str::slug('Create order'),
-        ]);
-        $module->abilities()->create([
-            'title'=>'View order',
-            'slug'=>Str::slug('View order'),
-        ]);
-        $module->abilities()->create([
-            'title'=>'Update order',
-            'slug'=>Str::slug('Update order'),
-        ]);
-        $module->abilities()->create([
-            'title'=>'Delete order',
-            'slug'=>Str::slug('Delete order'),
+        //categories
+        $module=Module::create([
+            'title'=>'Category',
+            'slug'=>Str::slug('Category'),
         ]);
 
-        //Orders
-
-         //
-         $module=Module::create([
-            'title'=>'Shop owner',
-            'slug'=>Str::slug('Shop owner'),
+        $module->abilities()->create([
+            'title'=>'View any category',
+            'slug'=>Str::slug('View any category'),
         ]);
         $module->abilities()->create([
-            'title'=>'View any shop owner',
-            'slug'=>Str::slug('View any shop owner'),
+            'title'=>'Create user',
+            'slug'=>Str::slug('Create category'),
         ]);
         $module->abilities()->create([
-            'title'=>'Create shop owner',
-            'slug'=>Str::slug('Create shop owner'),
+            'title'=>'View user',
+            'slug'=>Str::slug('View category'),
         ]);
         $module->abilities()->create([
-            'title'=>'View shop owner',
-            'slug'=>Str::slug('View shop owner'),
+            'title'=>'Update user',
+            'slug'=>Str::slug('Update category'),
         ]);
         $module->abilities()->create([
-            'title'=>'Update shop owner',
-            'slug'=>Str::slug('Update shop owner'),
-        ]);
-        $module->abilities()->create([
-            'title'=>'Delete shop owner',
-            'slug'=>Str::slug('Delete shop owner'),
+            'title'=>'Delete user',
+            'slug'=>Str::slug('Delete category'),
         ]);
     }
 }

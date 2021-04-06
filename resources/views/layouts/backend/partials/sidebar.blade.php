@@ -28,7 +28,24 @@
         </a>
       </li>
       @endcan
-
+      <li class="nav-item {{ Request::routeIs('app.categories.index') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('app.categories.index') }}">
+          <span class="menu-title">Categories</span>
+          <i class="mdi mdi-account-multiple menu-icon"></i>
+        </a>
+      </li>
+      <li class="nav-item {{ Request::routeIs('app.products.index') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('app.products.index') }}">
+          <span class="menu-title">Products</span>
+          <i class="mdi mdi-account-multiple menu-icon"></i>
+        </a>
+      </li>
+      <li class="nav-item {{ Request::routeIs('app.contacts.index') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('app.contacts.index') }}">
+          <span class="menu-title">Contacts</span>
+          <i class="mdi mdi-account-multiple menu-icon"></i>
+        </a>
+      </li>
       @if(auth()->user()->isSuperAdmin())
       <li class="nav-item">
         <a class="nav-link" data-toggle="collapse" href="#settings" aria-expanded="false" aria-controls="general-pages">
