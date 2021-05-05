@@ -1,130 +1,76 @@
-<footer id="Footer" class="clearfix">
-
-    <div class="widgets_wrapper">
+<footer>
+    <div class="footer-bg">
         <div class="container">
-            <!-- One Fourth (1/4) Column -->
-            <div class="column one-fourth">
-                <!-- Text Area -->
-                <aside class="widget widget_text">
-                    <h4>Shortcut links</h4>
-                    <div class="textwidget">
-                        <ul class="footer_links">
-                            <li>
-                                <a href="#">Quent per conubia nostra</a>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="company">
+                        <img class="img-fluid mb-3" src="{{asset('assets/images/logo-w.png')}}" alt="">
+                        <p>SCAPE Development Engineers is a Consultancy firm located in Dhaka which provides Interior Design, Exterior Design & Total Constructions solution for Govt. & Private sectors in Bangladesh.</p>
+                    </div>
+                </div> <!-- ./col -->
+                <div class="col-md-3">
+                    <div class="services">
+                        <h4>Services</h4>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#">
+                                    <img class="mr-2"src="{{asset('assets/images/home/footer-arrow.svg')}}" alt="">Interior design & development.
+                                </a>
                             </li>
-                            <li>
-                                <a href="#">Nceptos himenaeos</a>
+                            <li class="nav-item">
+                                <a href="#">
+                                    <img class="mr-2"src="{{asset('assets/images/home/footer-arrow.svg')}}" alt="">Architectural & engineering consultant.
+                                </a>
                             </li>
-                            <li>
-                                <a href="#">Mauris in erat</a>
+                            <li class="nav-item">
+                                <a href="#">
+                                    <img class="mr-2" src="{{asset('assets/images/home/footer-arrow.svg')}}" alt="">Pre-engineered steel building.
+                                </a>
                             </li>
-                            <li>
-                                <a href="#">Lustoac</a>
+                            <li class="nav-item">
+                                <a href="#">
+                                    <img class="mr-2"src="{{asset('assets/images/home/footer-arrow.svg')}}" alt="">Civil & building construction.
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">
+                                    <img class="mr-2" src="{{asset('assets/images/home/footer-arrow.svg')}}" alt="">Real estate
+                                </a>
                             </li>
                         </ul>
                     </div>
-                </aside>
-            </div>
-            <!-- One Fourth (1/4) Column -->
-            <div class="column one-fourth">
-                <!-- Text Area -->
-                <aside class="widget widget_text">
-                    <h4>Our mission</h4>
-                    <div class="textwidget">
-                        <ul class="footer_links">
-                            <li>
-                                <a href="#">Aenean sollicitudin orem qui</a>
+                </div> <!-- ./col -->
+                <div class="col-md-3">
+                    <div class="contact">
+                        <h4>Contact us</h4>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <img class="mr-2"src="{{asset('assets/images/home/phone.svg')}}" alt="">+88 01616182874
                             </li>
-                            <li>
-                                <a href="#">Duis sed odio sit amet nibh</a>
+                            <li class="nav-item">
+                                <img class="mr-2"src="{{asset('assets/images/home/phone.svg')}}" alt="">+88 01616182874
                             </li>
-                            <li>
-                                <a href="#">Morbi accumsan ipsum velit</a>
+                            <li class="nav-item">
+                                <img class="mr-2"src="{{asset('assets/images/home/mail.svg')}}" alt="">info.scapebd@gmail.com
                             </li>
-                            <li>
-                                <a href="#">Nam nec tellus </a>
-                            </li>
-                            <li>
-                                <a href="#">Class aptent taciti sociosqu </a>
-                            </li>
-                            <li>
-                                <a href="#">Mauris in erat justo</a>
-                            </li>
-                            <li>
-                                <a href="#">Sed non neque</a>
+                            <li class="nav-item d-flex align-items-start">
+                                <img class="mr-2"src="{{asset('assets/images/home/location.png')}}" alt="">
+                                <span>44/F/7 (2nd floor), Rangan Tower,West Panthapath,Dhaka-1215, Bangladesh.</span>
                             </li>
                         </ul>
                     </div>
-                </aside>
-            </div>
-            <!-- One Fourth (1/4) Column -->
-            <div class="column one-fourth">
-                <!-- Text Area -->
-                <aside class="widget widget_text">
-                    <h4>About us</h4>
-                    <div class="textwidget">
-                        <ul class="footer_links">
-                            <li>
-                                <a href="#">Duis sed odio sit amet nibh</a>
-                            </li>
-                            <li>
-                                <a href="#">Morbi accumsan ipsum velit</a>
-                            </li>
-                            <li>
-                                <a href="#">Nam nec tellus </a>
-                            </li>
-                            <li>
-                                <a href="#">Class aptent taciti sociosqu </a>
-                            </li>
-                            <li>
-                                <a href="#">Mauris in erat justo</a>
-                            </li>
-                            <li>
-                                <a href="#">Sed non neque</a>
-                            </li>
+                </div> <!-- ./col -->
+                <div class="col-md-2">
+                    <div class="social">
+                        <h4>Connect with us</h4>
+                        <ul class="navbar-nav d-flex navbar-expand">
+                            <li class="nav-item mr-3"><img src="{{asset('assets/images/home/facebook.svg')}}" alt=""></li>
+                            <li class="nav-item mr-3"><img src="{{asset('assets/images/home/instagram.svg')}}" alt=""></li>
+                            <li class="nav-item mr-3"><img src="{{asset('assets/images/home/linkedin.svg')}}" alt=""></li>
                         </ul>
                     </div>
-                </aside>
-            </div>
-            <!-- One Fourth (1/4) Column -->
-            <div class="column one-fourth">
-                <!-- Text Area -->
-                <aside class="widget widget_text">
-                    <h4>Departments</h4>
-                    <div class="textwidget">
-                        <ul class="footer_links">
-                            <li>
-                                <a href="#">Nam nec tellus </a>
-                            </li>
-                            <li>
-                                <a href="#">Class aptent taciti sociosqu </a>
-                            </li>
-                            <li>
-                                <a href="#">Mauris in erat justo</a>
-                            </li>
-                            <li>
-                                <a href="#">Sed non neque</a>
-                            </li>
-                        </ul>
-                    </div>
-                </aside>
-            </div>
-        </div>
-    </div>
-    <!-- Footer copyright-->
-    <div class="footer_copy">
-        <div class="container">
-            <div class="column one">
-
-                <!-- Copyrights -->
-                <div class="copyright">
-                    &copy; <span id="date"></span> <a target="_blank" rel="nofollow" href="{{route('welcome')}}">Multitech Engineering</a>
-                </div>
-
-                <!--Social info area-->
-                <ul class="social"></ul>
-            </div>
-        </div>
-    </div>
-
-</footer>
+                </div> <!-- ./col -->
+            </div> <!-- ./row -->
+        </div> <!-- ./container -->
+    </div> <!-- ./footer-bg -->
+</footer> <!-- ./Footer -->

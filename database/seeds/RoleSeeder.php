@@ -19,5 +19,9 @@ class RoleSeeder extends Seeder
             'title'=>'Super Admin',
             'slug' =>Str::slug('Super Admin'),
         ]);
+        Role::updateOrCreate([
+            'title'=>'Shop Owner',
+            'slug' =>Str::slug('Shop Owner'),
+        ]);
     }
 }

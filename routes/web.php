@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 
 Auth::routes();
 
@@ -49,17 +49,4 @@ Route::group(['as'=>'app.','prefix'=>'app','namespace'=>'Backend','middleware' =
         Route::delete('/delete/{user}','UserController@destroy')->name('user.destroy')->middleware('can:delete,user');;
     });
 
-
-    //category
-
-    Route::resource('categories','CategoryController');
-    Route::resource('subcategories','SubCategoryController');
-
-    //Product
-
-    Route::resource('products','ProductController');
-
-    //contact
-    Route::get('contacts','ContactController@index')->name('contacts.index');
-    Route::delete('/contacts/{contact}','ContactController@destroy')->name('contacts.destroy');
 });

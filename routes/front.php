@@ -1,47 +1,27 @@
 
 <?php
-use App\Models\Product;
-use App\Models\Contact;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('Frontend.welcome',[
-        'products'=>Product::latest()->limit(5)->get()
-    ]);
-})->name('welcome');
+Route::get('/',function(){
+    return view('frontend.home');
+})->name('home');
 
-Route::get('/contact', function () {
-    return view('Frontend.contact',[
-    ]);
-})->name('contact');
-
-Route::get('/about', function () {
-    return view('Frontend.about',[
-    ]);
+Route::get('about',function(){
+    return view('frontend.about');
 })->name('about');
 
-Route::get('/services', function () {
-    return view('Frontend.services',[
-    ]);
-})->name('services');
+Route::get('service',function(){
+    return view('frontend.service');
+})->name('service');
 
-Route::get('/products', function () {
-    return view('Frontend.products',[
-    ]);
-})->name('products');
+Route::get('team',function(){
+    return view('frontend.team');
+})->name('team');
 
+Route::get('gallery',function(){
+    return view('frontend.gallery');
+})->name('gallery');
 
-Route::post('contact',function(Request $request){
-    $attributes=$request->validate([
-        'name'=>'required|string',
-        'email'=>'required|email',
-        'phone'=>'required',
-        'message'=>'required'
-
-    ]);
-
-    Contact::create($attributes);
-
-    return back()->with('success','Message revieved ,We will contact with you soon');
-})->name('contact.store');
+Route::get('contact',function(){
+    return view('frontend.contact');
+})->name('contact');

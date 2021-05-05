@@ -1,100 +1,76 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 "> <![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie10 lt-ie9"> <![endif]-->
-<!--[if IE 9]><html class="no-js lt-ie10"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
-
-<head>
-
-    <!-- Basic Page Needs -->
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>@yield('title')</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="agro/images/favicon.ico">
-
-    <!-- FONTS -->
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,400italic,700'>
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:100,100italic,300,400,400italic,500,700'>
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Patua+One:100,300,400,400italic,700'>
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Droid+Serif:100,300,400,400italic,500,700'>
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Exo:100,300,400,400italic,500,700'>
-
-    <!-- CSS -->
-    <link rel='stylesheet' href='{{asset("css/global.css")}}'>
-    <link rel='stylesheet' href='{{asset("css/structure.css")}}'>
-    <link rel='stylesheet' href='{{asset("css/agro.css")}}'>
-    <link rel='stylesheet' href='{{asset("css/custom.css")}}'>
-
-
-    <!-- Revolution Slider -->
-    <link rel="stylesheet" href="{{asset('plugins/rs-plugin/css/settings.css')}}">
-
-</head>
-
-<body class="home template-slider style-simple layout-full-width mobile-tb-left no-content-padding header-classic minimalist-header sticky-header sticky-white ab-show subheader-both-center menu-arrow-bottom menuo-right menuo-no-borders footer-copy-center">
-
-    <!-- Main Theme Wrapper -->
-    <div id="Wrapper">
-
-        <!-- Header Wrapper -->
-        
-      @include('layouts.Frontend.Partials.header')
-        <!-- #Content -->
-        <!-- Main Content -->
-        <div id="Content">
-            @yield('content')
-        </div>
-
-        <!-- #Footer -->
-        @include('layouts.Frontend.Partials.footer')
-        <!-- Footer-->
-        
-
-    </div>
-    <!-- #Wrapper -->
-
-    <!-- JS -->
-    <script src="{{asset('js/jquery-2.1.4.min.js')}}"></script>
-
-    <script src="{{asset('js/mfn.menu.js')}}"></script>
-    <script src="{{asset('js/jquery.plugins.js')}}"></script>
-    <script src="{{asset('js/jquery.jplayer.min.js')}}"></script>
-    <script src="{{asset('js/animations/animations.js')}}"></script>
-    <script src="{{asset('js/scripts.js')}}"></script>
-    @stack('custom_js')
-    
-    <script>
-        //<![CDATA[
-        jQuery(window).load(function() {
-            var retina = window.devicePixelRatio > 1 ? true : false;
-            if (retina) {
-                var retinaEl = jQuery("#logo img.logo-main");
-                var retinaLogoW = retinaEl.width();
-                var retinaLogoH = retinaEl.height();
-                retinaEl.attr("src", "{{asset('images/retina-agro.png')}}").width(retinaLogoW).height(retinaLogoH);
-                var stickyEl = jQuery("#logo img.logo-sticky");
-                var stickyLogoW = stickyEl.width();
-                var stickyLogoH = stickyEl.height();
-                stickyEl.attr("src", "{{asset('images/retina-agro.png')}}").width(stickyLogoW).height(stickyLogoH);
-            }
-        });
-        //]]>
-    </script>
-
-    <script>
-        const tar=document.getElementById('date')
-        tar.innerText=new Date().getFullYear()
-    </script>
-
-</body>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+        @yield('title')
+    </title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    @stack('css')
+    <!-- Layout styles -->
+   
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" />
+  </head>
+  <body>
+    <!--header-->
+    <header id="header">
+      <div class="header-nav">
+          <div class="container">
+              <nav class="navbar navbar-expand-lg navbar-dark">
+                  <a class="navbar-brand mr-5" href="{{ route('home') }}">
+                      <img class="img-fluid" src="{{ asset('assets/images/logo-w.png') }}" alt="">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+  
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="{{ route('home') }}">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="{{ route('about') }}">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="{{ route('service') }}">Services</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="{{ route('team') }}">Team</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="{{ route('gallery') }}">Gallery</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href=" {{ route('contact') }}">Contacts</a>
+                      </li>
+                      </ul>
+                  </div> <!-- ./Collapse -->
+              </nav> <!-- ./Nav -->
+          </div><!-- ./Container -->
+      </div> <!-- ./Header-nav -->
+          
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="teeth">
+                  <img class="img-fluid" src="{{asset('assets/images/home/Teeth.png')}}" alt="">
+              </div>
+              </div>
+          </div>
+      </div>
+      @yield('slider')
+  </header> <!-- ./Header -->
+    @yield('content')
+    @include('layouts.frontend.partials.footer')
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="{{ asset('js/app.js') }}"></script>
+    <!-- End custom js for this page -->
+    @stack('custom-scripts')
+  </body>
 </html>
