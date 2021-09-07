@@ -110,7 +110,7 @@ p {
 }
 .nav-slider .slider-wrap img {
    width: 100%;
-   height: 100%;   
+   height: 100%;
 
 }
 ul.slick-dots {
@@ -155,7 +155,7 @@ ul.slick-dots li.slick-active button {
    width: 100%;
 }
 .mdl-sec-bg{
-   background-image: url('assets/images/home/mdl-section-bg.png');
+   background-image: url('/assets/images/home/mdl-section-bg.png');
    height: 100%;
    width: 100%;
    background-repeat: no-repeat;
@@ -431,7 +431,7 @@ button.slick-next.slick-arrow:focus {
 .footer-bg .company img{
    width: 100%;
 }
-.footer-bg .services, 
+.footer-bg .services,
 .footer-bg .contact,
 .footer-bg .social{
    margin-top: 78px;
@@ -767,7 +767,7 @@ img.mfp-img {
    .team {
       margin-top: 170px;
    }
-   
+
 }
 
 @media (max-width: 320px){
