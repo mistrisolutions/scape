@@ -10978,6 +10978,33 @@ p {
   color: #737B7D !important;
 }
 
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.fs-96 {
+  font-size: 96px !important;
+  line-height: normal !important;
+}
+
 /*
 *--------------------------------
 * Header-nav
@@ -11029,9 +11056,13 @@ p {
 
 #header .navbar .nav-item .nav-link {
   font-family: "Libel Suit";
-  font-size: 24px;
+  font-size: 20px;
   line-height: 29px;
   color: #FFFDFD !important;
+}
+
+#header .header-nav .dropdown-menu {
+  top: 145%;
 }
 
 /*
@@ -11460,14 +11491,13 @@ button.slick-next.slick-arrow:focus {
 
 /*
 *---------------------------------
-*About-page
+*about-page
 *---------------------------------
 */
 
 .about-nav-slider {
-  height: 400px;
+  height: 70vh;
   width: 100%;
-  margin-top: 220px;
 }
 
 .about-slider-wrap {
@@ -11512,6 +11542,67 @@ button.slick-next.slick-arrow:focus {
 }
 
 .about-us .we-are li {
+  font-family: Lora;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+  color: #737B7D;
+}
+
+/*
+*---------------------------------
+*Who-we-are-page
+*---------------------------------
+*/
+
+.who-nav-slider {
+  height: 70vh;
+  width: 100%;
+  margin-top: 220px;
+}
+
+.who-slider-wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.who-slider-wrap img {
+  width: 100%;
+  height: 100%;
+}
+
+.who-we-are {
+  background-color: #fff;
+}
+
+.who-we-are .we-are h1,
+.who-we-are .mission h1,
+.who-we-are .vission h1 {
+  font-family: "Libel Suit";
+  font-size: 38px;
+  line-height: 40px;
+  letter-spacing: 0.1px;
+  color: #373F41;
+  margin-bottom: 35px;
+}
+
+.who-we-are .we-are p,
+.who-we-are .mission p,
+.who-we-are .vission p {
+  font-family: Lora;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  color: #737B7D;
+  margin-bottom: 15px;
+}
+
+.who-we-are .we-are ol {
+  list-style: upper-roman;
+  margin-left: 30px;
+}
+
+.who-we-are .we-are li {
   font-family: Lora;
   font-size: 18px;
   line-height: 30px;
@@ -11567,10 +11658,6 @@ button.slick-next.slick-arrow:focus {
 *Team-page
 *---------------------------------
 */
-
-.team {
-  margin-top: 210px;
-}
 
 .team .card {
   transition: all 0.5s;
@@ -11629,6 +11716,16 @@ img.mfp-img {
   margin-top: 0px !important;
 }
 
+.portfolio-gallery .gallery-img-big,
+.portfolio-gallery .gallery-img-big {
+  height: 400px;
+}
+
+.portfolio-gallery .gallery-img {
+  height: 200px;
+  min-width: 100%;
+}
+
 /*
 *---------------------------------
 *Contact-page
@@ -11682,7 +11779,7 @@ img.mfp-img {
 
 @media (max-width: 991px) {
   #header .navbar .nav-item .nav-link {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 20px;
     text-align: right;
     margin-right: 5px;
@@ -11756,6 +11853,11 @@ img.mfp-img {
     font-size: 14px !important;
   }
 
+  .fs-96 {
+    font-size: 36px !important;
+    line-height: normal !important;
+  }
+
   .section-content ul li {
     font-size: 15px;
     line-height: 25px;
@@ -11793,7 +11895,6 @@ img.mfp-img {
 
   .about-nav-slider {
     height: 300px;
-    margin-top: 150px;
   }
 
   .about-us .we-are li {
@@ -11801,9 +11902,18 @@ img.mfp-img {
     line-height: 25px;
   }
 
-  .service,
-  .team {
-    margin-top: 170px;
+  .who-nav-slider {
+    height: 300px;
+    margin-top: 140px;
+  }
+
+  .portfolio {
+    margin-top: 130px;
+  }
+
+  .portfolio-gallery .gallery-img-big,
+  .portfolio-gallery .gallery-img-big {
+    height: 200px;
   }
 }
 
