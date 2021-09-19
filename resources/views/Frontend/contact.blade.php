@@ -65,7 +65,7 @@
                <div class="col-md-10 mx-auto">
                   <div class="row">
                      <div class="col-md-6 mb-5">
-                        <div class="map">
+                        <div class="map border-10">
                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.844422969521!2d90.38167421429699!3d23.752926694598216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b96dc43deffb%3A0x4045bef8b05f468b!2sScape%20Development%20Engineers!5e0!3m2!1sen!2sbd!4v1604337396210!5m2!1sen!2sbd" width="100%" height="450px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
                      </div>
@@ -76,17 +76,17 @@
                            <form>
                               <div class="form-group">
                                  <label for="textarea"></label>
-                                 <textarea class="form-control rounded-0" id="textarea" rows="3" placeholder="Message (required)"></textarea>
+                                 <textarea class="form-control border-10" id="textarea" rows="3" placeholder="Message (required)"></textarea>
                               </div>
                               <div class="form-group">
                                  <label for="name"></label>
-                                 <input type="text" class="form-control rounded-0" id="name" placeholder="Your email (required)">
+                                 <input type="text" class="form-control border-10 py-4" id="name" placeholder="Your email (required)">
                               </div>
                               <div class="form-group">
                                  <label for="email"></label>
-                                 <input type="email" class="form-control rounded-0" id="email" placeholder="Your email (required)">
+                                 <input type="email" class="form-control border-10 py-4" id="email" placeholder="Your email (required)">
                               </div>
-                              <button type="submit" class="btn btn-primary btn-lg rounded-0">Send message</button>
+                              <button type="submit" class="btn btn-primary btn-lg border-10">Send message</button>
                            </form>
                         </div>
                      </div>
@@ -101,7 +101,7 @@
     <script>
         // Navbar
         $(document).ready(function() {
-            $(window).scroll(function () { 
+            $(window).scroll(function () {
 
                 if ($(window).scrollTop() > 50) {
                     $('.header-nav').addClass('navbar-fixed-top');

@@ -20,11 +20,11 @@
                 <div class="row">
                     <div class="col-md-11 mx-auto">
                         <div class="h-100 w-100 relative">
-                            <img class="img-fluid" src="{{ asset('assets/images/portfolio/admission-office.png') }}"
+                            <img class="img-fluid" src="{{ asset('assets/images/portfolio/faculty.png') }}"
                                  alt="">
                             <div class="overlay"></div>
                             <div class="absolute d-flex justify-content-start align-items-end">
-                                <h1 class="text-white px-4 fs-96">Admission Office</h1>
+                                <h1 class="text-white px-4 fs-96">Faculty And Dean Office</h1>
                             </div>
                         </div>
                     </div> <!-- ./col -->
@@ -88,7 +88,7 @@
                     <div class="col-md-11 mx-auto">
                         <div>
                             <h2 class="text-center mb-5">Floor Planning</h2>
-                            <img class="w-100 h-auto" src="{{asset('assets/images/portfolio/portfolio-1.png')  }}"
+                            <img class="w-100 h-auto" src="{{asset('assets/images/portfolio/portfolio-2.png')  }}"
                                  alt="">
                         </div>
                     </div> <!-- ./col -->
@@ -102,82 +102,46 @@
                     <div class="row justify-content-center">
                         <div class="col-sm-6 col-md-6 col-lg-7">
                             <div class="border-0">
-                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_1 - Photo.png')}}">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup w-100 h-100"
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/F_13 - Photo.png')}}">
                                     <img class="gallery-img-big img-fluid"
-                                         src="{{asset('assets/images/portfolio/R_1 - Photo.png')}}" alt="Card image">
+                                         src="{{asset('assets/images/portfolio/F_12 - Photo.png')}}" alt="Card image">
                                 </a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-5 mt-3 mt-md-0">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_2 - Photo.png')}}">
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/F_11 - Photo.png')}}">
                                     <img class="gallery-img-big img-fluid"
-                                         src="{{asset('assets/images/portfolio/R_2 - Photo.png')}}" alt="Card image">
+                                         src="{{asset('assets/images/portfolio/F_11 - Photo.png')}}" alt="Card image">
                                 </a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_3 - Photo.png')}}">
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/F_14 - Photo.png')}}">
                                     <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/R_3 - Photo.png')}}" alt="Card image">
+                                         src="{{asset('assets/images/portfolio/F_14 - Photo.png')}}" alt="Card image">
                                 </a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_4 - Photo.png')}}">
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/F_15 - Photo.png')}}">
                                     <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/R_4 - Photo.png')}}" alt="Card image">
+                                         src="{{asset('assets/images/portfolio/F_15 - Photo.png')}}" alt="Card image">
                                 </a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_5 - Photo.png')}}">
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/F_12 - Photo.png')}}">
                                     <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/R_5 - Photo.png')}}" alt="Card image">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
-                            <div class="border-0">
-                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_6 - Photo.png')}}">
-                                    <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/R_6 - Photo.png')}}" alt="Card image">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
-                            <div class="border-0">
-                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_7 - Photo.png')}}">
-                                    <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/R_7 - Photo.png')}}" alt="Card image">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
-                            <div class="border-0">
-                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_9 - Photo.png')}}">
-                                    <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/R_9 - Photo.png')}}" alt="Card image">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
-                            <div class="border-0">
-                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_10 - Photo.png')}}">
-                                    <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/R_10 - Photo.png')}}" alt="Card image">
+                                         src="{{asset('assets/images/portfolio/F_15 - Photo.png')}}" alt="Card image">
                                 </a>
                             </div>
                         </div>

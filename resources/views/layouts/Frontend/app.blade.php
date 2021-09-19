@@ -48,6 +48,11 @@
                           </a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                               <a class="dropdown-item" href="{{ route('portfolio-1') }}">Admission Office</a>
+                              <a class="dropdown-item" href="{{ route('portfolio-2') }}">Faculty And Dean Office</a>
+                              <a class="dropdown-item" href="{{ route('portfolio-3') }}">Manuel Caffe</a>
+                              <a class="dropdown-item" href="{{ route('portfolio-4') }}">Fedex, Khulna</a>
+                              <a class="dropdown-item" href="{{ route('portfolio-5') }}">Food Company, Gajipur</a>
+                              <a class="dropdown-item" href="{{ route('portfolio-6') }}">Bijoy Residence</a>
                           </div>
                       </li>
                       <li class="nav-item">
