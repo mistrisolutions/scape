@@ -95,7 +95,7 @@
                         </li>
                      </ul>
                      <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-residence" role="tabpanel" aria-labelledby="pills-residence-tab"> 
+                        <div class="tab-pane fade show active" id="pills-residence" role="tabpanel" aria-labelledby="pills-residence-tab">
                            <div class="row">
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
@@ -103,7 +103,6 @@
                                        <img class="img-fluid w-100" src="{{asset('assets/images/residential/1.jpg')}}" alt="">
                                     </a>
                                     <a href=""  data-toggle="modal" data-target="#exampleModal"><img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt=""></a>
-                                    
                                  </div>
                               </div>
                               <div class="col-sm-6 col-md-4 mb-5">
@@ -136,21 +135,21 @@
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
-                              
+
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/residential/7.jpg')}}"><img class="img-fluid w-100" src="{{asset('assets/images/residential/7.jpg')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
-                              
+
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/residential/8.jpg')}}"><img class="img-fluid w-100" src="{{asset('assets/images/residential/8.jpg')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
-                              
+
                            </div>
                         </div> <!-- ./tab-pan -->
                         <div class="tab-pane fade" id="pills-office" role="tabpanel" aria-labelledby="pills-office-tab">
@@ -161,28 +160,28 @@
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
-                              
+
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/office/2.jpg')}}"><img class="img-fluid w-100" src="{{asset('assets/images/office/2.jpg')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
-                              
+
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/office/3.jpg')}}"><img class="img-fluid w-100" src="{{asset('assets/images/office/3.jpg')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
-                              
+
                               <div class="col-sm-6 col-md-4 mb-5">
                                  <div class="view-card">
                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"  class="view-popup" href="{{asset('assets/images/office/4.jpg')}}"><img class="img-fluid w-100" src="{{asset('assets/images/office/4.jpg')}}" alt=""></a>
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
-                              
+
                            </div>
                         </div> <!-- ./tab-pan -->
                         <div class="tab-pane fade" id="pills-hotel" role="tabpanel" aria-labelledby="pills-hotel-tab">
@@ -218,8 +217,8 @@
                                  </div>
                               </div>
 
-                              
-                              
+
+
                            </div>
                         </div> <!-- ./tab-pan -->
                         <div class="tab-pane fade" id="pills-rooftop" role="tabpanel" aria-labelledby="pills-rooftop-tab">
@@ -260,7 +259,7 @@
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
-                              
+
                            </div>
                         </div> <!-- ./tab-pan -->
                         <div class="tab-pane fade" id="pills-steel" role="tabpanel" aria-labelledby="pills-steel-tab">
@@ -301,7 +300,7 @@
                                     <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}" alt="">
                                  </div>
                               </div>
-                              
+
                            </div>
                         </div> <!-- ./tab-pan -->
                      </div>
@@ -332,7 +331,7 @@
  // Navbar
       $(document).ready(function() {
          //Navbar fixed top
-         $(window).scroll(function () { 
+         $(window).scroll(function () {
                if ($(window).scrollTop() > 50) {
                   $('.header-nav').addClass('navbar-fixed-top');
                   $('.teeth').addClass('teeth-fixed-top');
@@ -343,13 +342,13 @@
                   $('.teeth').removeClass('teeth-fixed-top');
                }
          });
-         
+
          //Fancybox
          $('.view-popup').fancybox({
-            
+
          });
       });
-   
+
 
 </script>
 @endpush

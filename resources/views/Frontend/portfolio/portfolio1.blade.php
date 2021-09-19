@@ -1,6 +1,8 @@
 @extends('layouts.Frontend.app')
 @section('title', 'about')
 @push('css')
+    <!-- fancybox-popup-css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
     <!-- slick-slider-css -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- Font-Awesome -->
@@ -18,7 +20,8 @@
                 <div class="row">
                     <div class="col-md-11 mx-auto">
                         <div class="h-100 w-100 relative">
-                            <img class="img-fluid" src="{{ asset('assets/images/service/admission-office.png') }}" alt="">
+                            <img class="img-fluid" src="{{ asset('assets/images/service/admission-office.png') }}"
+                                 alt="">
                             <div class="overlay"></div>
                             <div class="absolute d-flex justify-content-start align-items-end">
                                 <h1 class="text-white px-4 fs-96">Admission Office</h1>
@@ -31,62 +34,48 @@
                         <div class="row">
                             <div class="col-md-7">
                                 <h2 class="mb-2">Project Description: </h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                                <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. </p>
+                                <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                                    Ipsum passages, and more recently with desktop publishing software like Aldus
+                                    PageMaker including versions of Lorem Ipsum.</p>
                             </div>
                             <div class="col-md-5">
-                                <div class="d-flex">
-                                    <div class="w-25 text-center">
-                                        <svg class="w-auto h-auto" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18 12.1504C21.373 12.1504 24.1172 9.48246 24.1172 6.20312C24.1172 2.92379 21.373 0.255859 18 0.255859C14.627 0.255859 11.8828 2.92379 11.8828 6.20312C11.8828 9.48246 14.627 12.1504 18 12.1504ZM18 2.30664C20.2099 2.30664 22.0078 4.05459 22.0078 6.20312C22.0078 8.35166 20.2099 10.0996 18 10.0996C15.7901 10.0996 13.9922 8.35166 13.9922 6.20312C13.9922 4.05459 15.7901 2.30664 18 2.30664Z" fill="#4A4B4B"/>
-                                            <path d="M30.375 12.1504C32.5074 12.1504 34.2422 10.4638 34.2422 8.39062C34.2422 6.31749 32.5074 4.63086 30.375 4.63086C28.2426 4.63086 26.5078 6.31749 26.5078 8.39062C26.5078 10.4638 28.2426 12.1504 30.375 12.1504ZM30.375 6.68164C31.3443 6.68164 32.1328 7.44829 32.1328 8.39062C32.1328 9.33296 31.3443 10.0996 30.375 10.0996C29.4057 10.0996 28.6172 9.33296 28.6172 8.39062C28.6172 7.44829 29.4057 6.68164 30.375 6.68164Z" fill="#4A4B4B"/>
-                                            <path d="M31.2258 14.4746H29.5945C27.6723 14.4746 26.0129 15.5787 25.2567 17.1647C23.7 15.5124 21.4638 14.4746 18.9829 14.4746H17.0172C14.5363 14.4746 12.3001 15.5124 10.7433 17.1647C9.98712 15.5787 8.32774 14.4746 6.40547 14.4746H4.77422C2.14172 14.4746 0 16.5443 0 19.0882V26.5537C0 27.6581 0.927703 28.5566 2.06803 28.5566H8.51759C8.62573 29.7803 9.68407 30.7441 10.9703 30.7441H25.0298C26.3159 30.7441 27.3743 29.7803 27.4825 28.5566H33.8583C35.0393 28.5566 36.0001 27.6263 36.0001 26.4826V19.0882C36 16.5443 33.8583 14.4746 31.2258 14.4746ZM2.10938 19.0882C2.10938 17.6751 3.30483 16.5254 4.77422 16.5254H6.40547C7.87486 16.5254 9.07031 17.6751 9.07031 19.0882V19.7903C8.36107 21.5857 8.50781 22.6617 8.50781 26.5059H2.10938V19.0882ZM25.3828 28.3501C25.3828 28.5394 25.2245 28.6934 25.0298 28.6934H10.9702C10.7755 28.6934 10.6172 28.5393 10.6172 28.3501V22.7476C10.6172 19.3166 13.4882 16.5254 17.0171 16.5254H18.9828C22.5118 16.5254 25.3828 19.3166 25.3828 22.7475V28.3501ZM33.8906 26.4826C33.8906 26.518 34.2838 26.5059 27.4922 26.5059C27.4922 22.6332 27.6378 21.5828 26.9297 19.7903V19.0882C26.9297 17.6751 28.1251 16.5254 29.5945 16.5254H31.2258C32.6952 16.5254 33.8906 17.6751 33.8906 19.0882V26.4826Z" fill="#4A4B4B"/>
-                                            <path d="M5.625 12.1504C7.75737 12.1504 9.49219 10.4638 9.49219 8.39062C9.49219 6.31749 7.75737 4.63086 5.625 4.63086C3.49263 4.63086 1.75781 6.31749 1.75781 8.39062C1.75781 10.4638 3.49263 12.1504 5.625 12.1504ZM5.625 6.68164C6.59426 6.68164 7.38281 7.44829 7.38281 8.39062C7.38281 9.33296 6.59426 10.0996 5.625 10.0996C4.65574 10.0996 3.86719 9.33296 3.86719 8.39062C3.86719 7.44829 4.65574 6.68164 5.625 6.68164Z" fill="#4A4B4B"/>
-                                        </svg>
+                                <div class="row">
+                                    <div class="col-md-3 text-center">
+                                        <img class="h-auto w-50 mx-auto" src="/assets/images/portfolio/customer.svg" alt="">
                                     </div>
-                                    <div class="w-75">
+                                    <div class="col-md-7">
                                         <h5>Client:</h5>
                                         <p>Reveire Power and Automation Company Ltd.</p>
                                     </div>
                                 </div>
-                                <div class="d-flex">
-                                    <div class="w-25 text-center">
-                                        <svg class="w-auto h-auto" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18 12.1504C21.373 12.1504 24.1172 9.48246 24.1172 6.20312C24.1172 2.92379 21.373 0.255859 18 0.255859C14.627 0.255859 11.8828 2.92379 11.8828 6.20312C11.8828 9.48246 14.627 12.1504 18 12.1504ZM18 2.30664C20.2099 2.30664 22.0078 4.05459 22.0078 6.20312C22.0078 8.35166 20.2099 10.0996 18 10.0996C15.7901 10.0996 13.9922 8.35166 13.9922 6.20312C13.9922 4.05459 15.7901 2.30664 18 2.30664Z" fill="#4A4B4B"/>
-                                            <path d="M30.375 12.1504C32.5074 12.1504 34.2422 10.4638 34.2422 8.39062C34.2422 6.31749 32.5074 4.63086 30.375 4.63086C28.2426 4.63086 26.5078 6.31749 26.5078 8.39062C26.5078 10.4638 28.2426 12.1504 30.375 12.1504ZM30.375 6.68164C31.3443 6.68164 32.1328 7.44829 32.1328 8.39062C32.1328 9.33296 31.3443 10.0996 30.375 10.0996C29.4057 10.0996 28.6172 9.33296 28.6172 8.39062C28.6172 7.44829 29.4057 6.68164 30.375 6.68164Z" fill="#4A4B4B"/>
-                                            <path d="M31.2258 14.4746H29.5945C27.6723 14.4746 26.0129 15.5787 25.2567 17.1647C23.7 15.5124 21.4638 14.4746 18.9829 14.4746H17.0172C14.5363 14.4746 12.3001 15.5124 10.7433 17.1647C9.98712 15.5787 8.32774 14.4746 6.40547 14.4746H4.77422C2.14172 14.4746 0 16.5443 0 19.0882V26.5537C0 27.6581 0.927703 28.5566 2.06803 28.5566H8.51759C8.62573 29.7803 9.68407 30.7441 10.9703 30.7441H25.0298C26.3159 30.7441 27.3743 29.7803 27.4825 28.5566H33.8583C35.0393 28.5566 36.0001 27.6263 36.0001 26.4826V19.0882C36 16.5443 33.8583 14.4746 31.2258 14.4746ZM2.10938 19.0882C2.10938 17.6751 3.30483 16.5254 4.77422 16.5254H6.40547C7.87486 16.5254 9.07031 17.6751 9.07031 19.0882V19.7903C8.36107 21.5857 8.50781 22.6617 8.50781 26.5059H2.10938V19.0882ZM25.3828 28.3501C25.3828 28.5394 25.2245 28.6934 25.0298 28.6934H10.9702C10.7755 28.6934 10.6172 28.5393 10.6172 28.3501V22.7476C10.6172 19.3166 13.4882 16.5254 17.0171 16.5254H18.9828C22.5118 16.5254 25.3828 19.3166 25.3828 22.7475V28.3501ZM33.8906 26.4826C33.8906 26.518 34.2838 26.5059 27.4922 26.5059C27.4922 22.6332 27.6378 21.5828 26.9297 19.7903V19.0882C26.9297 17.6751 28.1251 16.5254 29.5945 16.5254H31.2258C32.6952 16.5254 33.8906 17.6751 33.8906 19.0882V26.4826Z" fill="#4A4B4B"/>
-                                            <path d="M5.625 12.1504C7.75737 12.1504 9.49219 10.4638 9.49219 8.39062C9.49219 6.31749 7.75737 4.63086 5.625 4.63086C3.49263 4.63086 1.75781 6.31749 1.75781 8.39062C1.75781 10.4638 3.49263 12.1504 5.625 12.1504ZM5.625 6.68164C6.59426 6.68164 7.38281 7.44829 7.38281 8.39062C7.38281 9.33296 6.59426 10.0996 5.625 10.0996C4.65574 10.0996 3.86719 9.33296 3.86719 8.39062C3.86719 7.44829 4.65574 6.68164 5.625 6.68164Z" fill="#4A4B4B"/>
-                                        </svg>
+                                <div class="row">
+                                    <div class="col-md-3 text-center">
+                                        <img class="h-auto w-50 mx-auto" src="/assets/images/portfolio/location.svg" alt="">
                                     </div>
-                                    <div class="w-75">
+                                    <div class="col-md-9">
                                         <h5>Location:</h5>
                                         <p>Blue Ocean Tower, KamalAtaturk Avenue, Banani</p>
                                     </div>
                                 </div>
-                                <div class="d-flex">
-                                    <div class="w-25 text-center">
-                                        <svg class="w-auto h-auto" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18 12.1504C21.373 12.1504 24.1172 9.48246 24.1172 6.20312C24.1172 2.92379 21.373 0.255859 18 0.255859C14.627 0.255859 11.8828 2.92379 11.8828 6.20312C11.8828 9.48246 14.627 12.1504 18 12.1504ZM18 2.30664C20.2099 2.30664 22.0078 4.05459 22.0078 6.20312C22.0078 8.35166 20.2099 10.0996 18 10.0996C15.7901 10.0996 13.9922 8.35166 13.9922 6.20312C13.9922 4.05459 15.7901 2.30664 18 2.30664Z" fill="#4A4B4B"/>
-                                            <path d="M30.375 12.1504C32.5074 12.1504 34.2422 10.4638 34.2422 8.39062C34.2422 6.31749 32.5074 4.63086 30.375 4.63086C28.2426 4.63086 26.5078 6.31749 26.5078 8.39062C26.5078 10.4638 28.2426 12.1504 30.375 12.1504ZM30.375 6.68164C31.3443 6.68164 32.1328 7.44829 32.1328 8.39062C32.1328 9.33296 31.3443 10.0996 30.375 10.0996C29.4057 10.0996 28.6172 9.33296 28.6172 8.39062C28.6172 7.44829 29.4057 6.68164 30.375 6.68164Z" fill="#4A4B4B"/>
-                                            <path d="M31.2258 14.4746H29.5945C27.6723 14.4746 26.0129 15.5787 25.2567 17.1647C23.7 15.5124 21.4638 14.4746 18.9829 14.4746H17.0172C14.5363 14.4746 12.3001 15.5124 10.7433 17.1647C9.98712 15.5787 8.32774 14.4746 6.40547 14.4746H4.77422C2.14172 14.4746 0 16.5443 0 19.0882V26.5537C0 27.6581 0.927703 28.5566 2.06803 28.5566H8.51759C8.62573 29.7803 9.68407 30.7441 10.9703 30.7441H25.0298C26.3159 30.7441 27.3743 29.7803 27.4825 28.5566H33.8583C35.0393 28.5566 36.0001 27.6263 36.0001 26.4826V19.0882C36 16.5443 33.8583 14.4746 31.2258 14.4746ZM2.10938 19.0882C2.10938 17.6751 3.30483 16.5254 4.77422 16.5254H6.40547C7.87486 16.5254 9.07031 17.6751 9.07031 19.0882V19.7903C8.36107 21.5857 8.50781 22.6617 8.50781 26.5059H2.10938V19.0882ZM25.3828 28.3501C25.3828 28.5394 25.2245 28.6934 25.0298 28.6934H10.9702C10.7755 28.6934 10.6172 28.5393 10.6172 28.3501V22.7476C10.6172 19.3166 13.4882 16.5254 17.0171 16.5254H18.9828C22.5118 16.5254 25.3828 19.3166 25.3828 22.7475V28.3501ZM33.8906 26.4826C33.8906 26.518 34.2838 26.5059 27.4922 26.5059C27.4922 22.6332 27.6378 21.5828 26.9297 19.7903V19.0882C26.9297 17.6751 28.1251 16.5254 29.5945 16.5254H31.2258C32.6952 16.5254 33.8906 17.6751 33.8906 19.0882V26.4826Z" fill="#4A4B4B"/>
-                                            <path d="M5.625 12.1504C7.75737 12.1504 9.49219 10.4638 9.49219 8.39062C9.49219 6.31749 7.75737 4.63086 5.625 4.63086C3.49263 4.63086 1.75781 6.31749 1.75781 8.39062C1.75781 10.4638 3.49263 12.1504 5.625 12.1504ZM5.625 6.68164C6.59426 6.68164 7.38281 7.44829 7.38281 8.39062C7.38281 9.33296 6.59426 10.0996 5.625 10.0996C4.65574 10.0996 3.86719 9.33296 3.86719 8.39062C3.86719 7.44829 4.65574 6.68164 5.625 6.68164Z" fill="#4A4B4B"/>
-                                        </svg>
+                                <div class="row">
+                                    <div class="col-md-3 text-center">
+                                        <img class="h-auto w-50 mx-auto" src="/assets/images/portfolio/expand.svg" alt="">
                                     </div>
-                                    <div class="w-75">
+                                    <div class="col-md-7">
                                         <h5>Project Area:</h5>
                                         <p>3500 sft. (Admission Office)</p>
                                     </div>
                                 </div>
-                                <div class="d-flex">
-                                    <div class="w-25 text-center">
-                                        <svg class="w-auto h-auto" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18 12.1504C21.373 12.1504 24.1172 9.48246 24.1172 6.20312C24.1172 2.92379 21.373 0.255859 18 0.255859C14.627 0.255859 11.8828 2.92379 11.8828 6.20312C11.8828 9.48246 14.627 12.1504 18 12.1504ZM18 2.30664C20.2099 2.30664 22.0078 4.05459 22.0078 6.20312C22.0078 8.35166 20.2099 10.0996 18 10.0996C15.7901 10.0996 13.9922 8.35166 13.9922 6.20312C13.9922 4.05459 15.7901 2.30664 18 2.30664Z" fill="#4A4B4B"/>
-                                            <path d="M30.375 12.1504C32.5074 12.1504 34.2422 10.4638 34.2422 8.39062C34.2422 6.31749 32.5074 4.63086 30.375 4.63086C28.2426 4.63086 26.5078 6.31749 26.5078 8.39062C26.5078 10.4638 28.2426 12.1504 30.375 12.1504ZM30.375 6.68164C31.3443 6.68164 32.1328 7.44829 32.1328 8.39062C32.1328 9.33296 31.3443 10.0996 30.375 10.0996C29.4057 10.0996 28.6172 9.33296 28.6172 8.39062C28.6172 7.44829 29.4057 6.68164 30.375 6.68164Z" fill="#4A4B4B"/>
-                                            <path d="M31.2258 14.4746H29.5945C27.6723 14.4746 26.0129 15.5787 25.2567 17.1647C23.7 15.5124 21.4638 14.4746 18.9829 14.4746H17.0172C14.5363 14.4746 12.3001 15.5124 10.7433 17.1647C9.98712 15.5787 8.32774 14.4746 6.40547 14.4746H4.77422C2.14172 14.4746 0 16.5443 0 19.0882V26.5537C0 27.6581 0.927703 28.5566 2.06803 28.5566H8.51759C8.62573 29.7803 9.68407 30.7441 10.9703 30.7441H25.0298C26.3159 30.7441 27.3743 29.7803 27.4825 28.5566H33.8583C35.0393 28.5566 36.0001 27.6263 36.0001 26.4826V19.0882C36 16.5443 33.8583 14.4746 31.2258 14.4746ZM2.10938 19.0882C2.10938 17.6751 3.30483 16.5254 4.77422 16.5254H6.40547C7.87486 16.5254 9.07031 17.6751 9.07031 19.0882V19.7903C8.36107 21.5857 8.50781 22.6617 8.50781 26.5059H2.10938V19.0882ZM25.3828 28.3501C25.3828 28.5394 25.2245 28.6934 25.0298 28.6934H10.9702C10.7755 28.6934 10.6172 28.5393 10.6172 28.3501V22.7476C10.6172 19.3166 13.4882 16.5254 17.0171 16.5254H18.9828C22.5118 16.5254 25.3828 19.3166 25.3828 22.7475V28.3501ZM33.8906 26.4826C33.8906 26.518 34.2838 26.5059 27.4922 26.5059C27.4922 22.6332 27.6378 21.5828 26.9297 19.7903V19.0882C26.9297 17.6751 28.1251 16.5254 29.5945 16.5254H31.2258C32.6952 16.5254 33.8906 17.6751 33.8906 19.0882V26.4826Z" fill="#4A4B4B"/>
-                                            <path d="M5.625 12.1504C7.75737 12.1504 9.49219 10.4638 9.49219 8.39062C9.49219 6.31749 7.75737 4.63086 5.625 4.63086C3.49263 4.63086 1.75781 6.31749 1.75781 8.39062C1.75781 10.4638 3.49263 12.1504 5.625 12.1504ZM5.625 6.68164C6.59426 6.68164 7.38281 7.44829 7.38281 8.39062C7.38281 9.33296 6.59426 10.0996 5.625 10.0996C4.65574 10.0996 3.86719 9.33296 3.86719 8.39062C3.86719 7.44829 4.65574 6.68164 5.625 6.68164Z" fill="#4A4B4B"/>
-                                        </svg>
+                                <div class="row">
+                                    <div class="col-md-3 text-center">
+                                        <img class="h-auto w-50 mx-auto" src="/assets/images/portfolio/money-bag.svg" alt="">
                                     </div>
-                                    <div class="w-75">
+                                    <div class="col-md-7">
                                         <h5>Project Area:</h5>
                                         <p>35,00,000 BDT</p>
                                     </div>
@@ -99,59 +88,97 @@
                     <div class="col-md-11 mx-auto">
                         <div>
                             <h2 class="text-center mb-5">Floor Planning</h2>
-                            <img class="w-100 h-auto" src="{{asset('assets/images/portfolio/portfolio-1.png')  }}" alt="">
+                            <img class="w-100 h-auto" src="{{asset('assets/images/portfolio/portfolio-1.png')  }}"
+                                 alt="">
                         </div>
                     </div> <!-- ./col -->
                 </div> <!-- ./row -->
             </div> <!-- ./container -->
         </div> <!-- ./about-us -->
         <div class="container portfolio-gallery">
-            <div class="row my-5">
+            <div class="row mb-5">
                 <div class="col-md-11 mx-auto">
+                    <h2 class="text-center mb-5">3D View</h2>
                     <div class="row justify-content-center">
                         <div class="col-sm-6 col-md-6 col-lg-7">
                             <div class="border-0">
-                                <img class="gallery-img-big img-fluid" src="{{asset('assets/images/portfolio/R_1 - Photo.png')}}" alt="Card image">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_1 - Photo.png')}}">
+                                    <img class="gallery-img-big img-fluid"
+                                         src="{{asset('assets/images/portfolio/R_1 - Photo.png')}}" alt="Card image">
+                                </a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-5 mt-3 mt-md-0">
                             <div class="border-0">
-                                <img class="gallery-img-big img-fluid" src="{{asset('assets/images/portfolio/R_2 - Photo.png')}}" alt="Card image">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_2 - Photo.png')}}">
+                                    <img class="gallery-img-big img-fluid"
+                                         src="{{asset('assets/images/portfolio/R_2 - Photo.png')}}" alt="Card image">
+                                </a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
                             <div class="border-0">
-                                <img class="gallery-img img-fluid" src="{{asset('assets/images/portfolio/R_3 - Photo.png')}}" alt="Card image">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_3 - Photo.png')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/portfolio/R_3 - Photo.png')}}" alt="Card image">
+                                </a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
                             <div class="border-0">
-                                <img class="gallery-img img-fluid" src="{{asset('assets/images/portfolio/R_4 - Photo.png')}}" alt="Card image">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_4 - Photo.png')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/portfolio/R_4 - Photo.png')}}" alt="Card image">
+                                </a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
                             <div class="border-0">
-                                <img class="gallery-img img-fluid" src="{{asset('assets/images/portfolio/R_5 - Photo.png')}}" alt="Card image">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_5 - Photo.png')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/portfolio/R_5 - Photo.png')}}" alt="Card image">
+                                </a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
                             <div class="border-0">
-                                <img class="gallery-img img-fluid" src="{{asset('assets/images/portfolio/R_6 - Photo.png')}}" alt="Card image">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_6 - Photo.png')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/portfolio/R_6 - Photo.png')}}" alt="Card image">
+                                </a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
                             <div class="border-0">
-                                <img class="gallery-img img-fluid" src="{{asset('assets/images/portfolio/R_7 - Photo.png')}}" alt="Card image">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_7 - Photo.png')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/portfolio/R_7 - Photo.png')}}" alt="Card image">
+                                </a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
                             <div class="border-0">
-                                <img class="gallery-img img-fluid" src="{{asset('assets/images/portfolio/R_9 - Photo.png')}}" alt="Card image">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_9 - Photo.png')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/portfolio/R_9 - Photo.png')}}" alt="Card image">
+                                </a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
                             <div class="border-0">
-                                <img class="gallery-img img-fluid" src="{{asset('assets/images/portfolio/R_10 - Photo.png')}}" alt="Card image">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_10 - Photo.png')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/portfolio/R_10 - Photo.png')}}" alt="Card image">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -163,6 +190,7 @@
 @push('custom-scripts')
     <!-- slick-slider js-->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script>
         // Navbar
         $(document).ready(function () {
@@ -178,6 +206,9 @@
                     $('.teeth').removeClass('teeth-fixed-top');
                 }
             });
+
+            //Fancybox
+            $('.view-popup').fancybox({});
         });
     </script>
 @endpush
