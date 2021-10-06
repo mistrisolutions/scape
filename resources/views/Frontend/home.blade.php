@@ -30,114 +30,25 @@
                 <div class="container">
                     <div class="row py-5">
                         <div class="col-sm-12 col-md-10 mx-auto pt-4">
-                            <h1 class="mb-4">Best Architectural Engineering Consultant in the city lucilius noster postulant philosophia ea usu, qui</h1>
-                            <p>SCAPE Development Engineers is a Consultancy firm located in Dhaka which provides Interior Design, Exterior Design & Total Constructions solution for Govt. & Private sectors in Bangladesh.</p>
-                            <p>Scape is a team of mordern interior design company. We believe any types of interior is possible like global taste of design.</p>
+                            <h1 class="mb-4 text-center">About Us</h1>
+                            <p>Scape Development Engineers, an innovative & inclusive company founded in 2018, is a consultancy firm that provides Interior Design, Exterior Design & Total Constructions solutions for Govt. & Private sectors in Bangladesh. Embracing an unwavering commitment to quality and customer service, Scape Development Engineers has done many projects all over the country. In this short time, we were able to establish our company as one of the most acclaimed companies in the Architectural Engineering & Construction sectors. Our group of young, dynamic & hard-working professionals are always giving their best effort to make your dream into an elegant reality. </p>
+                            <p>We are committed to providing our customers with products and services which exactly meet their needs and ensuring they receive the best possible added value. Our goal is to:</p>
 
-                            <ul class="navbar-nav">
-                                <li class="nav-item" ><img src="{{asset('assets/images/home/list-arrow.svg')}}" alt="">Interior design & development.</li>
-                                <li class="nav-item" ><img src="{{asset('assets/images/home/list-arrow.svg')}}" alt="">Architectural & engineering consultant.</li>
-                                <li class="nav-item" ><img src="{{asset('assets/images/home/list-arrow.svg')}}" alt="">Pre-engineered steel building.</li>
+                            <ul class="navbar-nav ml-5">
+                                <li class="nav-item" ><img src="{{asset('assets/images/home/list-arrow.svg')}}" alt="">Consistently deliver quality services to our clients.</li>
+                                <li class="nav-item" ><img src="{{asset('assets/images/home/list-arrow.svg')}}" alt="">Grow our firm organically.</li>
+                                <li class="nav-item" ><img src="{{asset('assets/images/home/list-arrow.svg')}}" alt="">To provide a customer-focused service that delivers high-quality construction projects in a safe, professional and timely manner.</li>
                                 <li class="nav-item" ><img src="{{asset('assets/images/home/list-arrow.svg')}}" alt="">Civil & building construction.</li>
-                                <li class="nav-item" ><img src="{{asset('assets/images/home/list-arrow.svg')}}" alt="">Real estate.</li>
+                                <li class="nav-item" ><img src="{{asset('assets/images/home/list-arrow.svg')}}" alt="">To develop long term partnerships with customers, suppliers and sub-contractors.</li>
                             </ul>
 
-                            <div class="row pt-5">
-                                <div class="col-12">
-                                    <div class="quote">
-                                        <h1>Details are not the details, They make the design.</h1>
-                                        <p>Charles Eames.</p>
-                                    </div>
-                                </div>
-                            </div><!-- ./Row -->
-             
                         </div><!-- ./Col -->
                     </div><!-- ./Row -->
                 </div><!-- ./Container -->
             </div><!-- ./Section-content -->
         </div><!-- ./Mdl-sec-bg -->
     </section> <!-- ./Middle-section -->
-    <section class="project">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-10 mx-auto">
-                    <h1>Feature projects</h1>
-                    <div class="row">
-                        <div class="col-sm-6 col-md-4">
-                            <div class="card border-0">
-                                <div class="card-header">
-                                    <img class="card-img-top" src="{{asset('assets/images/residential/1.jpg')}}" alt="Card image">
-                                </div>
-                                <div class="card-body text-center">
-                                    <p class="card-text font-weight-bold text-dark">Project 1</p>
-                                    <span class="card-text">Location</span>
-                                </div>
-                            </div> <!-- ./Card -->
-                        </div> <!-- ./col -->
-                        <div class="col-sm-6 col-md-4">
-                            <div class="card border-0">
-                                <div class="card-header">
-                                    <img class="card-img-top" src="{{asset('assets/images/office/1.jpg')}}" alt="Card image">
-                                </div>
-                                <div class="card-body text-center">
-                                    <p class="card-text font-weight-bold text-dark">Project Laximi Vander</p>
-                                    <span class="card-text">Pabna</span>
-                                </div>
-                            </div> <!-- ./Card -->
-                        </div> <!-- ./col -->
-                        <div class="col-sm-6 col-md-4">
-                            <div class="card border-0">
-                                <div class="card-header">
-                                    <img class="card-img-top" src="{{asset('assets/images/hotel/1.jpg')}}" alt="Card image">
-                                </div>
-                                <div class="card-body text-center">
-                                    <p class="card-text font-weight-bold text-dark">Project 3</p>
-                                    <span class="card-text">Gulsan</span>
-                                </div>
-                            </div> <!-- ./Card -->
-                        </div> <!-- ./col -->                       
-                    </div><!-- ./Row --> 
-                    <div class="more mt-5">
-                        <button class="btn mx-auto d-block px-3 py-3 rounded-0">
-                            View more projects <i class="fas fa-arrow-right ml-3"></i>
-                        </button>
-                    </div>
-                </div><!-- ./col --> 
-            </div><!-- ./Row --> 
-        </div><!-- ./Container --> 
-    </section><!-- ./Project -->
-    <section class="happy-client">
-        <div class="happy-bg">
-            <div class="overlay d-flex align-items-center">
-                <div class="container py-5">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="client-content text-center">
-                                <h1>Our happy clients</h1>
-                                <div class="review">
-                                    <div class="single-review">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae pretium sed aliquet nisi. Ut id faucibus est eget. Odio faucibus leo congue viverra nec lacus, sed sem. Habitasse vel habitant aenean vitae natoque.</p>
-                                        <h3>MD Sofique</h3>
-                                        <span>CEO, XYZ Corporation</span>
-                                    </div>
-                                    <div class="single-review">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae pretium sed aliquet nisi. Ut id faucibus est eget. Odio faucibus leo congue viverra nec lacus, sed sem. Habitasse vel habitant aenean vitae natoque.</p>
-                                        <h3>MD Rafiq</h3>
-                                        <span>CEO, XYZ Corporation</span>
-                                    </div>
-                                    <div class="single-review">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae pretium sed aliquet nisi. Ut id faucibus est eget. Odio faucibus leo congue viverra nec lacus, sed sem. Habitasse vel habitant aenean vitae natoque.</p>
-                                        <h3>MD Rafiq</h3>
-                                        <span>CEO, XYZ Corporation</span>
-                                    </div>
-                                </div> <!-- ./Review -->
-                            </div> <!-- ./Client-content -->
-                        </div> <!-- ./Col -->
-                    </div> <!-- ./Row -->
-                </div> <!-- ./Container -->
-            </div> <!-- ./overlay -->
-        </div> <!-- ./Happy-bg -->
-    </section> <!-- Happy-client -->
+    
     <section class="our-clients py-md-5 py-0">
         <div class="container">
             <div class="row py-5 justify-content-center text-center">
@@ -172,7 +83,7 @@
 <script>
     // Navbar
     $(document).ready(function() {
-        $(window).scroll(function () { 
+        $(window).scroll(function () {
 
             if ($(window).scrollTop() > 550) {
                 $('.header-nav').addClass('navbar-fixed-top');
@@ -200,7 +111,7 @@
         pauseOnHover: false,
         pauseOnFocus: false,
     });
-    
+
     $('.review').slick({
         dots: false,
         arrows: true,

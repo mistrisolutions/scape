@@ -907,8 +907,8 @@ img.mfp-img {
         top: 25px;
     }
     #header .navbar-brand img {
-        width: 120.03px !important;
-        height: 35px !important;
+        width: 110px !important;
+        height: 40px !important;
     }
     .teeth img {
         height: 125px;
@@ -994,6 +994,14 @@ img.mfp-img {
 
     .tab-left{
         width: 100%;
+    }
+
+    // footer
+    .footer-bg .company img{
+        width: 180px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
