@@ -1,4 +1,4 @@
-@extends('layouts.Frontend.app')
+@extends('layouts.frontend.app')
 @section('title', 'about')
 @push('css')
     <!-- slick-slider-css -->
