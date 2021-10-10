@@ -85,7 +85,7 @@
       @yield('slider')
   </header> <!-- ./Header -->
     @yield('content')
-    @include('layouts.frontend.partials.footer')
+    @include('layouts.frontend.Partials.footer')
     <!-- container-scroller -->
     <!-- plugins:js -->
     <script src="{{ asset('js/app.js') }}"></script>
