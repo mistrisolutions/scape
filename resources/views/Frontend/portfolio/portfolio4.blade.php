@@ -84,23 +84,23 @@
                         </div>
                     </div> <!-- ./col -->
                 </div> <!-- ./row -->
-                <div class="row py-5">
-                    <div class="col-md-11 mx-auto">
-                        <div>
-                            <h2 class="text-center mb-5">Floor Planning</h2>
-                            <img class="w-100 h-auto" src="{{asset('assets/images/portfolio/portfolio-2.png')  }}"
-                                 alt="">
-                        </div>
-                    </div> <!-- ./col -->
-                </div> <!-- ./row -->
+{{--                <div class="row py-5">--}}
+{{--                    <div class="col-md-11 mx-auto">--}}
+{{--                        <div>--}}
+{{--                            <h2 class="text-center mb-5">Live Pictures</h2>--}}
+{{--                            <img class="w-100 h-auto" src="{{asset('assets/images/portfolio/portfolio-2.png')  }}"--}}
+{{--                                 alt="">--}}
+{{--                        </div>--}}
+{{--                    </div> <!-- ./col -->--}}
+{{--                </div> <!-- ./row -->--}}
             </div> <!-- ./container -->
         </div> <!-- ./about-us -->
-        <div class="container portfolio-gallery">
+        <div class="container portfolio-gallery portfolio-4">
             <div class="row mb-5">
                 <div class="col-md-11 mx-auto">
-                    <h2 class="text-center mb-5">3D View</h2>
+                    <h2 class="text-center mb-5">Live Pictures</h2>
                     <div class="row justify-content-center">
-                        <div class="col-sm-6 col-md-6 col-lg-7">
+                        <div class="col-sm-6 col-md-6 col-lg-7 img-box">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup w-100 h-100"
                                    data-fancybox="gallery" href="{{asset('assets/images/portfolio/fedex-1.png')}}">
@@ -109,25 +109,23 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-5 mt-3 mt-md-0">
+                        <div class="col-sm-6 col-md-6 col-lg-5 mt-3 mt-md-0 img-box">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/fedex-1.png')}}">
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/fedex-6.png')}}">
                                     <img class="gallery-img-big img-fluid"
-                                         src="{{asset('assets/images/portfolio/fedex-1.png')}}" alt="Card image">
+                                         src="{{asset('assets/images/portfolio/fedex-6.png')}}" alt="Card image">
                                 </a>
                             </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
-                            <div class="border-0">
+                            <div class="border-0 mt-3">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
                                    data-fancybox="gallery" href="{{asset('assets/images/portfolio/fedex-2.png')}}">
-                                    <img class="gallery-img img-fluid"
+                                    <img class="gallery-img-big img-fluid"
                                          src="{{asset('assets/images/portfolio/fedex-2.png')}}" alt="Card image">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 img-box">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
                                    data-fancybox="gallery" href="{{asset('assets/images/portfolio/fedex-3.png')}}">
@@ -136,7 +134,16 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 img-box">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/fedex-5.png')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/portfolio/fedex-5.png')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 img-box">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
                                    data-fancybox="gallery" href="{{asset('assets/images/portfolio/fedex-4.png')}}">

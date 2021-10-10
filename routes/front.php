@@ -8,7 +8,7 @@ Route::get('/',function(){
 
 Route::prefix('about')->group(function () {
     Route::get('/about-us', function () {
-        return view('frontend.about.about');
+       return view('frontend.about.about');
     })->name('about-us');
 
     Route::get('/who-we-are', function () {
@@ -46,9 +46,9 @@ Route::prefix('portfolio')->group(function () {
     })->name('portfolio-6');
 });
 
-Route::get('team',function(){
-    return view('frontend.team');
-})->name('team');
+//Route::get('team',function(){
+//    return view('frontend.team');
+//})->name('team');
 
 Route::get('gallery',function(){
     return view('frontend.gallery');

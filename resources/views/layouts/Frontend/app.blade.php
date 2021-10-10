@@ -38,7 +38,7 @@
                               About Us
                           </a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="{{ route('about-us') }}">About Us</a>
+                             <a class="dropdown-item" href="{{ route('about-us') }}">About Us</a>
                               <a class="dropdown-item" href="{{ route('who-we-are') }}">Who we are</a>
                           </div>
                       </li>
@@ -58,9 +58,9 @@
                       <li class="nav-item">
                           <a class="nav-link" href="{{ route('service') }}">Services</a>
                       </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="{{ route('team') }}">Team</a>
-                      </li>
+{{--                      <li class="nav-item">--}}
+{{--                          <a class="nav-link" href="{{ route('team') }}">Team</a>--}}
+{{--                      </li>--}}
                       <li class="nav-item">
                           <a class="nav-link" href="{{ route('gallery') }}">Gallery</a>
                       </li>

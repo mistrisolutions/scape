@@ -139,9 +139,9 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/F_12 - Photo.png')}}">
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/F_14 - Photo.png')}}">
                                     <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/F_15 - Photo.png')}}" alt="Card image">
+                                         src="{{asset('assets/images/portfolio/F_14 - Photo.png')}}" alt="Card image">
                                 </a>
                             </div>
                         </div>

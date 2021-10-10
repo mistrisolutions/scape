@@ -88,7 +88,7 @@
                     <div class="col-md-11 mx-auto">
                         <div>
                             <h2 class="text-center mb-5">Floor Planning</h2>
-                            <img class="w-100 h-auto" src="{{asset('assets/images/portfolio/portfolio-2.png')  }}"
+                            <img class="w-100 h-auto" src="{{asset('assets/images/portfolio/portfolio-3.png')  }}"
                                  alt="">
                         </div>
                     </div> <!-- ./col -->
