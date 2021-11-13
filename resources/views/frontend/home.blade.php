@@ -14,10 +14,10 @@
             <img src="{{asset('assets/images/home/slider1.png')}}" alt="">
         </div>
         <div>
-            <img src="{{asset('assets/images/home/slider1.png')}}" alt="">
+            <img src="{{asset('assets/images/home/slider2.jpg')}}" alt="">
         </div>
         <div>
-            <img src="{{asset('assets/images/home/slider1.png')}}" alt="">
+            <img src="{{asset('assets/images/home/slider3.jpg')}}" alt="">
         </div>
     </div><!-- ./Slider-wrap -->
 </div><!-- ./Nav-slider -->
@@ -48,7 +48,7 @@
             </div><!-- ./Section-content -->
         </div><!-- ./Mdl-sec-bg -->
     </section> <!-- ./Middle-section -->
-    
+
     <section class="our-clients py-md-5 py-0">
         <div class="container">
             <div class="row py-5 justify-content-center text-center">
@@ -56,19 +56,25 @@
                     <h1>Our Clients</h1>
                     <div class="clients">
                         <div class="clients-logo">
-                            <img class="img-fluid" src="{{asset('assets/images/home/1.png')}}" alt="Brand Logo">
+                            <img class="img-fluid" src="{{asset('assets/images/company-logos/0.png')}}" alt="Brand Logo">
                         </div>
                         <div class="clients-logo">
-                            <img class="img-fluid" src="{{asset('assets/images/home/2.png')}}" alt="Brand Logo">
+                            <img class="img-fluid" src="{{asset('assets/images/company-logos/Al-Samit-Group-Logo.png')}}" alt="Brand Logo">
                         </div>
                         <div class="clients-logo">
-                            <img class="img-fluid" src="{{asset('assets/images/home/3.png')}}" alt="Brand Logo">
+                            <img class="img-fluid" src="{{asset('assets/images/company-logos/csrm.png')}}" alt="Brand Logo">
                         </div>
                         <div class="clients-logo">
-                            <img class="img-fluid" src="{{asset('assets/images/home/4.png')}}" alt="Brand Logo">
+                            <img class="img-fluid" src="{{asset('assets/images/company-logos/mgh-group-squarelogo.png')}}" alt="Brand Logo">
                         </div>
                         <div class="clients-logo">
-                            <img class="img-fluid" src="{{asset('assets/images/home/2.png')}}" alt="Brand Logo">
+                            <img class="img-fluid" src="{{asset('assets/images/company-logos/Reveire.png')}}" alt="Brand Logo">
+                        </div>
+                        <div class="clients-logo">
+                            <img class="img-fluid" src="{{asset('assets/images/company-logos/tfc-logo.png')}}" alt="Brand Logo">
+                        </div>
+                        <div class="clients-logo">
+                            <img class="img-fluid" src="{{asset('assets/images/company-logos/IUS.png')}}" alt="Brand Logo">
                         </div>
                     </div> <!-- ./Clients -->
                 </div> <!-- ./Col -->

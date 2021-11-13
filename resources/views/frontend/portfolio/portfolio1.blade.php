@@ -34,14 +34,8 @@
                         <div class="row">
                             <div class="col-md-7">
                                 <h2 class="mb-2">Project Description: </h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged. </p>
-                                <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                                    Ipsum passages, and more recently with desktop publishing software like Aldus
-                                    PageMaker including versions of Lorem Ipsum.</p>
+                                <p>This is the “<strong class="black">Admission Office</strong>” of the <strong class="black">University of Scholars</strong>. An admission office is the core of a UNIVERSITY. It is the junction between students, faculty & other employees of the university where they communicate with each other. For workers who spend a large part of their day in an office, it is crucial to create a space that’s functional, visually appealing, comfortable, and inviting - all of which promote productivity and efficiency.</p>
+                                <p>So we designed this with simplicity & subtle sophistication. As it'll be an over-circulated space, we sketched it to be a pleasant & comfortable environment. The reception is specially designed as a  row of books to give off a vibe of knowledge & warmth as it’ll be the 1st thing anyone will notice after entering the office room. Our team has created this environment that helps employees to boost innovativeness.</p>
                             </div>
                             <div class="col-md-5">
                                 <div class="row">
@@ -76,8 +70,8 @@
                                         <img class="h-auto w-50 mx-auto" src="/assets/images/portfolio/money-bag.svg" alt="">
                                     </div>
                                     <div class="col-md-7">
-                                        <h5>Project Area:</h5>
-                                        <p>35,00,000 BDT</p>
+                                        <h5>Budget:</h5>
+                                        <p>3.5 Million BDT</p>
                                     </div>
                                 </div>
                             </div>

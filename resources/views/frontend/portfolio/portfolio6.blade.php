@@ -20,7 +20,7 @@
                 <div class="row">
                     <div class="col-md-11 mx-auto">
                         <div class="h-100 w-100 relative">
-                            <img class="img-fluid" src="{{ asset('assets/images/portfolio/fedex.png') }}"
+                            <img class="img-fluid w-100" src="{{ asset('assets/images/portfolio//portfolio-6-2.png') }}"
                                  alt="">
                             <div class="overlay"></div>
                             <div class="absolute d-flex justify-content-start align-items-end">
@@ -34,14 +34,8 @@
                         <div class="row">
                             <div class="col-md-7">
                                 <h2 class="mb-2">Project Description: </h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged. </p>
-                                <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                                    Ipsum passages, and more recently with desktop publishing software like Aldus
-                                    PageMaker including versions of Lorem Ipsum.</p>
+                                <p>An architect will make it a space worth living in. They will bring in their creativity, some art and a bit of science to enhance your living space in ways you might not expect. We introduce elegance & comfort and help to raise the functionality in your life via our contemporary & modern architectures. </p>
+                                <p>This project is very close to our hearts as we design a “HOME” where souls are gathered. We designed this project so that the family living under this roof can feel the warmth of home via this architecture. Its soothing, comfortable, calming, reassuring, sophisticated as well as stylish, elegant, modern & graceful.</p>
                             </div>
                             <div class="col-md-5">
                                 <div class="row">
@@ -59,7 +53,7 @@
                                     </div>
                                     <div class="col-md-9">
                                         <h5>Location:</h5>
-                                        <p>Blue Ocean Tower, KamalAtaturk Avenue, Banani</p>
+                                        <p>Ihsak Lane, Pabna Sadar, Pabna</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -68,7 +62,7 @@
                                     </div>
                                     <div class="col-md-7">
                                         <h5>Project Area:</h5>
-                                        <p>3500 sft. (Admission Office)</p>
+                                        <p>4950 sft. (Land), <br> 1880 sft. (Building)</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -76,8 +70,8 @@
                                         <img class="h-auto w-50 mx-auto" src="/assets/images/portfolio/money-bag.svg" alt="">
                                     </div>
                                     <div class="col-md-7">
-                                        <h5>Project Area:</h5>
-                                        <p>35,00,000 BDT</p>
+                                        <h5>Budget:</h5>
+                                        <p>10.5 Million BDT</p>
                                     </div>
                                 </div>
                             </div>

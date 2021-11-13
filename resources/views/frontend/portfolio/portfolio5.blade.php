@@ -20,7 +20,7 @@
                 <div class="row">
                     <div class="col-md-11 mx-auto">
                         <div class="h-100 w-100 relative">
-                            <img class="img-fluid" src="{{ asset('assets/images/portfolio/fedex.png') }}"
+                            <img class="img-fluid w-100" src="{{ asset('assets/images/portfolio/food-1.png') }}"
                                  alt="">
                             <div class="overlay"></div>
                             <div class="absolute d-flex justify-content-start align-items-end">
@@ -34,14 +34,8 @@
                         <div class="row">
                             <div class="col-md-7">
                                 <h2 class="mb-2">Project Description: </h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged. </p>
-                                <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                                    Ipsum passages, and more recently with desktop publishing software like Aldus
-                                    PageMaker including versions of Lorem Ipsum.</p>
+                                <p>A restaurant with good food & a green scenario can be an ideal environment for a meeting & gossiping place. Interior design in restaurants impacts customer psychology. The highlight of this project is Plants & the color green. Now-a-days, Restaurants are very popular among this generation & a demanding business. To stand out in an already crowded industry, restaurants have to provide not only good food and service but also a unique dining environment to enhance customer satisfaction. Designing this project was our ultimate goal.</p>
+                                <p>We tried to enhance the beauty of the restaurant not only with our structural design but also with greenery. This place will be a center of attention in Gazipur because of its food & equally for its eye-soothing design which will connect everyone to nature.</p>
                             </div>
                             <div class="col-md-5">
                                 <div class="row">
@@ -50,7 +44,7 @@
                                     </div>
                                     <div class="col-md-7">
                                         <h5>Client:</h5>
-                                        <p>Reveire Power and Automation Company Ltd.</p>
+                                        <p>Mr. Hasib Siddique</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -59,7 +53,7 @@
                                     </div>
                                     <div class="col-md-9">
                                         <h5>Location:</h5>
-                                        <p>Blue Ocean Tower, KamalAtaturk Avenue, Banani</p>
+                                        <p>Deona-Jaydebpur Rd, Near Gazipur Dist. Graveyard, Jaydebpur, Gazipur.</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -68,7 +62,7 @@
                                     </div>
                                     <div class="col-md-7">
                                         <h5>Project Area:</h5>
-                                        <p>3500 sft. (Admission Office)</p>
+                                        <p>3900 sft.</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -76,8 +70,8 @@
                                         <img class="h-auto w-50 mx-auto" src="/assets/images/portfolio/money-bag.svg" alt="">
                                     </div>
                                     <div class="col-md-7">
-                                        <h5>Project Area:</h5>
-                                        <p>35,00,000 BDT</p>
+                                        <h5>Budget:</h5>
+                                        <p>3.5 Million BDT</p>
                                     </div>
                                 </div>
                             </div>

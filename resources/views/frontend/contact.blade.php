@@ -26,11 +26,7 @@
                            <ul class="navbar-nav navbar-expand-sm mt-3 mb-sm-5">
                               <li class="nav-item mr-5">
                                  <img class="img-fluid mr-2" src="{{asset('assets/images/contact/phone.png')}}" alt="">
-                                 <span>+88 01616182874</span>
-                              </li>
-                              <li class="nav-item">
-                                 <img class="img-fluid mr-2" src="{{asset('assets/images/contact/phone.png')}}" alt="">
-                                 <span>+88 0123456789</span>
+                                 <span>+88 01810023431</span>
                               </li>
                            </ul>
                         </div>
@@ -38,10 +34,6 @@
                            <h4>Email Address</h4>
                            <ul class="navbar-nav navbar-expand-lg mt-3 justify-content-between">
                               <li class="nav-item mr-3 d-flex align-items-center">
-                                 <img class="img-fluid mr-2" src="{{asset('assets/images/contact/email.png')}}" alt="">
-                                 <span>info.scapebd@gmail.com</span>
-                              </li>
-                              <li class="nav-item d-flex align-items-center">
                                  <img class="img-fluid mr-2" src="{{asset('assets/images/contact/email.png')}}" alt="">
                                  <span>info.scapebd@gmail.com</span>
                               </li>
@@ -72,7 +64,8 @@
                      <div class="col-md-6">
                         <div class="form">
                            <h4>Send a message</h4>
-                           <p>Praesent faucibus diam id varius dapibus. In hac habitasse platea dictumst. Nullam rhoncus auctor neque et pulvinar.</p>
+                           <p>With vast experience in structural engineering, SCAPE Developments is ready to build a sturdy foundation for your dream project.</p>
+                           <p class="mb-0">Contact Us for more details or you can send message here.</p>
                            <form>
                               <div class="form-group">
                                  <label for="textarea"></label>

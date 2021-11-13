@@ -34,14 +34,8 @@
                         <div class="row">
                             <div class="col-md-7">
                                 <h2 class="mb-2">Project Description: </h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged. </p>
-                                <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                                    Ipsum passages, and more recently with desktop publishing software like Aldus
-                                    PageMaker including versions of Lorem Ipsum.</p>
+                                <p>This is the “<strong class="black">Faculty & Dean Office</strong>” of the <strong class="black">University of Scholars</strong>. Faculty rooms make teachers more relaxed, more efficient and more effective for them to deliver the right kind of lessons. So, instead of a witch hunt against whoever is converting whatever spaces into faculty rooms, we give respect and respite for teachers by providing the space for them.</p>
+                                <p>This contemporary interior is designed while keeping in mind lighting & colors. The lighting used in this floor can change the perception of space, the shape, textures of materials and improve their aesthetic features. It also plays an important role in ensuring the comfortability of occupants. About the color, a fusion of white & purple is used in this design. As purple inspires creativity & design and white represents simplicity & enlightenment. Our hard-working & creative team has created this space in order to boost efficiency & motivation in the people working under this roof.</p>
                             </div>
                             <div class="col-md-5">
                                 <div class="row">
@@ -76,8 +70,8 @@
                                         <img class="h-auto w-50 mx-auto" src="/assets/images/portfolio/money-bag.svg" alt="">
                                     </div>
                                     <div class="col-md-7">
-                                        <h5>Project Area:</h5>
-                                        <p>35,00,000 BDT</p>
+                                        <h5>Budget:</h5>
+                                        <p>3.5 Million BDT</p>
                                     </div>
                                 </div>
                             </div>

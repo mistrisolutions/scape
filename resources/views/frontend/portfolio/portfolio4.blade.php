@@ -34,14 +34,8 @@
                         <div class="row">
                             <div class="col-md-7">
                                 <h2 class="mb-2">Project Description: </h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged. </p>
-                                <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                                    Ipsum passages, and more recently with desktop publishing software like Aldus
-                                    PageMaker including versions of Lorem Ipsum.</p>
+                                <p>FedEx Corporation, formerly Federal Express Corporation and later FDX Corporation, is an American multinational conglomerate holding company that focuses on transportation, e-commerce and business services. After starting its journey in Bangladesh, recently they opened a branch in Khulna. It was a very challenging task as the area was small. But we don’t compromise about our design. </p>
+                                <p>We’ve turned this little space into a full-functioning office where employees can work comfortably & have a pleasant experience working under this roof. We tried to express the identity of FedEx through their theme color purple & orange from their logo. And the main focus was lighting & the color white. As these will make the whole environment friendly for employees.</p>
                             </div>
                             <div class="col-md-5">
                                 <div class="row">
@@ -50,7 +44,7 @@
                                     </div>
                                     <div class="col-md-7">
                                         <h5>Client:</h5>
-                                        <p>Reveire Power and Automation Company Ltd.</p>
+                                        <p>MGH Group</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -59,7 +53,7 @@
                                     </div>
                                     <div class="col-md-9">
                                         <h5>Location:</h5>
-                                        <p>Blue Ocean Tower, KamalAtaturk Avenue, Banani</p>
+                                        <p>Sher-E-Bangla Rd, Khulna</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -68,7 +62,7 @@
                                     </div>
                                     <div class="col-md-7">
                                         <h5>Project Area:</h5>
-                                        <p>3500 sft. (Admission Office)</p>
+                                        <p>380 sft.</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -76,8 +70,8 @@
                                         <img class="h-auto w-50 mx-auto" src="/assets/images/portfolio/money-bag.svg" alt="">
                                     </div>
                                     <div class="col-md-7">
-                                        <h5>Project Area:</h5>
-                                        <p>35,00,000 BDT</p>
+                                        <h5>Budget:</h5>
+                                        <p>1 Million BDT</p>
                                     </div>
                                 </div>
                             </div>
