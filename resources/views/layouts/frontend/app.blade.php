@@ -13,7 +13,7 @@
     <!-- Layout styles -->
 
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" />
+    <link rel="shortcut icon" href="{{ asset('assets/images/favicon-dark.png') }}" />
   </head>
   <body>
     <!--header-->
@@ -38,7 +38,7 @@
                               About Us
                           </a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                             <a class="dropdown-item" href="{{ route('about-us') }}">About Us</a>
+                             <a class="dropdown-item" href="{{ route('mission-vision') }}">Mission & Vision</a>
                               <a class="dropdown-item" href="{{ route('who-we-are') }}">Who we are</a>
                           </div>
                       </li>
@@ -83,7 +83,7 @@
           </div>
       </div>
       @yield('slider')
-  </header> <!-- ./Header -->
+    </header> <!-- ./Header -->
     @yield('content')
     @include('layouts.frontend.Partials.footer')
     <!-- container-scroller -->
