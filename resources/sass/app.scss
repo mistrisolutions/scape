@@ -8,6 +8,7 @@
 @import '~bootstrap/scss/bootstrap';
 
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Mulish:ital,wght@0,600;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -16,7 +17,10 @@
 }
 
 body {
-    font-family: 'Libel Suit', sans-serif;
+    //font-family: 'Libel Suit', sans-serif;
+    font-family: 'Open Sans';
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
     scroll-behavior: smooth;
 }
 
@@ -25,7 +29,7 @@ button:focus {
 }
 
 h1 {
-    font-family: 'Libel Suit' !important;
+    font-family: 'Open Sans';
     font-style: normal !important;
     font-weight: bold !important;
     font-size: 32px !important;
@@ -35,13 +39,11 @@ h1 {
 }
 
 p {
-    font-family: Mulish !important;
-    font-style: normal !important;
-    font-weight: normal !important;
-    font-size: 16px !important;
-    line-height: 22px !important;
-    letter-spacing: 0.3px !important;
-    color: #737B7D !important;
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+    color: #767676 !important;
+    font-weight: 600 !important;
+    text-align: justify;
 }
 
 .overlay {
@@ -506,13 +508,13 @@ button.slick-next.slick-arrow:focus {
     height: 100%;
     width: 100%;
     background: #000C20;
-    padding: 50px 0;
+    padding: 50px 0 0 0;
     color: #fff;
 }
 
-.footer-bg .company {
-    padding: 0 10px;
-}
+//.footer-bg .company {
+//    padding: 0 10px;
+//}
 
 .footer-bg .company img {
     width: 100%;
@@ -642,18 +644,17 @@ button.slick-next.slick-arrow:focus {
 .who-we-are .we-are h1,
 .who-we-are .mission h1,
 .who-we-are .vission h1 {
-    font-family: 'Libel Suit';
-    font-size: 38px;
-    line-height: 40px;
+    font-size: 35px;
+    line-height: 35px;
     letter-spacing: 0.1px;
     color: #373F41;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 .who-we-are .we-are p,
 .who-we-are .mission p,
 .who-we-are .vission p {
-    font-family: Lora;
+    //font-family: Lora;
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.3px;
@@ -908,16 +909,22 @@ img.mfp-img {
 
 
 @media (max-width: 991px) {
+    #header .navbar .nav-item {
+        margin-left: 0px !important;
+    }
     #header .navbar .nav-item .nav-link {
         font-size: 15px;
         line-height: 20px;
-        text-align: right;
+        text-align: center;
         margin-right: 5px;
     }
     .footer-bg .services,
     .footer-bg .contact,
     .footer-bg .social {
         margin-top: 45px;
+    }
+    #header .header-nav .dropdown-menu{
+        text-align: center;
     }
 }
 
@@ -942,7 +949,7 @@ img.mfp-img {
 
 @media (max-width: 480px) {
     #header {
-        height: 50vh;
+        height: 60vh;
     }
     #header .header-nav {
         top: 25px;
@@ -955,20 +962,20 @@ img.mfp-img {
         height: 125px;
     }
     .nav-slider {
-        height: 75vh;
+        height: 60vh;
     }
-    .nav-slider .slider-wrap {
-        height: 80%;
-    }
+    //.nav-slider .slider-wrap {
+    //    height: 80%;
+    //}
     ul.slick-dots li button {
         height: 10px !important;
         width: 10px !important;
     }
     h1 {
-        font-size: 24px !important;
+        font-size: 20px !important;
     }
     p {
-        font-size: 14px !important;
+        font-size: 13px !important;
     }
 
     .fs-96 {
@@ -1013,7 +1020,7 @@ img.mfp-img {
         line-height: 25px;
     }
     .who-nav-slider {
-        height: 300px;
+        height: 190px;
         margin-top: 140px;
     }
 
@@ -1068,6 +1075,42 @@ img.mfp-img {
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+    ul.slick-dots{
+        bottom: 45px;
+    }
+
+    .who-we-are .we-are h1,
+    .who-we-are .mission h1,
+    .who-we-are .vission h1 {
+        font-family: 'Libel Suit';
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+    .our-clients .clients-logo{
+        height: 110px !important;
+    }
+    .our-clients .clients-logo img{
+        //height: 100% !important;
+        width: 100px !important;
+    }
+    .our-clients .clients.slick-initialized.slick-slider {
+        height: 160px !important;
+    }
+    .dropdown-toggle::after{
+        display: none;
+    }
+
+    .dropdown-toggle::before{
+        display: inline-block;
+        margin-right: 0.255em;
+        vertical-align: 0.255em;
+        content: "";
+        border-top: 0.3em solid;
+        border-right: 0.3em solid transparent;
+        border-bottom: 0;
+        border-left: 0.3em solid transparent;
     }
 
 }

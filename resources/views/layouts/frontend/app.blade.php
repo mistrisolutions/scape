@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>
         @yield('title')
     </title>
@@ -33,15 +33,18 @@
                       <li class="nav-item active">
                           <a class="nav-link" href="{{ route('home') }}">Home <span class="sr-only">(current)</span></a>
                       </li>
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              About Us
-                          </a>
-                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                             <a class="dropdown-item" href="{{ route('mission-vision') }}">Mission & Vision</a>
-                              <a class="dropdown-item" href="{{ route('who-we-are') }}">Who we are</a>
-                          </div>
+                      <li class="nav-item active">
+                          <a class="nav-link" href="{{ route('who-we-are') }}">About Us</a>
                       </li>
+{{--                      <li class="nav-item dropdown">--}}
+{{--                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
+{{--                              About Us--}}
+{{--                          </a>--}}
+{{--                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">--}}
+{{--                             <a class="dropdown-item" href="{{ route('mission-vision') }}">Mission & Vision</a>--}}
+{{--                              <a class="dropdown-item" href="{{ route('who-we-are') }}">Who we are</a>--}}
+{{--                          </div>--}}
+{{--                      </li>--}}
                       <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Portfolio

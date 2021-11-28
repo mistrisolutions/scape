@@ -28,13 +28,13 @@
         <div class="mdl-sec-bg">
             <div class="section-content">
                 <div class="container">
-                    <div class="row py-5">
+                    <div class="row py-2 py-md-5">
                         <div class="col-sm-12 col-md-10 mx-auto pt-4">
-                            <h1 class="mb-4 text-center">About Us</h1>
+                            <h1 class="mb-4 text-center">Scape Development Engineers</h1>
                             <p>Scape Development Engineers, an innovative & inclusive company founded in 2018, is a consultancy firm that provides Interior Design, Exterior Design & Total Constructions solutions for Govt. & Private sectors in Bangladesh. Embracing an unwavering commitment to quality and customer service, Scape Development Engineers has done many projects all over the country. In this short time, we were able to establish our company as one of the most acclaimed companies in the Architectural Engineering & Construction sectors. Our group of young, dynamic & hard-working professionals are always giving their best effort to make your dream into an elegant reality. </p>
                             <p>We are committed to providing our customers with products and services which exactly meet their needs and ensuring they receive the best possible added value. Our goal is to:</p>
 
-                            <ul class="navbar-nav ml-5">
+                            <ul class="navbar-nav ml-3 ml-md-5">
                                 <li class="nav-item" ><img src="{{asset('assets/images/home/list-arrow.svg')}}" alt="">Consistently deliver quality services to our clients.</li>
                                 <li class="nav-item" ><img src="{{asset('assets/images/home/list-arrow.svg')}}" alt="">Grow our firm organically.</li>
                                 <li class="nav-item" ><img src="{{asset('assets/images/home/list-arrow.svg')}}" alt="">To provide a customer-focused service that delivers high-quality construction projects in a safe, professional and timely manner.</li>
@@ -51,7 +51,7 @@
 
     <section class="our-clients py-md-5 py-0">
         <div class="container">
-            <div class="row py-5 justify-content-center text-center">
+            <div class="row py-3 py-md-5 justify-content-center text-center">
                 <div class="col-md-12">
                     <h1>Our Clients</h1>
                     <div class="clients">
@@ -135,12 +135,21 @@
         dots: true,
         arrows: false,
         slidesToShow: 4,
-        slidesToScroll: 2,
-        autoplay: true,
+        slidesToScroll: 4,
+        autoplay: false,
         autoplaySpeed: 2000,
         focusOnSelect: false,
         pauseOnHover: false,
         pauseOnFocus: false,
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }
+        ]
     });
 
 </script>

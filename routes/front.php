@@ -7,9 +7,9 @@ Route::get('/',function(){
 })->name('home');
 
 Route::prefix('about')->group(function () {
-    Route::get('/mission-vision', function () {
-       return view('frontend.about.mission_vision');
-    })->name('mission-vision');
+    //Route::get('/mission-vision', function () {
+    //   return view('frontend.about.mission_vision');
+    //})->name('mission-vision');
 
     Route::get('/who-we-are', function () {
         return view('frontend.about.whoWeAre');

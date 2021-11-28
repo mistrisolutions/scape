@@ -69,5 +69,6 @@
                 </div> <!-- ./col -->
             </div> <!-- ./row -->
         </div> <!-- ./container -->
+        <p class="text-center py-3 mb-0 border-top border-dark mt-3">© 2021 Scape Development Engineers All rights reserved.</p>
     </div> <!-- ./footer-bg -->
 </footer> <!-- ./Footer -->
