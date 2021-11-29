@@ -11,13 +11,13 @@
 <div class="nav-slider">
     <div class="slider-wrap">
         <div>
-            <img src="{{asset('assets/images/home/slider1.png')}}" alt="">
+            <img src="{{asset('assets/images/home/carousel-1.jpg')}}" alt="">
         </div>
         <div>
-            <img src="{{asset('assets/images/home/slider2.jpg')}}" alt="">
+            <img src="{{asset('assets/images/home/carousel-2.jpg')}}" alt="">
         </div>
         <div>
-            <img src="{{asset('assets/images/home/slider3.jpg')}}" alt="">
+            <img src="{{asset('assets/images/home/carousel-3.jpg')}}" alt="">
         </div>
     </div><!-- ./Slider-wrap -->
 </div><!-- ./Nav-slider -->
@@ -136,7 +136,7 @@
         arrows: false,
         slidesToShow: 4,
         slidesToScroll: 4,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         focusOnSelect: false,
         pauseOnHover: false,

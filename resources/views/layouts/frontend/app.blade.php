@@ -19,8 +19,8 @@
     <!--header-->
     <header id="header">
       <div class="header-nav">
-          <div class="container">
-              <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container px-md-0">
+              <nav class="navbar navbar-expand-lg navbar-dark px-0">
                   <a class="navbar-brand mr-5" href="{{ route('home') }}">
                       <img class="img-fluid" src="{{ asset('assets/images/logo-w.png') }}" alt="">
                   </a>

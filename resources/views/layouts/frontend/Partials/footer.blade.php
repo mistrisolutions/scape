@@ -61,9 +61,9 @@
                     <div class="social">
                         <h4>Connect with us</h4>
                         <ul class="navbar-nav d-flex navbar-expand">
-                            <li class="nav-item mr-3"><img src="{{asset('assets/images/home/facebook.svg')}}" alt=""></li>
-                            <li class="nav-item mr-3"><img src="{{asset('assets/images/home/instagram.svg')}}" alt=""></li>
-                            <li class="nav-item mr-3"><img src="{{asset('assets/images/home/linkedin.svg')}}" alt=""></li>
+                            <li class="nav-item mr-3"><a href="https://www.facebook.com/sdebangladesh" target="_blank"><img src="{{asset('assets/images/home/facebook.svg')}}" alt=""></a></li>
+                            <li class="nav-item mr-3"><a href="https://www.instagram.com/scapebd/" target="_blank"><img src="{{asset('assets/images/home/instagram.svg')}}" alt=""></a></li>
+                            <li class="nav-item mr-3"><a href="https://www.linkedin.com/company/66730800" target="_blank"><img src="{{asset('assets/images/home/linkedin.svg')}}" alt=""></a></li>
                         </ul>
                     </div>
                 </div> <!-- ./col -->

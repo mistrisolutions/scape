@@ -10965,7 +10965,7 @@ h1 {
   font-style: normal !important;
   font-weight: bold !important;
   font-size: 32px !important;
-  line-height: 30px !important;
+  line-height: 40px !important;
   letter-spacing: 0.1px !important;
   color: #373F41 !important;
 }
@@ -11156,7 +11156,6 @@ ul.slick-dots li.slick-active button {
 }
 
 .section-content ul li {
-  font-family: Lora;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -11241,7 +11240,6 @@ ul.slick-dots li.slick-active button {
 }
 
 .project .card .card-body span {
-  font-family: Lora;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -11341,7 +11339,6 @@ ul.slick-dots li.slick-active button {
 }
 
 .happy-client .happy-bg .client-content .review .single-review p {
-  font-family: Lora;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.3px;
@@ -11361,7 +11358,6 @@ ul.slick-dots li.slick-active button {
 button.slick-prev.slick-arrow,
 button.slick-next.slick-arrow {
   font-size: 0px;
-  background: transparent;
   color: #fff;
   font-variant: none;
   text-transform: none;
@@ -11369,9 +11365,8 @@ button.slick-next.slick-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background: transparent no-repeat center;
   height: 30px;
   width: 16px;
   border: none;
@@ -11466,7 +11461,6 @@ button.slick-next.slick-arrow:focus {
 }
 
 .footer-bg .company p {
-  font-family: Lora;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.3px;
@@ -11476,7 +11470,6 @@ button.slick-next.slick-arrow:focus {
 .footer-bg .services ul li a,
 .footer-bg .contact ul li,
 .footer-bg .social ul li {
-  font-family: Lora;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.2px;
@@ -11521,7 +11514,6 @@ button.slick-next.slick-arrow:focus {
 .about-us .we-are p,
 .about-us .mission p,
 .about-us .vission p {
-  font-family: Lora;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0.3px;
@@ -11535,7 +11527,6 @@ button.slick-next.slick-arrow:focus {
 }
 
 .about-us .we-are li {
-  font-family: Lora;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.3px;
@@ -11594,7 +11585,6 @@ button.slick-next.slick-arrow:focus {
 }
 
 .who-we-are .we-are li {
-  font-family: Lora;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.3px;
@@ -11624,6 +11614,11 @@ button.slick-next.slick-arrow:focus {
   line-height: 40px;
   letter-spacing: 0.1px;
   color: #373F41;
+}
+
+.service-item img {
+  height: 100%;
+  max-height: 440px;
 }
 
 .service-item p {
@@ -11665,8 +11660,8 @@ button.slick-next.slick-arrow:focus {
 
 .team .card-header img {
   height: 100%;
-  -o-object-position: center;
-     object-position: center;
+  -o-object-position: top;
+     object-position: top;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -11803,7 +11798,6 @@ img.mfp-img {
 }
 
 .contact-wrap .nav-item span {
-  font-family: Lora;
   font-size: 14px;
   line-height: 20px;
   text-align: center;

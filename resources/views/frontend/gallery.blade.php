@@ -1,4 +1,5 @@
 @extends('layouts.frontend.app')
+@section('title', 'Gallery')
 @push('css')
     <!-- fancybox-popup-css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>

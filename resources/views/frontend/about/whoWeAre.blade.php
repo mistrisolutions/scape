@@ -110,7 +110,7 @@
                         <div class="col-sm-6 col-md-6 col-lg-4">
                             <div class="card border-0">
                                 <div class="card-header  p-0 border-0">
-                                    <img class="card-img-top img-fluid" src="{{asset('assets/images/team/demo.png')}}" alt="Prottaset Ahmed Joy">
+                                    <img class="card-img-top img-fluid" src="{{asset('assets/images/team/Joy.jpeg')}}" alt="Prottaset Ahmed Joy">
                                 </div>
                                 <div class="card-body">
                                     <p class="card-text text-center font-weight-bold text-dark mb-1">Prottaset Ahmed Joy</p>
