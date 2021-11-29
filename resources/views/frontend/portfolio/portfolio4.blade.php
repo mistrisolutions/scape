@@ -1,5 +1,5 @@
 @extends('layouts.frontend.app')
-@section('title', 'about')
+@section('title', 'Fedex, Khulna')
 @push('css')
     <!-- fancybox-popup-css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
@@ -39,37 +39,37 @@
                             </div>
                             <div class="col-md-5">
                                 <div class="row">
-                                    <div class="col-md-3 text-center">
-                                        <img class="h-auto w-50 mx-auto" src="/assets/images/portfolio/customer.svg" alt="">
+                                    <div class="col-3 text-center">
+                                        <img class="h-auto w-50 mx-auto mt-1" src="/assets/images/portfolio/customer.svg" alt="">
                                     </div>
-                                    <div class="col-md-7">
+                                    <div class="col-9">
                                         <h5>Client:</h5>
                                         <p>MGH Group</p>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-3 text-center">
-                                        <img class="h-auto w-50 mx-auto" src="/assets/images/portfolio/location.svg" alt="">
+                                    <div class="col-3 text-center">
+                                        <img class="h-auto w-50 mx-auto mt-1" src="/assets/images/portfolio/location.svg" alt="">
                                     </div>
-                                    <div class="col-md-9">
+                                    <div class="col-9">
                                         <h5>Location:</h5>
                                         <p>Sher-E-Bangla Rd, Khulna</p>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-3 text-center">
-                                        <img class="h-auto w-50 mx-auto" src="/assets/images/portfolio/expand.svg" alt="">
+                                    <div class="col-3 text-center">
+                                        <img class="h-auto w-50 mx-auto mt-1" src="/assets/images/portfolio/expand.svg" alt="">
                                     </div>
-                                    <div class="col-md-7">
+                                    <div class="col-9">
                                         <h5>Project Area:</h5>
                                         <p>380 sft.</p>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-3 text-center">
-                                        <img class="h-auto w-50 mx-auto" src="/assets/images/portfolio/money-bag.svg" alt="">
+                                    <div class="col-3 text-center">
+                                        <img class="h-auto w-50 mx-auto mt-1" src="/assets/images/portfolio/money-bag.svg" alt="">
                                     </div>
-                                    <div class="col-md-7">
+                                    <div class="col-9">
                                         <h5>Budget:</h5>
                                         <p>1 Million BDT</p>
                                     </div>
