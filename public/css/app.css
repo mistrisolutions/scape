@@ -11001,12 +11001,34 @@ p {
 }
 
 .fs-96 {
-  font-size: 96px !important;
+  font-size: 70px !important;
   line-height: normal !important;
 }
 
 .black {
   color: #000C20 !important;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 30;
+}
+
+.whatsapp a {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #25D366;
+  color: #fff;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp a i {
+  font-size: 30px;
+  padding: 10px 15px;
 }
 
 /*
@@ -11708,15 +11730,15 @@ button.slick-next.slick-arrow:focus {
 
 .portfolio-wrap .nav-link {
   font-size: 40px;
-  line-height: 18px;
+  line-height: 50px;
   letter-spacing: 0.3px;
+  text-align: center;
   background-color: #000000b8;
 }
 
 .portfolio-wrap .nav-pills .nav-link.active {
   color: #fff;
   background-color: #032879b8;
-  line-height: 30px;
 }
 
 .tab-left {
@@ -11919,7 +11941,7 @@ img.mfp-img {
   }
 
   .fs-96 {
-    font-size: 36px !important;
+    font-size: 25px !important;
     line-height: normal !important;
   }
 
@@ -11987,6 +12009,7 @@ img.mfp-img {
   .portfolio-wrap .nav-link {
     font-size: 20px;
     text-align: center;
+    line-height: 30px;
   }
 
   .tab-left {
@@ -12070,6 +12093,11 @@ img.mfp-img {
 
   .map iframe {
     height: 250px;
+  }
+
+  .whatsapp a i {
+    font-size: 20px;
+    padding: 8px 10px;
   }
 }
 

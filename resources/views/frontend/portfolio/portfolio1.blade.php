@@ -18,9 +18,11 @@
         <div class="portfolio">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-11 mx-auto">
+                    <div class="]][col-md-11 mx-auto">
                         <div class="h-100 w-100 relative">
-                            <img class="img-fluid" src="{{ asset('assets/images/portfolio/admission-office.png') }}"
+{{--                            <img class="img-fluid" src="{{ asset('assets/images/portfolio/admission-office.png') }}"--}}
+{{--                                 alt="">--}}
+                            <img class="img-fluid" src="https://lh3.googleusercontent.com/fife/AAWUweXdsdnAlEELEBJ4sn5GEb7bzAeYd7aXlgMcrGEVtB9HZBvywDtFha0Yb7ZAyGV1pBQXCIL_ceG6rjtdSJ6-JR3PmMGp29gEfbmt2oLKr54ENqqYy2vvVFs1EwjHqWlKcWuxF4ztktVILSuahznjJA0wHOe7428xllsvehRbc8jztDPAaJXbpD2ztmJLaeXl_o9S54xSwEp8P0pL_7FMwJMQEsvq9ewcFNUE7efonQoEgAA-dQSZndZWIYKhchNoFGggIRxILOX7g9EMo30Mgs81tTdyZXZUvB3E-3XxPChJ1J1yzcrxk0i1QA0QvAWQ8gGibT4KsJbKx-y4yW5FJW5XGrNsp4XoQ0xnlEX6MJOCZDkEbRvaeGHE29UVKrGewnE_KWIH04Mn4aUe0ecYcrXHjnEZ2FsXwEbIEuHvYmDXsgFwrb41CljTD21OjsT6tkQTxUBzBzfX4e6e4NSAPGFIA-wGMLOuot8QlNLa46Xk8Jo3RdQWAZZdKsZvB3BpTNjrJItDGWjMt2HAlRrTk-EwwnI4LQUPKZnpgdcOc_J083-A-vp7pcYBWZNpfeZ9_5EjyY3Qqb8PFQZAwAA62r4eNoqJ4tCmuJAja8E2bkU0jrJ4tYw3kLcu8Cli-G0qIu7ECIOMkdZdJfBYDPonE-COkZpzZvKB41Dkp0rhTydpqh8jBjKsN2v2gAx8PaqkEEtTrlVa99-VsJAtby56ThLwYBHRNCq8nw=w2880-h1642-ft"
                                  alt="">
                             <div class="overlay"></div>
                             <div class="absolute d-flex justify-content-start align-items-end">

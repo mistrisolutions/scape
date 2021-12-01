@@ -90,7 +90,7 @@
                                 <li class="col-4 px-0 nav-item h-100 w-100 border-right">
                                     <a class="nav-link active rounded-0 d-flex align-items-center justify-content-center h-100" id="pills-residence-tab" data-toggle="pill"
                                        href="#pills-residence" role="tab" aria-controls="pills-residence"
-                                       aria-selected="true">3D VR View</a>
+                                       aria-selected="true">3D VR <br> View</a>
                                 </li>
                                 <li class="col-4 px-0 nav-item h-100 w-100">
                                     <a class="nav-link rounded-0 d-flex align-items-center justify-content-center h-100" id="p ills-office-tab" data-toggle="pill"
@@ -99,7 +99,7 @@
                                 </li>
                                 <li class="col-4 px-0 nav-item h-100 w-100 border-left">
                                     <a class="nav-link rounded-0 d-flex align-items-center justify-content-center h-100" id="p ills-hotel-tab" data-toggle="pill"
-                                       href="#pills-hotel" role="tab" aria-controls="pills-hotel" aria-selected="false">Project Videos</a>
+                                       href="#pills-hotel" role="tab" aria-controls="pills-hotel" aria-selected="false">Activities</a>
                                 </li>
                             </ul>
                         </div>

@@ -45,7 +45,7 @@
                         <h4>Contact us</h4>
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <img class="mr-2"src="{{asset('assets/images/home/phone.svg')}}" alt="">+88 01810023431
+                                <img class="mr-2"src="{{asset('assets/images/home/phone.svg')}}" alt="">+88 01616-182874
                             </li>
                             <li class="nav-item">
                                 <img class="mr-2"src="{{asset('assets/images/home/mail.svg')}}" alt="">info.scapebd@gmail.com
