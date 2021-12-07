@@ -952,6 +952,8 @@ img.mfp-img {
 .fancybox-image, .fancybox-spaceball{
     width: auto !important;
     height: auto !important;
+    max-height: 100% !important;
+    max-width: 100% !important;
     left: 50% !important;
     top: 50% !important;
     transform: translate(-50% , -50%);
