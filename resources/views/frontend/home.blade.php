@@ -30,7 +30,7 @@
                 <div class="container">
                     <div class="row py-2 py-md-5">
                         <div class="col-sm-12 col-md-10 mx-auto pt-4">
-                            <h1 class="mb-4 text-center">Scape Development Engineers</h1>
+                            <h1 class="mb-4 text-center font-discognate fs-40">Scape Development Engineers</h1>
                             <p>Scape Development Engineers, an innovative & inclusive company founded in 2018, is a consultancy firm that provides Interior Design, Exterior Design & Total Constructions solutions for Govt. & Private sectors in Bangladesh. Embracing an unwavering commitment to quality and customer service, Scape Development Engineers has done many projects all over the country. In this short time, we were able to establish our company as one of the most acclaimed companies in the Architectural Engineering & Construction sectors. Our group of young, dynamic & hard-working professionals are always giving their best effort to make your dream into an elegant reality. </p>
                             <p>We are committed to providing our customers with products and services which exactly meet their needs and ensuring they receive the best possible added value. Our goal is to:</p>
 

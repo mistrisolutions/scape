@@ -57,7 +57,7 @@
                      </div> <!-- ./row -->
                      <div class="row d-flex mb-4 mb-md-5 shadow-sm rounded-lg py-3">
                         <div class="col-md-6 mb-3 mb-md-0">
-                           <img class="img-fluid h-100 rounded-lg w-100" src="{{asset('assets/images/service/Building.jpg')}}" alt="">
+                           <img class="img-fluid h-100 rounded-lg w-100" src="{{asset('assets/images/service/building.jpg')}}" alt="">
                         </div>
                         <div class="col-md-6 mb-3 mb-md-0 py-3">
                            <h1 class="mb-3 mb-md-4">Pre-engineered Steel Building.</h1>
