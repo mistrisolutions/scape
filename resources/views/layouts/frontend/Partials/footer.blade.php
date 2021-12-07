@@ -29,12 +29,7 @@
                             </li>
                             <li class="nav-item">
                                 <a href="#">
-                                    <img class="mr-2"src="{{asset('assets/images/home/footer-arrow.svg')}}" alt="">Civil & building construction.
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#">
-                                    <img class="mr-2" src="{{asset('assets/images/home/footer-arrow.svg')}}" alt="">Real estate
+                                    <img class="mr-2" src="{{asset('assets/images/home/footer-arrow.svg')}}" alt="">Landscaping.
                                 </a>
                             </li>
                         </ul>

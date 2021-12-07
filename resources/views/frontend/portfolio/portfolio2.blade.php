@@ -20,7 +20,7 @@
                 <div class="row">
                     <div class="col-md-11 mx-auto">
                         <div class="h-100 w-100 relative">
-                            <img class="img-fluid" src="{{ asset('assets/images/portfolio/faculty.png') }}"
+                            <img class="img-fluid" src="{{ asset('assets/images/faculty_dean/cover.jpg') }}"
                                  alt="">
                             <div class="overlay"></div>
                             <div class="absolute d-flex justify-content-start align-items-end">
@@ -94,7 +94,7 @@
                 <div class="col-md-11 mx-auto">
                     <h2 class="text-center mb-5">3D View</h2>
                     <div class="row justify-content-center">
-                        <div class="col-sm-6 col-md-6 col-lg-7">
+                        <div class="col-sm-6 col-md-6 col-lg-7 px-md-2">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup w-100 h-100"
                                    data-fancybox="gallery" href="{{asset('assets/images/portfolio/F_13 - Photo.png')}}">
@@ -103,7 +103,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-5 mt-3 mt-md-0">
+                        <div class="col-sm-6 col-md-6 col-lg-5 mt-3 mt-md-0 px-md-2">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
                                    data-fancybox="gallery" href="{{asset('assets/images/portfolio/F_11 - Photo.png')}}">
@@ -112,7 +112,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
                                    data-fancybox="gallery" href="{{asset('assets/images/portfolio/F_14 - Photo.png')}}">
@@ -121,7 +121,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
                                    data-fancybox="gallery" href="{{asset('assets/images/portfolio/F_15 - Photo.png')}}">
@@ -130,7 +130,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
                                    data-fancybox="gallery" href="{{asset('assets/images/portfolio/F_14 - Photo.png')}}">
@@ -140,6 +140,108 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div> <!-- ./row -->
+        </div> <!-- ./container -->
+        <div class="container portfolio-gallery mt-md-5 pt-md-5">
+            <div class="row mb-5">
+                <div class="col-md-11 mx-auto">
+                    <h2 class="text-center mb-5">Live Pictures</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-6 col-md-6 col-lg-7 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/faculty_dean/1.jpg')}}">
+                                    <img class="gallery-img-big img-fluid"
+                                         src="{{asset('assets/images/faculty_dean/1.jpg')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-5 mt-3 mt-md-0 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/faculty_dean/2.jpg')}}">
+                                    <img class="gallery-img-big img-fluid"
+                                         src="{{asset('assets/images/faculty_dean/2.jpg')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/faculty_dean/3.jpg')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/faculty_dean/3.jpg')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/faculty_dean/4.jpg')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/faculty_dean/4.jpg')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/faculty_dean/5.jpg')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/faculty_dean/5.jpg')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/faculty_dean/6.jpg')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/faculty_dean/6.jpg')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/faculty_dean/7.jpg')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/faculty_dean/7.jpg')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/faculty_dean/8.jpg')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/faculty_dean/8.jpg')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/faculty_dean/9.jpg')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/faculty_dean/9.jpg')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- ./row -->
+            <div class="text-center">
+                <a href="{{ route('gallery') }}" class="btn btn-primary px-4 font-weight-bold">See all</a>
+            </div>
+        </div> <!-- ./container -->
+
+        <div class="container portfolio-gallery mt-md-5 pt-5">
+            <div class="row mb-5">
+                <div class="col-md-11 mx-auto">
+                    <h2 class="text-center mb-5">3D Video</h2>
+                    <iframe class="w-100 video" src="https://www.youtube.com/embed/5hemeiTVIG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div> <!-- ./row -->
         </div> <!-- ./container -->

@@ -27,7 +27,7 @@
                   <div class="service-item px-2">
                      <div class="row d-flex mb-4 mb-md-5 shadow-sm rounded-lg py-3">
                         <div class="col-md-6 mb-3 mb-md-0">
-                           <img class="img-fluid rounded-lg w-100" src="{{asset('assets/images/service/interior.png')}}" alt="">
+                           <img class="img-fluid rounded-lg w-100" src="{{asset('assets/images/service/Services_Interior.jpg')}}" alt="">
                         </div>
                         <div class="col-md-6 mb-3 mb-md-0 py-3">
                            <h1 class="mb-3 mb-md-4">Interior design & development.</h1>
@@ -52,12 +52,12 @@
                            <a href="{{ route('contact')  }}" class="btn btn-outline-primary rounded-lg px-3 py-2">Let's Work</a>
                         </div>
                         <div class="col-md-6 mb-3 mb-md-0 order-0 order-md-1">
-                           <img class="img-fluid rounded-lg w-100" src="{{asset('assets/images/service/architect.png')}}" alt="">
+                           <img class="img-fluid rounded-lg w-100" src="{{asset('assets/images/service/Architectural _ Engineering.jpg')}}" alt="">
                         </div>
                      </div> <!-- ./row -->
                      <div class="row d-flex mb-4 mb-md-5 shadow-sm rounded-lg py-3">
                         <div class="col-md-6 mb-3 mb-md-0">
-                           <img class="img-fluid h-100 rounded-lg w-100" src="{{asset('assets/images/service/building.jpg')}}" alt="">
+                           <img class="img-fluid h-100 rounded-lg w-100" src="{{asset('assets/images/service/Building.jpg')}}" alt="">
                         </div>
                         <div class="col-md-6 mb-3 mb-md-0 py-3">
                            <h1 class="mb-3 mb-md-4">Pre-engineered Steel Building.</h1>
@@ -77,11 +77,13 @@
                      <div class="row d-flex mb-4 mb-md-5 shadow-sm rounded-lg py-3">
                         <div class="col-md-6 mb-3 mb-md-0 order-1 order-md-0 py-3">
                            <h1 class="mb-3 mb-md-4">Landscaping</h1>
-                           <p class="mb-3 mb-md-5">Landscape design is the art of arranging the features of an area of land for aesthetic and/or practical reasons. We as a designer, provide landscape designs by combining nature and culture in the development. Landscaping contributes significantly to one’s well-being and quality of life. It provides the broader context within which anyone lives their lives. Living within aesthetically pleasing and culturally meaningful landscapes enhances one's sense of wellbeing. Besides, it'll have a great impact on the environment.</p>
+                           <p class="mb-3 mb-md-5">
+                               Landscape design is the art of arranging the features of an area of land for aesthetic and/or practical reasons. We as a designer, provide landscape designs by combining nature and culture in the development. Landscaping contributes significantly to one’s well-being and quality of life. It provides the broader context within which anyone lives their lives. Living within aesthetically pleasing and culturally meaningful landscapes enhances one's sense of wellbeing. Besides, it'll have a great impact on the environment.
+                           </p>
                            <a href="{{ route('contact')  }}" class="btn btn-outline-primary rounded-lg px-3 py-2">Let's Work</a>
                         </div>
                         <div class="col-md-6 mb-3 mb-md-0 order-0 order-md-1">
-                           <img class="img-fluid rounded-lg w-100" src="{{asset('assets/images/service/landscaping.png')}}" alt="">
+                           <img class="img-fluid rounded-lg w-100" src="{{asset('assets/images/service/Services_Landscaping.jpg')}}" alt="">
                         </div>
                      </div> <!-- ./row -->
                   </div>

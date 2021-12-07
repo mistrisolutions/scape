@@ -106,7 +106,7 @@
             <div class="row my-3 my-md-5 team">
                 <div class="col-md-10 mx-auto">
                     <h1 class="mb-3 mb-md-5">Team of dream makers</h1>
-                    <div class="row">
+                    <div class="row justify-content-center">
                         <div class="col-sm-6 col-md-6 col-lg-4">
                             <div class="card border-0">
                                 <div class="card-header  p-0 border-0">
@@ -115,6 +115,30 @@
                                 <div class="card-body">
                                     <p class="card-text text-center font-weight-bold text-dark mb-1">Prottaset Ahmed Joy</p>
                                     <p class="font-weight-light text-center">Project Coordinator</p>
+                                </div>
+                            </div> <!-- ./Card -->
+                        </div> <!-- ./col -->
+
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="card border-0">
+                                <div class="card-header  p-0 border-0">
+                                    <img class="card-img-top img-fluid" src="{{asset('assets/images/team/Feroz.png')}}" alt="Card image">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text text-center font-weight-bold text-dark mb-1">Md. Feroz Al Mamun</p>
+                                    <p class="font-weight-light text-center">Project Engineer</p>
+                                </div>
+                            </div> <!-- ./Card -->
+                        </div> <!-- ./col -->
+
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="card border-0">
+                                <div class="card-header  p-0 border-0">
+                                    <img class="card-img-top img-fluid" src="{{asset('assets/images/team/Kamrul-Hasan.jpeg')}}" alt="Kamrul Hasan">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text text-center font-weight-bold text-dark mb-1">Kamrul Hasan</p>
+                                    <p class="font-weight-light text-center">HR & Accounts Manager</p>
                                 </div>
                             </div> <!-- ./Card -->
                         </div> <!-- ./col -->
@@ -134,6 +158,18 @@
                         <div class="col-sm-6 col-md-6 col-lg-4">
                             <div class="card border-0">
                                 <div class="card-header  p-0 border-0">
+                                    <img class="card-img-top img-fluid" src="{{asset('assets/images/team/Akash.jpeg')}}" alt="Card image">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text text-center font-weight-bold text-dark mb-1">Akash Roy</p>
+                                    <p class="font-weight-light text-center">3D Designer</p>
+                                </div>
+                            </div> <!-- ./Card -->
+                        </div> <!-- ./col -->
+
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="card border-0">
+                                <div class="card-header  p-0 border-0">
                                     <img class="card-img-top img-fluid" src="{{asset('assets/images/team/Mashfique.jpg')}}" alt="Card image">
                                 </div>
                                 <div class="card-body">
@@ -146,45 +182,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4">
                             <div class="card border-0">
                                 <div class="card-header  p-0 border-0">
-                                    <img class="card-img-top img-fluid" src="{{asset('assets/images/team/Feroz.png')}}" alt="Card image">
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text text-center font-weight-bold text-dark mb-1">Md. Feroz Al Mamun</p>
-                                    <p class="font-weight-light text-center">Project Engineer</p>
-                                </div>
-                            </div> <!-- ./Card -->
-                        </div> <!-- ./col -->
-                        <div class="col-sm-6 col-md-6 col-lg-4">
-                            <div class="card border-0">
-                                <div class="card-header  p-0 border-0">
-                                    <img class="card-img-top img-fluid" src="{{asset('assets/images/team/Kamrul-Hasan.jpeg')}}" alt="Kamrul Hasan">
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text text-center font-weight-bold text-dark mb-1">Kamrul Hasan</p>
-                                    <p class="font-weight-light text-center">HR & Accounts Manager</p>
-                                </div>
-                            </div> <!-- ./Card -->
-                        </div> <!-- ./col -->
-
-                        <div class="col-sm-6 col-md-6 col-lg-4">
-                            <div class="card border-0">
-                                <div class="card-header  p-0 border-0">
-                                    <img class="card-img-top img-fluid" src="{{asset('assets/images/team/Akash.jpeg')}}" alt="Card image">
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text text-center font-weight-bold text-dark mb-1">Akash Roy</p>
-                                    <p class="font-weight-light text-center">3D Designer</p>
-                                </div>
-                            </div> <!-- ./Card -->
-                        </div> <!-- ./col -->
-                        <div class="col-sm-6 col-md-6 col-lg-4">
-                            <div class="card border-0">
-                                <div class="card-header  p-0 border-0">
                                     <img class="card-img-top img-fluid" src="{{asset('assets/images/team/Shashi.JPG')}}" alt="Card image">
                                 </div>
                                 <div class="card-body">
                                     <p class="card-text text-center font-weight-bold text-dark mb-1">Farjana Islam Shashi</p>
-                                    <p class="font-weight-light text-center">Content Writer</p>
+                                    <p class="font-weight-light text-center">Digital Marketing Executive</p>
                                 </div>
                             </div> <!-- ./Card -->
                         </div> <!-- ./col -->

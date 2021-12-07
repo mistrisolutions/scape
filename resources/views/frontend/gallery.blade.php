@@ -109,6 +109,119 @@
                                      aria-labelledby="pills-residence-tab">
                                     <div class="d-md-flex mb-3">
                                         <div class="pr-4 d-flex align-items-center tab-left">
+                                            <p class="text-primary">Bedroom</p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/residential/1.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/residential/1.jpg')}}" alt="">
+                                                    </a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/b8f65d588b614c8f975edf1ddc2bdc80?utm_campaign=embed&utm_source=other&heading=3.9&pitch=5.5&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/residential/2.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/residential/2.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/c4392a0f39df44afb2b6d08345d74dc2?utm_campaign=embed&utm_source=other&heading=69.1&pitch=-9.8&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/residential/3.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/residential/3.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/a18c25f7919f446080e81956656f019e?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/residential/3.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/residential/3.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/dd9f6a8e9f7c45ccb1eed04755df6885?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/residential/3.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/residential/3.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/47fc3936aaeb42cc88f2483dcc5dc3f5?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/residential/3.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/residential/3.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/0a6976bd46fb4d418c04b5dfa2e66f0f?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/residential/3.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/residential/3.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/d50d1c2246a64df6b87ee775f218a245?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-md-flex mb-3">
+                                        <div class="pr-4 d-flex align-items-center tab-left">
                                            <p class="text-primary">Formal Livingroom</p>
                                         </div>
                                         <div class="row">
@@ -329,12 +442,13 @@
             </div> <!-- ./container -->
         </div> <!-- ./about-us -->
     </main> <!-- ./Main -->
-    <div class="modal" id="exampleModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
+    <div class="modal" id="show-vr-box">
+        <div class="modal-dialog">
+            <div class="modal-content relative">
+                <i class="fas fa-times top-5 right-10 z-10 text-danger fs-50 close-vr" style="position: absolute; cursor: pointer;"></i>
                 <div class="modal-body">
                     <iframe class="img-fluid w-100"
-                            src="https://momento360.com/e/u/805ec727bacf478cb1a0c93aa34ebde5?utm_campaign=embed&utm_source=other&heading=1198.55&pitch=-9.76&field-of-view=75&size=medium"
+                            id="show-vr-iframe"
                             alt="">
                     </iframe>
                 </div>
@@ -368,6 +482,20 @@
             $('.view-popup').fancybox({});
         });
 
+        // Set VR View Iframe url
+        let showVrIframe = document.getElementById('show-vr-iframe');
+        let showVrBox = document.getElementById('show-vr-box');
+        let closeVr = document.querySelector('.close-vr');
+
+        function showVR(url){
+            event.stopImmediatePropagation()
+            showVrIframe.setAttribute('src' , url);
+            showVrBox.style.display = 'block'
+        }
+        // Hide Vr View Iframe when click outside
+        closeVr.addEventListener('click' , function (){
+            showVrBox.style.display = 'none'
+        })
 
     </script>
 @endpush

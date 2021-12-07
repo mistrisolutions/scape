@@ -16,6 +16,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     //font-family: 'Libel Suit', sans-serif;
     font-family: 'Open Sans';
@@ -68,6 +72,23 @@ p {
     z-index: 2;
 }
 
+.top-5 {
+    top: 5px;
+}
+
+.right-10 {
+    right: 10px;
+}
+
+.z-10{
+    z-index: 10;
+}
+
+.fs-50 {
+    font-size: 50px !important;
+    font-weight: 500;
+    line-height: normal !important;
+}
 .fs-96 {
     font-size: 70px !important;
     line-height: normal !important;
@@ -95,6 +116,10 @@ p {
 .whatsapp a i{
     font-size: 30px;
     padding:10px 15px;
+}
+
+.hide-vr{
+    display: none;
 }
 
 /*
@@ -911,6 +936,7 @@ img.mfp-img {
 }
 
 
+
 /*
 *---------------------------------
 *Responsive Design
@@ -967,7 +993,7 @@ img.mfp-img {
 
 @media (max-width: 480px) {
     #header {
-        height: 60vh;
+        height: 45vh;
     }
     #header .header-nav {
         top: 25px;
@@ -980,7 +1006,7 @@ img.mfp-img {
         height: 125px;
     }
     .nav-slider {
-        height: 60vh;
+        height: 45vh;
     }
     //.nav-slider .slider-wrap {
     //    height: 80%;
@@ -1140,6 +1166,10 @@ img.mfp-img {
     .whatsapp a i{
         font-size: 20px;
         padding:8px 10px;
+    }
+    .portfolio-gallery .video {
+        height: 200px;
+        min-width: 100%;
     }
 
 }
