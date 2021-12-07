@@ -94,7 +94,7 @@
                 <div class="col-md-11 mx-auto">
                     <h2 class="text-center mb-5">Live Pictures</h2>
                     <div class="row justify-content-center">
-                        <div class="col-sm-6 col-md-6 col-lg-7 img-box">
+                        <div class="col-sm-6 col-md-6 col-lg-7 img-box px-md-2">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup w-100 h-100"
                                    data-fancybox="gallery" href="{{asset('assets/images/portfolio/fedex-1.png')}}">
@@ -103,7 +103,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-5 mt-3 mt-md-0 img-box">
+                        <div class="col-sm-6 col-md-6 col-lg-5 mt-3 mt-md-0 img-box px-md-2">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
                                    data-fancybox="gallery" href="{{asset('assets/images/portfolio/fedex-6.png')}}">
@@ -119,7 +119,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 img-box">
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2 img-box">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
                                    data-fancybox="gallery" href="{{asset('assets/images/portfolio/fedex-3.png')}}">
@@ -128,7 +128,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 img-box">
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2 img-box">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
                                    data-fancybox="gallery" href="{{asset('assets/images/portfolio/fedex-5.png')}}">
@@ -137,7 +137,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 img-box">
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2 img-box">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
                                    data-fancybox="gallery" href="{{asset('assets/images/portfolio/fedex-4.png')}}">

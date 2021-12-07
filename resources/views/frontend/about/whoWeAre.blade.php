@@ -18,13 +18,13 @@
                 <div class="who-nav-slider">
                     <div class="who-slider-wrap">
                         <div>
-                            <img src="{{asset('assets/images/about/header.png')}}" alt="">
+                            <img src="{{asset('assets/images/about/cover1.jpg')}}" alt="">
                         </div>
                         <div>
-                            <img src="{{asset('assets/images/home/slider1.png')}}" alt="">
+                            <img src="{{asset('assets/images/about/cover2.jpg')}}" alt="">
                         </div>
                         <div>
-                            <img src="{{asset('assets/images/about/header.png')}}" alt="">
+                            <img src="{{asset('assets/images/about/cover3.jpg')}}" alt="">
                         </div>
                     </div><!-- ./Slider-wrap -->
                 </div><!-- ./Nav-slider -->
@@ -90,14 +90,19 @@
                 <div class="col-md-10 mx-auto">
                     <div class="team-header">
                         <div class="row d-flex align-items-center mb-3 mb-md-5">
-                            <div class="col-md-7 mb-5 mb-md-0">
+                            <div class="col-md-7 mb-3 mb-md-0">
                                 <h1 class="mb-3 mb-md-5">Message from CEO</h1>
                                 <p class="mb-3 mb-md-5">Our company began in 2020 and has continually grown thanks to the outstanding support of our many clients. SDE never stops doing what you need to give you the satisfaction you expect. That's how we became the best.Today as we tread the path of success, we look forward to sharing our story with you.</p>
                                 <p>We sincerely hope you will continue to seek inspiration from our history and look forward to a lasting relationship with you.</p>
-                                <a href="{{ route('contact')  }}" class="btn btn-outline-primary rounded-0 px-3 py-2">Let's Work</a>
+                                <div class="d-none d-md-block">
+                                    <a href="{{ route('contact')  }}" class="btn btn-outline-primary rounded-0 px-3 py-2">Let's Work</a>
+                                </div>
                             </div>
                             <div class="col-md-5 mb-5 mb-md-0">
                                 <img class="img-fluid w-100" src="{{asset('assets/images/team/ceo.png')}}" alt="">
+                                <div class="d-block d-md-none mt-4 mt-md-0">
+                                    <a href="{{ route('contact')  }}" class="btn btn-outline-primary rounded-0 px-3 py-2">Let's Work</a>
+                                </div>
                             </div>
                         </div> <!-- ./row -->
                     </div>

@@ -23,10 +23,14 @@
                      <div class="row">
                         <div class="col-sm-12 col-md-6 mb-5">
                            <h4>Contact Number</h4>
-                           <ul class="navbar-nav navbar-expand-sm mt-3 mb-sm-5">
-                              <li class="nav-item mr-5">
+                           <ul class="navbar-nav mt-3 mb-sm-5">
+                              <li class="nav-item mr-5 mb-2">
                                  <img class="img-fluid mr-2" src="{{asset('assets/images/contact/phone.png')}}" alt="">
                                  <span>+88 01616-182874</span>
+                              </li>
+                              <li class="nav-item mr-5">
+                                 <img class="img-fluid mr-2" src="{{asset('assets/images/contact/phone.png')}}" alt="">
+                                 <span>+88 01810023431</span>
                               </li>
                            </ul>
                         </div>

@@ -18,7 +18,7 @@
         <div class="portfolio">
             <div class="container">
                 <div class="row">
-                    <div class="]][col-md-11 mx-auto">
+                    <div class="col-md-11 mx-auto">
                         <div class="h-100 w-100 relative">
 {{--                            <img class="img-fluid" src="{{ asset('assets/images/portfolio/admission-office.png') }}"--}}
 {{--                                 alt="">--}}

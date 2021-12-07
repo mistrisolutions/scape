@@ -949,6 +949,14 @@ img.mfp-img {
     max-width: 32.3% !important;
 }
 
+.fancybox-image, .fancybox-spaceball{
+    width: auto !important;
+    height: auto !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50% , -50%);
+}
+
 /*
 *---------------------------------
 *Responsive Design

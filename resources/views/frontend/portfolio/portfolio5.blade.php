@@ -82,7 +82,7 @@
                     <div class="col-md-11 mx-auto">
                         <div>
                             <h2 class="text-center mb-5">Floor Planning</h2>
-                            <img class="w-100 h-auto" src="{{asset('assets/images/portfolio/food-company.png')  }}"
+                            <img class="w-100 h-auto" src="{{asset('assets/images/food/food-factory-plan.jpg')  }}"
                                  alt="">
                         </div>
                     </div> <!-- ./col -->
@@ -94,7 +94,7 @@
                 <div class="col-md-11 mx-auto">
                     <h2 class="text-center mb-5">3D View</h2>
                     <div class="row justify-content-center">
-                        <div class="col-sm-6 col-md-6 col-lg-7 img-box mb-3 mb-md-0">
+                        <div class="col-sm-6 col-md-6 col-lg-7 img-box mb-3 mb-md-0 px-md-2">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup w-100 h-100"
                                    data-fancybox="gallery" href="{{asset('assets/images/portfolio/food-1.png')}}">
@@ -117,7 +117,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-5 img-box">
+                        <div class="col-sm-6 col-md-6 col-lg-5 img-box px-md-2">
                             <div class="border-0 mb-3">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
                                    data-fancybox="gallery" href="{{asset('assets/images/portfolio/food-4.png')}}">
