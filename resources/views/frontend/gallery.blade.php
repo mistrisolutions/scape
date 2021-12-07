@@ -339,6 +339,51 @@
                                                     >
                                                 </div>
                                             </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/residential/2.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/residential/2.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/b3f7652e0b09448dbd8cc9f87ee9427b?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/residential/2.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/residential/2.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/784adc06d7634d419955dd09619b5f4b?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/residential/2.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/residential/2.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/e6fb9e0e2fff42ed8d2f11afe64ea5f8?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div> <!-- ./tab-pan -->
