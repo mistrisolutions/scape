@@ -81,7 +81,7 @@
 
 @section('content')
     <main>
-        <div class="portfolio">
+        <div class="portfolio gallery-wrapper">
             <div class="container">
                 <div class="row my-5">
                     <div class="col-md-10 mx-auto">
@@ -108,11 +108,11 @@
                                 <div class="tab-pane fade show active" id="pills-residence" role="tabpanel"
                                      aria-labelledby="pills-residence-tab">
                                     <div class="d-md-flex mb-3">
-                                        <div class="pr-4 d-flex align-items-center tab-left">
+                                        <div class="pr-md-4 d-flex flex-shrink-0 tab-left">
                                             <p class="text-primary">Bedroom</p>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                        <div class="row mx-0 gap-5 custom-grid w-100">
+                                            <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
                                                        class="view-popup" data-fancybox="gallery"
@@ -128,7 +128,7 @@
                                                     >
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                            <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
                                                        class="view-popup" data-fancybox="gallery"
@@ -143,7 +143,7 @@
                                                     >
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                            <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
                                                        class="view-popup" data-fancybox="gallery"
@@ -158,7 +158,7 @@
                                                     >
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                            <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
                                                        class="view-popup" data-fancybox="gallery"
@@ -173,7 +173,7 @@
                                                     >
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                            <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
                                                        class="view-popup" data-fancybox="gallery"
@@ -188,7 +188,7 @@
                                                     >
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                            <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
                                                        class="view-popup" data-fancybox="gallery"
@@ -203,7 +203,7 @@
                                                     >
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                            <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
                                                        class="view-popup" data-fancybox="gallery"
@@ -221,11 +221,11 @@
                                         </div>
                                     </div>
                                     <div class="d-md-flex mb-3">
-                                        <div class="pr-4 d-flex align-items-center tab-left">
-                                           <p class="text-primary">Formal Livingroom</p>
+                                        <div class="pr-md-4 d-flex flex-shrink-0 tab-left">
+                                            <p class="text-primary">Kitchen & Washroom</p>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                        <div class="row mx-0 gap-5 custom-grid w-100">
+                                            <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
                                                        class="view-popup" data-fancybox="gallery"
@@ -233,41 +233,37 @@
                                                         <img class="img-fluid w-100"
                                                              src="{{asset('assets/images/residential/1.jpg')}}" alt="">
                                                     </a>
-                                                    <a href="" data-toggle="modal" data-target="#exampleModal"><img
-                                                            class="threeD"
-                                                            src="{{asset('assets/images/portfolio/360.png')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/ce6e3591651f456e84c9da1b418f70a0?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                            <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
                                                        class="view-popup" data-fancybox="gallery"
                                                        href="{{asset('assets/images/residential/2.jpg')}}"><img
                                                             class="img-fluid w-100"
                                                             src="{{asset('assets/images/residential/2.jpg')}}" alt=""></a>
-                                                    <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}"
-                                                         alt="">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
-                                                <div class="view-card">
-                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup" data-fancybox="gallery"
-                                                       href="{{asset('assets/images/residential/3.jpg')}}"><img
-                                                            class="img-fluid w-100"
-                                                            src="{{asset('assets/images/residential/3.jpg')}}" alt=""></a>
-                                                    <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}"
-                                                         alt="">
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/ce6e3591651f456e84c9da1b418f70a0?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="d-md-flex mb-3">
-                                        <div class="pr-4 d-flex align-items-center tab-left">
-                                            <p class="text-primary">Family Livingroom</p>
+                                        <div class="pr-md-4 d-flex flex-shrink-0 tab-left">
+                                            <p class="text-primary">VR Files (Dining & Living)</p>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                        <div class="row mx-0 gap-5 custom-grid w-100">
+                                            <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
                                                        class="view-popup" data-fancybox="gallery"
@@ -275,73 +271,72 @@
                                                         <img class="img-fluid w-100"
                                                              src="{{asset('assets/images/residential/1.jpg')}}" alt="">
                                                     </a>
-                                                    <a href="" data-toggle="modal" data-target="#exampleModal"><img
-                                                            class="threeD"
-                                                            src="{{asset('assets/images/portfolio/360.png')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/ce6e3591651f456e84c9da1b418f70a0?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                            <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
                                                        class="view-popup" data-fancybox="gallery"
                                                        href="{{asset('assets/images/residential/2.jpg')}}"><img
                                                             class="img-fluid w-100"
                                                             src="{{asset('assets/images/residential/2.jpg')}}" alt=""></a>
-                                                    <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}"
-                                                         alt="">
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/579883d83aa34f9ba16359a602ccaa2d?utm_campaign=embed&utm_source=other&heading=142.95&pitch=-15.19&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
-                                                <div class="view-card">
-                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup" data-fancybox="gallery"
-                                                       href="{{asset('assets/images/residential/3.jpg')}}"><img
-                                                            class="img-fluid w-100"
-                                                            src="{{asset('assets/images/residential/3.jpg')}}" alt=""></a>
-                                                    <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}"
-                                                         alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="d-md-flex mb-3">
-                                        <div class="pr-4 d-flex align-items-center tab-left">
-                                            <p class="text-primary">Main Bedroom</p>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
-                                                <div class="view-card">
-                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup" data-fancybox="gallery"
-                                                       href="{{asset('assets/images/residential/1.jpg')}}">
-                                                        <img class="img-fluid w-100"
-                                                             src="{{asset('assets/images/residential/1.jpg')}}" alt="">
-                                                    </a>
-                                                    <a href="" data-toggle="modal" data-target="#exampleModal"><img
-                                                            class="threeD"
-                                                            src="{{asset('assets/images/portfolio/360.png')}}" alt=""></a>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                            <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
                                                        class="view-popup" data-fancybox="gallery"
                                                        href="{{asset('assets/images/residential/2.jpg')}}"><img
                                                             class="img-fluid w-100"
                                                             src="{{asset('assets/images/residential/2.jpg')}}" alt=""></a>
-                                                    <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}"
-                                                         alt="">
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/c362c38f497548d09101dc86a5cefbd5?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                            <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
                                                        class="view-popup" data-fancybox="gallery"
-                                                       href="{{asset('assets/images/residential/3.jpg')}}"><img
+                                                       href="{{asset('assets/images/residential/2.jpg')}}"><img
                                                             class="img-fluid w-100"
-                                                            src="{{asset('assets/images/residential/3.jpg')}}" alt=""></a>
-                                                    <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}"
-                                                         alt="">
+                                                            src="{{asset('assets/images/residential/2.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/b425901a1be54333be2d160b4bdc9087?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/residential/2.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/residential/2.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/a8cd0030f87d4b339070dadcd9e0e36a?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
                                                 </div>
                                             </div>
                                         </div>
@@ -349,44 +344,596 @@
                                 </div> <!-- ./tab-pan -->
                                 <div class="tab-pane fade" id="pills-office" role="tabpanel"
                                      aria-labelledby="pills-office-tab">
-                                    <div class="d-md-flex">
-                                        <div class="pr-4 d-flex align-items-center tab-left">
-                                            <p class="text-primary">Formal Livingroom</p>
+                                    <div class="d-md-flex mb-3">
+                                        <div class="pr-md-4 d-flex flex-shrink-0 tab-left">
+                                            <p class="text-primary">Admission Office</p>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                        <div class="row mx-0 gap-5 custom-grid w-100">
+                                            <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup"
-                                                       href="{{asset('assets/images/office/1.jpg')}}"><img
-                                                            class="img-fluid w-100"
-                                                            src="{{asset('assets/images/office/1.jpg')}}" alt=""></a>
-{{--                                                    <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}"--}}
-{{--                                                         alt="">--}}
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/1.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/1.jpg')}}" alt="">
+                                                    </a>
                                                 </div>
                                             </div>
-
-                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                            <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup"
-                                                       href="{{asset('assets/images/office/2.jpg')}}"><img
-                                                            class="img-fluid w-100"
-                                                            src="{{asset('assets/images/office/2.jpg')}}" alt=""></a>
-{{--                                                    <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}"--}}
-{{--                                                         alt="">--}}
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/2.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/2.jpg')}}" alt="">
+                                                    </a>
                                                 </div>
                                             </div>
-
-                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                            <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup"
-                                                       href="{{asset('assets/images/office/3.jpg')}}"><img
-                                                            class="img-fluid w-100"
-                                                            src="{{asset('assets/images/office/3.jpg')}}" alt=""></a>
-{{--                                                    <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}"--}}
-{{--                                                         alt="">--}}
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/3.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/3.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/4.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/4.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/5.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/5.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/6.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/6.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/7.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/7.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/8.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/8.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/9.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/9.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/10.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/10.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/11.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/11.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/12.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/12.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/13.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/13.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/14.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/14.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/15.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/15.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/16.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/16.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/17.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/17.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/18.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/18.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/19.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/19.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/20.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/20.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/21.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/21.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/22.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/22.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/23.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/23.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/24.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/24.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/25.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/25.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/26.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/26.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/27.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/27.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/28.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/28.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/29.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/29.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/30.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/30.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/31.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/31.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/32.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/32.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/33.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/33.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/34.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/34.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/35.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/35.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/36.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/36.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/37.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/37.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/38.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/38.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/39.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/39.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/admission/40.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/admission/40.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-md-flex mb-3">
+                                        <div class="pr-md-4 d-flex flex-shrink-0 tab-left">
+                                            <p class="text-primary">Faculty And Dean Office</p>
+                                        </div>
+                                        <div class="row mx-0 gap-5 custom-grid w-100">
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/faculty_dean/1.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/faculty_dean/1.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/faculty_dean/2.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/faculty_dean/2.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/faculty_dean/3.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/faculty_dean/3.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/faculty_dean/4.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/faculty_dean/4.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/faculty_dean/5.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/faculty_dean/5.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/faculty_dean/6.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/faculty_dean/6.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/faculty_dean/7.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/faculty_dean/7.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/faculty_dean/8.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/faculty_dean/8.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/faculty_dean/9.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/faculty_dean/9.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/faculty_dean/10.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/faculty_dean/10.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/faculty_dean/11.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/faculty_dean/11.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/faculty_dean/12.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/faculty_dean/12.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/faculty_dean/13.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/faculty_dean/13.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/faculty_dean/14.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/faculty_dean/14.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/faculty_dean/15.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/faculty_dean/15.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/faculty_dean/16.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/faculty_dean/16.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/faculty_dean/17.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/faculty_dean/17.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/faculty_dean/18.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/faculty_dean/18.jpg')}}" alt="">
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -394,42 +941,466 @@
                                 </div> <!-- ./tab-pan -->
                                 <div class="tab-pane fade" id="pills-hotel" role="tabpanel"
                                      aria-labelledby="pills-hotel-tab">
-                                    <div class="d-md-flex">
-                                        <div class="pr-4 d-flex align-items-center tab-left">
-                                            <p class="text-primary">Formal Livingroom</p>
+                                    <div class="d-md-flex mb-3">
+                                        <div class="pr-md-4 d-flex flex-shrink-0 tab-left">
+                                            <p class="text-primary">1st Year Anniversary</p>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                        <div class="row mx-0 gap-5 custom-grid w-100">
+                                            <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
-                                                    <iframe class="w-100 h-100" src="https://www.youtube.com/embed/cRpn8Wrf4Fs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-{{--                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"--}}
-{{--                                                       class="view-popup" href="{{asset('assets/images/hotel/1.jpg')}}"><img--}}
-{{--                                                            class="img-fluid w-100"--}}
-{{--                                                            src="{{asset('assets/images/hotel/1.jpg')}}" alt=""></a>--}}
-{{--                                                    <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}"--}}
-{{--                                                         alt="">--}}
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/1st-anniversary/1.jpeg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/1st-anniversary/1.jpeg')}}" alt="">
+                                                    </a>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                            <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
-                                                    <iframe class="h-100 w-100" src="https://www.youtube.com/embed/t3fg7NSnVqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-{{--                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"--}}
-{{--                                                       class="view-popup" href="{{asset('assets/images/hotel/2.jpg')}}"><img--}}
-{{--                                                            class="img-fluid w-100"--}}
-{{--                                                            src="{{asset('assets/images/hotel/2.jpg')}}" alt=""></a>--}}
-{{--                                                    <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}"--}}
-{{--                                                         alt="">--}}
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/1st-anniversary/2.jpeg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/1st-anniversary/2.jpeg')}}" alt="">
+                                                    </a>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                                            <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
-                                                    <iframe class="h-100 w-100" src="https://www.youtube.com/embed/b1c0YIb6obc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-{{--                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"--}}
-{{--                                                       class="view-popup" href="{{asset('assets/images/hotel/3.jpg')}}"><img--}}
-{{--                                                            class="img-fluid w-100"--}}
-{{--                                                            src="{{asset('assets/images/hotel/3.jpg')}}" alt=""></a>--}}
-{{--                                                    <img class="threeD" src="{{asset('assets/images/portfolio/360.png')}}"--}}
-{{--                                                         alt="">--}}
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/1st-anniversary/3.jpeg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/1st-anniversary/3.jpeg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/1st-anniversary/4.jpeg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/1st-anniversary/4.jpeg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/1st-anniversary/5.jpeg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/1st-anniversary/5.jpeg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/1st-anniversary/6.jpeg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/1st-anniversary/6.jpeg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/1st-anniversary/7.jpeg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/1st-anniversary/7.jpeg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/1st-anniversary/8.jpeg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/1st-anniversary/8.jpeg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/1st-anniversary/9.jpeg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/1st-anniversary/9.jpeg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/1st-anniversary/10.jpeg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/1st-anniversary/10.jpeg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/1st-anniversary/11.jpeg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/1st-anniversary/11.jpeg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/1st-anniversary/12.jpeg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/1st-anniversary/12.jpeg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/1st-anniversary/13.jpeg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/1st-anniversary/13.jpeg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/1st-anniversary/14.jpeg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/1st-anniversary/14.jpeg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/1st-anniversary/15.jpeg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/1st-anniversary/15.jpeg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/1st-anniversary/16.jpeg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/1st-anniversary/16.jpeg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/1st-anniversary/17.jpeg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/1st-anniversary/17.jpeg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-md-flex mb-3">
+                                        <div class="pr-md-4 d-flex flex-shrink-0 tab-left">
+                                            <p class="text-primary">Cricket Carnival (Univrsity of Scholars)</p>
+                                        </div>
+                                        <div class="row mx-0 gap-5 custom-grid w-100">
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/1.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/1.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/2.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/2.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/3.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/3.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/4.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/4.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/5.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/5.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/6.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/6.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/7.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/7.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/8.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/8.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/9.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/9.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/10.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/10.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/11.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/11.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/12.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/12.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/13.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/13.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/14.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/14.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/15.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/15.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/16.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/16.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/17.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/17.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/18.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/18.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/19.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/19.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/20.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/20.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/21.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/21.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/22.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/22.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/23.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/23.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/24.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/24.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/25.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/25.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/26.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/26.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/27.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/27.jpg')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/activities/cricket-carnival/28.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/activities/cricket-carnival/28.jpg')}}" alt="">
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -495,6 +1466,7 @@
         // Hide Vr View Iframe when click outside
         closeVr.addEventListener('click' , function (){
             showVrBox.style.display = 'none'
+            showVrIframe.setAttribute('src' , '');
         })
 
     </script>

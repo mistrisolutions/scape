@@ -162,7 +162,7 @@
                                 </div>
                                 <div class="card-body">
                                     <p class="card-text text-center font-weight-bold text-dark mb-1">Akash Roy</p>
-                                    <p class="font-weight-light text-center">3D Designer</p>
+                                    <p class="font-weight-light text-center">3D Visualiser</p>
                                 </div>
                             </div> <!-- ./Card -->
                         </div> <!-- ./col -->

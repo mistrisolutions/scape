@@ -30,11 +30,11 @@
 
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav mr-auto">
-                      <li class="nav-item active">
-                          <a class="nav-link" href="{{ route('home') }}">Home <span class="sr-only">(current)</span></a>
+                      <li class="nav-item">
+                          <a class="nav-link {{request()->routeIs('home')?'nav-active':''}}" href="{{ route('home') }}">Home <span class="sr-only">(current)</span></a>
                       </li>
-                      <li class="nav-item active">
-                          <a class="nav-link" href="{{ route('who-we-are') }}">About Us</a>
+                      <li class="nav-item">
+                          <a class="nav-link {{request()->routeIs('who-we-are')?'nav-active':''}}" href="{{ route('who-we-are') }}">About Us</a>
                       </li>
 {{--                      <li class="nav-item dropdown">--}}
 {{--                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
@@ -50,25 +50,25 @@
                               Portfolio
                           </a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="{{ route('portfolio-1') }}">Admission Office</a>
-                              <a class="dropdown-item" href="{{ route('portfolio-2') }}">Faculty And Dean Office</a>
-                              <a class="dropdown-item" href="{{ route('portfolio-3') }}">Manuel Caffe</a>
-                              <a class="dropdown-item" href="{{ route('portfolio-4') }}">Fedex, Khulna</a>
-                              <a class="dropdown-item" href="{{ route('portfolio-5') }}">Food Company, Gajipur</a>
-                              <a class="dropdown-item" href="{{ route('portfolio-6') }}">Bijoy Residence</a>
+                              <a class="dropdown-item {{request()->routeIs('portfolio-1')?'nav-active':''}}" href="{{ route('portfolio-1') }}">Admission Office</a>
+                              <a class="dropdown-item {{request()->routeIs('portfolio-2')?'nav-active':''}}" href="{{ route('portfolio-2') }}">Faculty And Dean Office</a>
+                              <a class="dropdown-item {{request()->routeIs('portfolio-3')?'nav-active':''}}" href="{{ route('portfolio-3') }}">Manuel Caffe</a>
+                              <a class="dropdown-item {{request()->routeIs('portfolio-4')?'nav-active':''}}" href="{{ route('portfolio-4') }}">Fedex, Khulna</a>
+                              <a class="dropdown-item {{request()->routeIs('portfolio-5')?'nav-active':''}}" href="{{ route('portfolio-5') }}">Food Company, Gajipur</a>
+                              <a class="dropdown-item {{request()->routeIs('portfolio-6')?'nav-active':''}}" href="{{ route('portfolio-6') }}">Bijoy Residence</a>
                           </div>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="{{ route('service') }}">Services</a>
+                          <a class="nav-link {{request()->routeIs('service')?'nav-active':''}}" href="{{ route('service') }}">Services</a>
                       </li>
 {{--                      <li class="nav-item">--}}
-{{--                          <a class="nav-link" href="{{ route('team') }}">Team</a>--}}
+{{--                          <a class="nav-link {{request()->routeIs('home')?'nav-active':''}}" href="{{ route('team') }}">Team</a>--}}
 {{--                      </li>--}}
                       <li class="nav-item">
-                          <a class="nav-link" href="{{ route('gallery') }}">Gallery</a>
+                          <a class="nav-link {{request()->routeIs('gallery')?'nav-active':''}}" href="{{ route('gallery') }}">Gallery</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href=" {{ route('contact') }}">Contacts</a>
+                          <a class="nav-link {{request()->routeIs('contact')?'nav-active':''}}" href=" {{ route('contact') }}">Contacts</a>
                       </li>
                       </ul>
                   </div> <!-- ./Collapse -->

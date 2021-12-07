@@ -122,6 +122,12 @@ p {
     display: none;
 }
 
+.gap-5{
+    gap: 10px;
+}
+
+
+
 /*
 *--------------------------------
 * Header-nav
@@ -175,6 +181,9 @@ p {
     font-size: 20px;
     line-height: 29px;
     color: #FFFDFD !important;
+}
+#header .navbar .nav-item .nav-active {
+    color: #0DA6DB !important;
 }
 
 #header .header-nav .dropdown-menu {
@@ -835,7 +844,7 @@ button.slick-next.slick-arrow:focus {
 }
 
 .tab-left{
-    width: 150px;
+    width: 200px;
 }
 
 img.mfp-img {
@@ -935,7 +944,10 @@ img.mfp-img {
     display: block;
 }
 
-
+.gallery-wrapper .custom-grid .col-sm-6.col-md-4 {
+    width: 32.3% !important;
+    max-width: 32.3% !important;
+}
 
 /*
 *---------------------------------
@@ -1170,6 +1182,10 @@ img.mfp-img {
     .portfolio-gallery .video {
         height: 200px;
         min-width: 100%;
+    }
+    .gallery-wrapper .custom-grid .col-sm-6.col-md-4{
+        width: 100% !important;
+        max-width: 100% !important;
     }
 
 }
