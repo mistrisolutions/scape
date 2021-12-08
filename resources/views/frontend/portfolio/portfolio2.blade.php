@@ -143,7 +143,7 @@
                 </div>
             </div> <!-- ./row -->
         </div> <!-- ./container -->
-        <div class="container portfolio-gallery mt-md-5 pt-md-5">
+        <div class="container portfolio-gallery my-3 my-md-5 pt-md-5">
             <div class="row mb-5">
                 <div class="col-md-11 mx-auto">
                     <h2 class="text-center mb-5">Live Pictures</h2>
@@ -235,15 +235,6 @@
             <div class="text-center">
                 <a href="{{ route('gallery') }}" class="btn btn-primary px-4 font-weight-bold">See all</a>
             </div>
-        </div> <!-- ./container -->
-
-        <div class="container portfolio-gallery mt-md-5 pt-5">
-            <div class="row mb-5">
-                <div class="col-md-11 mx-auto">
-                    <h2 class="text-center mb-5">3D Video</h2>
-                    <iframe class="w-100 video" src="https://www.youtube.com/embed/5hemeiTVIG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div> <!-- ./row -->
         </div> <!-- ./container -->
     </main> <!-- ./Main -->
 @endsection

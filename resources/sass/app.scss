@@ -90,6 +90,9 @@ p {
 .z-10{
     z-index: 10;
 }
+.fs-20{
+    font-size: 20px !important;
+}
 .fs-40{
     font-size: 40px !important;
 }
@@ -1055,6 +1058,10 @@ img.mfp-img {
     }
     p {
         font-size: 13px !important;
+    }
+
+    .fs-20{
+        font-size: 16px !important;
     }
 
     .fs-40{
