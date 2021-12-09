@@ -235,7 +235,7 @@
                                                     </a>
                                                     <img
                                                         class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/ce6e3591651f456e84c9da1b418f70a0?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        onclick="showVR('https://momento360.com/e/u/ed1d015d92234a97a8fd388f91cfdc91?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
                                                         src="{{asset('assets/images/portfolio/360.png')}}"
                                                         alt="Show VR"
                                                     >
@@ -251,6 +251,21 @@
                                                     <img
                                                         class="threeD"
                                                         onclick="showVR('https://momento360.com/e/u/ce6e3591651f456e84c9da1b418f70a0?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/vr/kitchenwashroom/3.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/vr/kitchenwashroom/3.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/83b5a9af0d214fb0967c26351639ac67?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
                                                         src="{{asset('assets/images/portfolio/360.png')}}"
                                                         alt="Show VR"
                                                     >
@@ -273,7 +288,7 @@
                                                     </a>
                                                     <img
                                                         class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/ce6e3591651f456e84c9da1b418f70a0?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        onclick="showVR('https://momento360.com/e/u/579883d83aa34f9ba16359a602ccaa2d?utm_campaign=embed&utm_source=other&heading=142.95&pitch=-15.19&field-of-view=75&size=medium')"
                                                         src="{{asset('assets/images/portfolio/360.png')}}"
                                                         alt="Show VR"
                                                     >
@@ -288,7 +303,7 @@
                                                             src="{{asset('assets/images/vr/dinning-living-room/2.jpg')}}" alt=""></a>
                                                     <img
                                                         class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/579883d83aa34f9ba16359a602ccaa2d?utm_campaign=embed&utm_source=other&heading=142.95&pitch=-15.19&field-of-view=75&size=medium')"
+                                                        onclick="showVR('https://momento360.com/e/u/c362c38f497548d09101dc86a5cefbd5?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
                                                         src="{{asset('assets/images/portfolio/360.png')}}"
                                                         alt="Show VR"
                                                     >
@@ -303,7 +318,7 @@
                                                             src="{{asset('assets/images/vr/dinning-living-room/3.jpg')}}" alt=""></a>
                                                     <img
                                                         class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/c362c38f497548d09101dc86a5cefbd5?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        onclick="showVR('https://momento360.com/e/u/b425901a1be54333be2d160b4bdc9087?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
                                                         src="{{asset('assets/images/portfolio/360.png')}}"
                                                         alt="Show VR"
                                                     >
@@ -318,7 +333,7 @@
                                                             src="{{asset('assets/images/vr/dinning-living-room/4.jpg')}}" alt=""></a>
                                                     <img
                                                         class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/b425901a1be54333be2d160b4bdc9087?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        onclick="showVR('https://momento360.com/e/u/a8cd0030f87d4b339070dadcd9e0e36a?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
                                                         src="{{asset('assets/images/portfolio/360.png')}}"
                                                         alt="Show VR"
                                                     >
@@ -333,7 +348,7 @@
                                                             src="{{asset('assets/images/vr/dinning-living-room/5.jpg')}}" alt=""></a>
                                                     <img
                                                         class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/a8cd0030f87d4b339070dadcd9e0e36a?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        onclick="showVR('https://momento360.com/e/u/5dc6c108cc1545758d90c8cc760403cf?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
                                                         src="{{asset('assets/images/portfolio/360.png')}}"
                                                         alt="Show VR"
                                                     >
