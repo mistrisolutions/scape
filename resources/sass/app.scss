@@ -817,6 +817,10 @@ button.slick-next.slick-arrow:focus {
     margin-top: 210px;
 }
 
+.portfolio .hero-img{
+    height: 550px;
+}
+
 .view-card {
     position: relative;
     height: 100%;
@@ -875,17 +879,24 @@ img.mfp-img {
 .portfolio-gallery .gallery-img-big {
     height: 400px;
     min-width: 100% !important;
+    object-fit: cover;
+    object-position: center;
 }
 
 .portfolio-gallery .gallery-img {
     height: 200px;
     min-width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 .portfolio-gallery .video {
     height: 400px;
     min-width: 100%;
 }
-
+.portfolio-4 .img-box .gallery-img-big{
+    object-position: center;
+    object-fit: cover;
+}
 .portfolio-4 .img-box:nth-child(1) .gallery-img-big{
     height: 900px;
 }
@@ -1117,6 +1128,11 @@ img.mfp-img {
     .portfolio {
         margin-top: 130px;
     }
+    .portfolio .hero-img{
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+    }
     .portfolio-gallery .gallery-img-big {
         height: 200px;
     }
@@ -1136,23 +1152,12 @@ img.mfp-img {
     }
 
 
-    .portfolio-4 .img-box:nth-child(1) .gallery-img-big{
-        height: 400px;
-    }
-    .portfolio-4 .img-box:nth-child(2) .gallery-img-big{
-        height: 340px;
-    }
+    .portfolio-4 .img-box:nth-child(1) .gallery-img-big,
+    .portfolio-4 .img-box:nth-child(2) .gallery-img-big,
     .portfolio-4 .img-box:nth-child(3) .gallery-img,
     .portfolio-4 .img-box:nth-child(4) .gallery-img,
-    .portfolio-4 .img-box:nth-child(5) .gallery-img{
-        height: 340px;
-    }
-
-    .portfolio-5 .img-box:nth-child(2) .gallery-img{
-        height: 200px;
-    }
-
-
+    .portfolio-4 .img-box:nth-child(5) .gallery-img,
+    .portfolio-5 .img-box:nth-child(2) .gallery-img,
     .portfolio-6 .img-box:nth-child(1) .gallery-img-big,
     .portfolio-6 .img-box:nth-child(2) .gallery-img,
     .portfolio-6 .img-box:nth-child(3) .gallery-img,
@@ -1220,6 +1225,9 @@ img.mfp-img {
     .gallery-wrapper .custom-grid .col-sm-6.col-md-4{
         width: 100% !important;
         max-width: 100% !important;
+    }
+    .view-card a.view-popup img{
+        height: 200px;
     }
 
 }

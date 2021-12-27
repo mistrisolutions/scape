@@ -20,7 +20,7 @@
                 <div class="row">
                     <div class="col-md-11 mx-auto">
                         <div class="h-100 w-100 relative">
-                            <img class="img-fluid" src="{{ asset('assets/images/portfolio/fedex.png') }}"
+                            <img class="img-fluid w-100 hero-img" src="{{ asset('assets/images/portfolio/fedex.png') }}"
                                  alt="">
                             <div class="overlay"></div>
                             <div class="absolute d-flex justify-content-start align-items-end">

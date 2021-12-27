@@ -20,7 +20,7 @@
                 <div class="row">
                     <div class="col-md-11 mx-auto">
                         <div class="h-100 w-100 relative">
-                            <img class="img-fluid" src="{{ asset('assets/images/portfolio/manual.jpg') }}"
+                            <img class="img-fluid w-100 hero-img" src="{{ asset('assets/images/portfolio/manual.jpg') }}"
                                  alt="">
                             <div class="overlay"></div>
                             <div class="absolute d-flex justify-content-start align-items-end">
@@ -92,7 +92,7 @@
         <div class="container portfolio-gallery">
             <div class="row mb-5">
                 <div class="col-md-11 mx-auto">
-                    <h2 class="text-center mb-5">3D Video</h2>
+                    <h2 class="text-center mb-5">Real Video</h2>
                     <iframe class="w-100 video" src="https://www.youtube.com/embed/q49XVNOay0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div> <!-- ./row -->
