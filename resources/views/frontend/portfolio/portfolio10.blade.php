@@ -1,5 +1,5 @@
 @extends('layouts.frontend.app')
-@section('title', 'The Food Company, Gajipur')
+@section('title', 'Bijoy Residence')
 @push('css')
     <!-- fancybox-popup-css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
@@ -20,11 +20,11 @@
                 <div class="row">
                     <div class="col-md-11 mx-auto">
                         <div class="h-100 w-100 relative">
-                            <img class="img-fluid w-100 hero-img" src="{{ asset('assets/images/portfolio/food-1.png') }}"
+                            <img class="img-fluid w-100 hero-img" src="{{ asset('assets/images/bijoy/cover.jpg') }}"
                                  alt="">
                             <div class="overlay"></div>
                             <div class="absolute d-flex justify-content-start align-items-end">
-                                <h1 class="text-white px-4 fs-96">The Food Company, Gazipur</h1>
+                                <h1 class="text-white px-4 fs-96">Library & Register Floor</h1>
                             </div>
                         </div>
                     </div> <!-- ./col -->
@@ -34,8 +34,8 @@
                         <div class="row">
                             <div class="col-md-7">
                                 <h2 class="mb-2">Project Description: </h2>
-                                <p>A restaurant with good food & a green scenario can be an ideal environment for a meeting & gossiping place. Interior design in restaurants impacts customer psychology. The highlight of this project is Plants & the color green. Now-a-days, Restaurants are very popular among this generation & a demanding business. To stand out in an already crowded industry, restaurants have to provide not only good food and service but also a unique dining environment to enhance customer satisfaction. Designing this project was our ultimate goal.</p>
-                                <p>We tried to enhance the beauty of the restaurant not only with our structural design but also with greenery. This place will be a center of attention in Gazipur because of its food & equally for its eye-soothing design which will connect everyone to nature.</p>
+                                <p>An architect will make it a space worth living in. They will bring in their creativity, some art and a bit of science to enhance your living space in ways you might not expect. We introduce elegance & comfort and help to raise the functionality in your life via our contemporary & modern architectures. </p>
+                                <p>This project is very close to our hearts as we design a “HOME” where souls are gathered. We designed this project so that the family living under this roof can feel the warmth of home via this architecture. Its soothing, comfortable, calming, reassuring, sophisticated as well as stylish, elegant, modern & graceful.</p>
                             </div>
                             <div class="col-md-5">
                                 <div class="row">
@@ -44,7 +44,7 @@
                                     </div>
                                     <div class="col-9">
                                         <h5>Client:</h5>
-                                        <p>Mr. Hasib Siddique</p>
+                                        <p>Bijoy Kumar Saha</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -53,7 +53,7 @@
                                     </div>
                                     <div class="col-9">
                                         <h5>Location:</h5>
-                                        <p>Deona-Jaydebpur Rd, Near Gazipur Dist. Graveyard, Jaydebpur, Gazipur.</p>
+                                        <p>Ihsak Lane, Pabna Sadar, Pabna</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -62,7 +62,7 @@
                                     </div>
                                     <div class="col-9">
                                         <h5>Project Area:</h5>
-                                        <p>3900 sft.</p>
+                                        <p>4950 sft. (Land), <br> 1880 sft. (Building)</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -71,7 +71,7 @@
                                     </div>
                                     <div class="col-9">
                                         <h5>Budget:</h5>
-                                        <p>3.5 Million BDT</p>
+                                        <p>10.5 Million BDT</p>
                                     </div>
                                 </div>
                             </div>
@@ -82,68 +82,58 @@
                     <div class="col-md-11 mx-auto">
                         <div>
                             <h2 class="text-center mb-5">Floor Planning</h2>
-                            <img class="w-100 h-auto" src="{{asset('assets/images/food/food-factory-plan.jpg')  }}"
+                            <img class="w-100 h-auto" src="{{asset('assets/images/portfolio/protfolio-6.png')  }}"
                                  alt="">
                         </div>
                     </div> <!-- ./col -->
                 </div> <!-- ./row -->
             </div> <!-- ./container -->
         </div> <!-- ./about-us -->
-        <div class="container portfolio-gallery portfolio-5">
+        <div class="container portfolio-gallery portfolio-6">
             <div class="row mb-5">
                 <div class="col-md-11 mx-auto">
                     <h2 class="text-center mb-5">3D View</h2>
                     <div class="row justify-content-center">
-                        <div class="col-sm-6 col-md-6 col-lg-7 img-box mb-3 mb-md-0 px-md-2">
+                        <div class="col-sm-6 col-md-6 col-lg-7 img-box px-md-2">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup w-100 h-100"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/food-1.png')}}">
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/portfolio-6-1.png')}}">
                                     <img class="gallery-img-big img-fluid"
-                                         src="{{asset('assets/images/portfolio/food-1.png')}}" alt="Card image">
-                                </a>
-                            </div>
-                            <div class="border-0 mt-3">
-                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/food-2.png')}}">
-                                    <img class="gallery-img-big img-fluid"
-                                         src="{{asset('assets/images/portfolio/food-2.png')}}" alt="Card image">
-                                </a>
-                            </div>
-                            <div class="border-0 mt-3">
-                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/food-3.png')}}">
-                                    <img class="gallery-img-big img-fluid"
-                                         src="{{asset('assets/images/portfolio/food-3.png')}}" alt="Card image">
+                                         src="{{asset('assets/images/portfolio/portfolio-6-1.png')}}" alt="Card image">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-5 img-box px-md-2">
+                        <div class="col-sm-6 col-md-6 col-lg-5 mt-3 mt-md-0 img-box mt-3 mt-md-0 px-md-2">
                             <div class="border-0 mb-3">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/food-4.png')}}">
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/portfolio-6-2.png')}}">
                                     <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/food-4.png')}}" alt="Card image">
-                                </a>
-                            </div>
-                            <div class="border-0 mb-3">
-                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/food-5.png')}}">
-                                    <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/food-5.png')}}" alt="Card image">
-                                </a>
-                            </div>
-                            <div class="border-0 mb-3">
-                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/food-6.png')}}">
-                                    <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/food-6.png')}}" alt="Card image">
+                                         src="{{asset('assets/images/portfolio/portfolio-6-2.png')}}" alt="Card image">
                                 </a>
                             </div>
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/food-7.png')}}">
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/portfolio-6-3.png')}}">
                                     <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/food-7.png')}}" alt="Card image">
+                                         src="{{asset('assets/images/portfolio/portfolio-6-3.png')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-5 mt-3 img-box mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/portfolio-6-4.png')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/portfolio/portfolio-6-4.png')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-7 mt-3 img-box mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/portfolio-6-5.png')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/portfolio/portfolio-6-5.png')}}" alt="Card image">
                                 </a>
                             </div>
                         </div>
