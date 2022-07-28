@@ -1,5 +1,5 @@
 @extends('layouts.frontend.app')
-@section('title', 'The Food Company, Gajipur')
+@section('title', 'Kitchen Design(Bagerhat)')
 @push('css')
     <!-- fancybox-popup-css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
@@ -20,11 +20,13 @@
                 <div class="row">
                     <div class="col-md-11 mx-auto">
                         <div class="h-100 w-100 relative">
-                            <img class="img-fluid w-100 hero-img" src="{{ asset('assets/images/portfolio/food-1.png') }}"
+{{--                            <img class="img-fluid" src="{{ asset('assets/images/portfolio/admission-office.png') }}"--}}
+{{--                                 alt="">--}}
+                            <img class="img-fluid hero-img" src="{{ asset('assets/images/kitchen_design/banner.png') }}"
                                  alt="">
                             <div class="overlay"></div>
                             <div class="absolute d-flex justify-content-start align-items-end">
-                                <h1 class="text-white px-4 fs-96">The Food Company, Gazipur</h1>
+                                <h1 class="text-white px-4 fs-96">Kitchen Design(Bagerhat)</h1>
                             </div>
                         </div>
                     </div> <!-- ./col -->
@@ -34,8 +36,8 @@
                         <div class="row">
                             <div class="col-md-7">
                                 <h2 class="mb-2">Project Description: </h2>
-                                <p>A restaurant with good food & a green scenario can be an ideal environment for a meeting & gossiping place. Interior design in restaurants impacts customer psychology. The highlight of this project is Plants & the color green. Now-a-days, Restaurants are very popular among this generation & a demanding business. To stand out in an already crowded industry, restaurants have to provide not only good food and service but also a unique dining environment to enhance customer satisfaction. Designing this project was our ultimate goal.</p>
-                                <p>We tried to enhance the beauty of the restaurant not only with our structural design but also with greenery. This place will be a center of attention in Gazipur because of its food & equally for its eye-soothing design which will connect everyone to nature.</p>
+                                <p>A well decorated and functional kitchen is one of a master element for a grand mansion just like the one Mr. M.A.Salam built.It was a big challenge to match these two kitchen with the standard of this luxury mansion.</p>
+                                <p>We designed and implimented a luxury,modern and multi functional kitchen concept.All cabinets were Docu painted with Hardner lequer finish.This luxury smart kitchens added  an extra star to the mansion interior which uplifted the standard of the mansionsion</p>
                             </div>
                             <div class="col-md-5">
                                 <div class="row">
@@ -44,7 +46,7 @@
                                     </div>
                                     <div class="col-9">
                                         <h5>Client:</h5>
-                                        <p>Mr. Hasib Siddique</p>
+                                        <p> M.A.Salam</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -53,7 +55,7 @@
                                     </div>
                                     <div class="col-9">
                                         <h5>Location:</h5>
-                                        <p>Deona-Jaydebpur Rd, Near Gazipur Dist. Graveyard, Jaydebpur, Gazipur.</p>
+                                        <p>Munigong, Bagerhat</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -62,7 +64,7 @@
                                     </div>
                                     <div class="col-9">
                                         <h5>Project Area:</h5>
-                                        <p>3900 sft.</p>
+                                        <p>850 sft.</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -70,8 +72,8 @@
                                         <img class="h-auto w-50 mx-auto mt-1" src="/assets/images/portfolio/money-bag.svg" alt="">
                                     </div>
                                     <div class="col-9">
-                                        <h5>Budget:</h5>
-                                        <p>3.5 Million BDT</p>
+                                        <h5>Project Cost: </h5>
+                                        <p>14,00,000 BDT</p>
                                     </div>
                                 </div>
                             </div>
@@ -82,75 +84,92 @@
                     <div class="col-md-11 mx-auto">
                         <div>
                             <h2 class="text-center mb-5">Floor Planning</h2>
-                            <img class="w-100 h-auto" src="{{asset('assets/images/food/food-factory-plan.jpg')  }}"
+                            <h2 class="text-center mt-5">Kitchen 1</h2>
+                            <img class="w-100 h-auto" src="{{asset('assets/images/kitchen_design/floor-1.png')  }}"
+                                 alt="">
+                        </div>
+
+                         <div>
+                            <h2 class="text-center mt-5">Kitchen 2</h2>
+                            <img class="w-100 h-auto" src="{{asset('assets/images/kitchen_design/floor-2.png')  }}"
                                  alt="">
                         </div>
                     </div> <!-- ./col -->
                 </div> <!-- ./row -->
             </div> <!-- ./container -->
         </div> <!-- ./about-us -->
-        <div class="container portfolio-gallery portfolio-5">
+        <div class="container portfolio-gallery">
             <div class="row mb-5">
                 <div class="col-md-11 mx-auto">
-                    <h2 class="text-center mb-5">3D View</h2>
+                    <h2 class="text-center mb-5">Real Image </h2>
                     <div class="row justify-content-center">
-                        <div class="col-sm-6 col-md-6 col-lg-7 img-box mb-3 mb-md-0 px-md-2">
+                        <div class="col-sm-6 col-md-6 col-lg-7 px-md-2">
                             <div class="border-0">
-                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup w-100 h-100"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/food-1.png')}}">
-                                    <img class="gallery-img-big img-fluid"
-                                         src="{{asset('assets/images/portfolio/food-1.png')}}" alt="Card image">
-                                </a>
-                            </div>
-                            <div class="border-0 mt-3">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/food-2.png')}}">
+                                   data-fancybox="gallery" href="{{asset('assets/images/kitchen_design/real-1.png')}}">
                                     <img class="gallery-img-big img-fluid"
-                                         src="{{asset('assets/images/portfolio/food-2.png')}}" alt="Card image">
-                                </a>
-                            </div>
-                            <div class="border-0 mt-3">
-                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/food-3.png')}}">
-                                    <img class="gallery-img-big img-fluid"
-                                         src="{{asset('assets/images/portfolio/food-3.png')}}" alt="Card image">
+                                         src="{{asset('assets/images/kitchen_design/real-1.png')}}" alt="Card image">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-5 img-box px-md-2">
-                            <div class="border-0 mb-3">
-                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/food-4.png')}}">
-                                    <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/food-4.png')}}" alt="Card image">
-                                </a>
-                            </div>
-                            <div class="border-0 mb-3">
-                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/food-5.png')}}">
-                                    <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/food-5.png')}}" alt="Card image">
-                                </a>
-                            </div>
-                            <div class="border-0 mb-3">
-                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/food-6.png')}}">
-                                    <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/food-6.png')}}" alt="Card image">
-                                </a>
-                            </div>
+                        <div class="col-sm-6 col-md-6 col-lg-5 mt-3 mt-md-0 px-md-2">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/food-7.png')}}">
-                                    <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/food-7.png')}}" alt="Card image">
+                                   data-fancybox="gallery" href="{{asset('assets/images/kitchen_design/real-2.png')}}">
+                                    <img class="gallery-img-big img-fluid"
+                                         src="{{asset('assets/images/kitchen_design/real-2.png')}}" alt="Card image">
                                 </a>
                             </div>
                         </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/kitchen_design/real-3.png')}}">
+                                    <img class="gallery-img img-fluid radiance-real-image"
+                                         src="{{asset('assets/images/kitchen_design/real-3.png')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/kitchen_design/real-4.png')}}">
+                                    <img class="gallery-img img-fluid radiance-real-image"
+                                         src="{{asset('assets/images/kitchen_design/real-4.png')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/kitchen_design/real-5.png')}}">
+                                    <img class="gallery-img img-fluid radiance-real-image"
+                                         src="{{asset('assets/images/kitchen_design/real-5.png')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                      
                     </div>
                 </div>
             </div> <!-- ./row -->
+            <div class="text-center mb-3 mb-md-0 pb-4">
+                <a href="{{ route('gallery') }}" class="btn btn-primary px-4 font-weight-bold">See all</a>
+            </div>
         </div> <!-- ./container -->
+
+
+        <style>
+            .radiance-real-image{
+                height: 482px !important;
+            }
+
+            @media only screen and (max-width: 576px){
+                .radiance-real-image{
+                    height: 350px !important;
+                }
+            }
+        </style>
+
     </main> <!-- ./Main -->
 @endsection
 @push('custom-scripts')

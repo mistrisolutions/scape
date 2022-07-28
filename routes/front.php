@@ -44,6 +44,26 @@ Route::prefix('portfolio')->group(function () {
     Route::get('/portfolio-6', function () {
         return view('frontend.portfolio.portfolio6');
     })->name('portfolio-6');
+
+    Route::get('/portfolio-7', function () {
+        return view('frontend.portfolio.portfolio7');
+    })->name('portfolio-7');
+
+    Route::get('/portfolio-8', function () {
+        return view('frontend.portfolio.portfolio8');
+    })->name('portfolio-8');
+
+    Route::get('/portfolio-9', function () {
+        return view('frontend.portfolio.portfolio9');
+    })->name('portfolio-9');
+
+    Route::get('/portfolio-10', function () {
+        return view('frontend.portfolio.portfolio10');
+    })->name('portfolio-10');
+
+    Route::get('/portfolio-11', function () {
+        return view('frontend.portfolio.portfolio11');
+    })->name('portfolio-11');
 });
 
 //Route::get('team',function(){

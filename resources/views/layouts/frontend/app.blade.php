@@ -54,8 +54,13 @@
                               <a class="dropdown-item {{request()->routeIs('portfolio-2')?'nav-active':''}}" href="{{ route('portfolio-2') }}">Faculty And Dean Office</a>
                               <a class="dropdown-item {{request()->routeIs('portfolio-3')?'nav-active':''}}" href="{{ route('portfolio-3') }}">Manuel Caffe</a>
                               <a class="dropdown-item {{request()->routeIs('portfolio-4')?'nav-active':''}}" href="{{ route('portfolio-4') }}">Fedex, Khulna</a>
-                              <a class="dropdown-item {{request()->routeIs('portfolio-5')?'nav-active':''}}" href="{{ route('portfolio-5') }}">Food Company, Gajipur</a>
+                              <a class="dropdown-item {{request()->routeIs('portfolio-5')?'nav-active':''}}" href="{{ route('portfolio-5') }}">Food Company, Gazipur</a>
                               <a class="dropdown-item {{request()->routeIs('portfolio-6')?'nav-active':''}}" href="{{ route('portfolio-6') }}">Bijoy Residence</a>
+                              <a class="dropdown-item {{request()->routeIs('portfolio-7')?'nav-active':''}}" href="{{ route('portfolio-7') }}">Mr. Sujan Kabir Residence</a>
+                              <a class="dropdown-item {{request()->routeIs('portfolio-8')?'nav-active':''}}" href="{{ route('portfolio-8') }}">Radiance Bangladesh</a> 
+                              <a class="dropdown-item {{request()->routeIs('portfolio-9')?'nav-active':''}}" href="{{ route('portfolio-9') }}">Kitchen Design(Bagerhat)</a> 
+                              <a class="dropdown-item {{request()->routeIs('portfolio-10')?'nav-active':''}}" href="{{ route('portfolio-10') }}">Library & Register Floor</a> 
+                              <a class="dropdown-item {{request()->routeIs('portfolio-11')?'nav-active':''}}" href="{{ route('portfolio-11') }}">Class Room Floor</a> 
                           </div>
                       </li>
                       <li class="nav-item">
