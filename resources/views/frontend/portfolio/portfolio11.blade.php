@@ -1,5 +1,5 @@
 @extends('layouts.frontend.app')
-@section('title', 'Bijoy Residence')
+@section('title', 'Admission Office')
 @push('css')
     <!-- fancybox-popup-css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
@@ -20,7 +20,9 @@
                 <div class="row">
                     <div class="col-md-11 mx-auto">
                         <div class="h-100 w-100 relative">
-                            <img class="img-fluid w-100 hero-img" src="{{ asset('assets/images/bijoy/cover.jpg') }}"
+{{--                            <img class="img-fluid" src="{{ asset('assets/images/portfolio/admission-office.png') }}"--}}
+{{--                                 alt="">--}}
+                            <img class="img-fluid hero-img" src="{{ asset('assets/images/portfolio/admission-office.jpeg') }}"
                                  alt="">
                             <div class="overlay"></div>
                             <div class="absolute d-flex justify-content-start align-items-end">
@@ -34,8 +36,8 @@
                         <div class="row">
                             <div class="col-md-7">
                                 <h2 class="mb-2">Project Description: </h2>
-                                <p>An architect will make it a space worth living in. They will bring in their creativity, some art and a bit of science to enhance your living space in ways you might not expect. We introduce elegance & comfort and help to raise the functionality in your life via our contemporary & modern architectures. </p>
-                                <p>This project is very close to our hearts as we design a “HOME” where souls are gathered. We designed this project so that the family living under this roof can feel the warmth of home via this architecture. Its soothing, comfortable, calming, reassuring, sophisticated as well as stylish, elegant, modern & graceful.</p>
+                                <p>This is the “<strong class="black">Admission Office</strong>” of the <strong class="black">University of Scholars</strong>. An admission office is the core of a UNIVERSITY. It is the junction between students, faculty & other employees of the university where they communicate with each other. For workers who spend a large part of their day in an office, it is crucial to create a space that’s functional, visually appealing, comfortable, and inviting - all of which promote productivity and efficiency.</p>
+                                <p>So we designed this with simplicity & subtle sophistication. As it'll be an over-circulated space, we sketched it to be a pleasant & comfortable environment. The reception is specially designed as a  row of books to give off a vibe of knowledge & warmth as it’ll be the 1st thing anyone will notice after entering the office room. Our team has created this environment that helps employees to boost innovativeness.</p>
                             </div>
                             <div class="col-md-5">
                                 <div class="row">
@@ -44,7 +46,7 @@
                                     </div>
                                     <div class="col-9">
                                         <h5>Client:</h5>
-                                        <p>Bijoy Kumar Saha</p>
+                                        <p>Reveire Power and Automation Company Ltd.</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -53,7 +55,7 @@
                                     </div>
                                     <div class="col-9">
                                         <h5>Location:</h5>
-                                        <p>Ihsak Lane, Pabna Sadar, Pabna</p>
+                                        <p>Blue Ocean Tower, KamalAtaturk Avenue, Banani</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -62,7 +64,7 @@
                                     </div>
                                     <div class="col-9">
                                         <h5>Project Area:</h5>
-                                        <p>4950 sft. (Land), <br> 1880 sft. (Building)</p>
+                                        <p>3500 sft. (Admission Office)</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -71,7 +73,7 @@
                                     </div>
                                     <div class="col-9">
                                         <h5>Budget:</h5>
-                                        <p>10.5 Million BDT</p>
+                                        <p>3.5 Million BDT</p>
                                     </div>
                                 </div>
                             </div>
@@ -82,58 +84,96 @@
                     <div class="col-md-11 mx-auto">
                         <div>
                             <h2 class="text-center mb-5">Floor Planning</h2>
-                            <img class="w-100 h-auto" src="{{asset('assets/images/portfolio/protfolio-6.png')  }}"
+                            <img class="w-100 h-auto" src="{{asset('assets/images/portfolio/portfolio-1.png')  }}"
                                  alt="">
                         </div>
                     </div> <!-- ./col -->
                 </div> <!-- ./row -->
             </div> <!-- ./container -->
         </div> <!-- ./about-us -->
-        <div class="container portfolio-gallery portfolio-6">
+        <div class="container portfolio-gallery">
             <div class="row mb-5">
                 <div class="col-md-11 mx-auto">
                     <h2 class="text-center mb-5">3D View</h2>
                     <div class="row justify-content-center">
-                        <div class="col-sm-6 col-md-6 col-lg-7 img-box px-md-2">
+                        <div class="col-sm-6 col-md-6 col-lg-7 px-md-2">
                             <div class="border-0">
-                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup w-100 h-100"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/portfolio-6-1.png')}}">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_1 - Photo.png')}}">
                                     <img class="gallery-img-big img-fluid"
-                                         src="{{asset('assets/images/portfolio/portfolio-6-1.png')}}" alt="Card image">
+                                         src="{{asset('assets/images/portfolio/R_1 - Photo.png')}}" alt="Card image">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-5 mt-3 mt-md-0 img-box mt-3 mt-md-0 px-md-2">
-                            <div class="border-0 mb-3">
-                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/portfolio-6-2.png')}}">
-                                    <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/portfolio-6-2.png')}}" alt="Card image">
-                                </a>
-                            </div>
+                        <div class="col-sm-6 col-md-6 col-lg-5 mt-3 mt-md-0 px-md-2">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/portfolio-6-3.png')}}">
-                                    <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/portfolio-6-3.png')}}" alt="Card image">
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_2 - Photo.png')}}">
+                                    <img class="gallery-img-big img-fluid"
+                                         src="{{asset('assets/images/portfolio/R_2 - Photo.png')}}" alt="Card image">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-5 mt-3 img-box mt-3 px-md-2">
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/portfolio-6-4.png')}}">
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_3 - Photo.png')}}">
                                     <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/portfolio-6-4.png')}}" alt="Card image">
+                                         src="{{asset('assets/images/portfolio/R_3 - Photo.png')}}" alt="Card image">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-7 mt-3 img-box mt-3 px-md-2">
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/portfolio-6-5.png')}}">
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_4 - Photo.png')}}">
                                     <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/portfolio-6-5.png')}}" alt="Card image">
+                                         src="{{asset('assets/images/portfolio/R_4 - Photo.png')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_5 - Photo.png')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/portfolio/R_5 - Photo.png')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_6 - Photo.png')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/portfolio/R_6 - Photo.png')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_7 - Photo.png')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/portfolio/R_7 - Photo.png')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_9 - Photo.png')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/portfolio/R_9 - Photo.png')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/R_10 - Photo.png')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/portfolio/R_10 - Photo.png')}}" alt="Card image">
                                 </a>
                             </div>
                         </div>
@@ -141,6 +181,110 @@
                 </div>
             </div> <!-- ./row -->
         </div> <!-- ./container -->
+
+        <div class="container portfolio-gallery mt-md-5 pt-md-5">
+            <div class="row mb-5">
+                <div class="col-md-11 mx-auto">
+                    <h2 class="text-center mb-5">Live Pictures</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-6 col-md-6 col-lg-7 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/admission/1.jpg')}}">
+                                    <img class="gallery-img-big img-fluid"
+                                         src="{{asset('assets/images/admission/1.jpg')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-5 mt-3 mt-md-0 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/admission/2.jpg')}}">
+                                    <img class="gallery-img-big img-fluid"
+                                         src="{{asset('assets/images/admission/2.jpg')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/admission/3.jpg')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/admission/3.jpg')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/admission/4.jpg')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/admission/4.jpg')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/admission/5.jpg')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/admission/5.jpg')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/admission/6.jpg')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/admission/6.jpg')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/admission/7.jpg')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/admission/7.jpg')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/admission/8.jpg')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/admission/8.jpg')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/admission/9.jpg')}}">
+                                    <img class="gallery-img img-fluid"
+                                         src="{{asset('assets/images/admission/9.jpg')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- ./row -->
+            <div class="text-center mb-3 mb-md-0">
+                <a href="{{ route('gallery') }}" class="btn btn-primary px-4 font-weight-bold">See all</a>
+            </div>
+        </div> <!-- ./container -->
+
+        <div class="container portfolio-gallery mt-md-5 pt-md-5">
+            <div class="row mb-5">
+                <div class="col-md-11 mx-auto">
+                    <h2 class="text-center mb-5">Real Video</h2>
+                    <iframe class="w-100 video" src="https://www.youtube.com/embed/n53Mqx7jfXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div> <!-- ./row -->
+        </div> <!-- ./container -->
+
     </main> <!-- ./Main -->
 @endsection
 @push('custom-scripts')

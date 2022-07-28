@@ -1,5 +1,5 @@
 @extends('layouts.frontend.app')
-@section('title', 'Bijoy Residence')
+@section('title', 'Kitchen Design(Bagerhat)')
 @push('css')
     <!-- fancybox-popup-css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
@@ -20,7 +20,9 @@
                 <div class="row">
                     <div class="col-md-11 mx-auto">
                         <div class="h-100 w-100 relative">
-                            <img class="img-fluid w-100 hero-img" src="{{ asset('assets/images/bijoy/cover.jpg') }}"
+{{--                            <img class="img-fluid" src="{{ asset('assets/images/portfolio/admission-office.png') }}"--}}
+{{--                                 alt="">--}}
+                            <img class="img-fluid hero-img" src="{{ asset('assets/images/kitchen_design/banner.png') }}"
                                  alt="">
                             <div class="overlay"></div>
                             <div class="absolute d-flex justify-content-start align-items-end">
@@ -34,8 +36,8 @@
                         <div class="row">
                             <div class="col-md-7">
                                 <h2 class="mb-2">Project Description: </h2>
-                                <p>An architect will make it a space worth living in. They will bring in their creativity, some art and a bit of science to enhance your living space in ways you might not expect. We introduce elegance & comfort and help to raise the functionality in your life via our contemporary & modern architectures. </p>
-                                <p>This project is very close to our hearts as we design a “HOME” where souls are gathered. We designed this project so that the family living under this roof can feel the warmth of home via this architecture. Its soothing, comfortable, calming, reassuring, sophisticated as well as stylish, elegant, modern & graceful.</p>
+                                <p>A well decorated and functional kitchen is one of a master element for a grand mansion just like the one Mr. M.A.Salam built.It was a big challenge to match these two kitchen with the standard of this luxury mansion.</p>
+                                <p>We designed and implimented a luxury,modern and multi functional kitchen concept.All cabinets were Docu painted with Hardner lequer finish.This luxury smart kitchens added  an extra star to the mansion interior which uplifted the standard of the mansionsion</p>
                             </div>
                             <div class="col-md-5">
                                 <div class="row">
@@ -44,7 +46,7 @@
                                     </div>
                                     <div class="col-9">
                                         <h5>Client:</h5>
-                                        <p>Bijoy Kumar Saha</p>
+                                        <p> M.A.Salam</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -53,7 +55,7 @@
                                     </div>
                                     <div class="col-9">
                                         <h5>Location:</h5>
-                                        <p>Ihsak Lane, Pabna Sadar, Pabna</p>
+                                        <p>Munigong, Bagerhat</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -62,7 +64,7 @@
                                     </div>
                                     <div class="col-9">
                                         <h5>Project Area:</h5>
-                                        <p>4950 sft. (Land), <br> 1880 sft. (Building)</p>
+                                        <p>850 sft.</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -70,8 +72,8 @@
                                         <img class="h-auto w-50 mx-auto mt-1" src="/assets/images/portfolio/money-bag.svg" alt="">
                                     </div>
                                     <div class="col-9">
-                                        <h5>Budget:</h5>
-                                        <p>10.5 Million BDT</p>
+                                        <h5>Project Cost: </h5>
+                                        <p>14,00,000 BDT</p>
                                     </div>
                                 </div>
                             </div>
@@ -82,65 +84,92 @@
                     <div class="col-md-11 mx-auto">
                         <div>
                             <h2 class="text-center mb-5">Floor Planning</h2>
-                            <img class="w-100 h-auto" src="{{asset('assets/images/portfolio/protfolio-6.png')  }}"
+                            <h2 class="text-center mt-5">Kitchen 1</h2>
+                            <img class="w-100 h-auto" src="{{asset('assets/images/kitchen_design/floor-1.png')  }}"
+                                 alt="">
+                        </div>
+
+                         <div>
+                            <h2 class="text-center mt-5">Kitchen 2</h2>
+                            <img class="w-100 h-auto" src="{{asset('assets/images/kitchen_design/floor-2.png')  }}"
                                  alt="">
                         </div>
                     </div> <!-- ./col -->
                 </div> <!-- ./row -->
             </div> <!-- ./container -->
         </div> <!-- ./about-us -->
-        <div class="container portfolio-gallery portfolio-6">
+        <div class="container portfolio-gallery">
             <div class="row mb-5">
                 <div class="col-md-11 mx-auto">
-                    <h2 class="text-center mb-5">3D View</h2>
+                    <h2 class="text-center mb-5">Real Image </h2>
                     <div class="row justify-content-center">
-                        <div class="col-sm-6 col-md-6 col-lg-7 img-box px-md-2">
+                        <div class="col-sm-6 col-md-6 col-lg-7 px-md-2">
                             <div class="border-0">
-                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup w-100 h-100"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/portfolio-6-1.png')}}">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/kitchen_design/real-1.png')}}">
                                     <img class="gallery-img-big img-fluid"
-                                         src="{{asset('assets/images/portfolio/portfolio-6-1.png')}}" alt="Card image">
+                                         src="{{asset('assets/images/kitchen_design/real-1.png')}}" alt="Card image">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-5 mt-3 mt-md-0 img-box mt-3 mt-md-0 px-md-2">
-                            <div class="border-0 mb-3">
-                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/portfolio-6-2.png')}}">
-                                    <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/portfolio-6-2.png')}}" alt="Card image">
-                                </a>
-                            </div>
+                        <div class="col-sm-6 col-md-6 col-lg-5 mt-3 mt-md-0 px-md-2">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/portfolio-6-3.png')}}">
-                                    <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/portfolio-6-3.png')}}" alt="Card image">
+                                   data-fancybox="gallery" href="{{asset('assets/images/kitchen_design/real-2.png')}}">
+                                    <img class="gallery-img-big img-fluid"
+                                         src="{{asset('assets/images/kitchen_design/real-2.png')}}" alt="Card image">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-5 mt-3 img-box mt-3 px-md-2">
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/portfolio-6-4.png')}}">
-                                    <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/portfolio-6-4.png')}}" alt="Card image">
+                                   data-fancybox="gallery" href="{{asset('assets/images/kitchen_design/real-3.png')}}">
+                                    <img class="gallery-img img-fluid radiance-real-image"
+                                         src="{{asset('assets/images/kitchen_design/real-3.png')}}" alt="Card image">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-7 mt-3 img-box mt-3 px-md-2">
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
                             <div class="border-0">
                                 <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
-                                   data-fancybox="gallery" href="{{asset('assets/images/portfolio/portfolio-6-5.png')}}">
-                                    <img class="gallery-img img-fluid"
-                                         src="{{asset('assets/images/portfolio/portfolio-6-5.png')}}" alt="Card image">
+                                   data-fancybox="gallery" href="{{asset('assets/images/kitchen_design/real-4.png')}}">
+                                    <img class="gallery-img img-fluid radiance-real-image"
+                                         src="{{asset('assets/images/kitchen_design/real-4.png')}}" alt="Card image">
                                 </a>
                             </div>
                         </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3 px-md-2">
+                            <div class="border-0">
+                                <a data-fancybox="gallery" data-width="2048" data-height="1365" class="view-popup"
+                                   data-fancybox="gallery" href="{{asset('assets/images/kitchen_design/real-5.png')}}">
+                                    <img class="gallery-img img-fluid radiance-real-image"
+                                         src="{{asset('assets/images/kitchen_design/real-5.png')}}" alt="Card image">
+                                </a>
+                            </div>
+                        </div>
+                      
                     </div>
                 </div>
             </div> <!-- ./row -->
+            <div class="text-center mb-3 mb-md-0 pb-4">
+                <a href="{{ route('gallery') }}" class="btn btn-primary px-4 font-weight-bold">See all</a>
+            </div>
         </div> <!-- ./container -->
+
+
+        <style>
+            .radiance-real-image{
+                height: 482px !important;
+            }
+
+            @media only screen and (max-width: 576px){
+                .radiance-real-image{
+                    height: 350px !important;
+                }
+            }
+        </style>
+
     </main> <!-- ./Main -->
 @endsection
 @push('custom-scripts')
