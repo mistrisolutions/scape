@@ -74,7 +74,7 @@
                                     </div>
                                     <div class="col-9">
                                         <h5>Budget:</h5>
-                                        <p>3.5 Million BDT</p>
+                                        <p>35,00,000 BDT</p>
                                     </div>
                                 </div>
                             </div>
@@ -267,9 +267,9 @@
                     </div>
                 </div>
             </div> <!-- ./row -->
-            <div class="text-center my-3 mb-md-5">
+            {{-- <div class="text-center my-3 mb-md-5">
                 <a href="{{ route('gallery') }}" class="btn btn-primary px-4 font-weight-bold">See all</a>
-            </div>
+            </div> --}}
         </div> <!-- ./container -->
 
     </main> <!-- ./Main -->
