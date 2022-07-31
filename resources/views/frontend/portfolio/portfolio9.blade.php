@@ -101,7 +101,7 @@
         <div class="container portfolio-gallery">
             <div class="row mb-5">
                 <div class="col-md-11 mx-auto">
-                    <h2 class="text-center mb-5">Real Image </h2>
+                    <h2 class="text-center mb-5">Live Pictures</h2>
                     <div class="row justify-content-center">
                         <div class="col-sm-6 col-md-6 col-lg-7 px-md-2">
                             <div class="border-0">
