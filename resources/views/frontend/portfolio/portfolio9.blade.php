@@ -101,7 +101,7 @@
         <div class="container portfolio-gallery">
             <div class="row mb-5">
                 <div class="col-md-11 mx-auto">
-                    <h2 class="text-center mb-5">Real Image </h2>
+                    <h2 class="text-center mb-5">Live Pictures</h2>
                     <div class="row justify-content-center">
                         <div class="col-sm-6 col-md-6 col-lg-7 px-md-2">
                             <div class="border-0">
@@ -152,9 +152,9 @@
                     </div>
                 </div>
             </div> <!-- ./row -->
-            <div class="text-center mb-3 mb-md-0 pb-4">
+            {{-- <div class="text-center mb-3 mb-md-0 pb-4">
                 <a href="{{ route('gallery') }}" class="btn btn-primary px-4 font-weight-bold">See all</a>
-            </div>
+            </div> --}}
         </div> <!-- ./container -->
 
 
