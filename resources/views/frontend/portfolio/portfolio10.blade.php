@@ -65,7 +65,7 @@
                                     </div>
                                     <div class="col-9">
                                         <h5>Project Area:</h5>
-                                        <p>3500 sft. (Admission Office)</p>
+                                        <p>3500 sft. (Library & Register Floor)</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -267,9 +267,9 @@
                     </div>
                 </div>
             </div> <!-- ./row -->
-            {{-- <div class="text-center my-3 mb-md-5">
+            <div class="text-center my-3 mb-md-5">
                 <a href="{{ route('gallery') }}" class="btn btn-primary px-4 font-weight-bold">See all</a>
-            </div> --}}
+            </div>
         </div> <!-- ./container -->
 
     </main> <!-- ./Main -->
