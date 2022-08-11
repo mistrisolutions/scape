@@ -404,7 +404,7 @@
                                 </div> <!-- ./tab-pan -->
                                 <div class="tab-pane fade" id="pills-office" role="tabpanel"
                                      aria-labelledby="pills-office-tab">
-                                    {{-- <div class="d-md-flex mb-3">
+                                    <div class="d-md-flex mb-3">
                                         <div class="pr-md-4 d-flex flex-shrink-0 tab-left">
                                             <p class="text-primary">Admission Office</p>
                                         </div>
@@ -997,7 +997,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> --}}
+                                    </div>
                                     {{-- sujon kabir residen start  --}}
                                     <div class="d-md-flex mb-3">
                                         <div class="pr-md-4 d-flex flex-shrink-0 tab-left kobir">
