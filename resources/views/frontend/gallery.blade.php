@@ -695,8 +695,9 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <a id="sujon" name="sujon"></a>
+                                            
                                             <div class="col-sm-6 col-md-4 px-0">
+                                                <a id="sujon" name="sujon"></a>
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
                                                        class="view-popup" data-fancybox="gallery"
@@ -879,8 +880,9 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <a id="library" name="library"></a>
                                             <div class="col-sm-6 col-md-4 px-0">
+                                            <a id="library" name="library"></a>
+
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
                                                        class="view-popup" data-fancybox="gallery"
@@ -1121,9 +1123,10 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <a id="classroom" name="classroom"></a>
 
                                             <div class="col-sm-6 col-md-4 px-0">
+                                            <a id="classroom" name="classroom"></a>
+
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
                                                        class="view-popup" data-fancybox="gallery"
