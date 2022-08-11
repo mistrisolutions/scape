@@ -268,7 +268,7 @@
                 </div>
             </div> <!-- ./row -->
             <div class="text-center my-3 mb-md-5">
-                <a href="{{ route('gallery') }}" class="btn btn-primary px-4 font-weight-bold">See all</a>
+                <a href="/gallery/#library" class="btn btn-primary px-4 font-weight-bold">See all</a>
             </div>
         </div> <!-- ./container -->
 

@@ -482,6 +482,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+                                            
                                             <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
@@ -502,6 +503,9 @@
                                                     </a>
                                                 </div>
                                             </div>
+                                            {{-- redicret to dean office  --}}
+                                            <a id="faculty" name="faculty"></a>
+                                            {{-- redicret to dean office  --}}
                                             <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
@@ -514,12 +518,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a name="#faculty"></a>
+                                    
+                                    
                                     <div class="d-md-flex mb-3">
-                                        <div class="pr-md-4 d-flex flex-shrink-0 tab-left">
+                                        <div  class="pr-md-4 d-flex flex-shrink-0 tab-left">
                                             <p class="text-primary">Faculty And Dean Office</p>
                                         </div>
-                                        <div class="row mx-0 gap-5 custom-grid w-100">
+                                        <div   class="row mx-0 gap-5 custom-grid w-100">
                                             <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
@@ -690,6 +695,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+                                            <a id="sujon" name="sujon"></a>
                                             <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
@@ -873,7 +879,7 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            
+                                            <a id="library" name="library"></a>
                                             <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
@@ -1115,6 +1121,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+                                            <a id="classroom" name="classroom"></a>
 
                                             <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
