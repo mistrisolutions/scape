@@ -74,6 +74,11 @@ Route::get('gallery',function(){
     return view('frontend.gallery');
 })->name('gallery');
 
+// Route::get('gallery/dean-office',function(){
+//     // return view('frontend.gallery'#faculty);
+//     return view('frontend.gallery');
+// });
+
 Route::get('contact',function(){
     return view('frontend.contact');
 })->name('contact');

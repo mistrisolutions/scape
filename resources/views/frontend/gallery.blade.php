@@ -90,12 +90,12 @@
                                 <li class="col-4 px-0 nav-item h-100 w-100 border-right">
                                     <a class="nav-link active rounded-0 d-flex align-items-center justify-content-center h-100" id="pills-residence-tab" data-toggle="pill"
                                        href="#pills-residence" role="tab" aria-controls="pills-residence"
-                                       aria-selected="true">3D VR <br> View</a>
+                                       aria-selected="true">Project Pictures</a>
                                 </li>
                                 <li class="col-4 px-0 nav-item h-100 w-100">
                                     <a class="nav-link rounded-0 d-flex align-items-center justify-content-center h-100" id="p ills-office-tab" data-toggle="pill"
                                        href="#pills-office" role="tab" aria-controls="pills-office"
-                                       aria-selected="false">Project Pictures</a>
+                                       aria-selected="false">3D VR <br> View</a>
                                 </li>
                                 <li class="col-4 px-0 nav-item h-100 w-100 border-left">
                                     <a class="nav-link rounded-0 d-flex align-items-center justify-content-center h-100" id="p ills-hotel-tab" data-toggle="pill"
@@ -107,303 +107,6 @@
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-residence" role="tabpanel"
                                      aria-labelledby="pills-residence-tab">
-                                    <div class="d-md-flex mb-3">
-                                        <div class="pr-md-4 d-flex flex-shrink-0 tab-left">
-                                            <p class="text-primary">Bedroom</p>
-                                        </div>
-                                        <div class="row mx-0 gap-5 custom-grid w-100">
-                                            <div class="col-sm-6 col-md-4 px-0">
-                                                <div class="view-card">
-                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup" data-fancybox="gallery"
-                                                       href="{{asset('assets/images/vr/bedroom/1.jpg')}}">
-                                                        <img class="img-fluid w-100"
-                                                             src="{{asset('assets/images/vr/bedroom/1.jpg')}}" alt="">
-                                                    </a>
-                                                    <img
-                                                        class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/b8f65d588b614c8f975edf1ddc2bdc80?utm_campaign=embed&utm_source=other&heading=3.9&pitch=5.5&field-of-view=75&size=medium')"
-                                                        src="{{asset('assets/images/portfolio/360.png')}}"
-                                                        alt="Show VR"
-                                                    >
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4 px-0">
-                                                <div class="view-card">
-                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup" data-fancybox="gallery"
-                                                       href="{{asset('assets/images/vr/bedroom/2.jpg')}}"><img
-                                                            class="img-fluid w-100"
-                                                            src="{{asset('assets/images/vr/bedroom/2.jpg')}}" alt=""></a>
-                                                    <img
-                                                        class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/c4392a0f39df44afb2b6d08345d74dc2?utm_campaign=embed&utm_source=other&heading=69.1&pitch=-9.8&field-of-view=75&size=medium')"
-                                                        src="{{asset('assets/images/portfolio/360.png')}}"
-                                                        alt="Show VR"
-                                                    >
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4 px-0">
-                                                <div class="view-card">
-                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup" data-fancybox="gallery"
-                                                       href="{{asset('assets/images/vr/bedroom/3.jpg')}}"><img
-                                                            class="img-fluid w-100"
-                                                            src="{{asset('assets/images/vr/bedroom/3.jpg')}}" alt=""></a>
-                                                    <img
-                                                        class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/a18c25f7919f446080e81956656f019e?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
-                                                        src="{{asset('assets/images/portfolio/360.png')}}"
-                                                        alt="Show VR"
-                                                    >
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4 px-0">
-                                                <div class="view-card">
-                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup" data-fancybox="gallery"
-                                                       href="{{asset('assets/images/vr/bedroom/4.jpg')}}"><img
-                                                            class="img-fluid w-100"
-                                                            src="{{asset('assets/images/vr/bedroom/4.jpg')}}" alt=""></a>
-                                                    <img
-                                                        class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/dd9f6a8e9f7c45ccb1eed04755df6885?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
-                                                        src="{{asset('assets/images/portfolio/360.png')}}"
-                                                        alt="Show VR"
-                                                    >
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4 px-0">
-                                                <div class="view-card">
-                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup" data-fancybox="gallery"
-                                                       href="{{asset('assets/images/vr/bedroom/5.jpg')}}"><img
-                                                            class="img-fluid w-100"
-                                                            src="{{asset('assets/images/vr/bedroom/5.jpg')}}" alt=""></a>
-                                                    <img
-                                                        class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/47fc3936aaeb42cc88f2483dcc5dc3f5?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
-                                                        src="{{asset('assets/images/portfolio/360.png')}}"
-                                                        alt="Show VR"
-                                                    >
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4 px-0">
-                                                <div class="view-card">
-                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup" data-fancybox="gallery"
-                                                       href="{{asset('assets/images/vr/bedroom/6.jpg')}}"><img
-                                                            class="img-fluid w-100"
-                                                            src="{{asset('assets/images/vr/bedroom/6.jpg')}}" alt=""></a>
-                                                    <img
-                                                        class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/0a6976bd46fb4d418c04b5dfa2e66f0f?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
-                                                        src="{{asset('assets/images/portfolio/360.png')}}"
-                                                        alt="Show VR"
-                                                    >
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4 px-0">
-                                                <div class="view-card">
-                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup" data-fancybox="gallery"
-                                                       href="{{asset('assets/images/vr/bedroom/7.jpg')}}"><img
-                                                            class="img-fluid w-100"
-                                                            src="{{asset('assets/images/residential/7.jpg')}}" alt=""></a>
-                                                    <img
-                                                        class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/d50d1c2246a64df6b87ee775f218a245?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
-                                                        src="{{asset('assets/images/portfolio/360.png')}}"
-                                                        alt="Show VR"
-                                                    >
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="d-md-flex mb-3">
-                                        <div class="pr-md-4 d-flex flex-shrink-0 tab-left">
-                                            <p class="text-primary">Kitchen & Washroom</p>
-                                        </div>
-                                        <div class="row mx-0 gap-5 custom-grid w-100">
-                                            <div class="col-sm-6 col-md-4 px-0">
-                                                <div class="view-card">
-                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup" data-fancybox="gallery"
-                                                       href="{{asset('assets/images/vr/kitchenwashroom/1.jpg')}}">
-                                                        <img class="img-fluid w-100"
-                                                             src="{{asset('assets/images/vr/kitchenwashroom/1.jpg')}}" alt="">
-                                                    </a>
-                                                    <img
-                                                        class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/ed1d015d92234a97a8fd388f91cfdc91?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
-                                                        src="{{asset('assets/images/portfolio/360.png')}}"
-                                                        alt="Show VR"
-                                                    >
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4 px-0">
-                                                <div class="view-card">
-                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup" data-fancybox="gallery"
-                                                       href="{{asset('assets/images/vr/kitchenwashroom/2.jpg')}}"><img
-                                                            class="img-fluid w-100"
-                                                            src="{{asset('assets/images/vr/kitchenwashroom/2.jpg')}}" alt=""></a>
-                                                    <img
-                                                        class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/ce6e3591651f456e84c9da1b418f70a0?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
-                                                        src="{{asset('assets/images/portfolio/360.png')}}"
-                                                        alt="Show VR"
-                                                    >
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4 px-0">
-                                                <div class="view-card">
-                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup" data-fancybox="gallery"
-                                                       href="{{asset('assets/images/vr/kitchenwashroom/3.jpg')}}"><img
-                                                            class="img-fluid w-100"
-                                                            src="{{asset('assets/images/vr/kitchenwashroom/3.jpg')}}" alt=""></a>
-                                                    <img
-                                                        class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/83b5a9af0d214fb0967c26351639ac67?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
-                                                        src="{{asset('assets/images/portfolio/360.png')}}"
-                                                        alt="Show VR"
-                                                    >
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="d-md-flex mb-3">
-                                        <div class="pr-md-4 d-flex flex-shrink-0 tab-left">
-                                            <p class="text-primary">VR Files (Dining & Living)</p>
-                                        </div>
-                                        <div class="row mx-0 gap-5 custom-grid w-100">
-                                            <div class="col-sm-6 col-md-4 px-0">
-                                                <div class="view-card">
-                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup" data-fancybox="gallery"
-                                                       href="{{asset('assets/images/vr/dinning-living-room/1.jpg')}}">
-                                                        <img class="img-fluid w-100"
-                                                             src="{{asset('assets/images/vr/dinning-living-room/1.jpg')}}" alt="">
-                                                    </a>
-                                                    <img
-                                                        class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/579883d83aa34f9ba16359a602ccaa2d?utm_campaign=embed&utm_source=other&heading=142.95&pitch=-15.19&field-of-view=75&size=medium')"
-                                                        src="{{asset('assets/images/portfolio/360.png')}}"
-                                                        alt="Show VR"
-                                                    >
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4 px-0">
-                                                <div class="view-card">
-                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup" data-fancybox="gallery"
-                                                       href="{{asset('assets/images/vr/dinning-living-room/2.jpg')}}"><img
-                                                            class="img-fluid w-100"
-                                                            src="{{asset('assets/images/vr/dinning-living-room/2.jpg')}}" alt=""></a>
-                                                    <img
-                                                        class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/c362c38f497548d09101dc86a5cefbd5?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
-                                                        src="{{asset('assets/images/portfolio/360.png')}}"
-                                                        alt="Show VR"
-                                                    >
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4 px-0">
-                                                <div class="view-card">
-                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup" data-fancybox="gallery"
-                                                       href="{{asset('assets/images/vr/dinning-living-room/3.jpg')}}"><img
-                                                            class="img-fluid w-100"
-                                                            src="{{asset('assets/images/vr/dinning-living-room/3.jpg')}}" alt=""></a>
-                                                    <img
-                                                        class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/b425901a1be54333be2d160b4bdc9087?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
-                                                        src="{{asset('assets/images/portfolio/360.png')}}"
-                                                        alt="Show VR"
-                                                    >
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4 px-0">
-                                                <div class="view-card">
-                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup" data-fancybox="gallery"
-                                                       href="{{asset('assets/images/vr/dinning-living-room/4.jpg')}}"><img
-                                                            class="img-fluid w-100"
-                                                            src="{{asset('assets/images/vr/dinning-living-room/4.jpg')}}" alt=""></a>
-                                                    <img
-                                                        class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/a8cd0030f87d4b339070dadcd9e0e36a?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
-                                                        src="{{asset('assets/images/portfolio/360.png')}}"
-                                                        alt="Show VR"
-                                                    >
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4 px-0">
-                                                <div class="view-card">
-                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup" data-fancybox="gallery"
-                                                       href="{{asset('assets/images/vr/dinning-living-room/5.jpg')}}"><img
-                                                            class="img-fluid w-100"
-                                                            src="{{asset('assets/images/vr/dinning-living-room/5.jpg')}}" alt=""></a>
-                                                    <img
-                                                        class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/5dc6c108cc1545758d90c8cc760403cf?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
-                                                        src="{{asset('assets/images/portfolio/360.png')}}"
-                                                        alt="Show VR"
-                                                    >
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4 px-0">
-                                                <div class="view-card">
-                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup" data-fancybox="gallery"
-                                                       href="{{asset('assets/images/vr/dinning-living-room/6.jpg')}}"><img
-                                                            class="img-fluid w-100"
-                                                            src="{{asset('assets/images/vr/dinning-living-room/6.jpg')}}" alt=""></a>
-                                                    <img
-                                                        class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/b3f7652e0b09448dbd8cc9f87ee9427b?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
-                                                        src="{{asset('assets/images/portfolio/360.png')}}"
-                                                        alt="Show VR"
-                                                    >
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4 px-0">
-                                                <div class="view-card">
-                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup" data-fancybox="gallery"
-                                                       href="{{asset('assets/images/vr/dinning-living-room/7.jpg')}}"><img
-                                                            class="img-fluid w-100"
-                                                            src="{{asset('assets/images/vr/dinning-living-room/7.jpg')}}" alt=""></a>
-                                                    <img
-                                                        class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/784adc06d7634d419955dd09619b5f4b?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
-                                                        src="{{asset('assets/images/portfolio/360.png')}}"
-                                                        alt="Show VR"
-                                                    >
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4 px-0">
-                                                <div class="view-card">
-                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
-                                                       class="view-popup" data-fancybox="gallery"
-                                                       href="{{asset('assets/images/vr/dinning-living-room/8.jpg')}}"><img
-                                                            class="img-fluid w-100"
-                                                            src="{{asset('assets/images/vr/dinning-living-room/8.jpg')}}" alt=""></a>
-                                                    <img
-                                                        class="threeD"
-                                                        onclick="showVR('https://momento360.com/e/u/e6fb9e0e2fff42ed8d2f11afe64ea5f8?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
-                                                        src="{{asset('assets/images/portfolio/360.png')}}"
-                                                        alt="Show VR"
-                                                    >
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> <!-- ./tab-pan -->
-                                <div class="tab-pane fade" id="pills-office" role="tabpanel"
-                                     aria-labelledby="pills-office-tab">
                                     <div class="d-md-flex mb-3">
                                         <div class="pr-md-4 d-flex flex-shrink-0 tab-left">
                                             <p class="text-primary">Admission Office</p>
@@ -779,6 +482,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+                                            
                                             <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
@@ -799,6 +503,9 @@
                                                     </a>
                                                 </div>
                                             </div>
+                                            {{-- redicret to dean office  --}}
+                                            <a id="faculty" name="faculty"></a>
+                                            {{-- redicret to dean office  --}}
                                             <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
@@ -811,11 +518,13 @@
                                             </div>
                                         </div>
                                     </div>
+                                    
+                                    
                                     <div class="d-md-flex mb-3">
-                                        <div class="pr-md-4 d-flex flex-shrink-0 tab-left">
+                                        <div  class="pr-md-4 d-flex flex-shrink-0 tab-left">
                                             <p class="text-primary">Faculty And Dean Office</p>
                                         </div>
-                                        <div class="row mx-0 gap-5 custom-grid w-100">
+                                        <div   class="row mx-0 gap-5 custom-grid w-100">
                                             <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
@@ -986,6 +695,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+                                            <a id="sujon" name="sujon"></a>
                                             <div class="col-sm-6 col-md-4 px-0">
                                                 <div class="view-card">
                                                     <a data-fancybox="gallery" data-width="2048" data-height="1365"
@@ -994,6 +704,999 @@
                                                         <img class="img-fluid w-100"
                                                              src="{{asset('assets/images/faculty_dean/18.jpg')}}" alt="">
                                                     </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{-- sujon kabir residen start  --}}
+                                    <div class="d-md-flex mb-3">
+                                        <div class="pr-md-4 d-flex flex-shrink-0 tab-left kobir">
+                                            <p class="text-primary" style="font-size: 14px!important">Mr. Sujan Kabir Residence</p>
+                                        </div>
+
+                                        <div class="row mx-0 gap-5 custom-grid w-100">
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 19.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 19.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 5.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 5.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 11.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 11.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 4.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 4.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 2.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 2.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 15.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 15.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 8.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 8.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 1.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 1.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 3.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 3.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 14.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 14.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 6.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 6.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 9.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 9.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 17.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 17.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 20.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 20.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 16.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 16.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a id="library" name="library"></a>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 18.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/sujon/Residence (Sujon vai) 18.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{-- sujon kabir residen end  --}}
+
+                                    {{-- library floor start  --}}
+
+                                    <div class="d-md-flex mb-3">
+                                        <div class="pr-md-4 d-flex flex-shrink-0 tab-left kobir">
+                                            <p class="text-primary" style="font-size: 14px!important">Library & Register Floor</p>
+                                        </div>
+
+                                        <div class="row mx-0 gap-5 custom-grid w-100">
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/library/LRF1.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/library/LRF1.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                             <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/library/LRF2.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/library/LRF2.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                             <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/library/LRF4.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/library/LRF4.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                             <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/library/LRF5.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/library/LRF5.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                             <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/library/LRF6.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/library/LRF6.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                             <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/library/LRF7.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/library/LRF7.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                             <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/library/LRF3.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/library/LRF3.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                             <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/library/LRF8.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/library/LRF8.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                             <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/library/LRF9.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/library/LRF9.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                             <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/library/LRF10.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/library/LRF10.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                             <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/library/LRF11.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/library/LRF11.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                             <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/library/LRF16.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/library/LRF16.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                             <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/library/LRF12.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/library/LRF12.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                             <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/library/LRF21.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/library/LRF21.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                             <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/library/LRF19.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/library/LRF19.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                             <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/library/LRF20.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/library/LRF20.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                             <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/library/LRF18.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/library/LRF18.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                             <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/library/LRF13.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/library/LRF13.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                             <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/library/LRF14.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/library/LRF14.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/library/LRF17.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/library/LRF17.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a id="classroom" name="classroom"></a>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/library/LRF15.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/library/LRF15.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {{-- library floor end  --}}
+
+
+
+                                    {{-- Classroom start  --}}
+
+                                        <div class="d-md-flex mb-3">
+                                        <div class="pr-md-4 d-flex flex-shrink-0 tab-left kobir">
+                                            <p class="text-primary" style="font-size: 14px!important">Classroom Floor</p>
+                                        </div>
+
+                                        <div class="row mx-0 gap-5 custom-grid w-100">
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/classroom/CRF13.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/classroom/CRF13.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/classroom/CRF12.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/classroom/CRF12.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/classroom/CRF1.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/classroom/CRF1.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/classroom/CRF5.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/classroom/CRF5.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/classroom/CRF2.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/classroom/CRF2.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/classroom/CRF6.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/classroom/CRF6.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/classroom/CRF10.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/classroom/CRF10.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/classroom/CRF3.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/classroom/CRF3.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/classroom/CRF7.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/classroom/CRF7.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/classroom/CRF11.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/classroom/CRF11.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/classroom/CRF4.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/classroom/CRF4.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/classroom/CRF8.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/classroom/CRF8.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/classroom/CRF9.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/classroom/CRF9.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/classroom/CRF14.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/classroom/CRF14.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/classroom/CRF15.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/classroom/CRF15.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/classroom/CRF16.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/classroom/CRF16.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/classroom/CRF17.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/classroom/CRF17.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/classroom/CRF18.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/classroom/CRF18.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/classroom/CRF19.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/classroom/CRF19.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/classroom/CRF20.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/classroom/CRF20.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/classroom/CRF21.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/classroom/CRF21.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/classroom/CRF22.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/classroom/CRF22.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/gallery/classroom/CRF23.png')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/gallery/classroom/CRF23.png')}}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {{-- classroom end  --}}
+                                </div> <!-- ./tab-pan -->
+                                <div class="tab-pane fade" id="pills-office" role="tabpanel"
+                                     aria-labelledby="pills-office-tab">
+                                    {{-- vr start  --}}
+                                    <div class="d-md-flex mb-3">
+                                        <div class="pr-md-4 d-flex flex-shrink-0 tab-left">
+                                            <p class="text-primary">Bedroom</p>
+                                        </div>
+                                        <div class="row mx-0 gap-5 custom-grid w-100">
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/vr/bedroom/1.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/vr/bedroom/1.jpg')}}" alt="">
+                                                    </a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/b8f65d588b614c8f975edf1ddc2bdc80?utm_campaign=embed&utm_source=other&heading=3.9&pitch=5.5&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/vr/bedroom/2.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/vr/bedroom/2.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/c4392a0f39df44afb2b6d08345d74dc2?utm_campaign=embed&utm_source=other&heading=69.1&pitch=-9.8&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/vr/bedroom/3.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/vr/bedroom/3.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/a18c25f7919f446080e81956656f019e?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/vr/bedroom/4.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/vr/bedroom/4.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/dd9f6a8e9f7c45ccb1eed04755df6885?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/vr/bedroom/5.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/vr/bedroom/5.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/47fc3936aaeb42cc88f2483dcc5dc3f5?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/vr/bedroom/6.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/vr/bedroom/6.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/0a6976bd46fb4d418c04b5dfa2e66f0f?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/vr/bedroom/7.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/residential/7.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/d50d1c2246a64df6b87ee775f218a245?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-md-flex mb-3">
+                                        <div class="pr-md-4 d-flex flex-shrink-0 tab-left">
+                                            <p class="text-primary">Kitchen & Washroom</p>
+                                        </div>
+                                        <div class="row mx-0 gap-5 custom-grid w-100">
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/vr/kitchenwashroom/1.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/vr/kitchenwashroom/1.jpg')}}" alt="">
+                                                    </a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/ed1d015d92234a97a8fd388f91cfdc91?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/vr/kitchenwashroom/2.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/vr/kitchenwashroom/2.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/ce6e3591651f456e84c9da1b418f70a0?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/vr/kitchenwashroom/3.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/vr/kitchenwashroom/3.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/83b5a9af0d214fb0967c26351639ac67?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-md-flex mb-3">
+                                        <div class="pr-md-4 d-flex flex-shrink-0 tab-left">
+                                            <p class="text-primary">VR Files (Dining & Living)</p>
+                                        </div>
+                                        <div class="row mx-0 gap-5 custom-grid w-100">
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/vr/dinning-living-room/1.jpg')}}">
+                                                        <img class="img-fluid w-100"
+                                                             src="{{asset('assets/images/vr/dinning-living-room/1.jpg')}}" alt="">
+                                                    </a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/579883d83aa34f9ba16359a602ccaa2d?utm_campaign=embed&utm_source=other&heading=142.95&pitch=-15.19&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/vr/dinning-living-room/2.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/vr/dinning-living-room/2.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/c362c38f497548d09101dc86a5cefbd5?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/vr/dinning-living-room/3.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/vr/dinning-living-room/3.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/b425901a1be54333be2d160b4bdc9087?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/vr/dinning-living-room/4.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/vr/dinning-living-room/4.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/a8cd0030f87d4b339070dadcd9e0e36a?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/vr/dinning-living-room/5.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/vr/dinning-living-room/5.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/5dc6c108cc1545758d90c8cc760403cf?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/vr/dinning-living-room/6.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/vr/dinning-living-room/6.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/b3f7652e0b09448dbd8cc9f87ee9427b?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/vr/dinning-living-room/7.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/vr/dinning-living-room/7.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/784adc06d7634d419955dd09619b5f4b?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 px-0">
+                                                <div class="view-card">
+                                                    <a data-fancybox="gallery" data-width="2048" data-height="1365"
+                                                       class="view-popup" data-fancybox="gallery"
+                                                       href="{{asset('assets/images/vr/dinning-living-room/8.jpg')}}"><img
+                                                            class="img-fluid w-100"
+                                                            src="{{asset('assets/images/vr/dinning-living-room/8.jpg')}}" alt=""></a>
+                                                    <img
+                                                        class="threeD"
+                                                        onclick="showVR('https://momento360.com/e/u/e6fb9e0e2fff42ed8d2f11afe64ea5f8?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium')"
+                                                        src="{{asset('assets/images/portfolio/360.png')}}"
+                                                        alt="Show VR"
+                                                    >
                                                 </div>
                                             </div>
                                         </div>
@@ -1487,6 +2190,25 @@
         </div>
     </div>
     </div>
+
+    <style>
+        
+        @media only screen and (min-width:992px){
+            .k-i-1{
+            height: 131px;
+            }
+
+            .k-i-2{
+                height: 152px;
+            }
+
+            .k-i-3{
+                height: 135px;
+            }
+        }
+
+
+    </style>
 
 @endsection
 @push('custom-scripts')

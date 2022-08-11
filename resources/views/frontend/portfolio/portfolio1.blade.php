@@ -272,7 +272,7 @@
                 </div>
             </div> <!-- ./row -->
             <div class="text-center mb-3 mb-md-0">
-                <a href="{{ route('gallery') }}" class="btn btn-primary px-4 font-weight-bold">See all</a>
+                <a href="/gallery" class="btn btn-primary px-4 font-weight-bold">See all</a>
             </div>
         </div> <!-- ./container -->
 

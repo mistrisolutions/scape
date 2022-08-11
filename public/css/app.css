@@ -11096,6 +11096,10 @@ p {
   gap: 10px;
 }
 
+.gap-4 {
+  gap: 5px;
+}
+
 .font-discognate {
   font-family: Discognate;
 }

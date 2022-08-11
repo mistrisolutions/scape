@@ -201,7 +201,7 @@
             </div> <!-- ./row -->
 
              <div class="text-center pb-4">
-                <a href="{{ route('gallery') }}" class="btn btn-primary px-4 font-weight-bold">See all</a>
+                <a href="/gallery/#sujon" class="btn btn-primary px-4 font-weight-bold">See all</a>
             </div>
 
         </div> <!-- ./container -->
